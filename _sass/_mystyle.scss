@@ -45,17 +45,17 @@ body.theme-dark,
 
 // Hero image on index.html
 .masthead {
-  background: linear-gradient(
-      180deg,
-      transparent 0,
-      transparent 20%,
-      rgba(0, 0, 0, 0.1) 30%,
-      rgba(0, 0, 0, 0.8) 70%,
-      #000
-    ),
-    url(../images/HEROIMAGE.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background: linear-gradient(
+  //     180deg,
+  //     transparent 0,
+  //     transparent 20%,
+  //     rgba(0, 0, 0, 0.1) 30%,
+  //     rgba(0, 0, 0, 0.8) 70%,
+  //     #000
+  //   ),
+  //   url(../images/HEROIMAGE.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
 
 // Avatars

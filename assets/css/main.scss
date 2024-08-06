@@ -12,8 +12,8 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 // Override main colors
-$blue: rgb(0, 153, 255);
-$purple: rgb(255, 51, 133);
+$blue: #00a4bd;
+$purple: #00bda5;
 
 // To fix dependencies on sizing the typografy
 html {
@@ -30,13 +30,13 @@ html {
 }
 
 // Fix some colors incongruencies
-a:visited {
-  color: inherit !important;
-}
-
 // a:visited {
-//   @extend a;
+//   color: inherit !important;
 // }
+
+a:visited {
+  @extend a;
+}
 
 .search__toggle {
   color: $purple !important;
