@@ -30,13 +30,13 @@ html {
 }
 
 // Fix some colors incongruencies
-// a:visited {
-//   color: inherit !important;
-// }
-
 a:visited {
-  @extend a;
+  color: inherit !important;
 }
+
+// a:visited {
+//   @extend a;
+// }
 
 .search__toggle {
   color: $purple !important;
