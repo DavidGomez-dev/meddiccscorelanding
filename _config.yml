@@ -103,9 +103,9 @@ author:
   avatar: "/assets/images/screenshot2.png"
   bio: "Enhance your sales process with Meddicc score for Hubspot"
   links:
-    # - label: "Web App"
-    #   icon: "fas fa-fw fa-mobile-alt"
-    #   url: "https://app.DOMAIN.com/"
+    - label: "Install now"
+      icon: "fas fa-fw fa-hubspot"
+      url: "/"
     # - label: "Google Play"
     #   icon: "fab fa-fw fa-google-play"
     #   url: "https://play.google.com/store/apps/details?id=com.DOMAIN.app.twa"

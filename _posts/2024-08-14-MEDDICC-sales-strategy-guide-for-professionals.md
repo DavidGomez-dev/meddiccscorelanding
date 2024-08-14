@@ -7,7 +7,7 @@ tags:
   - sales strategy
   - guide for sales professionals
 classes: wide
-date: 2022-04-15 10:46:57 +0100
+date: 2024-04-15 10:46:57 +0100
 excerpt: In the world of sales strategy, MEDDICC is a powerful framework that can significantly enhance the effectiveness of your sales process. Whether you're a sea...
 header:
   overlay_image: /assets/images/posts/2024-08-14_896.webp

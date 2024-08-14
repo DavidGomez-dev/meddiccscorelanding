@@ -5,5 +5,5 @@ main:
     url: /#pricing
   - title: "Blog"
     url: /blog/
-  - title: "Docs"
-    url: /#download
+  - title: "Setup"
+    url: /blog/setup-guide/
