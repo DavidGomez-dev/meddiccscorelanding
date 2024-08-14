@@ -104,7 +104,7 @@ author:
   bio: "Enhance your sales process with Meddicc score for Hubspot"
   links:
     - label: "Install now"
-      icon: "fas fa-fw fa-hubspot"
+      icon: "fab fa-fw fa-hubspot"
       url: "/"
     # - label: "Google Play"
     #   icon: "fab fa-fw fa-google-play"

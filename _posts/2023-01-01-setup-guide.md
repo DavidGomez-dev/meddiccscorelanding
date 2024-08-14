@@ -15,7 +15,7 @@ excerpt: Setup Guide for installing Meddicc Score in HubSpot
 
 Click the "Install App" button to link your HubSpot account.
 
-[![Install](../../assets/images/installBtn.png)](https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&scope=oauth%20crm.objects.deals.read%20crm.objects.deals.write&redirect_uri=https%3A%2F%2Fapp.meddiccscore.com%2Foauth-callback)
+<a href="https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&scope=oauth%20crm.objects.deals.read%20crm.objects.deals.write&redirect_uri=https%3A%2F%2Fapp.meddiccscore.com%2Foauth-callback" target="_blank">![Install](../../assets/images/installBtn.png)</a>
 
 **2. Login to Your HubSpot Account**
 
@@ -47,7 +47,7 @@ Start using Meddicc Score to complete the information form the Deal and get an s
 
 **7. Upgrade to Premium**
 
-If you like Meddicc score and want to use it for more than 5 Deal, you can upgrade convinently from the own app.
+If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app.
 
 ![Ugrade](../../assets/images/guide5.png)
 
