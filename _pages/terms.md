@@ -220,7 +220,6 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 For any questions or concerns regarding your privacy, you may contact us using the following details:
 
-- tailored.systems
 - {{ site.email }}
 
 ---
