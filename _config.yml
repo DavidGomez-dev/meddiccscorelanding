@@ -18,7 +18,7 @@ email: meddiccscore@gmail.com
 pwalink: "https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&scope=oauth%20crm.objects.deals.read%20crm.objects.deals.write&redirect_uri=https%3A%2F%2Fapp.meddiccscore.com%2Foauth-callback"
 googleplaylink: "https://play.google.com/store/apps/details?id=com.DOMAIN.app.twa  TODO Add  &utm_source=landing"
 appstorelink: "/?ref=requestappstore   TODO Add  &utm_source=landing"
-description: Simplify your sales process with automated MEDDICC scoring and seamless HubSpot integration. Get real-time feedback on sales progress and enhance your team’s efficiency with ease. Transform tedious tasks into actionable insights.
+description: Simplify your sales process with automated MEDDICC score for HubSpot integration. Transform tedious tasks into actionable insights and enhance your team’s efficiency with ease.
 twitter_username: TwitterUsername
 github_username: username
 minimal_mistakes_skin: contrast #default
