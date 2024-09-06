@@ -7,7 +7,7 @@ title: "Privacy"
 
 **Last updated: March 22, 2024**
 
-Tailored.systems (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our mobile application (the “Application”). Please read this Privacy Policy carefully. **IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS OUR APPLICATIONS.**
+Meddicc Score (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our mobile application (the “Application”). Please read this Privacy Policy carefully. **IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS OUR APPLICATIONS.**
 
 We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Application after the date such revised Privacy Policy is posted.
 
@@ -27,27 +27,13 @@ Information our servers automatically collect when you access the Application, s
 
 ### Financial Data
 
-Financial information, such as data related to your payment method (e.g. valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the Application. We store only very limited, if any, financial information that we collect.
+Financial information, such as data related to your payment method (e.g. valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the Application. We store only very limited, if any, financial information that we collect. All payments are managed by Stripe. See thier Privacy Policy here:
 
-### Facebook Permissions
-
-The Application may by default access your Facebook basic account information, including your name, email, gender, birthday, current city, and profile picture URL, as well as other information that you choose to make public. We may also request access to other permissions related to your account, such as friends, checkins, and likes, and you may choose to grant or deny us access to each individual permission. For more information regarding Facebook permissions, refer to the Facebook Permissions Reference page.
-
-### Data from Social Networks
-
-User information from social networking sites, such as Facebook and Instagram, including your name, your social network username, location, gender, birth date, email address, profile picture, and public data for contacts, if you connect your account to such social networks. This information may also include the contact information of anyone you invite to use and/or join the Application.
-
-### Geo-Location Information
-
-We may request access or permission to and track location-based information from your mobile device, either continuously or while you are using the Application, to provide location-based services. If you wish to change our access or permissions, you may do so in your device’s settings.
+https://stripe.com/gb/privacy
 
 ### Image Data
 
 User provided photographs that are chosen to be modified using the Application are not used for any reason other than to provide you with the functionality of the Application. For our photo editing Applications, the photo processing is performed locally on your mobile device. We do not collect your photographs or albums, even if you have granted us permission to access your camera or photo albums. Photographs are only shared when the user chooses to utilize the “Share” feature of the Application to transmit edited photographs via social media, MMS, or other means of transmissions.
-
-### Face Data
-
-Facial detection may be performed locally on your device on provided photographs to identify facial features required for portrait editing functionality of the Application. Face data is not used to identify the user, and is not collected or transmitted to external servers or services.
 
 ### Mobile Device Access
 
@@ -56,10 +42,6 @@ We may request access or permission to certain features from your mobile device,
 ### Mobile Device Data
 
 Device information such as your mobile device ID number, model, and manufacturer, version of your operating system, phone number, country, location, and any other data you choose to provide.
-
-### Push Notifications
-
-We may request to send you push notifications regarding your account or the Application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device’s settings.
 
 ### Third-Party Data
 
@@ -123,13 +105,15 @@ When you post comments, contributions or other content to the Applications, your
 
 We may use third-party advertising companies to serve ads when you visit the Application. These companies may use information about your visits to the Application and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.
 
+Currently there is no Advertisement on the App.
+
 ### Affiliates
 
 We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include our parent company and any subsidiaries, joint venture partners or other companies that we control or that are under common control with us.
 
 ### Business Partners
 
-We may share your information with our business partners to offer you certain products, services or promotions.
+We will not share your information with any business partners to offer you certain products, services or promotions.
 
 ### Offer Wall
 
@@ -159,6 +143,8 @@ We may use cookies, web beacons, tracking pixels, and other tracking technologie
 ### Internet-Based Advertising
 
 Additionally, we may use third-party software to serve ads on the Application, implement email marketing campaigns, and manage other interactive marketing initiatives. This third-party software may use cookies or similar tracking technology to help manage and optimize your online experience with us. For more information about opting-out of interest-based ads, visit the Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.
+
+Currently there is no Advertisement on the App.
 
 ### Website Analytics
 
