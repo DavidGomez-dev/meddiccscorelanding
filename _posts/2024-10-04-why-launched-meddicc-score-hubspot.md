@@ -7,11 +7,11 @@ tags:
   - what is MEDDICC score
   - importance of MEDDICC score
 classes: wide
-date: 2024-10-04 11:01:41 +0100
-excerpt: I have released Meddicc Score HubSpot app to fill MEDDICC, BANT, SPICED and others in HubSpot, a code project during the summer vacations.
+date: 2024-09-04 11:01:41 +0100
+excerpt: I have released Meddicc Score to fill MEDDICC, BANT, SPICED and others in HubSpot, a code project during the summer vacations.
 header:
-  overlay_image: /assets/images/imagesocial.png
-  teaser: /assets/images/imagesocial.png
+  overlay_image: /assets/images/posts/2024-09-10_69.webp
+  teaser: /assets/images/posts/2024-09-10_69.webp
   caption:
 ---
 
@@ -62,7 +62,5 @@ Building a [HubSpot](https://www.linkedin.com/company/hubspot/) app turned out t
 I’m eager to see how this initial version is received by the market, and then define the roadmap with the feedback.
 
 I’m excited to share this with you all and **would love to hear your feedback**! If you’re using HubSpot and have been looking for a way to streamline your sales qualification process, give it a try. And if you’re not using HubSpot yet, this might be the perfect reason to start. **Thank you for your support, and happy selling**!
-
----
 
 How do you organise your sales team? Follow me or drop a comment below👇 for more strategies that could steer your venture towards sustained growth.
