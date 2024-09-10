@@ -35,19 +35,19 @@ During my summer vacation, I decided to put **my amateur coding skills to work**
 
 The score appears directly on the Deals sidebar on the right, with a visual indicator showing the current score and highlighting which categories are complete or still need attention.
 
-![Score on the Deals Sidebar](assets/images/guide3.png)
+![Score on the Deals Sidebar](../../assets/images/guide3.png)
 
 #### 2. Streamlined Data Entry
 
 By clicking on “Update Score,” users are taken to a form where they can easily input the necessary information. The score is automatically calculated based on the completed fields, saving time and effort.
 
-![Easy Qualification Forms](assets/images/guide4.png)
+![Easy Qualification Forms](../../assets/images/guide4.png)
 
 #### 3. Change Qualification Framework
 
 By selecting an option from the dropdown menu, you can switch to other qualification frameworks, such as **MEDDICC, BANT, GPCTBA/C&I, SPICED, FAINT, CHAMP, SCOTSMAN, or ANUM**.
 
-![Selecting Other Frameworks](assets/images/guide7.png)
+![Selecting Other Frameworks](../../assets/images/guide7.png)
 
 ### Pricing:
 
