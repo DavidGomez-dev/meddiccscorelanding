@@ -10,8 +10,8 @@ classes: wide
 date: 2024-10-04 11:01:41 +0100
 excerpt: I have released Meddicc Score HubSpot app to fill MEDDICC, BANT, SPICED and others in HubSpot, a code project during the summer vacations.
 header:
-  overlay_image: /assets/images/posts/imagesocial.png
-  teaser: /assets/images/posts/imagesocial.png
+  overlay_image: /assets/images/imagesocial.png
+  teaser: /assets/images/imagesocial.png
   caption:
 ---
 
