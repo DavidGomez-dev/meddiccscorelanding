@@ -39,7 +39,7 @@ facebook:
   username: FacebookUsername
   app_id:
   publisher:
-og_image: /assets/images/guide4.png
+og_image: /assets/images/imagesocial.png
 
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
