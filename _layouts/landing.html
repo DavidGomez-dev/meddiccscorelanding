@@ -3,365 +3,309 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include head.html %} {% include head/custom.html %}
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <!-- <link href="assets/css/styles.css" rel="stylesheet" /> -->
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    {% include navigation.html %}
-    <!-- Mashead header-->
-    <header class="masthead">
-      <div class="container px-5">
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-6">
-            <!-- Mashead text and app badges-->
-            <div class="mb-5 mb-lg-0 text-center text-lg-start">
-              <h1 class="display-1 lh-1 mb-3">Meddicc Score for HubSpot</h1>
-              <p class="lead fw-normal text-muted mb-3">
-                Simplify Your Sales Workflow with User-Friendly MEDDICC Tracking for HubSpot.
-              </p>
-              <ul class="py-3">
-                <li>Easy Integration with HubSpot.</li>
-                <li>Multiple Frameworks: BANT, SPICED, FAINT, CHAMP...</li>
-                <li>Identify Gaps in Your Sales Process Instantly.</li>
-                <li>Transform Your CRM with Enhanced MEDDICC Analysis.</li>
-              </ul>
-              <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2" href="{{ site.pwalink }}"
-                  ><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z"
-                      fill="#FF7A59"
-                    ></path></svg
-                  >Install app</a
-                >
-              </div>
-              <!-- Avatar testimonials -->
-              <div class="d-flex flex-column flex-md-row justify-content-center align-items-center g-3 gap-4 mt-5">
-                <div class="avatar-group">
-                  <!-- Custom class for avatar grouping -->
-                  <!-- Avatar items -->
-                  <div class="avatar">
-                    <!-- Custom class for avatar size -->
-                    <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_1.jpg" />
-                  </div>
-                  <div class="avatar">
-                    <!-- Custom class for avatar size -->
-                    <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_2.jpg" />
-                  </div>
-                  <div class="avatar">
-                    <!-- Custom class for avatar size -->
-                    <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_3.jpg" />
-                  </div>
-                  <div class="avatar">
-                    <!-- Custom class for avatar size -->
-                    <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_4.jpg" />
-                  </div>
-                  <div class="avatar">
-                    <!-- Custom class for avatar size -->
-                    <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_5.jpg" />
-                  </div>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start g-1">
-                  <div class="rating">
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                  </div>
-                  <div class="text-muted"><span class="fw-bold fs-5">+100</span> happy users worldwide</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 p-0">
-            <!-- Masthead device mockup feature-->
-            <div class="masthead-device-mockup">
-              <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                    <stop class="gradient-start-color" offset="0%"></stop>
-                    <stop class="gradient-end-color" offset="100%"></stop>
-                  </linearGradient>
-                </defs>
-                <circle cx="50" cy="50" r="50"></circle></svg
-              ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                <rect
-                  x="-32.54"
-                  y="78.39"
-                  width="305.92"
-                  height="84.05"
-                  rx="42.03"
-                  transform="translate(120.42 -49.88) rotate(45)"
-                ></rect>
-                <rect
-                  x="-32.54"
-                  y="78.39"
-                  width="305.92"
-                  height="84.05"
-                  rx="42.03"
-                  transform="translate(-49.88 120.42) rotate(-45)"
-                ></rect></svg
-              ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <img src="assets/images/screenshot.gif" class="z-3" alt="Meddicc Score for HubSpot" srcset="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Quote/testimonial aside-->
-    <aside class="text-center bg-gradient-primary-to-secondary">
-      <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-xl-8">
-            <div class="h2 fs-1 text-white mb-4">
-              "Our Sales Reps love the simplicity of the new forms. Our completion rates have doubled!"
-            </div>
-            <img
-              class="img-fluid rounded-circle"
-              src="assets/images/testimonial_5.jpg"
-              alt="Meddic Score for HubSpot user"
-              style="height: 7rem"
-            />
-            <div class="text-muted">"Samuel - Phoenix, AZ."</div>
-          </div>
-        </div>
-      </div>
-    </aside>
-    <!-- App features section-->
-    <section id="features">
-      <div class="container px-5">
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-            <div class="container-fluid px-5">
-              <div class="row gx-5">
-                <div class="col-md-6 mb-5">
-                  <!-- Feature item-->
-                  <div class="text-center">
-                    <i class="bi-speedometer2 icon-feature text-gradient d-block mb-3"></i>
-                    <h3 class="font-alt">Automated MEDDICC Scoring</h3>
-                    <p class="text-muted mb-0">
-                      The tool calculates scores based on predefined criteria, providing you with reliable insights
-                      instantly.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-5">
-                  <!-- Feature item-->
-                  <div class="text-center">
-                    <i class="icon-feature text-gradient d-block mb-3">
-                      <svg width="64" height="64" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <style type="text/css">
-                          #gradientLogo {
-                            fill: url(#MyGradient);
-                          }
-                        </style>
-                        <defs>
-                          <linearGradient id="MyGradient">
-                            <stop offset="0%" stop-color="#00a4bd" />
-                            <stop offset="100%" stop-color="#00bda5" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="gradientLogo"
-                          d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z"
-                          fill="#FF7A59"
-                        ></path>
-                      </svg>
-                    </i>
-                    <h3 class="font-alt">Easy Integration with HubSpot</h3>
-                    <p class="text-muted mb-0">
-                      Seamlessly integrate with HubSpot to enhance your existing Deal pages.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
-                  <!-- Feature item-->
-                  <div class="text-center">
-                    <i class="bi-file-earmark-check icon-feature text-gradient d-block mb-3"></i>
-                    <h3 class="font-alt">Multiple Qualification Frameworks</h3>
-                    <p class="text-muted mb-0">
-                      Choose the framework that best fits your sales process: MEDDICC, BANT, GPCTBA/C&I, SPICED, FAINT,
-                      CHAMP, SCOTSMAN, or ANUM.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <!-- Feature item-->
-                  <div class="text-center">
-                    <i class="bi-journal-text icon-feature text-gradient d-block mb-3"></i>
-                    <h3 class="font-alt">Streamlined Sales Forms</h3>
-                    <p class="text-muted mb-0">
-                      Our tool takes the hassle out of form filling, allowing your sales reps to focus on what they do
-                      best—selling.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 order-lg-0">
-            <!-- Features section device mockup-->
-            <div class="features-device-mockup features2">
-              <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                    <stop class="gradient-start-color" offset="0%"></stop>
-                    <stop class="gradient-end-color" offset="100%"></stop>
-                  </linearGradient>
-                </defs>
-                <circle cx="50" cy="50" r="50"></circle></svg
-              ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                <rect
-                  x="-32.54"
-                  y="78.39"
-                  width="305.92"
-                  height="84.05"
-                  rx="42.03"
-                  transform="translate(120.42 -49.88) rotate(45)"
-                ></rect>
-                <rect
-                  x="-32.54"
-                  y="78.39"
-                  width="305.92"
-                  height="84.05"
-                  rx="42.03"
-                  transform="translate(-49.88 120.42) rotate(-45)"
-                ></rect></svg
-              ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <img src="assets/images/screenshot2.png" class="z-3 border" alt="Meddicc Score for HubSpot" srcset="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Basic features section-->
-    <section class="bg-light" id="pricing">
-      <div class="container px-5">
-        <h2 class="display-4 lh-1 mb-4">Competitive pricing</h2>
-        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between pt-5">
-          <div class="col-md-4">
-            <div class="pricing-card">
-              <div class="pricing-card-header">
-                <div class="is--heading-3">Free</div>
-              </div>
-              <div class="price">Free</div>
-              <div class="price-card-features">
-                <ul>
-                  <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
-                  <li><span class="price-text-blue">&#10003;</span> 5 deals with Score</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="pricing-card">
-              <div class="pricing-card-header">
-                <div class="is--heading-3">Premium</div>
-              </div>
-              <div class="price">
-                $19<span class="price-month">/mo</span> <span class="price-old">$29</span>
-                <span class="price-month">Offer</span>
-              </div>
-              <!-- <p>July offer</p> -->
-              <div class="price-card-features">
-                <ul>
-                  <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
-                  <li><span class="price-text-blue">&#10003;</span> Unlimited deals with Score</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="pricing-card">
-              <div class="pricing-card-header">
-                <div class="is--heading-3">Enterprise</div>
-                <span class="pricing-badge">> 20 users</span>
-              </div>
-              <div class="price"><a href="mailto:meddiccscore@gmail.com" class="price-contact">Contact us </a></div>
-              <div class="price-card-features">
-                <ul>
-                  <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
-                  <li><span class="price-text-blue">&#10003;</span> Unlimited deals with Score</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-5">
-          <p class="secured">
-            🔒 Secured by
-            <svg
-              class="InlineSVG Icon Footer-PoweredBy-Icon Icon--md"
-              focusable="false"
-              width="33"
-              height="15"
-              role="img"
-              aria-labelledby="stripe-title"
-            >
-              <title id="stripe-title">Stripe</title>
-              <g fill-rule="evenodd">
-                <path
-                  d="M32.956 7.925c0-2.313-1.12-4.138-3.261-4.138-2.15 0-3.451 1.825-3.451 4.12 0 2.719 1.535 4.092 3.74 4.092 1.075 0 1.888-.244 2.502-.587V9.605c-.614.307-1.319.497-2.213.497-.876 0-1.653-.307-1.753-1.373h4.418c0-.118.018-.588.018-.804zm-4.463-.859c0-1.02.624-1.445 1.193-1.445.55 0 1.138.424 1.138 1.445h-2.33zM22.756 3.787c-.885 0-1.454.415-1.77.704l-.118-.56H18.88v10.535l2.259-.48.009-2.556c.325.235.804.57 1.6.57 1.616 0 3.089-1.302 3.089-4.166-.01-2.62-1.5-4.047-3.08-4.047zm-.542 6.225c-.533 0-.85-.19-1.066-.425l-.009-3.352c.235-.262.56-.443 1.075-.443.822 0 1.391.922 1.391 2.105 0 1.211-.56 2.115-1.39 2.115zM18.04 2.766V.932l-2.268.479v1.843zM15.772 3.94h2.268v7.905h-2.268zM13.342 4.609l-.144-.669h-1.952v7.906h2.259V6.488c.533-.696 1.436-.57 1.716-.47V3.94c-.289-.108-1.346-.307-1.879.669zM8.825 1.98l-2.205.47-.009 7.236c0 1.337 1.003 2.322 2.34 2.322.741 0 1.283-.135 1.581-.298V9.876c-.289.117-1.716.533-1.716-.804V5.865h1.716V3.94H8.816l.009-1.96zM2.718 6.235c0-.352.289-.488.767-.488.687 0 1.554.208 2.241.578V4.202a5.958 5.958 0 0 0-2.24-.415c-1.835 0-3.054.957-3.054 2.557 0 2.493 3.433 2.096 3.433 3.17 0 .416-.361.552-.867.552-.75 0-1.708-.307-2.467-.723v2.15c.84.362 1.69.515 2.467.515 1.879 0 3.17-.93 3.17-2.548-.008-2.692-3.45-2.213-3.45-3.225z"
-                ></path>
-              </g>
-            </svg>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Blog Section-->
-    <section id="blog">
-      <div class="container px-5">
-        <h2 class="display-4 lh-1 mb-4">Latest articles about Meddicc Score</h2>
-        <div class="entries-grid">
-          {% for post in site.posts limit:8 %} {% include archive-single.html type="grid" %} {% endfor %}
-        </div>
-      </div>
-    </section>
-    <!-- Call to action section-->
-    <section class="cta">
-      <div class="cta-content">
-        <div class="container px-5">
-          <h2 class="text-white display-1 lh-1 mb-4">
-            Improve Your Sales Process
-            <br />
-            with Meddicc Score for HubSpot
-          </h2>
-          <a class="btn btn-light py-3 px-4 rounded-pill" href="{{ site.pwalink }}" target="_blank"
-            >Install on HubSpot →</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- App badge section-->
-    <section class="bg-gradient-primary-to-secondary" id="download">
-      <div class="container px-5">
-        <h3 class="text-center text-white font-alt mb-4">Start Your Free Trial Today!</h3>
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-          <a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2" href="{{ site.pwalink }}"
-            ><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z"
-                fill="#FF7A59"
-              ></path></svg
-            >Install app</a
-          >
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer-->
-    <!-- <footer class="bg-black text-center py-5">
+<head>
+  {% include head.html %} {% include head/custom.html %}
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <!-- <link href="assets/css/styles.css" rel="stylesheet" /> -->
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  {% include navigation.html %}
+  <!-- Mashead header-->
+  <header class="masthead">
+    <div class="container px-5">
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-6">
+          <!-- Mashead text and app badges-->
+          <div class="mb-5 mb-lg-0 text-center text-lg-start">
+            <h1 class="display-1 lh-1 mb-3">Meddicc Score for HubSpot</h1>
+            <p class="lead fw-normal text-muted mb-3">
+              Simplify Your Sales Workflow with User-Friendly MEDDICC Tracking for HubSpot.
+            </p>
+            <ul class="py-3">
+              <li>Easy Integration with HubSpot.</li>
+              <li>Multiple Frameworks: BANT, SPICED, FAINT, CHAMP...</li>
+              <li>Automatic Scoring and feedback with AI.</li>
+              <li>Transform Your CRM with Enhanced Qualification Analysis.</li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+              <a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2" href="{{ site.pwalink }}"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z" fill="#FF7A59"></path>
+                </svg>Install app</a>
+            </div>
+            <!-- Avatar testimonials -->
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center g-3 gap-4 mt-5">
+              <div class="avatar-group">
+                <!-- Custom class for avatar grouping -->
+                <!-- Avatar items -->
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_1.jpg" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_2.jpg" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_3.jpg" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_4.jpg" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Testimonial of using Meddicc Score for Hubspot" src="assets/images/testimonial_5.jpg" />
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start g-1">
+                <div class="rating">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                </div>
+                <div class="text-muted"><span class="fw-bold fs-5">+100</span> happy users worldwide</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-0">
+          <!-- Masthead device mockup feature-->
+          <div class="masthead-device-mockup">
+            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                  <stop class="gradient-start-color" offset="0%"></stop>
+                  <stop class="gradient-end-color" offset="100%"></stop>
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="50"></circle>
+            </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+            </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="50"></circle>
+            </svg>
+            <img src="assets/images/screenshot.gif" class="z-3" alt="Meddicc Score for HubSpot" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Quote/testimonial aside-->
+  <aside class="text-center bg-gradient-primary-to-secondary">
+    <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-xl-8">
+          <div class="h2 fs-1 text-white mb-4">
+            "Our Sales Reps love the simplicity of the new forms. The AI feedback help us to qualify better and ask the right questions!"
+          </div>
+          <img class="img-fluid rounded-circle" src="assets/images/testimonial_5.jpg" alt="Meddic Score for HubSpot user" style="height: 7rem" />
+          <div class="text-muted">"Samuel - Phoenix, AZ."</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- App features section-->
+  <section id="features">
+    <div class="container px-5">
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+          <div class="container-fluid px-5">
+            <div class="row gx-5">
+              <div class="col-md-6 mb-5">
+                <!-- Feature item-->
+                <div class="text-center">
+                  <i class="bi-speedometer2 icon-feature text-gradient d-block mb-3"></i>
+                  <h3 class="font-alt">Automated AI Scoring</h3>
+                  <p class="text-muted mb-0">
+                    The tool calculates scores based on the factual data, providing you with feedback insights
+                    instantly.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <!-- Feature item-->
+                <div class="text-center">
+                  <i class="icon-feature text-gradient d-block mb-3">
+                    <svg width="64" height="64" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <style type="text/css">
+                        #gradientLogo {
+                          fill: url(#MyGradient);
+                        }
+                      </style>
+                      <defs>
+                        <linearGradient id="MyGradient">
+                          <stop offset="0%" stop-color="#00a4bd" />
+                          <stop offset="100%" stop-color="#00bda5" />
+                        </linearGradient>
+                      </defs>
+                      <path id="gradientLogo" d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z" fill="#FF7A59"></path>
+                    </svg>
+                  </i>
+                  <h3 class="font-alt">Easy Integration with HubSpot</h3>
+                  <p class="text-muted mb-0">
+                    Seamlessly integrate with HubSpot to enhance your existing Deal pages.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-md-0">
+                <!-- Feature item-->
+                <div class="text-center">
+                  <i class="bi-file-earmark-check icon-feature text-gradient d-block mb-3"></i>
+                  <h3 class="font-alt">Multiple Qualification Frameworks</h3>
+                  <p class="text-muted mb-0">
+                    Choose the framework that best fits your sales process: MEDDICC, BANT, GPCTBA/C&I, SPICED, FAINT,
+                    CHAMP, SCOTSMAN, or ANUM.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- Feature item-->
+                <div class="text-center">
+                  <i class="bi-journal-text icon-feature text-gradient d-block mb-3"></i>
+                  <h3 class="font-alt">Streamlined Sales Forms</h3>
+                  <p class="text-muted mb-0">
+                    Our tool takes the hassle out of form filling, allowing your sales reps to focus on what they do
+                    best—selling.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-lg-0">
+          <!-- Features section device mockup-->
+          <div class="features-device-mockup features2">
+            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                  <stop class="gradient-start-color" offset="0%"></stop>
+                  <stop class="gradient-end-color" offset="100%"></stop>
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="50"></circle>
+            </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+            </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="50"></circle>
+            </svg>
+            <img src="assets/images/screenshot2.png" class="z-3 border" alt="Meddicc Score for HubSpot" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Basic features section-->
+  <section class="bg-light" id="pricing">
+    <div class="container px-5">
+      <h2 class="display-4 lh-1 mb-4">Competitive pricing</h2>
+      <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between pt-5">
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="is--heading-3">Free</div>
+            </div>
+            <div class="price">Free</div>
+            <div class="price-card-features">
+              <ul>
+                <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
+                <li><span class="price-text-blue">&#10003;</span> 5 deals with Score</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="is--heading-3">Premium</div>
+            </div>
+            <div class="price">
+              $19<span class="price-month">/mo</span> <span class="price-old">$29</span>
+              <span class="price-month">Offer</span>
+            </div>
+            <!-- <p>July offer</p> -->
+            <div class="price-card-features">
+              <ul>
+                <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
+                <li><span class="price-text-blue">&#10003;</span> Unlimited deals with Score</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="is--heading-3">Enterprise</div>
+              <span class="pricing-badge">> 20 users</span>
+            </div>
+            <div class="price"><a href="mailto:meddiccscore@gmail.com" class="price-contact">Contact us </a></div>
+            <div class="price-card-features">
+              <ul>
+                <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
+                <li><span class="price-text-blue">&#10003;</span> Unlimited deals with Score</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-5">
+        <p class="secured">
+          🔒 Secured by
+          <svg class="InlineSVG Icon Footer-PoweredBy-Icon Icon--md" focusable="false" width="33" height="15" role="img" aria-labelledby="stripe-title">
+            <title id="stripe-title">Stripe</title>
+            <g fill-rule="evenodd">
+              <path d="M32.956 7.925c0-2.313-1.12-4.138-3.261-4.138-2.15 0-3.451 1.825-3.451 4.12 0 2.719 1.535 4.092 3.74 4.092 1.075 0 1.888-.244 2.502-.587V9.605c-.614.307-1.319.497-2.213.497-.876 0-1.653-.307-1.753-1.373h4.418c0-.118.018-.588.018-.804zm-4.463-.859c0-1.02.624-1.445 1.193-1.445.55 0 1.138.424 1.138 1.445h-2.33zM22.756 3.787c-.885 0-1.454.415-1.77.704l-.118-.56H18.88v10.535l2.259-.48.009-2.556c.325.235.804.57 1.6.57 1.616 0 3.089-1.302 3.089-4.166-.01-2.62-1.5-4.047-3.08-4.047zm-.542 6.225c-.533 0-.85-.19-1.066-.425l-.009-3.352c.235-.262.56-.443 1.075-.443.822 0 1.391.922 1.391 2.105 0 1.211-.56 2.115-1.39 2.115zM18.04 2.766V.932l-2.268.479v1.843zM15.772 3.94h2.268v7.905h-2.268zM13.342 4.609l-.144-.669h-1.952v7.906h2.259V6.488c.533-.696 1.436-.57 1.716-.47V3.94c-.289-.108-1.346-.307-1.879.669zM8.825 1.98l-2.205.47-.009 7.236c0 1.337 1.003 2.322 2.34 2.322.741 0 1.283-.135 1.581-.298V9.876c-.289.117-1.716.533-1.716-.804V5.865h1.716V3.94H8.816l.009-1.96zM2.718 6.235c0-.352.289-.488.767-.488.687 0 1.554.208 2.241.578V4.202a5.958 5.958 0 0 0-2.24-.415c-1.835 0-3.054.957-3.054 2.557 0 2.493 3.433 2.096 3.433 3.17 0 .416-.361.552-.867.552-.75 0-1.708-.307-2.467-.723v2.15c.84.362 1.69.515 2.467.515 1.879 0 3.17-.93 3.17-2.548-.008-2.692-3.45-2.213-3.45-3.225z"></path>
+            </g>
+          </svg>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Blog Section-->
+  <section id="blog">
+    <div class="container px-5">
+      <h2 class="display-4 lh-1 mb-4">Latest articles about Meddicc Score</h2>
+      <div class="entries-grid">
+        {% for post in site.posts limit:8 %} {% include archive-single.html type="grid" %} {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- Call to action section-->
+  <section class="cta">
+    <div class="cta-content">
+      <div class="container px-5">
+        <h2 class="text-white display-1 lh-1 mb-4">
+          Improve Your Sales Process
+          <br />
+          with Meddicc Score for HubSpot
+        </h2>
+        <a class="btn btn-light py-3 px-4 rounded-pill" href="{{ site.pwalink }}" target="_blank">Install on HubSpot →</a>
+      </div>
+    </div>
+  </section>
+  <!-- App badge section-->
+  <section class="bg-gradient-primary-to-secondary" id="download">
+    <div class="container px-5">
+      <h3 class="text-center text-white font-alt mb-4">Start Your Free Trial Today!</h3>
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+        <a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2" href="{{ site.pwalink }}"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z" fill="#FF7A59"></path>
+          </svg>Install app</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-->
+  <!-- <footer class="bg-black text-center py-5">
       <div class="container px-5">
         <div class="text-white-50 small">
           <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
@@ -373,9 +317,10 @@
         </div>
       </div>
     </footer> -->
-    <div id="footer" class="page__footer mt-0">
-      <footer>{% include footer/custom.html %} {% include_cached footer.html %}</footer>
-    </div>
-    {% include scripts.html %}
-  </body>
+  <div id="footer" class="page__footer mt-0">
+    <footer>{% include footer/custom.html %} {% include_cached footer.html %}</footer>
+  </div>
+  {% include scripts.html %}
+</body>
+
 </html>
