@@ -45,11 +45,20 @@ Locate Meddicc Score within the HubSpot sidebar under Deal.
 
 **6. Begin Scoring**
 
-Start using Meddicc Score to complete the information form the Deal and get an score.
+Select the qualification framework that you prefer for this deal.
+Start using Meddicc Score to complete the information form for that Deal.
+When clicking on Score, the AI model will return a Score based on the data introduced and feedback for every step.
 
 ![Begin Scoring](../../assets/images/guide4.png)
 
-**7. Upgrade to Premium**
+**6. Report and Export**
+
+Clicking on Report, a full pipeline summary can be found.
+From the report is possible to download a CSV with all the notes and scores saved.
+
+![Reporting](../../assets/images/guide8.png)
+
+**8. Upgrade to Premium**
 
 If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app.
 
