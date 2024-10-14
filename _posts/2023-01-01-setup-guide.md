@@ -60,7 +60,7 @@ Locate Meddicc Score within the HubSpot sidebar under Deal.
 
 **8. Upgrade to Premium**
 
-If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app.
+If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on "Upgrade Now" and you will go to a checkout powered by Stripe.
 
 ![Ugrade](../../assets/images/guide5.png)
 
