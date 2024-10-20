@@ -19,7 +19,7 @@ header:
 
 Click the "Install App" button to link your HubSpot account.
 
-<a href="https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&scope=oauth%20crm.objects.deals.read&redirect_uri=https%3A%2F%2Fapp.meddiccscore.com%2Foauth-callback" target="_blank">![Install](../../assets/images/installBtn.png)</a>
+<a href="https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&scope=oauth%20crm.objects.deals.read%20crm.objects.deals.write%20crm.pipelines.orders.write&redirect_uri=https%3A%2F%2Fapp.meddiccscore.com%2Foauth-callback" target="_blank">![Install](../../assets/images/installBtn.png)</a>
 
 **2. Login to Your HubSpot Account**
 
