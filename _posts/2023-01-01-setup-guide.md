@@ -21,15 +21,21 @@ Click the "Install App" button to link your HubSpot account.
 
 <a href="{{ site.pwalink }}" target="_blank">![Install](../../assets/images/installBtn.png)</a>
 
+---
+
 **2. Login to Your HubSpot Account**
 
 Simply use your standard HubSpot login credentials.
 
 ![Login](../../assets/images/guide1.png)
 
+---
+
 **3. Select Your HubSpot Account**
 
 If you have multiple accounts, select the one you wish to use. Single accounts will be chosen automatically.
+
+---
 
 **4. Confirm Permissions**
 
@@ -37,11 +43,15 @@ Approve the necessary permissions for Meddicc Score to interface with your HubSp
 
 ![Permissions](../../assets/images/guide2.png)
 
+---
+
 **5. Access Meddicc Score from the HubSpot Sidebar**
 
 Locate Meddicc Score within the HubSpot sidebar under Deal.
 
 ![Access from Sidebar](../../assets/images/guide3.png)
+
+---
 
 **6. Begin Scoring**
 
@@ -51,12 +61,24 @@ Locate Meddicc Score within the HubSpot sidebar under Deal.
 
 ![Begin Scoring](../../assets/images/guide4.png)
 
+- It is possible to modify the Score manually by clicking on the pencil icon bellow the score.
+
+![Manual Scoring](../../assets/images/guide41.png)
+
+---
+
 **6. Report and Export**
 
-- Clicking on Report, a full pipeline summary can be found.
+- Clicking on Report, a full account pipeline summary can be found.
 - From the report is possible to download a CSV with all the notes and scores saved.
 
 ![Reporting](../../assets/images/guide8.png)
+
+- The Score is also available as a custom Hubspot variable (score_meddicc), and can be used in reporting, columns, etc.
+
+![Reporting](../../assets/images/features4.png)
+
+---
 
 **8. Upgrade to Premium**
 
@@ -69,3 +91,29 @@ If you like Meddicc Score and want to use it for more than 5 deals, you can upgr
 Navigate to **Settings > Integrations > Connected Apps** in HubSpot to uninstall Meddicc Score without impacting your HubSpot data.
 
 ![Uninstall](../../assets/images/guide6.png)
+
+---
+
+### Troubleshooting
+
+**I cannot see Score as a custom variable**
+
+To enable this, you may need to reauthorize the app for the new permits required. Please click here
+
+<a href="{{ site.pwalink }}" target="_blank">![Install](../../assets/images/installBtn.png)</a>
+
+You may also need before that, to have permits to add new properties (or someone else who has authorized the app with permits).
+
+![troubleshooting](../../assets/images/trouble1.png)
+
+It would be possible also to create the variable manually. It can be done in Settings:
+
+![troubleshooting](../../assets/images/trouble12.png)
+
+It is very important to make it work that:
+
+- the internal name be exactly "score_meddicc"
+- Object type is "Deal"
+- Group is "Deal information"
+
+![troubleshooting](../../assets/images/trouble2.png)
