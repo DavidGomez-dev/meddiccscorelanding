@@ -271,3 +271,24 @@ h3 {
 strong {
   color: #00a4bd !important;
 }
+
+.private-button--primary,
+.private-button--primary:hover {
+  background-color: #ff7a59;
+  border-color: #ff7a59;
+  color: #fff !important;
+}
+
+.private-button--primary:visited {
+  color: #fff !important;
+}
+
+.text-decor-none {
+  text-decoration: none;
+}
+
+.text-decor-none:hover {
+  text-decoration: underline;
+  text-decoration-color: #00a4bd !important;
+  color: #00a4bd !important;
+}
