@@ -59,5 +59,10 @@ a:visited {
   top: 100px !important;
 }
 
+.video-poster {
+  background: url(../images/Postervideo2.png) top center no-repeat;
+  background-size: cover;
+}
+
 // New Age + Bootstrap
 @import "styles.scss";
