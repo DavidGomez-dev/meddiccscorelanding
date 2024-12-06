@@ -165,6 +165,16 @@ In all cases, the information extracted from emails is limited to the initial po
 
 On the checkout Stripe page, there is a button 'Add Code' where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please [Contact Us]("{{ site.email }}"):
 
-![troubleshooting](../../assets/images/trouble4.png){: .my-5 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
+![troubleshooting](../../assets/images/trouble4.png){: .mt-5 mb-1 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
 
-![troubleshooting](../../assets/images/trouble3.png){: .my-5 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
+![troubleshooting](../../assets/images/trouble3.png){: .mb-5 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
+
+If you already have a subscription and want to add a coupon code, it cannot be done automatically, please [Contact Us]("{{ site.email }}")
+
+#### How can cancell or manage my subcription
+
+If you want to cancell your subscription or change de invoice details, you can access the Customer Portal by clikcing on "Manage my subscription"
+
+![troubleshooting](../../assets/images/trouble6.png){: .mt-5 mb-1 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
+
+![troubleshooting](../../assets/images/trouble5.png){: .mb-5 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
