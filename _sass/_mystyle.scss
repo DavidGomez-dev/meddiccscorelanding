@@ -292,3 +292,38 @@ strong {
   text-decoration-color: #00a4bd !important;
   color: #00a4bd !important;
 }
+
+// <!-- Begin Brevo Form -->
+
+#sib-container input:-ms-input-placeholder {
+  text-align: left;
+  // font-family: Helvetica, sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+  text-align: left;
+  // font-family: Helvetica, sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container textarea::placeholder {
+  text-align: left;
+  // font-family: Helvetica, sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container a {
+  text-decoration: underline;
+  color: rgb(0, 164, 189);
+}
+
+#sib-container form {
+  background-color: white;
+}
+
+.sib-form {
+  font-family: initial;
+}
+
+// <!--  END - We recommend to place the above code in head tag of your website html -->
