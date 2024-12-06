@@ -164,3 +164,5 @@ In all cases, the information extracted from emails is limited to the initial po
 #### How can add a discount code
 
 On the checkout Stripe page, there is a button 'Add Code' where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please [Contact Us]("{{ site.email }}"):
+
+![troubleshooting](../../assets/images/trouble2.png){: .my-5 .w-50 .border .border-3 .border-primary .rounded .rounded-3}
