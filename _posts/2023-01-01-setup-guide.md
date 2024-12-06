@@ -160,3 +160,7 @@ To enable this, you may need to reauthorize the app for the new permits required
 </a>
 
 In all cases, the information extracted from emails is limited to the initial portion of each email. This helps avoid processing repetitive long threads, legal disclaimers, and other non-essential content. However, if critical Deal information is buried deep within the email threads or other engagements, the AI might not capture or interpret it accurately.
+
+#### How can add a discount code
+
+On the checkout Stripe page, there is a button 'Add Code' where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please [Contact Us]("{{ site.email }}"):
