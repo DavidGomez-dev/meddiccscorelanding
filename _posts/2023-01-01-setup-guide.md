@@ -30,7 +30,7 @@ header:
 
 <p>Click the “Install App” button to link your HubSpot account.</p>
 
-<p><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
+<p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
 <hr>
 
@@ -38,7 +38,7 @@ header:
 
 <p>Simply use your standard HubSpot login credentials.</p>
 
-<p><img src="../../assets/images/guide1.png" alt="Login" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide1.png" alt="Login" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -46,7 +46,7 @@ header:
 
 <p>If you have multiple accounts, select the one you wish to use. Single accounts will be chosen automatically.</p>
 
-<p><img src="../../assets/images/guide2.png" alt="Account" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide2.png" alt="Account" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -54,9 +54,7 @@ header:
 
 <p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”.</p>
 
-<p><img src="../../assets/images/guide21.png" alt="Permissions" class="my-5 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
+<p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -71,11 +69,11 @@ header:
 <div class="accordion-collapse collapse show" id="collapseUsing" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 class="mt-5 mb-3 text-primary">5. Access Meddicc Score from the HubSpot Sidebar</h4>
+<h4 class="mt-3 mb-3 text-primary">5. Access Meddicc Score from the HubSpot Sidebar</h4>
 
 <p>Locate Meddicc Score within the HubSpot sidebar under Deal.</p>
 
-<p><img src="../../assets/images/guide3.png" alt="Access from Sidebar" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide3.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -87,7 +85,7 @@ header:
 Note: Comments to engagements are not gathered since they are not available through the HubSpot API.</li>
 </ul>
 
-<video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3" poster="/assets/images/poster-clip.png">
+<video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3 my-3" poster="/assets/images/poster-clip.png">
 <source src="/assets/images/clip.mp4" type="video/mp4">
 <source src="/assets/images/clip.webm" type="video/webm">
 <img src="../../assets/images/poster-clip.png" alt="Auto fill" class="my-5 border border-3 border-primary rounded rounded-3">
@@ -99,14 +97,14 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
 </ul>
 
-<p><img src="../../assets/images/guide42.png" alt="Auto scoring" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide42.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>Users can also modify the Score manually by clicking the pencil icon below the score.</li>
   <li>All scores are stored in HubSpot as a custom variable named “score_meddicc”.</li>
 </ul>
 
-<p><img src="../../assets/images/guide41.png" alt="Manual Scoring" class="w-50 my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide41.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -119,7 +117,7 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>Users can return to the previous framework at any time.</li>
 </ul>
 
-<p><img src="../../assets/images/guide4.png" alt="Begin Scoring" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide4.png" alt="Begin Scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -129,13 +127,13 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>Clicking the gear icon on ‘Select Framework’ allows you to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
 </ul>
 
-<p><img src="../../assets/images/guide9.png" alt="Editing" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>Turning on the ‘Default Framework’ switch will set the selected framework as the default for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
 </ul>
 
-<p><img src="../../assets/images/guide10.png" alt="Editing" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide10.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -146,13 +144,13 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>From the report is possible to download a CSV with all the notes and scores saved.</li>
 </ul>
 
-<p><img src="../../assets/images/guide8.png" alt="Reporting" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>The Score is also available as a custom Hubspot variable (score_meddicc), and can be used in reporting, columns, etc.</li>
 </ul>
 
-<p><img src="../../assets/images/features4.png" alt="Reporting" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -160,9 +158,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
-<p><img src="../../assets/images/guide5.png" alt="Ugrade" class="my-5 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
+<p class="text-center"><img src="../../assets/images/guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -179,9 +175,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p>Navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong> in HubSpot to uninstall Meddicc Score without impacting your HubSpot data.</p>
 
-<p><img src="../../assets/images/guide6.png" alt="Uninstall" class="my-5 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
+<p class="text-center"><img src="../../assets/images/guide6.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -200,15 +194,15 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
 
-<p><a href="https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&amp;redirect_uri=https://app.meddiccscore.com/oauth-callback&amp;scope=oauth%20crm.objects.deals.read%20crm.objects.deals.write&amp;optional_scope=crm.pipelines.orders.write%20sales-email-read" target="_blank"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
+<p class="text-center"><a href="{{ site.pwalink }}" target="_blank"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
 <p>You may also need before that, to have permits to add new properties (or someone else who has authorized the app with permits).</p>
 
-<p><img src="../../assets/images/trouble1.png" alt="troubleshooting" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble1.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p>It would be possible also to create the variable manually. It can be done in Settings:</p>
 
-<p><img src="../../assets/images/trouble12.png" alt="troubleshooting" class="my-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble12.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p>It is very important to make it work that:</p>
 
@@ -218,37 +212,39 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>Group is “Deal information”</li>
 </ul>
 
-<p><img src="../../assets/images/trouble2.png" alt="troubleshooting" class="my-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble2.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 <h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="mt-5 mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required (access to read emails basically). Please click here:</p>
 
-<p><a href="https://app-eu1.hubspot.com/oauth/authorize?client_id=2da3e323-5933-4b26-a4ca-0724ed3a6c7e&amp;redirect_uri=https://app.meddiccscore.com/oauth-callback&amp;scope=oauth%20crm.objects.deals.read%20crm.objects.deals.write&amp;optional_scope=crm.pipelines.orders.write%20sales-email-read" target="_blank"><img src="../../assets/images/installBtn.png" alt="Install" class="w-10">
+<p class="text-center"><a href="{{ site.pwalink }}" alt="Install" class="w-10">
 </a></p>
 
-<p>In all cases, the information extracted from emails is limited to the initial portion of each email. This helps avoid processing repetitive long threads, legal disclaimers, and other non-essential content. However, if critical Deal information is buried deep within the email threads or other engagements, the AI might not capture or interpret it accurately.</p>
+<p>In all cases, the information extracted from emails is limited to the initial portion of each email. This helps avoid processing repetitive long threads, legal disclaimers, and other non-essential content. However, if critical Deal information is buried deep within the email threads or other engagements, the AI might not capture or interpret it accurately. Also AI tends to allucinate sometimes, please check important facts.</p>
 
 <hr>
-<h4 id="how-can-add-a-discount-code" class="mt-5 mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+
+<h4 id="how-can-add-a-discount-code" class="mt-3 mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="&quot;meddiccscore@gmail.com&quot;">Contact Us</a>:</p>
 
-<p><img src="../../assets/images/trouble4.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble4.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p><img src="../../assets/images/trouble3.png" alt="troubleshooting" class="mb-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble3.png" alt="troubleshooting" class="mb-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p>If you already have a subscription and want to add a coupon code, it cannot be done automatically, please <a href="&quot;meddiccscore@gmail.com&quot;">Contact Us</a></p>
 
 <hr>
+
 <h4 id="how-can-cancell-or-manage-my-subcription" class="mt-5 mb-3 text-primary">How can cancell or manage my subscription<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>If you want to cancell your subscription or change de invoice details, you can access the Customer Portal by clikcing on “Manage my subscription”</p>
 
-<p><img src="../../assets/images/trouble6.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble6.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
