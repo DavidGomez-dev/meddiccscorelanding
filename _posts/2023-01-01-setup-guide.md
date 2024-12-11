@@ -11,6 +11,9 @@ header:
   overlay_image: /assets/images/imagesocial.png
   teaser: /assets/images/imagesocial.png
   caption:
+  video:
+    side_id: "86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=false&hide_speed=true&t=68"
+    provider: "loom"
 ---
 
 <div class="w-50">
@@ -19,10 +22,15 @@ header:
 </iframe>
 </div>
 </div>
-<h3 id="getting-started" data-bs-toggle="collapse" href="#collapseInstalling" role="button" aria-expanded="false" aria-controls="collapseInstalling">Getting Started <i class="bi bi-chevron-down"></i><a class="header-link" href="#getting-started" title="Permalink"><span class="sr-only">Permalink</span></a></h3>
+<div id="accordionExample" class="accordion">
+<div class="accordion-item">
 
-<div class="collapse" id="collapseInstalling">
+<h3 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstalling" aria-expanded="true" aria-controls="collapseInstalling">Getting Started
+</button></h3>
 
+<div class="accordion-collapse collapse" id="collapseInstalling" data-bs-parent="#accordionExample">
+<div class="accordion-body">
 <h4 class="mt-5 mb-3 text-primary">1. Connect Your HubSpot Account</h4>
 
 <p>Click the “Install App” button to link your HubSpot account.</p>
@@ -56,10 +64,17 @@ header:
 <hr>
 
 </div>
+</div>
+</div>
 
-<h3 id="using-app" data-bs-toggle="collapse" href="#collapseUsing" role="button" aria-expanded="false" aria-controls="collapseUsing">Using the APP <i class="bi bi-chevron-up"></i><a class="header-link" href="#using-app" title="Permalink"><span class="sr-only">Permalink</span></a></h3>
+<div class="accordion-item">
 
-<div class="collapse show" id="collapseUsing">
+<h3 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsing" aria-expanded="true" aria-controls="collapseUsing">Using the APP
+</button></h3>
+
+<div class="accordion-collapse collapse show" id="collapseUsing" data-bs-parent="#accordionExample">
+<div class="accordion-body">
 
 <h4 class="mt-5 mb-3 text-primary">5. Access Meddicc Score from the HubSpot Sidebar</h4>
 
@@ -155,10 +170,17 @@ Note: Comments to engagements are not gathered since they are not available thro
 <hr>
 
 </div>
+</div>
+</div>
 
-<h3 id="uninstalling-app" data-bs-toggle="collapse" href="#collapseUninstall" role="button" aria-expanded="false" aria-controls="collapseUninstall">Uninstalling the APP <i class="bi bi-chevron-down"></i><a class="header-link" href="#uninstalling-app" title="Permalink"><span class="sr-only">Permalink</span></a></h3>
+<div class="accordion-item">
 
-<div class="collapse" id="collapseUninstall">
+<h3 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUninstall" aria-expanded="true" aria-controls="collapseUninstall">Uninstalling the APP
+</button></h3>
+
+<div class="accordion-collapse collapse" id="collapseUninstall" data-bs-parent="#accordionExample">
+<div class="accordion-body">
 
 <p>Navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong> in HubSpot to uninstall Meddicc Score without impacting your HubSpot data.</p>
 
@@ -167,10 +189,17 @@ Note: Comments to engagements are not gathered since they are not available thro
 <hr>
 
 </div>
+</div>
+</div>
 
-<h3 id="uninstalling-app" data-bs-toggle="collapse" href="#collapseTrouble" role="button" aria-expanded="false" aria-controls="collapseTrouble">Troubleshooting <i class="bi bi-chevron-up"></i><a class="header-link" href="#uninstalling-app" title="Permalink"><span class="sr-only">Permalink</span></a></h3>
+<div class="accordion-item">
 
-<div class="collapse show" id="collapseTrouble">
+<h3 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrouble" aria-expanded="true" aria-controls="collapseTrouble">Troubleshooting
+</button></h3>
+
+<div class="accordion-collapse collapse show" id="collapseTrouble" data-bs-parent="#accordionExample">
+<div class="accordion-body">
 
 <h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="mt-5 mb-3 text-primary">I cannot see Score as a custom variable / The Score in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
 
@@ -226,4 +255,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>
 
+</div>
+</div>
+</div>
 </div>
