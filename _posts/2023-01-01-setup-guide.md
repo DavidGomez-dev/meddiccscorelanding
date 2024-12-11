@@ -196,23 +196,40 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
-<p>You may also need before that, to have permits to add new properties (or someone else who has authorized the app with permits).</p>
+<p>You may also need before that, to have permits to add new properties (or someone else who has authorized the app with all the permits). Partner accounts with permits may be not enough. For reference, the Scope requiered is "crm.pipelines.orders.write".</p>
 
 <p class="text-center"><img src="../../assets/images/trouble1.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>It would be possible also to create the variable manually. It can be done in Settings:</p>
+<p>If does not owrk even after installation, then user needs to <strong>create the variable manually</strong>. It can be done in Settings > Data Management > Properties > Create property:</p>
 
 <p class="text-center"><img src="../../assets/images/trouble12.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p>It is very important to make it work that:</p>
 
 <ul>
-  <li>the internal name be exactly “score_meddicc”</li>
+  <li>The internal name be exactly “score_meddicc”</li>
   <li>Object type is “Deal”</li>
   <li>Group is “Deal information”</li>
+  <li>The property label “Score” (but it can be different)</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/trouble2.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>"Field type": # Number</li>
+  <li>"Number format": Formatted number</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/trouble21.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+
+<p>These are optional but recommended for validation:</p>
+<ul>
+  <li>"Set min value limit": 0</li>
+  <li>"Set max value limit": 100</li>
+  <li>"Set max number of decimal places": 0</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/trouble22.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 <h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="mt-5 mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
