@@ -7,6 +7,7 @@ tags:
 classes: wide no_padding_top
 date: 2023-01-01 16:54:38 +0100
 excerpt: Guide for installing and using Meddicc Score in HubSpot
+sidebar_resume: true
 header:
   overlay_image: /assets/images/zermatt.jpg
   teaser: /assets/images/zermatt.jpg
@@ -21,12 +22,12 @@ header:
 <div class="accordion-item">
 
 <h3 class="accordion-header">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstalling" aria-expanded="true" aria-controls="collapseInstalling">Getting Started
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstalling" aria-expanded="true" aria-controls="collapseInstalling"><span id="start" class="pt-6-m">Getting Started</span>
 </button></h3>
 
 <div class="accordion-collapse collapse" id="collapseInstalling" data-bs-parent="#accordionExample">
 <div class="accordion-body">
-<h4 class="mt-5 mb-3 text-primary">1. Connect Your HubSpot Account</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="connect-your-hubspot-account">1. Connect Your HubSpot Account</h4>
 
 <p>Click the “Install App” button to link your HubSpot account.</p>
 
@@ -34,7 +35,7 @@ header:
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">2. Login to Your HubSpot Account</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="login-to-your-hubspot-account">2. Login to Your HubSpot Account</h4>
 
 <p>Simply use your standard HubSpot login credentials.</p>
 
@@ -42,7 +43,7 @@ header:
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">3. Select Your HubSpot Account</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="select-your-hubspot-account">3. Select Your HubSpot Account</h4>
 
 <p>If you have multiple accounts, select the one you wish to use. Single accounts will be chosen automatically.</p>
 
@@ -50,7 +51,7 @@ header:
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">4. Confirm Permissions</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="confirm-permissions">4. Confirm Permissions</h4>
 
 <p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”.</p>
 
@@ -63,13 +64,13 @@ header:
 <div class="accordion-item">
 
 <h3 class="accordion-header">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsing" aria-expanded="true" aria-controls="collapseUsing">Using the APP
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsing" aria-expanded="true" aria-controls="collapseUsing"><span id="using" class="pt-6-m">Using the APP</span>
 </button></h3>
 
 <div class="accordion-collapse collapse show" id="collapseUsing" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 class="mt-3 mb-3 text-primary">5. Access Meddicc Score from the HubSpot Sidebar</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score from the HubSpot Sidebar</h4>
 
 <p>Locate Meddicc Score within the HubSpot sidebar under Deal.</p>
 
@@ -77,7 +78,7 @@ header:
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">6. Begin Scoring</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="begin-scoring">6. Begin Scoring</h4>
 
 <ul>
   <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in the Settings.)</li>
@@ -108,7 +109,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">7. Change the Framework</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="change-framework">7. Change the Framework</h4>
 
 <ul>
   <li>Users can select a different qualification framework for each Deal.</li>
@@ -121,7 +122,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">8. Settings: Editing the framework questions and default framework</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="editing-questions">8. Settings: Editing the framework questions and default framework</h4>
 
 <ul>
   <li>Clicking the gear icon on ‘Select Framework’ allows you to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
@@ -137,7 +138,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">9. Report and Export</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">9. Report and Export</h4>
 
 <ul>
   <li>Clicking on Report, a full account pipeline summary can be found.</li>
@@ -154,7 +155,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="mt-5 mb-3 text-primary">10. Upgrade to Premium</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">10. Upgrade to Premium</h4>
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
@@ -167,7 +168,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-item">
 
 <h3 class="accordion-header">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUninstall" aria-expanded="true" aria-controls="collapseUninstall">Uninstalling the APP
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUninstall" aria-expanded="true" aria-controls="collapseUninstall"><span id="uninstalling" class="pt-6-m">Uninstalling the APP</span>
 </button></h3>
 
 <div class="accordion-collapse collapse" id="collapseUninstall" data-bs-parent="#accordionExample">
@@ -184,13 +185,13 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-item">
 
 <h3 class="accordion-header">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrouble" aria-expanded="true" aria-controls="collapseTrouble">Troubleshooting
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrouble" aria-expanded="true" aria-controls="collapseTrouble"><span id="troubleshooting" class="pt-6-m">Troubleshooting</span>
 </button></h3>
 
 <div class="accordion-collapse collapse show" id="collapseTrouble" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="mt-5 mb-3 text-primary">I cannot see Score as a custom variable / The Score in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
+<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a custom variable / The Score in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
 
@@ -200,7 +201,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p class="text-center"><img src="../../assets/images/trouble1.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>If does not owrk even after installation, then user needs to <strong>create the variable manually</strong>. It can be done in Settings > Data Management > Properties > Create property:</p>
+<p>If does not work even after re-installation, then user needs to <strong>create the variable manually</strong>. It can be done in Settings > Data Management > Properties > Create property:</p>
 
 <p class="text-center"><img src="../../assets/images/trouble12.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -232,7 +233,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <p class="text-center"><img src="../../assets/images/trouble22.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
-<h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="mt-5 mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+<h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="pt-6-m mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required (access to read emails basically). Please click here:</p>
 
@@ -243,7 +244,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 id="how-can-add-a-discount-code" class="mt-3 mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+<h4 id="how-can-add-a-discount-code" class="pt-6-m mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="&quot;meddiccscore@gmail.com&quot;">Contact Us</a>:</p>
 
@@ -255,7 +256,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 id="how-can-cancell-or-manage-my-subcription" class="mt-5 mb-3 text-primary">How can cancell or manage my subscription<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+<h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>If you want to cancell your subscription or change de invoice details, you can access the Customer Portal by clikcing on “Manage my subscription”</p>
 

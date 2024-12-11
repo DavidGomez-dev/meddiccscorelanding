@@ -40,4 +40,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
+
+  // Shown all the accordion on the sidebar
+
+  const sidebar = document.querySelector(".resume");
+  if (sidebar) {
+    sidebar.addEventListener("click", (e) => {
+      const accordions = document.querySelectorAll(".accordion-collapse");
+      accordions.forEach(function (element) {
+        element.classList.add("show");
+      });
+    });
+  }
 });
