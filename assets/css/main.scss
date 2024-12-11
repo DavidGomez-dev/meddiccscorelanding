@@ -64,5 +64,18 @@ a:visited {
   background-size: cover;
 }
 
+.no_padding_top section.page__content {
+  padding-top: 0 !important;
+}
+
+h3.accordion-header {
+  padding-top: 0 !important;
+}
+
+h3.accordion-header button {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
 // New Age + Bootstrap
 @import "styles.scss";

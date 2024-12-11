@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.header.video.side_id and page.header.video.provider %}
+{% if page.header.video.side and page.header.video.provider %}
   {% include page__hero_video_side.html %}
 {% elsif page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}

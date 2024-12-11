@@ -4,24 +4,19 @@ title: "Meddicc Score HubSpot Guide"
 categories: blog
 tags:
   - setup guide
-classes: wide
+classes: wide no_padding_top
 date: 2023-01-01 16:54:38 +0100
 excerpt: Guide for installing and using Meddicc Score in HubSpot
 header:
-  overlay_image: /assets/images/imagesocial.png
-  teaser: /assets/images/imagesocial.png
+  overlay_image: /assets/images/zermatt.jpg
+  teaser: /assets/images/zermatt.jpg
   caption:
   video:
-    side_id: "86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=false&hide_speed=true&t=68"
+    side: true
+    id: "86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=false&hide_speed=true&t=68"
     provider: "loom"
 ---
 
-<div class="w-50">
-<div style="position: relative; padding-bottom: 56.25%; height: 0;">
-<iframe class="video-poster" src="https://www.loom.com/embed/86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=false&hide_speed=true&t=68" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-</iframe>
-</div>
-</div>
 <div id="accordionExample" class="accordion">
 <div class="accordion-item">
 
