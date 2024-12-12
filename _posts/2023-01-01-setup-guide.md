@@ -102,7 +102,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <ul>
   <li>Users can also modify the Score manually by clicking the pencil icon below the score.</li>
-  <li>All scores are stored in HubSpot as a custom variable named “score_meddicc”.</li>
+  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide41.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
@@ -148,7 +148,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <p class="text-center"><img src="../../assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>The Score is also available as a custom Hubspot variable (score_meddicc), and can be used in reporting, columns, etc.</li>
+  <li>The Score is also available as a custom Hubspot property (score_meddicc), and can be used in reporting, columns, etc.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -191,7 +191,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-collapse collapse show" id="collapseTrouble" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a custom variable / The Score in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
+<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a property / The Score property in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
 
@@ -201,7 +201,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p class="text-center"><img src="../../assets/images/trouble1.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>If does not work even after re-installation, then user needs to <strong>create the variable manually</strong>. It can be done in Settings > Data Management > Properties > Create property:</p>
+<p>If does not work even after re-installation, then user needs to <i>create the variable manually</i>. It can be done in <strong>Settings > Data Management > Properties > Create property</strong>:</p>
 
 <p class="text-center"><img src="../../assets/images/trouble12.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -238,7 +238,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <p>To enable this, you may need to reauthorize the app for the new permits required (access to read emails basically). Please click here:</p>
 
 <p class="text-center"><a href="{{ site.pwalink }}" alt="Install" class="w-10">
-</a></p>
+<img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
 <p>In all cases, the information extracted from emails is limited to the initial portion of each email. This helps avoid processing repetitive long threads, legal disclaimers, and other non-essential content. However, if critical Deal information is buried deep within the email threads or other engagements, the AI might not capture or interpret it accurately. Also AI tends to allucinate sometimes, please check important facts.</p>
 
