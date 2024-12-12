@@ -7,6 +7,22 @@
 // Scripts
 //
 
+// Get the current URL
+const currentUrl = window.location.href;
+
+// Create a URL object to parse the URL
+const url = new URL(currentUrl);
+
+// Use URLSearchParams to get query parameters
+const params = new URLSearchParams(url.search);
+
+// Check if the parameter 'bant' exists and is set to 'true'
+if (params.get("bant") === "true") {
+  document.querySelectorAll(".frameworkName").forEach((el) => {
+    el.innerHTML = "BANT";
+  });
+}
+
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof url != "undefined") {
