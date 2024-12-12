@@ -7,6 +7,7 @@
 // Scripts
 //
 
+// BANT trick
 // Get the current URL
 const currentUrl = window.location.href;
 
