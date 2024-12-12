@@ -20,6 +20,26 @@ function gtag_report_conversion(url) {
   return false;
 }
 
+window.REQUIRED_CODE_ERROR_MESSAGE = "Please choose a country code";
+window.LOCALE = "en";
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+  "The information provided is invalid. Please review the field format and try again.";
+
+window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+window.translation = {
+  common: {
+    selectedList: "{quantity} list selected",
+    selectedLists: "{quantity} lists selected",
+  },
+};
+
+var AUTOHIDE = true;
+
+// End Brevo Form -->
+
 window.addEventListener("DOMContentLoaded", (event) => {
   // Activate Bootstrap scrollspy on the main nav element
   const mainNav = document.body.querySelector("#mainNav");
