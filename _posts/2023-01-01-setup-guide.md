@@ -29,7 +29,7 @@ header:
 <div class="accordion-body">
 <h4 class="pt-6-m mb-3 text-primary" id="connect-your-hubspot-account">1. Connect Your HubSpot Account</h4>
 
-<p>Click the “Install App” button to link your HubSpot account.</p>
+<p>Click the <strong>Install app</strong> button below to link your HubSpot account.</p>
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
@@ -93,7 +93,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 </video>
 
 <ul>
-  <li>Then the AI model return a Score based on the data introduced and feedback for every step. The responses, feedback and score are stored.</li>
+  <li>Then the AI model returns a Score based on the data introduced and feedback for every step. The responses, feedback and score are stored.</li>
   <li>Users can manually update the pre-filled responses on the form at any time.</li>
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
 </ul>
@@ -101,7 +101,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <p class="text-center"><img src="../../assets/images/guide42.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>Users can also modify the Score manually by clicking the pencil icon below the score.</li>
+  <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
   <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.</li>
 </ul>
 
@@ -114,7 +114,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <ul>
   <li>Users can select a different qualification framework for each Deal.</li>
   <li>AI will prepopulate the selected framework with relevant information from the Deal.</li>
-  <li>However, switching frameworks will not automatically recalculate the Score, ensuring that old responses remain accessible.</li>
+  <li>However, switching frameworks will not automatically recalculate the score nor save the responses, ensuring that old responses remain accessible.</li>
   <li>Users can return to the previous framework at any time.</li>
 </ul>
 
@@ -174,7 +174,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-collapse collapse" id="collapseUninstall" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<p>If you are a paid or premium user, you  need to cancel your subcription before uninstallig, by visiting the Customer Portal. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></p>
+<p>If you are a paid or premium user, you  need to cancel your subcription before uninstalling, by visiting the Customer Portal. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></p>
 
 <p>To uninstall, navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong>. Click in Actions and then "Uninstall". This will uninstall Meddicc Score without impacting your HubSpot data.</p>
 
@@ -260,7 +260,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>If you want to cancell your subscription or change de invoice details, you can access the Customer Portal by clikcing on “Manage my subscription”</p>
+<p>If you want to cancel your subscription or change de invoice details, you can access the Customer Portal by clikcking on “Manage my subscription”</p>
 
 <p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
