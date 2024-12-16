@@ -100,9 +100,7 @@ At the end of each period, Your Subscription will automatically renew under the 
 
 ### Subscription cancellations
 
-You may cancel Your Subscription renewal either through Your Account settings page or by contacting the Company. You will not receive a refund for the fees You already paid for Your current Subscription period and You will be able to access the Service until the end of Your current Subscription period.
-
-If the Subscription has been made through an In-app Purchase, You can cancel the renewal of Your Subscription with the Application Store.
+You may cancel Your Subscription renewal either through Your Account settings page or by contacting the Company. If You cancel within 30 days of the initial purchase, You are eligible for a full refund of the fees paid. If You cancel after the 30-day period, You will not receive a refund for the fees already paid for Your current Subscription period, but You will be able to access the Service until the end of Your current Subscription period.
 
 ### Billing
 
@@ -122,11 +120,9 @@ Your continued use of the Service after the Subscription fee change comes into e
 
 ### Refunds
 
-Except when required by law, paid Subscription fees are non-refundable.
+Except when required by law, paid Subscription fees are non-refundable after the first 30 days. However, if You cancel Your Subscription within 30 days of purchase, You are eligible for a full refund.
 
-Other refund requests for Subscriptions may be considered by the Company on a case-by-case basis and granted at the sole discretion of the Company.
-
-If the Subscription has been made through an In-app purchase, the Application Store’s refund policy will apply. If You wish to request a refund, You may do so by contacting the Application Store directly.
+Other refund requests for Subscriptions beyond the 30-day period may be considered by the Company on a case-by-case basis and granted at the sole discretion of the Company.
 
 ## In-app Purchases
 
