@@ -174,7 +174,9 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-collapse collapse" id="collapseUninstall" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<p>Navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong> in HubSpot to uninstall Meddicc Score without impacting your HubSpot data.</p>
+<p>If you are a paid or premium user, you  need to cancel your subcription before uninstallig, by visiting the Customer Portal. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></p>
+
+<p>To uninstall, navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong>. Click in Actions and then "Uninstall". This will uninstall Meddicc Score without impacting your HubSpot data.</p>
 
 <p class="text-center"><img src="../../assets/images/guide6.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -246,13 +248,13 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <h4 id="how-can-add-a-discount-code" class="pt-6-m mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="&quot;meddiccscore@gmail.com&quot;">Contact Us</a>:</p>
+<p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="mailto:meddiccscore@gmail.com">Contact Us</a>:</p>
 
 <p class="text-center"><img src="../../assets/images/trouble4.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="../../assets/images/trouble3.png" alt="troubleshooting" class="mb-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p>If you already have a subscription and want to add a coupon code, it cannot be done automatically, please <a href="&quot;meddiccscore@gmail.com&quot;">Contact Us</a></p>
+<p>If you already have a subscription and want to add a coupon code, it cannot be done automatically, please <a href="mailto:meddiccscore@gmail.com">Contact Us</a></p>
 
 <hr>
 
