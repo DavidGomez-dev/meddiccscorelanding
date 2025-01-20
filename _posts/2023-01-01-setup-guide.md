@@ -33,7 +33,7 @@ header:
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
-For more information on user permissions, visit the [HubSpot User Permissions Guide](#cannot-install-app).
+<p>For more information on user permissions, visit the <a href="#cannot-install-app">HubSpot User Permissions Guide</a>.</p>
 
 <hr>
 
