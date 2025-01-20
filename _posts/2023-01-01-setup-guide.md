@@ -193,6 +193,16 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-collapse collapse show" id="collapseTrouble" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
+<h4 id="cannot-install-app" class="pt-6-m mb-3 text-primary">I cannot install the APP<a class="header-link" href="#cannot-install-app" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+
+<p>Please check that the user have permits to install external APPs from the marketplace.</p>
+
+<p class="text-center"><img src="../../assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">HubSpot User Permissions Guide</a>.</p>
+
+<hr>
+
 <h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a property / The Score property in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
