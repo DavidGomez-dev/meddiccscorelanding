@@ -33,6 +33,8 @@ header:
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="../../assets/images/installBtn.png" alt="Install"></a></p>
 
+For more information on user permissions, visit the [HubSpot User Permissions Guide](#cannot-install-app).
+
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="login-to-your-hubspot-account">2. Login to Your HubSpot Account</h4>
