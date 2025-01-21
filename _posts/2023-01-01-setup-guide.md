@@ -74,7 +74,7 @@ header:
 
 <h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score from the HubSpot Sidebar</h4>
 
-<p>Locate Meddicc Score within the HubSpot sidebar under Deal.</p>
+<p>Find Meddicc Score in the HubSpot sidebar under Deal. It displays a summary of the total score and categorizes the status using three colors (red, yellow, and green) based on the completeness of each category.</p>
 
 <p class="text-center"><img src="../../assets/images/guide3.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -96,7 +96,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <ul>
   <li>Then the AI model returns a Score based on the data introduced and feedback for every step. The responses, feedback and score are stored.</li>
-  <li>Users can manually update the pre-filled responses on the form at any time.</li>
+  <li>Users can manually update the pre-filled responses on the form at any time and also re-populate with AI by clicking on "Refill", for instance if more information has been recorded on de Deal.</li>
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
 </ul>
 
@@ -144,7 +144,9 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <ul>
   <li>Clicking on Report, a full account pipeline summary can be found.</li>
+  <li>It includes a  Bubble Quadrant Graph, which displays the current year’s opportunities with their Score, Close Date, and Amount represented by the bubble size. It will only shows deals that have Close Date and Amount recorded.</li>
   <li>From the report is possible to download a CSV with all the notes and scores saved.</li>
+  <li>It is also possible to download the report on PDF format.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
