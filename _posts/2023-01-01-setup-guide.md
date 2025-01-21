@@ -96,7 +96,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <ul>
   <li>Then the AI model returns a Score based on the data introduced and feedback for every step. The responses, feedback and score are stored.</li>
-  <li>Users can manually update the pre-filled responses on the form at any time and also re-populate with AI by clicking on "Refill", for instance if more information has been recorded on de Deal.</li>
+  <li>Users can manually update the pre-filled responses on the form at any time. Additionally, they can re-populate the form with AI by clicking on "Refill", for instance, if more information has been recorded on the Deal.</li>
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
 </ul>
 
