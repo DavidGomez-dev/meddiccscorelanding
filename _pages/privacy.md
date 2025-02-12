@@ -89,6 +89,16 @@ If we believe the release of information about you is necessary to respond to le
 
 We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.
 
+#### List of Sub-processors
+
+| Legal Entity  | Purpose of Processing            | Location(s)   |
+| ------------- | -------------------------------- | ------------- |
+| Railway, Inc. | Cloud Infrastructure             | United States |
+| Google LLC    | Website Analytics, Email         | United States |
+| Github, Inc.  | Landing page, repository         | United States |
+| Sendinblue    | Platform and Marketing Messaging | France        |
+| Stripe, Inc.  | Billing platform                 | United States |
+
 ### Marketing Communications
 
 With your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law.
