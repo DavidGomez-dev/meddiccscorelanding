@@ -140,7 +140,33 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">9. Report and Export</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="manage-account">9. Settings: Manage your account and users</h4>
+
+<ul>
+  <li>Clicking on the "Account" tag displays a list of current users who have installed MeddiccScore.</li>
+  <li>In the right column of the list, two actions are available only to the Admin user:
+    <ul>
+      <li><strong>Delete:</strong> Marks the user for deletion. The user will need to reinstall MeddiccScore to continue using it.</li>
+      <li><strong>Make Admin:</strong> Grants administration privileges to a new user.</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>On the right side, there are different options:
+    <ul>
+      <li><strong>Upgrade (only for Free users):</strong> Upgrade to premium plans.</li>
+      <li><strong>Manage Subscription (only for Admin paid users):</strong> Redirects to the Customer Portal where the user can update or cancel your paid subscription, or send a email to support is your subcription is Corporate. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
+      <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore information (NOT the HubSpot Account) including deals, users, and account data. This action is irreversible, so be sure before proceeding. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel your paid subscription</a> (if any) before deleting the account. Type "Delete Account" to confirm.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">10. Report and Export</h4>
 
 <ul>
   <li>Clicking on Report, a full account pipeline summary can be found.</li>
@@ -159,7 +185,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">10. Upgrade to Premium</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">11. Upgrade to Premium</h4>
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
@@ -179,6 +205,8 @@ Note: Comments to engagements are not gathered since they are not available thro
 <div class="accordion-body">
 
 <p>If you are a paid or premium user, you  need to cancel your subcription before uninstalling, by visiting the Customer Portal. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></p>
+
+<p>Additionally, you may want to delete all the data stored in MeddiccScore, including users and account information, before uninstalling. <a href="#manage-account">More information.</a> If you plan to reinstall the app later, the data will reappear unless the account has been deleted beforehand.</p>
 
 <p>To uninstall, navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong>. Click in Actions and then "Uninstall". This will uninstall Meddicc Score without impacting your HubSpot data.</p>
 
@@ -281,7 +309,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>If you want to cancel your subscription or change de invoice details, you can access the Customer Portal by clikcking on “Manage my subscription”</p>
+<p>If you want to cancel your subscription or change de invoice details, you can access the Customer Portal by clikcking on “Subscription” button inside the settings. (Only admin users)</p>
 
 <p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
