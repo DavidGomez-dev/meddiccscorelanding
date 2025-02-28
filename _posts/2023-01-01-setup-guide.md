@@ -55,7 +55,8 @@ header:
 
 <h4 class="pt-6-m mb-3 text-primary" id="confirm-permissions">4. Confirm Permissions</h4>
 
-<p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”.</p>
+<p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, you have installed Meddicc Score. </p>
+<p>The first user of the account is the Admin by default, but there can be more users on the same account.</p>
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -124,10 +125,10 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="editing-questions">8. Settings: Editing the framework questions and default framework</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="editing-questions">8. Settings: Editing the framework questions and default framework (only Admin)</h4>
 
 <ul>
-  <li>Clicking the Settings buttons, on the Framework tab, allows the user to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
+  <li>Only Admins can access this feature. Clicking the Settings buttons, on the Framework tab, allows the user to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -140,7 +141,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="manage-account">9. Settings: Manage your account and users</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="manage-account">9. Settings: Manage your account and users (only Admin)</h4>
 
 <ul>
   <li>Clicking on the "Account" tab displays a list of current users who have installed MeddiccScore.</li>
