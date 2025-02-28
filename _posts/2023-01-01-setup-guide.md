@@ -127,7 +127,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <h4 class="pt-6-m mb-3 text-primary" id="editing-questions">8. Settings: Editing the framework questions and default framework</h4>
 
 <ul>
-  <li>Clicking the gear icon on ‘Select Framework’ allows you to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
+  <li>Clicking the Settings buttons, on the Framework tab, allows the user to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -143,7 +143,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <h4 class="pt-6-m mb-3 text-primary" id="manage-account">9. Settings: Manage your account and users</h4>
 
 <ul>
-  <li>Clicking on the "Account" tag displays a list of current users who have installed MeddiccScore.</li>
+  <li>Clicking on the "Account" tab displays a list of current users who have installed MeddiccScore.</li>
   <li>In the right column of the list, two actions are available only to the Admin user:
     <ul>
       <li><strong>Delete:</strong> Marks the user for deletion. The user will need to reinstall MeddiccScore to continue using it.</li>
@@ -152,7 +152,7 @@ Note: Comments to engagements are not gathered since they are not available thro
   </li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide91.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>On the right side, there are different options:
