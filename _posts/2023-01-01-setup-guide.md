@@ -309,7 +309,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>If you want to cancel your subscription or change de invoice details, you can access the Customer Portal by clikcking on “Subscription” button inside the settings. (Only admin users)</p>
+<p>If you want to cancel your subscription or change de invoice details, you can access the Customer Portal (or send and email to Support) by clicking on “Subscription” button inside the settings. (Only admin users)</p>
 
 <p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
