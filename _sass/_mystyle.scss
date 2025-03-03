@@ -11,6 +11,10 @@ $darkColor: #fff5d0;
   color: $darkColor !important;
 }
 
+.theme-dark h2 {
+  font-weight: 500 !important;
+}
+
 body.theme-dark,
 .theme-dark .masthead,
 .theme-dark .page__meta {
