@@ -116,14 +116,14 @@ We may share your information with third parties that perform services for us or
 
 #### List of Sub-processors
 
-| Legal Entity  | Purpose of Processing            | Location(s)   |
-| ------------- | -------------------------------- | ------------- |
-| Railway, Inc. | Cloud Infrastructure             | United States |
-| Google LLC    | Website Analytics, Email         | United States |
-| MongoDB, Inc. | Cloud Infrastructure             | United States |
-| Github, Inc.  | Landing page, repository         | United States |
-| Sendinblue    | Platform and Marketing Messaging | France        |
-| Stripe, Inc.  | Billing platform                 | United States |
+| Legal Entity | Purpose of Processing            | Location(s)   |
+| ------------ | -------------------------------- | ------------- |
+| (NDA needed) | Cloud Infrastructure             | United States |
+| Google LLC   | Website Analytics, Email         | United States |
+| (NDA needed) | Database Infrastructure          | United States |
+| Github, Inc. | Landing page, repository         | United States |
+| Sendinblue   | Platform and Marketing Messaging | France        |
+| Stripe, Inc. | Billing platform                 | United States |
 
 ### Affiliates
 
