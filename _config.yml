@@ -122,7 +122,7 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
+    - label: #"Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
     - label: "Sitemap"
@@ -134,6 +134,9 @@ footer:
     - label: "Privacy"
       icon: "fas fa-fw fa-user-secret"
       url: "/privacy/"
+    - label: "Security"
+      icon: "fas fa-fw fa-shield-alt"
+      url: "/security/"
     - label: "Affiliate Program"
       icon: "fas fa-fw fa-users"
       url: "https://meddiccscore.com/blog/affiliate-program/"

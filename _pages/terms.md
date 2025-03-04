@@ -5,7 +5,7 @@ title: "Terms"
 
 # Terms and Conditions
 
-**Last updated: March 22, 2024**
+**Last updated: March 4, 2025**
 
 Please read these terms and conditions carefully before using Our Services.
 
@@ -19,11 +19,11 @@ The words of which the initial letter is capitalized have meanings defined under
 
 For the purposes of these Terms and Conditions:
 
-- **Application** means the software program provided by the Company downloaded by You on any electronic device.
-- **Application Store** means the digital distribution service operated and developed by Apple Inc. (Apple App Store) or Google Inc. (Google Play Store) in which the Application has been downloaded.
+- **Application** means the software application MeddiccScore, an add-on to HubSpot.
+- **Application Store** means the digital distribution service operated and developed by HubSpot Inc. (HubSpot Marketplace) in which the Application has been downloaded.
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where “control” means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
-- **Country** refers to: Spain
-- **Company** (referred to as either “the Company”, “We”, “Us” or “Our” in this Agreement) refers to tailored.systems.
+- **Country** refers to: United Kingdom
+- **Company** (referred to as either “the Company”, “We”, “Us” or “Our” in this Agreement) refers to MeddiccScore.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Feedback** means feedback, innovations or suggestions sent by You regarding the attributes, performance or features of our Service.
 - **Goods** refer to the items offered for sale on the Service.
@@ -90,11 +90,19 @@ All Goods purchased are subject to a one-time payment. Payment can be made throu
 
 Payment cards (credit cards or debit cards) are subject to validation checks and authorization by Your card issuer. If we do not receive the required authorization, We will not be liable for any delay or non-delivery of Your Order.
 
+## Free Version
+
+The Company may, at its sole discretion, offer a free version of the Service with limited features. The free version is provided "AS IS" and "AS AVAILABLE" without any warranties or guarantees of any kind. The Company reserves the right to modify or discontinue the free version at any time without prior notice.
+
+## Trial Periods
+
+The Company may offer trial periods for certain Subscription plans. During the trial period, You will have access to the Service for a limited time at no cost. At the end of the trial period, You will be automatically charged for the Subscription plan unless You cancel before the trial period ends. The terms of the trial period, including its duration, will be specified at the time of the offer.
+
 ## Subscriptions
 
 ### Subscription period
 
-The Service or some parts of the Service are available only with a paid Subscription. You will be billed in advance on a recurring and periodic basis (such as daily, weekly, monthly or annually), depending on the type of Subscription plan you select when purchasing the Subscription.
+The Service or some parts of the Service are available only with a paid Subscription. You will be billed in advance on a recurring and periodic basis (such as monthly or annually), depending on the type of Subscription plan you select when purchasing the Subscription.
 
 At the end of each period, Your Subscription will automatically renew under the exact same conditions unless You cancel it or the Company cancels it.
 
@@ -118,6 +126,10 @@ The Company will provide You with reasonable prior notice of any change in Subsc
 
 Your continued use of the Service after the Subscription fee change comes into effect constitutes Your agreement to pay the modified Subscription fee amount.
 
+## Discount Coupons
+
+The Company may offer discount coupons that provide a reduction in the Subscription fees or other charges. Discount coupons are subject to the terms and conditions specified at the time of the offer. Discount coupons cannot be redeemed for cash, transferred, or combined with other offers unless explicitly stated. The Company reserves the right to modify or cancel discount coupons at any time without prior notice.
+
 ### Refunds
 
 Except when required by law, paid Subscription fees are non-refundable after the first 30 days. However, if You cancel Your Subscription within 30 days of purchase, You are eligible for a full refund.
@@ -126,17 +138,17 @@ Other refund requests for Subscriptions beyond the 30-day period may be consider
 
 ## In-app Purchases
 
-The Application may include In-app Purchases that allow you to buy products, services or Subscriptions.
+The Application may include In-app Purchases that allow you to access premium features, services, or Subscriptions.
 
-More information about how you may be able to manage In-app Purchases using your Device may be set out in the Application Store’s own terms and conditions or in your Device’s Help settings.
+More information about how you may be able to manage In-app Purchases using your Device may be set out in your Device’s Help settings.
 
-In-app Purchases can only be consumed within the Application. If you make a In-app Purchase, that In-app Purchase cannot be cancelled after you have initiated its download. In-app Purchases cannot be redeemed for cash or other consideration or otherwise transferred.
+In-app Purchases can only be consumed within the Application. If you make an In-app Purchase, that In-app Purchase cannot be cancelled after you have initiated access to the premium features. In-app Purchases cannot be redeemed for cash or other consideration or otherwise transferred.
 
-If any In-app Purchase is not successfully downloaded or does not work once it has been successfully downloaded, we will, after becoming aware of the fault or being notified to the fault by You, investigate the reason for the fault. We will act reasonably in deciding whether to provide You with a replacement In-app Purchase or issue You with a patch to repair the fault. In no event will We charge You to replace or repair the In-app Purchase. In the unlikely event that we are unable to replace or repair the relevant In-app Purchase or are unable to do so within a reasonable period of time and without significant inconvenience to You, We will authorize the Application Store to refund You an amount up to the cost of the relevant In-app Purchase. Alternatively, if You wish to request a refund, You may do so by contacting the Application Store directly.
+If any In-app Purchase does not work once you have successfully accessed the premium features, we will, after becoming aware of the fault or being notified of the fault by You, investigate the reason for the fault. We will act reasonably in deciding whether to provide You with access to the premium features or issue You with a patch to repair the fault. In no event will We charge You to replace or repair the In-app Purchase. In the unlikely event that we are unable to provide access to the premium features or are unable to do so within a reasonable period of time and without significant inconvenience to You, We will refund You an amount up to the cost of the relevant In-app Purchase. Alternatively, if You wish to request a refund, You may do so by contacting Us directly.
 
-You acknowledge and agree that all billing and transaction processes are handled by the Application Store from where you downloaded the Application and are governed by that Application Store’s own terms and conditions.
+You acknowledge and agree that all billing and transaction processes are handled by Us directly using Stripe and are governed by Our own terms and conditions.
 
-If you have any payment related issues with In-app Purchases, then you need to contact the Application Store directly.
+If you have any payment-related issues with In-app Purchases, then you need to contact Us directly.
 
 ## Intellectual Property
 
@@ -160,17 +172,7 @@ We strongly advise You to read the terms and conditions and privacy policies of 
 
 ## Use of OpenAI and ChatGPT
 
-Our app integrates services powered by OpenAI's ChatGPT, an advanced language model that facilitates dynamic interactions and content generation. By using our app, you acknowledge and agree to the following:
-
-1. **Nature of ChatGPT**: ChatGPT is an AI-based service designed to assist users by generating responses, suggestions, and content based on input provided by the user. While we strive to ensure the accuracy and relevance of these responses, it is important to understand that ChatGPT-generated outputs may not always be correct, complete, or applicable to your specific situation.
-
-2. **Data Handling**: The queries and information submitted to ChatGPT may be processed and stored by OpenAI in accordance with their privacy policy. We do not have direct control over how OpenAI manages the data you provide through these interactions, and you are encouraged to review [OpenAI’s Privacy Policy](https://openai.com/policies/privacy-policy) for more details on their data handling practices.
-
-3. **User Responsibility**: You are responsible for how you use the content provided by ChatGPT. The outputs generated by ChatGPT are intended for informational purposes only and should not be considered professional, legal, financial, or medical advice. Always verify critical information with qualified experts.
-
-4. **Limitations and Liability**: While we integrate OpenAI's technology to enhance the user experience, we do not guarantee the performance, availability, or suitability of ChatGPT for any particular purpose. Our app is not liable for any consequences arising from the use of ChatGPT-generated content, including any inaccuracies, omissions, or actions taken based on the information provided.
-
-5. **Updates and Changes**: As OpenAI continues to develop and improve its services, updates or changes may be made to the integration of ChatGPT within our app. We reserve the right to modify or discontinue the use of ChatGPT in our app without prior notice.
+Our app integrates services powered by OpenAI's ChatGPT, an advanced language model that facilitates dynamic interactions and content generation. See our [Privacy Policy](/privacy-policy) for more information.
 
 ## Termination
 
@@ -196,7 +198,7 @@ Some jurisdictions do not allow the exclusion of certain types of warranties or 
 
 ## Governing Law
 
-The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+The laws of the United Kingdom, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
 
 ## Disputes Resolution
 
@@ -228,7 +230,7 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 ## Contact Us
 
-For any questions or concerns regarding your privacy, you may contact us using the following details:
+For any questions or concerns regarding these terms, you may contact us using the following details:
 
 - {{ site.email }}
 
