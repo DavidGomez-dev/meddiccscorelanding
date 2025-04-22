@@ -147,8 +147,9 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>Clicking on the "Account" tab displays a list of current users who have installed MeddiccScore.</li>
   <li>In the right column of the list, two actions are available only to the Admin user:
     <ul>
-      <li><strong>Delete:</strong> Marks the user for deletion. The user will need to reinstall MeddiccScore to continue using it.</li>
-      <li><strong>Make Admin:</strong> Grants administration privileges to a new user.</li>
+      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan.</li>
+      <li><strong>Delete:</strong> Marks the user for deletion. Once deleted, the user will need to reinstall MeddiccScore to regain access.</li>
+      <li><strong>Make Admin:</strong> Assigns administrative privileges to the selected user, granting them access to manage account settings and users.</li>
     </ul>
   </li>
 </ul>
