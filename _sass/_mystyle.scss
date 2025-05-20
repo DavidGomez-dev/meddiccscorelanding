@@ -339,4 +339,13 @@ strong {
   padding: 24px;
 }
 
+.logo-frame {
+  row-gap: 1rem;
+}
+
+.logo {
+  filter: grayscale(1) invert(1);
+  height: 2rem !important;
+}
+
 // <!--  END - We recommend to place the above code in head tag of your website html -->
