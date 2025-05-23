@@ -349,4 +349,10 @@ strong {
   height: 2rem !important;
 }
 
+.logoinv {
+  filter: grayscale(1) invert(1);
+  //filter: brightness(0%) invert(0%);
+  height: 2rem !important;
+}
+
 // <!--  END - We recommend to place the above code in head tag of your website html -->
