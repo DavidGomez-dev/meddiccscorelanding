@@ -199,4 +199,4 @@ If you are under 18 years of age, reside in California, and have a registered ac
 
 For any questions or concerns regarding your privacy, you may contact us using the following details:
 
-[privacy@meddiccscore.com](mailto:privacy@meddiccscore.com)
+[meddiccscore@gmail.com](mailto:meddiccscore@gmail.com)
