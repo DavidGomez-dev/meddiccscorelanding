@@ -161,16 +161,38 @@ Note: Comments to engagements are not gathered since they are not available thro
 <ul>
   <li>On the right side, there are different options:
     <ul>
-      <li><strong>Upgrade (only for Free users):</strong> Upgrade to premium plans.</li>
-      <li><strong>Manage Subscription (only for Admin paid users):</strong> Redirects to the Customer Portal where the user can update or cancel your paid subscription, or send a email to support is your subcription is Corporate. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
-      <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore information (NOT the HubSpot Account) including deals, users, and account data. This action is irreversible, so be sure before proceeding. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel your paid subscription</a> (if any) before deleting the account. Type "Delete Account" to confirm.</li>
+      <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
+      <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
+      <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore data (not your HubSpot account), including deals, users, and account information. This action cannot be undone. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel any paid subscription</a> before deleting your account. Type "Delete Account" to confirm.</li>
+      <li><strong>Automations (Premium users only):</strong> Automate the scoring process. See the next section for details.</li>
     </ul>
   </li>
 </ul>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">10. Report and Export</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="automations">10. Automations (Only Premium Admins)</h4>
+
+<ul>
+  <li>Automations help you streamline and automate the scoring process. They are only available for Premium users.</li>
+
+  <p class="text-center"><img src="../../assets/images/guide911.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+  <li>
+    <strong>Automatic Scoring:</strong> When enabled, this feature sets up a workflow so that every time a new engagement (Note, Meeting, Task, or Call) is logged in HubSpot, the Meddicc Score form is automatically re-filled with the latest information and rescored. Locked fields will not be changed, but unlocked fields and the overall score may be updated. Please note the following limitations due to the HubSpot API:
+    <ul>
+      <li>The Meddicc Card in the sidebar will not refresh automatically; it updates only when the entire deal is refreshed.</li>
+      <li>Automatic scoring is not triggered if an engagement is updated or deleted—only when a new engagement is created.</li>
+      <li>Automatic scoring does not trigger for new emails; it works only for Meetings, Calls, Tasks, or Notes.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Score Account:</strong> This option will trigger scoring for <b>all deals</b> in your account. <b>All previous information and scores will be overwritten, and this action cannot be undone.</b> The process may take several minutes, and the Admin user will receive an email notification once it is complete.
+  </li>
+</ul>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">11. Report and Export</h4>
 
 <ul>
   <li>Clicking on Report, a full account pipeline summary can be found.</li>
@@ -189,14 +211,14 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">11. Upgrade to Premium</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">12. Upgrade to Premium</h4>
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
 <p class="text-center"><img src="../../assets/images/guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="changeplan">12. Change my subscription plan</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="changeplan">13. Change the subscription plan</h4>
 
 <p>If you're already enjoying the premium benefits of Meddicc Score but want to upgrade to a Team plan or switch to a yearly subscription to unlock significant savings, you can easily make the change through the Customer Portal. Take advantage of these exclusive discounts today and maximize your Meddicc Score experience!</p>
 
