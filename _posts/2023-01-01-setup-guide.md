@@ -181,7 +181,7 @@ Note: Comments to engagements are not gathered since they are not available thro
     <strong>Automatic Scoring:</strong> When enabled, this feature sets up a workflow so that every time a new engagement (Note, Meeting, Task, or Call) is logged in HubSpot, the Meddicc Score form is automatically re-filled with the latest information and rescored. Locked fields will not be changed, but unlocked fields and the overall score may be updated. Please note the following limitations due to the HubSpot API:
     <ul>
       <li>The Meddicc Card in the sidebar will not refresh automatically; it updates only when the entire deal is refreshed.</li>
-      <li>Automatic scoring is not triggered if an engagement is updated or deleted—only when a new engagement is created.</li>
+      <li>Automatic scoring is not triggered if an engagement is updated from a previous engagement already created.</li>
       <li>Automatic scoring does not trigger for new emails; it works only for Meetings, Calls, Tasks, or Notes.</li>
     </ul>
   </li>
