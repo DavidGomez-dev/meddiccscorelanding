@@ -205,7 +205,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <p class="text-center"><img src="../../assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>The Score is also available as a custom Hubspot property (score_meddicc), and can be used in reporting, columns, etc.</li>
+  <li>The Score is also available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
