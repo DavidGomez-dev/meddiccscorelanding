@@ -147,7 +147,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <ul>
   <li>Clicking on the "Account" tab displays a list of current users who have installed MeddiccScore.</li>
-  <li>In the right column of the list, two actions are available only to the Admin user:
+    <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
       <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan.</li>
       <li><strong>Delete:</strong> Marks the user for deletion. Once deleted, the user will need to reinstall MeddiccScore to regain access.</li>
@@ -161,11 +161,19 @@ Note: Comments to engagements are not gathered since they are not available thro
 <ul>
   <li>On the right side, there are different options:
     <ul>
+          <li><strong>General:</strong></li>
+          <ul>
+            <li><strong>Change Framework:</strong> Allows non-admin users to switch between different sales qualification frameworks (e.g., MEDDICC, BANT).</li>
+            <li><strong>Change Score Manually:</strong> Enables non-admin users to manually adjust the scores assigned to deals or opportunities.</li>
+            <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li>
+          </ul>
+          <li><strong>Automations (Premium users only):</strong> Automate the scoring process. See the next section for details.</li>
       <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
       <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
       <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore data (not your HubSpot account), including deals, users, and account information. This action cannot be undone. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel any paid subscription</a> before deleting your account. Type "Delete Account" to confirm.</li>
-      <li><strong>Automations (Premium users only):</strong> Automate the scoring process. See the next section for details.</li>
+
     </ul>
+
   </li>
 </ul>
 
