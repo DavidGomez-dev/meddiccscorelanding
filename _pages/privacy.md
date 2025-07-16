@@ -297,6 +297,38 @@ EU/UK users can contact:
 - **Data Privacy Officer:** [meddiccscore@gmail.com](mailto:meddiccscore@gmail.com)
 - **Supervisory Authorities:** ICO (UK) or the relevant EU DPA for unresolved complaints.
 
+## Email Communications: What You’ll Receive
+
+We send several types of emails—each under a different lawful basis:
+
+#### 1. Transactional Emails (Legitimate Interest)
+
+Strongly focused on necessary, service-related actions you’ve taken, such as:
+
+- Order confirmations
+- Billing receipts
+- Security alerts
+- Release notes for major changes (e.g., Terms of Service, privacy updates)
+
+#### 2. Product Updates & Release Notes (Legitimate Interest)
+
+Information you’ve opted into by using our service, like:
+
+- New features
+- Bug fixes
+- Maintenance notifications
+
+A link to our Privacy Policy and instructions for managing preferences is always included.
+
+#### 3. Promotional & Marketing Emails (Consent Granted on installation)
+
+If we do send offers—such as discounts, new product announcements, or upsells—it’s only after:
+
+- You have explicitly opted in by installing the app.
+- You are clearly informed how to unsubscribe at any time in every email.
+
+If even so, you want do not want to receive any email from us, please contact us.
+
 ## Contact Us
 
 For any questions or concerns regarding your privacy, you may contact us using the following details:
