@@ -178,10 +178,11 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>
     <strong>Available providers:</strong>
     <ul>
-      <li><strong>OpenAI / GPT 4.1: </strong><a href="https://platform.openai.com/docs/models" target="_blank">more information on model capabilities ↗</a></li>
+      <li><strong>OpenAI / GPT 4.1: </strong><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Google / Gemini 2.5:</strong> <a href="https://deepmind.google/models/gemini/" target="_blank">more information on model capabilities ↗</a></li>
-      <li><strong>Meta / Llama 4:</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>Anthropic / Sonnet 4:</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on model capabilities ↗</a></li>
+      <li><strong>Meta / Llama 4:</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
+      <li><strong>OpenAI / GPT OSS:</strong> <a href="https://platform.openai.com/docs/models/gpt-oss-120b" target="_blank">more information on model capabilities ↗</a>. GPT OSS is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>Azure OpenAI / GPT 4.1:</strong> Microsoft Azure enables the use of OpenAI models (along with others) in a private, secure, enterprise-grade deployment, guaranteeing full data privacy (according to their claims). This allows organizations to leverage the latest OpenAI models without explicitly sharing their information with OpenAI.<a href="https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/" target="_blank">more information on Azure ↗</a>. For this to work, more information is required:
       <ul>
         <li>Resource name: The calls to the API will follow this URL https://{resourceName}.openai.azure.com/openai/v1{path}</li>
@@ -208,13 +209,13 @@ Note: Comments to engagements are not gathered since they are not available thro
   </thead>
   <tbody>
     <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>OpenAI (Direct API, GPT-4/4.1)</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>OpenAI GPT-4.1 (Direct API)</strong></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡ (fast; depends on load)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (excellent reasoning, creative and reliable)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Strong balance of speed and intelligence; widely adopted.</td>
     </tr>
     <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>OpenAI (Azure OpenAI)</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>OpenAI GPT-4.1 (Azure OpenAI)</strong></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡ (enterprise-grade stability)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (same model quality as direct API)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Often steadier latency due to Microsoft infrastructure.</td>
@@ -236,6 +237,12 @@ Note: Comments to engagements are not gathered since they are not available thro
       <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡⚡ (ultra-low latency on Groq)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠 (solid; generally below GPT-4/Gemini for reasoning)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Best when speed is critical; slightly weaker reasoning depth.</td>
+    </tr>
+        <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>GPT OSS (via Groq)</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡⚡ (extremely fast; Groq hardware optimized for OSS models)</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (similar or better than GPT 4.1)</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Good combination of speed and reasoning.</td>
     </tr>
   </tbody>
 </table>
