@@ -172,7 +172,7 @@ Note: Comments to engagements are not gathered since they are not available thro
     This allows the user to select the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
   </li>
     <li>
-      Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our support team.
+      Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:meddiccscore@gmail.com">support team</a>.
     <p class="text-center"><img src="../../assets/images/guide811.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
   </li>
   <li>
