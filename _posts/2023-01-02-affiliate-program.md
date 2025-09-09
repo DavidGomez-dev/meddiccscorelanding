@@ -15,7 +15,7 @@ header:
 
 # Meddicc Score Affiliate Program
 
-## Earn by Sharing Meddicc Score with Your Network
+## Earn by Sharing Meddicc Score with Your Network!
 
 The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commission for every customer you refer to our app. If you’re a marketer, consultant, or growth specialist with an audience interested in improving sales qualification frameworks, this program is for you!
 
