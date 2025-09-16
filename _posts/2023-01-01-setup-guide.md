@@ -112,6 +112,12 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <p class="text-center"><img src="../../assets/images/guide41.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
+<ul>
+  <li>On every question, clicking on the info icon, a little guidance text is showed to help users to answer the question. This text can also be customized on Settings.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide421.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
+
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="change-framework">7. Change the Framework</h4>
@@ -268,7 +274,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.2 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
 
 <ul>
-  <li>Only Admins can access this feature. Clicking on the Framework tab, allows the user to edit the questions for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions for all deals where that framework has been used.</li>
+  <li>Only Admins can access this feature. Clicking on the Framework tab, allows the user to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
   <li>Turning on the ‘Default Framework’ switch will set the selected framework as the default for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
 </ul>
 
