@@ -113,7 +113,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <p class="text-center"><img src="../../assets/images/guide41.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>On every question, clicking on the info icon, a little guidance text is showed to help users to answer the question. This text can also be customized on Settings.</li>
+  <li>Each question can include a short guidance text to help users provide better answers. By clicking the info icon, this guidance will be displayed. The text can also be customized in the Settings menu.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide421.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
@@ -279,6 +279,12 @@ Note: Comments to engagements are not gathered since they are not available thro
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide10.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>You can add more questions to any category of the framework. When you hover over the bottom of a question, a bar with “+” and “–” icons will appear, allowing you to add a new question or remove the existing one.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide101.png" alt="Adding questions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
