@@ -171,7 +171,19 @@ Note: Comments to engagements are not gathered since they are not available thro
   </li>
 </ul>
 
-<p class="pt-6-m" id="selectLLM"><strong>8.1.3 AI LLM Model Provider:</strong></p>
+<p class="pt-6-m" id="scoring_methodology"><strong>8.1.3 Scoring Methodology:</strong></p>
+
+<ul>
+  <li>Score of the forms go from 0 to 100. There are two options for Scoring the forms.</li>
+  <li>
+    <strong>All the form together (default):</strong> When enabled, all the form is evaluated by the AI LLM model providing a score based on the overall responses for the sales qualification framework and the likelihood of successfully closing the deal. Depending on the model selected and even the evaluation, the results may vary, that can be discutible and in genral trend to be optimistic.
+  </li>
+  <li>
+    <strong>By section:</strong> With this option, every section of the form (e.g. Metrics, Economic Buyer...) get scored in three options (bad - 0, medium - 0.5 and good - 1). Then the individual scores are aggregated and divided by the number of sections, and then multiply by 100. In this case, the results are more predictable although they can be also more repetitive.
+  </li>
+</ul>
+
+<p class="pt-6-m" id="selectLLM"><strong>8.1.4 AI LLM Model Provider:</strong></p>
 
 <ul>
   <li>
@@ -184,7 +196,7 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>
     <strong>Available providers:</strong>
     <ul>
-      <li><strong>OpenAI / GPT 4.1: </strong><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">more information on model capabilities ↗</a></li>
+      <li><strong>OpenAI / GPT 4.1  (default): </strong><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Google / Gemini 2.5:</strong> <a href="https://deepmind.google/models/gemini/" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Anthropic / Sonnet 4:</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Meta / Llama 4:</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
@@ -260,7 +272,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <!-- <h4 class="pt-6-m mb-3 text-primary" id="selectLLM">TODO</h4> -->
 
-<p ><strong>8.1.4 Manage your Subscription and account:</strong></p>
+<p ><strong>8.1.5 Manage your Subscription and account:</strong></p>
 <ul>
   <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
   <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
