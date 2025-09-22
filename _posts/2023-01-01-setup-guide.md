@@ -176,10 +176,10 @@ Note: Comments to engagements are not gathered since they are not available thro
 <ul>
   <li>Score of the forms go from 0 to 100. There are two options for Scoring the forms.</li>
   <li>
-    <strong>All the form together (default):</strong> When enabled, all the form is evaluated by the AI LLM model providing a score based on the overall responses for the sales qualification framework and the likelihood of successfully closing the deal. Depending on the model selected and even the evaluation, the results may vary, that can be discutible and in genral trend to be optimistic.
+    <strong>All the form together (default):</strong> When enabled, the entire form is evaluated by the selected AI LLM model, which generates a score based on the overall responses within the sales qualification framework and assesses the likelihood of successfully closing the deal. Please note that results may vary depending on the chosen model and the specific evaluation, and may sometimes be subject to interpretation or appear optimistic in nature.
   </li>
   <li>
-    <strong>By section:</strong> With this option, every section of the form (e.g. Metrics, Economic Buyer...) get scored in three options (bad - 0, medium - 0.5 and good - 1). Then the individual scores are aggregated and divided by the number of sections, and then multiply by 100. In this case, the results are more predictable although they can be also more repetitive.
+    <strong>By section:</strong> With this option, each section of the form (e.g., Metrics, Economic Buyer, etc.) is scored as either bad (0), medium (0.5), or good (1). The individual section scores are then summed, divided by the total number of sections, and multiplied by 100 to produce a final score between 0 and 100. This method provides more predictable and consistent results, though it may also lead to more repetitive scoring patterns.
   </li>
 </ul>
 
