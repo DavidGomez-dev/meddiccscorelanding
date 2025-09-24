@@ -107,10 +107,11 @@ Note: Comments to engagements are not gathered since they are not available thro
 
 <ul>
   <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
+  <li>Users can also lock the score value. When the score is locked, it will not be changed by manual edits or by Automations. This is useful if you want to update the form with new AI-generated responses or feedback, but keep the previously agreed score unchanged.</li>
   <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide41.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="../../assets/images/guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>Each question can include a short guidance text to help users provide better answers. By clicking the info icon, this guidance will be displayed. The text can also be customized in the Settings menu.</li>
@@ -179,7 +180,7 @@ Note: Comments to engagements are not gathered since they are not available thro
     <strong>All the form together (default):</strong> When enabled, the entire form is evaluated by the selected AI LLM model, which generates a score based on the overall responses within the sales qualification framework and assesses the likelihood of successfully closing the deal. Please note that results may vary depending on the chosen model and the specific evaluation, and may sometimes be subject to interpretation or appear optimistic in nature.
   </li>
   <li>
-    <strong>By section:</strong> With this option, each section of the form (e.g., Metrics, Economic Buyer, etc.) is scored as either bad (0), medium (0.5), or good (1). The individual section scores are then summed, divided by the total number of sections, and multiplied by 100 to produce a final score between 0 and 100. This method provides more predictable and consistent results, though it may also lead to more repetitive scoring patterns.
+    <strong>Individual by sections:</strong> With this option, each section of the form (e.g., Metrics, Economic Buyer, etc.) is scored as either bad (0), medium (0.5), or good (1). The individual section scores are then summed, divided by the total number of sections, and multiplied by 100 to produce a final score between 0 and 100. This method provides more predictable and consistent results, though it may also lead to more repetitive scoring patterns.
   </li>
 </ul>
 
