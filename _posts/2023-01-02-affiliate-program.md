@@ -21,8 +21,8 @@ The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commi
 
 ### Why Join?
 
-- **Competitive Commission**: Earn an oustanding **10USD for each referred customer’s subscription**. (>50% commission)
-- **Recurring Revenue**: Receive recurring commissions for the first 12 months of a referred customer's subscription. (**up to 120 USD total per customer**)
+- **Competitive Commission**: Earn an oustanding **50% for each referred customer’s subscription for up to 6 months (or until cancelled if before )**.
+- **Recurring Revenue**: Receive recurring commissions for the first 6 months of a referred customer's subscription (or until cancelled if before ). (**without limit on the commisison**)
 - **Easy Sign-Up**: Get started quickly by applying to our program. Once approved, you’ll receive your unique referral code.
 - **Access to Resources**: We provide promotional materials, including banners, logos, and sample content to help you succeed.
 - **Monthly Payouts**: Get paid on a monthly basis once you reach the minimum threshold of 20USD.
