@@ -10,11 +10,11 @@ classes: wide
 date: 2025-06-09 12:01:51 +0100
 excerpt: In today’s competitive market, sales teams need a structured approach to identify and capitalize on the most promising prospects. One proven method is the *...
 header:
-  overlay_image: /assets/images/posts/2025-06-09_531.webp
-  teaser: /assets/images/posts/2025-06-09_531.webp
-  caption: 
+  overlay_image: /assets/images/posts/2025-06-09_531.png
+  teaser: /assets/images/posts/2025-06-09_531.png
+  caption:
 ---
-  
+
 # Mastering Sales Prioritization: Unlocking Sales Opportunities with the FAINT Framework
 
 In today’s competitive market, sales teams need a structured approach to identify and capitalize on the most promising prospects. One proven method is the **FAINT framework**—a powerful model designed for effective **sales prioritization** and maximizing **sales opportunities**.

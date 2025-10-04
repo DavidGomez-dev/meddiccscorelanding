@@ -10,11 +10,11 @@ classes: wide
 date: 2025-05-23 12:02:11 +0100
 excerpt: Sales teams in today’s rapidly evolving B2B landscape are under constant pressure to hit targets and close quality deals. A solid sales qualification proces...
 header:
-  overlay_image: /assets/images/posts/2025-05-23_285.webp
-  teaser: /assets/images/posts/2025-05-23_285.webp
-  caption: 
+  overlay_image: /assets/images/posts/2025-05-23_285.png
+  teaser: /assets/images/posts/2025-05-23_285.png
+  caption:
 ---
-  
+
 # SPICED Framework: The Modern Sales Qualification Tool Every Seller Needs
 
 Sales teams in today’s rapidly evolving B2B landscape are under constant pressure to hit targets and close quality deals. A solid sales qualification process separates high-value opportunities from those less likely to convert. Enter the SPICED framework, a modern sales qualification tool designed to align with contemporary selling strategies and buyer journeys. In this post, we’ll dive deep into the SPICED framework, why it matters in modern sales, and how you can implement it to transform your sales pipeline.
@@ -50,35 +50,35 @@ Let’s explore how each component of the SPICED framework strengthens your sale
 
 Start by uncovering your prospect’s current environment. Ask open-ended questions to learn about their workflows, team dynamics, and existing technologies. This sets the stage for a tailored conversation.
 
-*Example Question:*  
+_Example Question:_  
 “What tools or processes are you currently using to manage this area of your business?”
 
 ### 2. Pain
 
 Identify specific problems or pain points your prospect is experiencing. Understanding the ‘pain’ positions your product as a potential solution.
 
-*Example Question:*  
+_Example Question:_  
 “What challenges are you facing that prompted you to explore solutions?”
 
 ### 3. Impact
 
 Dig deeper to understand how these pain points affect the business, including lost revenue, productivity setbacks, or missed opportunities. Assessing the impact quantifies the value of solving the problem.
 
-*Example Question:*  
+_Example Question:_  
 “If this challenge persists, what effect could it have on your goals this quarter?”
 
 ### 4. Critical Event
 
 Uncover any pressing deadlines or events that make the prospect’s problem urgent (e.g., a contract renewal, product launch, compliance requirement). This defines timeline and urgency.
 
-*Example Question:*  
+_Example Question:_  
 “Is there a specific event or date by which you need this resolved?”
 
 ### 5. Decision
 
 Clarify how purchasing decisions are made within the prospect’s organization. Learn who the key stakeholders are and outline the buying process to avoid surprises.
 
-*Example Question:*  
+_Example Question:_  
 “Can you walk me through your decision-making process for new solutions?”
 
 ## Implementing SPICED in Your Sales Process
@@ -96,4 +96,4 @@ The SPICED framework is fast becoming the gold standard for sales qualification 
 
 ---
 
-*Want more modern sales tips? Subscribe for updates and boost your sales qualification process with the latest frameworks and strategies!*
+_Want more modern sales tips? Subscribe for updates and boost your sales qualification process with the latest frameworks and strategies!_
