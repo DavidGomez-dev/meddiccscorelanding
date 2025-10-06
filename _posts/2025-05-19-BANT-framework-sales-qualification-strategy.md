@@ -10,11 +10,11 @@ classes: wide
 date: 2025-05-19 12:01:57 +0100
 excerpt: Looking to optimize your sales process and close more deals? The BANT framework remains one of the most effective sales qualification tools, empowering sale...
 header:
-  overlay_image: /assets/images/posts/2025-05-19_511.webp
-  teaser: /assets/images/posts/2025-05-19_511.webp
-  caption: 
+  overlay_image: /assets/images/posts/2025-05-19_511.png
+  teaser: /assets/images/posts/2025-05-19_511.png
+  caption:
 ---
-  
+
 # The BANT Framework: Elevate Your Sales Qualification Process with a Classic Sales Strategy
 
 Looking to optimize your sales process and close more deals? The BANT framework remains one of the most effective sales qualification tools, empowering sales teams to pinpoint promising prospects efficiently. In an increasingly competitive marketplace, leveraging a reliable sales strategy like BANT can make all the difference in accelerating your pipeline and maximizing conversion rates.
@@ -44,18 +44,22 @@ The BANT framework brings structure and clarity to the sales qualification proce
 Integrating the BANT framework into your sales qualification process doesn’t have to be complicated. Here’s a step-by-step approach:
 
 ### 1. **Ask Targeted Questions**
+
 - **Budget:** “What budget has been allocated for this project?”
 - **Authority:** “Who else will be involved in the decision-making process?”
 - **Need:** “What challenges are you hoping to solve with our solution?”
 - **Timeline:** “When do you anticipate making a decision or rollout?”
 
 ### 2. **Score Your Leads**
+
 Assign values to each BANT category based on the prospect’s responses. Leads scoring high across all four criteria are most likely to convert.
 
 ### 3. **Create BANT-Based Qualification Stages**
+
 Map your CRM stages to BANT attributes, ensuring your sales pipeline accurately reflects each lead’s qualification progress.
 
 ### 4. **Prioritize Follow-Ups**
+
 Follow up promptly with the most qualified leads, while nurturing those who may require more time or information to fulfill all BANT criteria.
 
 ## Modernizing the BANT Framework

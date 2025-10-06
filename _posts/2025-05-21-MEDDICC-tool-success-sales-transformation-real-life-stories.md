@@ -10,11 +10,11 @@ classes: wide
 date: 2025-05-21 12:18:50 +0100
 excerpt: The world of sales is changing fast, and only those who master proven frameworks like the MEDDICC tool are achieving remarkable sales transformation. But wh...
 header:
-  overlay_image: /assets/images/posts/2025-05-21_59.webp
-  teaser: /assets/images/posts/2025-05-21_59.webp
-  caption: 
+  overlay_image: /assets/images/posts/2025-05-21_59.png
+  teaser: /assets/images/posts/2025-05-21_59.png
+  caption:
 ---
-  
+
 # Real-Life Sales Transformation: MEDDICC Tool Success Stories That Inspire
 
 The world of sales is changing fast, and only those who master proven frameworks like the MEDDICC tool are achieving remarkable sales transformation. But what does MEDDICC tool success look like in the real world? Today, we’re diving into genuine, real-life stories where businesses transformed their sales processes and results by leveraging the MEDDICC score tool.
@@ -25,13 +25,13 @@ The world of sales is changing fast, and only those who master proven frameworks
 
 Before exploring these inspiring success stories, it’s important to understand what the **MEDDICC tool** is. MEDDICC is a qualification framework sales teams use to evaluate and prioritize their opportunities. The acronym stands for:
 
-- **M**etrics  
-- **E**conomic buyer  
-- **D**ecision criteria  
-- **D**ecision process  
-- **I**dentify pain  
-- **C**hampion  
-- **C**ompetition  
+- **M**etrics
+- **E**conomic buyer
+- **D**ecision criteria
+- **D**ecision process
+- **I**dentify pain
+- **C**hampion
+- **C**ompetition
 
 This systematic approach helps sales professionals qualify leads more rigorously, shorten sales cycles, and focus on the most promising opportunities.
 

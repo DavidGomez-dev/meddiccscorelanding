@@ -96,11 +96,13 @@ Note: Comments to engagements are not gathered since they are not available thro
 </video>
 
 <ul>
-  <li>Then the AI model returns a Score based on the data introduced, Next Steps for the Sellers and feedback for every category. The responses, feedback and score are stored.</li>
+  <li>Then the AI model returns a Score based on the data introduced, Next Steps for the Sellers and feedback for every category. The responses, feedback and score are stored. </li>
   <li>Users can manually update the pre-filled responses on the form at any time. If additional information has been recorded in the Deal, they can click on "Refill" to re-populate the form with updated AI-generated responses.</li>
   <li>To prevent specific responses from being modified or overwritten during a refill, users can lock those responses by clicking the lock icon. Locked responses will remain unchanged even after a refill.</li>
   <p class="text-center"><img src="../../assets/images/guide411.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
+  <li>the AI model will provide ✨ Next Steps and suggested questions (and to whom), to help SDRs to know what they need to find out on the next call.</li>
+<li>If the Deal is already closed, it provides a Win Analysis or a Post-Mortem Analysis to learn from the errors and match the framework inputs with the results.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide42.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
