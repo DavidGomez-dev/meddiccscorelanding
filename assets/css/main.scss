@@ -24,6 +24,10 @@ html {
   padding-top: 10em !important;
 }
 
+.page__content {
+  padding-top: 0 !important;
+}
+
 .initial-content,
 .search-content {
   padding-top: 4rem !important;
@@ -46,7 +50,7 @@ a:visited {
 .author__avatar img {
   border-radius: 0 !important;
   border: none !important;
-  max-width: 200px !important;
+  max-width: 300px !important;
 }
 
 @media (min-width: 64em) {

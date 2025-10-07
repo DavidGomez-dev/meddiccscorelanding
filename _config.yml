@@ -98,12 +98,12 @@ plugins:
 
 author:
   name: "Meddicc Score"
-  avatar: "/assets/images/screenshot2.png"
-  bio: "Enhance your sales process with Meddicc score for Hubspot"
+  avatar: "/assets/images/marketplace1.png"
+  bio: "Enhance your sales process letting AI to fill your MEDDICC in HubSpot."
   links:
     - label: "Install now"
       icon: "fab fa-fw fa-hubspot"
-      url: "/"
+      url: "https://app.meddiccscore.com/install"
     # - label: "Google Play"
     #   icon: "fab fa-fw fa-google-play"
     #   url: "https://play.google.com/store/apps/details?id=com.DOMAIN.app.twa"
