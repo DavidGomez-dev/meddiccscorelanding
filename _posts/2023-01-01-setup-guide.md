@@ -85,8 +85,13 @@ header:
 
 <ul>
   <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in the Settings.)</li>
-  <li>Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. AI analyzes this data to auto-fill responses for the Framework Questions.
-Note: Comments to engagements are not gathered since they are not available through the HubSpot API.</li>
+  <li>Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from teh deal such as description, close date, contacts etc is also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
+Note: Comments to engagements or attachments to the engatmenets are not gathered since they are not available through the HubSpot API.</li>
+</ul>
+  <p class="text-center"><img src="../../assets/images/guide61.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<ul>
+  <li>Then the AI model returns a Score based on the data introduced, Next Steps for the Sellers and feedback for every category. The responses, feedback and score are stored. </li>
+  <li>Users can manually update the pre-filled responses on the form at any time. If additional information has been recorded in the Deal, they can click on "Refill" to re-populate the form with updated AI-generated responses.</li>
 </ul>
 
 <video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3 my-3" poster="/assets/images/poster-clip.png">
@@ -96,8 +101,6 @@ Note: Comments to engagements are not gathered since they are not available thro
 </video>
 
 <ul>
-  <li>Then the AI model returns a Score based on the data introduced, Next Steps for the Sellers and feedback for every category. The responses, feedback and score are stored. </li>
-  <li>Users can manually update the pre-filled responses on the form at any time. If additional information has been recorded in the Deal, they can click on "Refill" to re-populate the form with updated AI-generated responses.</li>
   <li>To prevent specific responses from being modified or overwritten during a refill, users can lock those responses by clicking the lock icon. Locked responses will remain unchanged even after a refill.</li>
   <p class="text-center"><img src="../../assets/images/guide411.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
@@ -110,7 +113,7 @@ Note: Comments to engagements are not gathered since they are not available thro
 <ul>
   <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
   <li>Users can also lock the score value. When the score is locked, it will not be changed by manual edits or by Automations. This is useful if you want to update the form with new AI-generated responses or feedback, but keep the previously agreed score unchanged.</li>
-  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.</li>
+  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.<a href="/#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="../../assets/images/guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
@@ -422,7 +425,7 @@ Note: Comments to engagements are not gathered since they are not available thro
   <li>The internal name be exactly “score_meddicc”</li>
   <li>Object type is “Deal”</li>
   <li>Group is “Deal information”</li>
-  <li>The property label “Score” (but it can be different)</li>
+  <li>The property label “Score” or "Score Meddicc" (or any other)</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/trouble2.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
@@ -442,6 +445,16 @@ Note: Comments to engagements are not gathered since they are not available thro
 </ul>
 
 <p class="text-center"><img src="../../assets/images/trouble22.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>After that, the Score property will be available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/trouble23.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="../../assets/images/trouble24.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="../../assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 <h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="pt-6-m mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
