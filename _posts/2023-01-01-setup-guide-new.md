@@ -149,7 +149,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <ul>
   <li>Only Admins (considered that in Meddicc Score, may be different from HubSpot admins) can access Settings. This will get access to customize the experience of Meddicc Score. It is organized in four sections: General settings, Company Profile (to provide context to the AI),  Framework (to modify the questions) and Users (to manage user access and licences).</li>
-    <li>It can be accessed by clicking on "Settings" on the bottom part of the Cards or going to Hubspot Settings > Connected Apps > Meddicc Score > Settings.</li>
+    <li>It can be accessed by clicking on "Settings" on the bottom part of the Cards or going to Hubspot Settings > Integrations > Connected Apps > Meddicc Score > Settings.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide8n.png" alt="Editing" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -296,7 +296,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.2 Company Profile: Provide context to tailor the AI responses (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="company-profile">8.2 Company Profile: Provide context to tailor the AI responses (only Admin)</h5>
 
 <ul>
   <li>In this section is possible to add more context about your organization's value propositions, products, and services to ensure AI-generated content is relevant and tailored to your organization. Filling this information is optional but recommended. The field that are available are:</li>
@@ -316,17 +316,17 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.3 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
 
 <ul>
-  <li>Only Admins can access this feature. Clicking on the Framework tab, allows the user to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
-  <li>Turning on the ‘Default Framework’ switch will set the selected framework as the default for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
+  <li>Only Admins can access this feature. Clicking on the Frameworks tab, allows the Admins to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
+  <li>The framework selected will also be the Default framework for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide10.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide10n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>You can add more questions to any category of the framework. When you hover over the bottom of a question, a bar with “+” and “–” icons will appear, allowing you to add a new question or remove the existing one.</li>
+  <li>You can add more questions to any category of the framework. Clicking in "Add question" will add one more set of question and guidance. It can be removed clicking on "Remove question", although it has to be at least one per category.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide101.png" alt="Adding questions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide101n.png" alt="Adding questions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -344,20 +344,24 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide91.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide91n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="report-and-export">9. Report and Export</h4>
 
 <ul>
-  <li>Clicking on Report, a full account pipeline summary can be found.</li>
-  <li>It includes a  Bubble Quadrant Graph, which displays the current year’s opportunities with their Score, Close Date, and Amount represented by the bubble size. It will only shows deals that have Close Date and Amount recorded.</li>
-  <li>From the report is possible to download a CSV with all the notes and scores saved.</li>
-  <li>It is also possible to download the report on PDF format.</li>
+  <li>Access the Home page but clicking on the marketplace icon and then on Meddicc Score. A list of all the account opportunities with be displayed.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide98n.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>From the menu "Actions" report is possible to download a CSV with all the notes and scores saved. It is also possible to download the report on PDF format.</li>
+  <li>It includes a  Bubble Quadrant Graph, which displays the current year’s opportunities with their Score, Close Date, and Amount represented by the bubble size. It will only shows deals that have Close Date and Amount recorded.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide981n.png" alt="Reporting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>The Score is also available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
