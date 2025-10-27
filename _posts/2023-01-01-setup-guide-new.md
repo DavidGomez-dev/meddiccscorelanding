@@ -73,11 +73,58 @@ header:
 <div class="accordion-collapse collapse show" id="collapseUsing" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score from the HubSpot Sidebar</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score in HubSpot</h4>
 
-<p>Find Meddicc Score in the HubSpot sidebar under Deal. It displays a summary of the total score and categorizes the status using three colors (red, yellow, and green) based on the completeness of each category.</p>
+<p>Meddicc Score can be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to Settngs > Connected Apps > Meddicc Score > App cards > Manage Locations. They can be added to the different views (Default view is the first one). The information shown is similar but every location take advantage of the available space to render the best experience. The current locations are:</p>
 
-<p class="text-center"><img src="../../assets/images/guide3.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<ul>
+  <li>Deal: Middle Colum, Right Sidebar and Deal Execution</li>
+  <li>Contact: Middle Colum and Right Sidebar </li>
+  <li>Company: Middle Colum and Right Sidebar </li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>It can also be configure by Admin by clicking inside the record on "Customize", select the view (Default view?) and then add the cards on the proper locations. Please note that it is possible to have also a dedicated tab just for the Meddicc Card:</p>
+
+<p class="text-center"><img src="../../assets/images/guide31n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="../../assets/images/guide32n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>To add a card, click on the "+" sign and search for Meddicc Score. It will be located on Card Library > Card type > Apps:</p>
+
+<p class="text-center"><img src="../../assets/images/guide33n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<h5 class="pt-6-m mb-3 text-primary" id="deal-cards">5.1 Deal Cards</h5>
+
+<ul>
+<li>The Deal Cards are the most important for the Sales process. They show the different categories or questions on the sales framework, a icon indicating the AI feedback (bad, medium or good) an the response stored.</li>
+<li>On the side card, the response is showed when cliking on the category.</li>
+<li>Moreover, a "Next Steps" is also created, that is transformed in "Win Analysis" for the deals marked closed-won and a "Post-mortem Analysis" for the closed-lost.</li>
+<li>It is also has some buttons to "Send Email" and "Schedule Meeting".</li>
+<li>Clicking on "Redo Analysis", it will trigger to re-fill the form and score it again. Clicking on "Update Score", users can access to modfiy the responses and/or score it again</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide51n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<h5 class="pt-6-m mb-3 text-primary" id="contact-cards">5.2 Contact Cards</h5>
+
+<ul>
+<li>The Contact Cards list all the deals where the contact is involed on. </li>
+<li>Morevoer, it makes and Ai generated Action Plan for this contact, summarizing the importance and providing talking points / potential questions for the next interaction, according to the sales framework.</li>
+<li>It also generate a draft email to be sent according to the plan, ready by clicking on "Send Email". It is also possible to "Schedule a Meeting", or re-do the contact analysis.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide52n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<h5 class="pt-6-m mb-3 text-primary" id="company-cards">5.3 Company Cards</h5>
+
+<ul>
+<li>The Company Cards show a list of the deals and contacts relevant for this company. </li>
+<li>From the deal list is possible to access the form and modify it. From contacts, the action plan is shown and it is also posible to send a pre-drafted email and schedule a meeting to that contact.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide53n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -336,7 +383,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore.</li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
-      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan.</li>
+      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
       <li><strong>Delete:</strong> Marks the user for deletion. Once deleted, the user will need to reinstall MeddiccScore to regain access.</li>
       <li><strong>Make Admin:</strong> Assigns administrative privileges to the selected user, granting them access to manage account settings and users. There can be more than one Admin, but at least one.</li>
       <li><strong>Remove Admin:</strong> Remove administrative privileges to the selected user. There has to be at least one Admin user.</li>
@@ -375,6 +422,8 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
+<p class="text-center"><img src="../../assets/images/guide5n.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
 <p class="text-center"><img src="../../assets/images/guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
@@ -382,13 +431,18 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>If you're already enjoying the premium benefits of Meddicc Score but want to upgrade to a Team plan or switch to a yearly subscription to unlock significant savings, you can easily make the change through the Customer Portal. Take advantage of these exclusive discounts today and maximize your Meddicc Score experience!</p>
 
-<p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p>You can access Customer Portal going to Settings > Subscription.</p>
 
-<p>You can also change your billing details by clicking on "Update Subscription".</p>
+<p class="text-center"><img src="../../assets/images/trouble5n.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="../../assets/images/guide51.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="../../assets/images/guide52.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>You can also change your billing details by clicking on Billing Information > "Update information".</p>
+
+<p class="text-center"><img src="../../assets/images/trouble51n.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+
 </div>
 </div>
 </div>
@@ -408,7 +462,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>To uninstall, navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong>. Click in Actions and then "Uninstall". This will uninstall Meddicc Score without impacting your HubSpot data.</p>
 
-<p class="text-center"><img src="../../assets/images/guide6.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide6n.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
