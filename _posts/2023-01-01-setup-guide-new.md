@@ -56,9 +56,15 @@ header:
 <h4 class="pt-6-m mb-3 text-primary" id="confirm-permissions">4. Confirm Permissions</h4>
 
 <p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, you have installed Meddicc Score. </p>
-<p>The first user of the account is the Admin by default, but there can be more users on the same account.</p>
+<p>The first user of the account is the Admin by default, but there can be more users (and Admins) on the same account.</p>
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to Settngs > Connected Apps > Meddicc Score > App cards > Manage Locations. They can be added to the different views (Default view is the first one).</p>
+
+<p>See more information on <a href="https://knowledge.hubspot.com/integrations/install-and-manage-app-cards" target="_blank">the HubSpot official article.</a></p>
+
+<p class="text-center"><img src="../../assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -75,7 +81,13 @@ header:
 
 <h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score in HubSpot</h4>
 
-<p>Meddicc Score can be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to Settngs > Connected Apps > Meddicc Score > App cards > Manage Locations. They can be added to the different views (Default view is the first one). The information shown is similar but every location take advantage of the available space to render the best experience. The current locations are:</p>
+<p>Meddicc Score is easily accessible within your HubSpot records, but you may need to configure the app card to display on your Deal, Contact, or Company record pages.</p>
+
+<p> Hubspot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
+
+<p>Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
+
+<p>The information shown is similar but every location take advantage of the available space to render the best experience. The current locations are:</p>
 
 <ul>
   <li>Deal: Middle Colum, Right Sidebar and Deal Execution</li>
@@ -83,9 +95,11 @@ header:
   <li>Company: Middle Colum and Right Sidebar </li>
 </ul>
 
+<p>See more information on <a href="https://knowledge.hubspot.com/integrations/install-and-manage-app-cards" target="_blank">the HubSpot official article.</a></p>
+
 <p class="text-center"><img src="../../assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>It can also be configure by Admin by clicking inside the record on "Customize", select the view (Default view?) and then add the cards on the proper locations. Please note that it is possible to have also a dedicated tab just for the Meddicc Card:</p>
+<p>It can also be configure by Admin(s) or users with permits, by clicking inside the record on "Customize", select the view (Default view?) and then add the cards on the proper locations. Please note that it is possible to have also a dedicated tab just for the Meddicc Card:</p>
 
 <p class="text-center"><img src="../../assets/images/guide31n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -484,6 +498,16 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="text-center"><img src="../../assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">HubSpot User Permissions Guide</a>.</p>
+
+<hr>
+
+<h4 id="cannot-add-cards" class="pt-6-m mb-3 text-primary">I cannot add cards to my view<a class="header-link" href="#cannot-add-cards" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+
+<p>Users must have <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?hubs_content=knowledge.hubspot.com/object-settings/create-cards-on-records&hubs_content-cta=customize-record-page-layout#crm-tools" target="_blank">Customize record page layout</a> permissions or <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?hubs_content=knowledge.hubspot.com/object-settings/create-cards-on-records&hubs_content-cta=super-admin#super-admin" target="_blank">Super Admin</a> permissions to create cards and customize a record. For more details, see the <a href="https://knowledge.hubspot.com/object-settings/create-cards-on-records" target="_blank">HubSpot guide on creating cards</a>.</p>
+
+<p class="text-center"><img src="../../assets/images/trouble8n.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="../../assets/images/trouble8n2.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
