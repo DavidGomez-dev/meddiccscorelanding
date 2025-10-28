@@ -56,15 +56,9 @@ header:
 <h4 class="pt-6-m mb-3 text-primary" id="confirm-permissions">4. Confirm Permissions</h4>
 
 <p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, you have installed Meddicc Score. </p>
-<p>The first user of the account is the Admin by default, but there can be more users (and Admins) on the same account.</p>
+<p>The first user of the account is the Admin by default, but there can be more users on the same account.</p>
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to Settngs > Connected Apps > Meddicc Score > App cards > Manage Locations. They can be added to the different views (Default view is the first one).</p>
-
-<p>See more information on <a href="https://knowledge.hubspot.com/integrations/install-and-manage-app-cards" target="_blank">the HubSpot official article.</a></p>
-
-<p class="text-center"><img src="../../assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -79,80 +73,25 @@ header:
 <div class="accordion-collapse collapse show" id="collapseUsing" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score in HubSpot</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score from the HubSpot Sidebar</h4>
 
-<p>Meddicc Score is easily accessible within your HubSpot records, but you may need to configure the app card to display on your Deal, Contact, or Company record pages.</p>
+<p>Find Meddicc Score in the HubSpot sidebar under Deal. It displays a summary of the total score and categorizes the status using three colors (red, yellow, and green) based on the completeness of each category.</p>
 
-<p> Hubspot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
-
-<p>* Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
-
-<p class="text-center"><img src="../../assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>See more information on <a href="https://knowledge.hubspot.com/integrations/install-and-manage-app-cards" target="_blank">the HubSpot official article.</a></p>
-
-<p>The information shown is similar but every location take advantage of the available space to render the best experience. The current locations are:</p>
-
-<ul>
-  <li>Deal: Middle Colum, Right Sidebar and Deal Execution</li>
-  <li>Contact: Middle Colum and Right Sidebar </li>
-  <li>Company: Middle Colum and Right Sidebar </li>
-</ul>
-
-<p>It can also be configure by Admin(s) or users with permits, by clicking inside the record on "Customize", select the view (Default view?) and then add the cards on the proper locations. Please note that it is possible to have also a dedicated tab just for the Meddicc Card:</p>
-
-<p class="text-center"><img src="../../assets/images/guide31n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p class="text-center"><img src="../../assets/images/guide32n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>To add a card, click on the "+" sign and search for Meddicc Score. It will be located on Card Library > Card type > Apps:</p>
-
-<p class="text-center"><img src="../../assets/images/guide33n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<h5 class="pt-6-m mb-3 text-primary" id="deal-cards">5.1 Deal Cards</h5>
-
-<ul>
-<li>The Deal Cards are the most important for the Sales process. They show the different categories or questions on the sales framework, a icon indicating the AI feedback (bad, medium or good) an the response stored.</li>
-<li>On the side card, the response is showed when cliking on the category.</li>
-<li>Moreover, a "Next Steps" is also created, that is transformed in "Win Analysis" for the deals marked closed-won and a "Post-mortem Analysis" for the closed-lost.</li>
-<li>It is also has some buttons to "Send Email" and "Schedule Meeting".</li>
-<li>Clicking on "Redo Analysis", it will trigger to re-fill the form and score it again. Clicking on "Update Score", users can access to modfiy the responses and/or score it again</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide51n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<h5 class="pt-6-m mb-3 text-primary" id="contact-cards">5.2 Contact Cards</h5>
-
-<ul>
-<li>The Contact Cards list all the deals where the contact is involed on. </li>
-<li>Morevoer, it makes and Ai generated Action Plan for this contact, summarizing the importance and providing talking points / potential questions for the next interaction, according to the sales framework.</li>
-<li>It also generate a draft email to be sent according to the plan, ready by clicking on "Send Email". It is also possible to "Schedule a Meeting", or re-do the contact analysis.</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide52n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<h5 class="pt-6-m mb-3 text-primary" id="company-cards">5.3 Company Cards</h5>
-
-<ul>
-<li>The Company Cards show a list of the deals and contacts relevant for this company. </li>
-<li>From the deal list is possible to access the form and modify it. From contacts, the action plan is shown and it is also posible to send a pre-drafted email and schedule a meeting to that contact.</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide53n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide3.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="begin-scoring">6. Deal Cards - Begin Scoring</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="begin-scoring">6. Begin Scoring</h4>
 
 <ul>
-  <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in Settings). The Deal appear with zero score and all categories empty.</li>
-  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from teh deal such as description, close date, contacts etc is also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
-Note: Comments to engagements or attachments to the engagements are not gathered since they are not available in the HubSpot API.</li>
+  <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in the Settings.)</li>
+  <li>Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from teh deal such as description, close date, contacts etc is also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
+Note: Comments to engagements or attachments to the engatmenets are not gathered since they are not available through the HubSpot API.</li>
 </ul>
-  <p class="text-center"><img src="../../assets/images/guide61n.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+  <p class="text-center"><img src="../../assets/images/guide61.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <ul>
   <li>Then the AI model returns a Score based on the data introduced, Next Steps for the Sellers and feedback for every category. The responses, feedback and score are stored. </li>
-  <li>Users can manually update the pre-filled responses on the form at any time, by clicking on "Update Score" or in the pencil. If additional information has been recorded in the Deal, they can click on "Refill" to re-populate the form with updated AI-generated responses.</li>
+  <li>Users can manually update the pre-filled responses on the form at any time. If additional information has been recorded in the Deal, they can click on "Refill" to re-populate the form with updated AI-generated responses.</li>
 </ul>
 
 <video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3 my-3" poster="/assets/images/poster-clip.png">
@@ -185,12 +124,6 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p class="text-center"><img src="../../assets/images/guide421.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
-<ul>
-  <li>On the Deal cards, the score and responses are displayed. Clicking "Next Steps" reveals recommended actions and suggested questions, and lets you send an email, schedule a meeting, or re-run the scoring and assessment. The sidebar and the tab card present the same information, however the interface adapts to the available space.</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide611n.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
-
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="change-framework">7. Change the Framework</h4>
@@ -209,15 +142,14 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <h4 class="pt-6-m mb-3 text-primary" id="settings">8. Settings  (only Admin)</h4>
 
 <ul>
-  <li>Only Admins (considered that in Meddicc Score, may be different from HubSpot admins) can access Settings. This will get access to customize the experience of Meddicc Score. It is organized in four sections: General settings, Company Profile (to provide context to the AI),  Framework (to modify the questions) and Users (to manage user access and licences).</li>
-    <li>It can be accessed by clicking on "Settings" on the bottom part of the Cards or going to Hubspot Settings > Integrations > Connected Apps > Meddicc Score > Settings.</li>
+  <li>Only Admins can access this feature. This will get access to customize the experience of Meddicc Score. It is organized in three sections: General settings, Framework (to modify the questions) and Users (to manage user access and licences)</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide8n.png" alt="Editing" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <h5 class="pt-6-m mb-3 text-primary" id="settings-general">8.1 General Settings:</h5>
 
-<p class="text-center"><img src="../../assets/images/guide81n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide81.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p><strong>8.1.1 Users access:</strong></p>
 
@@ -265,7 +197,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
     <li>
       Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:meddiccscore@gmail.com">support team</a>.
-    <p class="text-center"><img src="../../assets/images/guide811n.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+    <p class="text-center"><img src="../../assets/images/guide811.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
   </li>
   <li>
     <strong>Available providers:</strong>
@@ -281,7 +213,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
         <li>Base URL: Instead of Resource name, the Base URL can be provided. The calls to the API will follow this URL {baseURL}/v1{path}</li>
         <li>Api Key: Although the key is safely stored and encrypted, It is recommended to provide an exclusive Api Key for Meddicc Score and set limits of usage.</li>
       </ul>
-          <p class="text-center"><img src="../../assets/images/guide812n.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+          <p class="text-center"><img src="../../assets/images/guide812.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
       </li>
     </ul>
   </li>
@@ -350,54 +282,37 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <ul>
   <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
   <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
-  <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore data (not your HubSpot account), including deals, users, and account information. This action cannot be undone. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel any paid subscription</a> before deleting your account.</li>
+  <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore data (not your HubSpot account), including deals, users, and account information. This action cannot be undone. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel any paid subscription</a> before deleting your account. Type "Delete Account" to confirm.</li>
 </ul>
 
 <!-- <h4 class="pt-6-m mb-3 text-primary" id="automations">10. Automations (Only Premium Admins)</h4> -->
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="company-profile">8.2 Company Profile: Provide context to tailor the AI responses (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.2 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
 
 <ul>
-  <li>In this section is possible to add more context about your organization's value propositions, products, and services to ensure AI-generated content is relevant and tailored to your organization. Filling this information is optional but recommended. The field that are available are:</li>
-    <ul>
-        <li><strong>Company name </strong></li>
-        <li><strong>Industry </strong></li>
-        <li><strong>Value proposition </strong></li>
-        <li><strong>What pains does your company solve? </strong></li>
-        <li><strong>Product(s) or Service(s): </strong> A list of the offering with the name and description. At least one has to be provided.</li>
-    </ul>
+  <li>Only Admins can access this feature. Clicking on the Framework tab, allows the user to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
+  <li>Turning on the ‘Default Framework’ switch will set the selected framework as the default for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide82n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide10.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>You can add more questions to any category of the framework. When you hover over the bottom of a question, a bar with “+” and “–” icons will appear, allowing you to add a new question or remove the existing one.</li>
+</ul>
+
+<p class="text-center"><img src="../../assets/images/guide101.png" alt="Adding questions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.3 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
-
-<ul>
-  <li>Only Admins can access this feature. Clicking on the Frameworks tab, allows the Admins to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
-  <li>The framework selected will also be the Default framework for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide10n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<ul>
-  <li>You can add more questions to any category of the framework. Clicking in "Add question" will add one more set of question and guidance. It can be removed clicking on "Remove question", although it has to be at least one per category.</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide101n.png" alt="Adding questions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
-
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">8.4 Users: Manage your users (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">8.3. Users: Manage your users (only Admin)</h5>
 
 <ul>
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore.</li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
-      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
+      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan.</li>
       <li><strong>Delete:</strong> Marks the user for deletion. Once deleted, the user will need to reinstall MeddiccScore to regain access.</li>
       <li><strong>Make Admin:</strong> Assigns administrative privileges to the selected user, granting them access to manage account settings and users. There can be more than one Admin, but at least one.</li>
       <li><strong>Remove Admin:</strong> Remove administrative privileges to the selected user. There has to be at least one Admin user.</li>
@@ -405,24 +320,20 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide91n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide91.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="report-and-export">9. Report and Export</h4>
 
 <ul>
-  <li>Access the Home page but clicking on the marketplace icon and then on Meddicc Score. A list of all the account opportunities with be displayed.</li>
-</ul>
-
-<p class="text-center"><img src="../../assets/images/guide98n.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<ul>
-  <li>From the menu "Actions" report is possible to download a CSV with all the notes and scores saved. It is also possible to download the report on PDF format.</li>
+  <li>Clicking on Report, a full account pipeline summary can be found.</li>
   <li>It includes a  Bubble Quadrant Graph, which displays the current year’s opportunities with their Score, Close Date, and Amount represented by the bubble size. It will only shows deals that have Close Date and Amount recorded.</li>
+  <li>From the report is possible to download a CSV with all the notes and scores saved.</li>
+  <li>It is also possible to download the report on PDF format.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/guide981n.png" alt="Reporting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>The Score is also available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
@@ -436,8 +347,6 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
-<p class="text-center"><img src="../../assets/images/guide5n.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
 <p class="text-center"><img src="../../assets/images/guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
@@ -445,18 +354,13 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>If you're already enjoying the premium benefits of Meddicc Score but want to upgrade to a Team plan or switch to a yearly subscription to unlock significant savings, you can easily make the change through the Customer Portal. Take advantage of these exclusive discounts today and maximize your Meddicc Score experience!</p>
 
-<p>You can access Customer Portal going to Settings > Subscription.</p>
+<p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p class="text-center"><img src="../../assets/images/trouble5n.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p>You can also change your billing details by clicking on "Update Subscription".</p>
 
 <p class="text-center"><img src="../../assets/images/guide51.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="../../assets/images/guide52.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>You can also change your billing details by clicking on Billing Information > "Update information".</p>
-
-<p class="text-center"><img src="../../assets/images/trouble51n.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
-
 </div>
 </div>
 </div>
@@ -476,7 +380,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>To uninstall, navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong>. Click in Actions and then "Uninstall". This will uninstall Meddicc Score without impacting your HubSpot data.</p>
 
-<p class="text-center"><img src="../../assets/images/guide6n.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/guide6.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -498,16 +402,6 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="text-center"><img src="../../assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">HubSpot User Permissions Guide</a>.</p>
-
-<hr>
-
-<h4 id="cannot-add-cards" class="pt-6-m mb-3 text-primary">I cannot add cards to my view<a class="header-link" href="#cannot-add-cards" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>Users must have <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?hubs_content=knowledge.hubspot.com/object-settings/create-cards-on-records&hubs_content-cta=customize-record-page-layout#crm-tools" target="_blank">Customize record page layout</a> permissions or <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?hubs_content=knowledge.hubspot.com/object-settings/create-cards-on-records&hubs_content-cta=super-admin#super-admin" target="_blank">Super Admin</a> permissions to create cards and customize a record. For more details, see the <a href="https://knowledge.hubspot.com/object-settings/create-cards-on-records" target="_blank">HubSpot guide on creating cards</a>.</p>
-
-<p class="text-center"><img src="../../assets/images/trouble8n.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p class="text-center"><img src="../../assets/images/trouble8n2.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -556,9 +450,9 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <li>After that, the Score property will be available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
 </ul>
 
-<p class="text-center"><img src="../../assets/images/trouble23.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble23.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p class="text-center"><img src="../../assets/images/trouble24.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="../../assets/images/trouble24.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="../../assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -601,24 +495,6 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="text-center"><img src="../../assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="../../assets/images/trouble6.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
-
-<h4 id="migrate-legacy" class="pt-6-m mb-3 text-primary">Migrate from Legacy App Cards<a class="header-link" href="#migrate-legacy" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>You may have installed a version of Meddicc Score that use the legacy App Cards on the Deal section. You can easily migrate <strong>without loosing any data or any interrumpting your current workflows</strong>.</p>
-
-<p>You may see a message indicating that the card has available updates. For account admins, a link to the app’s settings page will be included. Non-admin users will see similar messaging, but will be guided to contact their account admin to assist with setup.</p>
-
-<p>The process will be the same that when adding a fresh installation, <a href="#access-from-sidebar">described before</a></p>
-
-<p class="text-center"><img src="../../assets/images/legacy.png" alt="troubleshooting" class="mt-5 border border-3 border-primary rounded rounded-3"></p>
-
-<p>After adding the new cards, you can safely remove the old card version on the Deal sidebar. Eventually all the old cards will be hidded  sometime after 2026.</p>
-
-<p>If you want to access the setup and usage guide of the old Legacy cards, it can be accessed from <a href="https://meddiccscore.com/blog/setup-guide-legacy/">here.</a></p>
-
-<hr>
 
 </div>
 </div>
