@@ -60,7 +60,9 @@ header:
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to Settngs > Connected Apps > Meddicc Score > App cards > Manage Locations. They can be added to the different views (Default view is the first one).</p>
+<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
+
+<p>* Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
 
 <p>See more information on <a href="https://knowledge.hubspot.com/integrations/install-and-manage-app-cards" target="_blank">the HubSpot official article.</a></p>
 
@@ -125,7 +127,7 @@ header:
 
 <ul>
 <li>The Contact Cards list all the deals where the contact is involed on. </li>
-<li>Morevoer, it makes and Ai generated Action Plan for this contact, summarizing the importance and providing talking points / potential questions for the next interaction, according to the sales framework.</li>
+<li>Morevoer, it makes and AI generated Action Plan for this contact, summarizing the importance and providing talking points / potential questions for the next interaction, according to the sales framework.</li>
 <li>It also generate a draft email to be sent according to the plan, ready by clicking on "Send Email". It is also possible to "Schedule a Meeting", or re-do the contact analysis.</li>
 </ul>
 
