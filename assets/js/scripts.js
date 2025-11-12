@@ -44,7 +44,8 @@ window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
 
 window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
 
-window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+window.GENERIC_INVALID_MESSAGE =
+  "The information provided is invalid. Please review the field format and try again.";
 
 window.translation = {
   common: {
@@ -69,7 +70,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector(".navbar-toggler");
-  const responsiveNavItems = [].slice.call(document.querySelectorAll("#navbarResponsive .nav-link"));
+  const responsiveNavItems = [].slice.call(
+    document.querySelectorAll("#navbarResponsive .nav-link")
+  );
   responsiveNavItems.map(function (responsiveNavItem) {
     responsiveNavItem.addEventListener("click", () => {
       if (window.getComputedStyle(navbarToggler).display !== "none") {
@@ -88,5 +91,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
         element.classList.add("show");
       });
     });
+  }
+});
+
+document.querySelectorAll("iframe.youtubevideo").forEach((iframe) => {
+  const injectStyle = () => {
+    try {
+      const doc = iframe.contentDocument || iframe.contentWindow?.document;
+      console.log("Iframe document: ", doc);
+      if (!doc || !doc.head) return;
+      const style = doc.createElement("style");
+      style.textContent = ".ytp-gradient-top{display:none !important;}";
+      doc.head.appendChild(style);
+    } catch (err) {
+      // cross-origin iframe — cannot inject
+      console.warn("Unable to inject CSS into iframe", iframe, err);
+    }
+  };
+
+  if (iframe.contentDocument?.readyState === "complete" || iframe.complete) {
+    injectStyle();
+  } else {
+    iframe.addEventListener("load", injectStyle, { once: true });
   }
 });

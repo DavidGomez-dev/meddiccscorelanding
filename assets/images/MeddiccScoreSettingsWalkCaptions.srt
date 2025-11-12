@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:00,592
+Hello!.
+
+2
+00:00:00,592 --> 00:00:02,553
+Let’s explore the configuration and
+
+3
+00:00:02,553 --> 00:00:04,676
+settings available in Meddicc Score.
+
+4
+00:00:05,202 --> 00:00:07,234
+To access the settings, simply click at
+
+5
+00:00:07,234 --> 00:00:08,482
+the bottom of on any card.
+
+6
+00:00:08,482 --> 00:00:08,801
+.
+
+7
+00:00:08,801 --> 00:00:11,135
+If you’re an admin, you’ll have full
+
+8
+00:00:11,135 --> 00:00:13,445
+access to all configuration options.
+
+9
+00:00:13,945 --> 00:00:15,803
+There are four main sections in the
+
+10
+00:00:15,803 --> 00:00:16,569
+settings:
+
+11
+00:00:16,569 --> 00:00:20,354
+General, Company Profile, Frameworks,
+
+12
+00:00:20,354 --> 00:00:21,295
+and Users.
+
+13
+00:00:21,795 --> 00:00:23,861
+In the General section, you can manage
+
+14
+00:00:23,861 --> 00:00:25,638
+non-admin user access.
+
+15
+00:00:25,638 --> 00:00:27,553
+For example, if they can change the
+
+16
+00:00:27,553 --> 00:00:29,840
+framework or update the score manually.
+
+17
+00:00:29,840 --> 00:00:32,255
+You’ll also find automation options —
+
+18
+00:00:32,255 --> 00:00:34,461
+for example, when a new record is
+
+19
+00:00:34,461 --> 00:00:36,330
+added,if the deal is automatically
+
+20
+00:00:36,330 --> 00:00:37,607
+updated and score it.
+
+21
+00:00:37,607 --> 00:00:40,661
+Or score all the account at once, very
+
+22
+00:00:40,661 --> 00:00:42,077
+useful when you are starting with the
+
+23
+00:00:42,077 --> 00:00:43,993
+plug-in, to score all the hundreds of
+
+24
+00:00:43,993 --> 00:00:45,397
+deals you already have.
+
+25
+00:00:45,897 --> 00:00:48,719
+From here, you can also manage your
+
+26
+00:00:48,719 --> 00:00:50,692
+subscription, delete the Meddicc Score
+
+27
+00:00:50,692 --> 00:00:52,678
+account and all the data stored, and
+
+28
+00:00:52,678 --> 00:00:54,593
+handle billing directly through Stripe.
+
+29
+00:00:55,093 --> 00:00:57,241
+The scoring methodology can be
+
+30
+00:00:57,241 --> 00:00:59,401
+customized to score the form by section
+
+31
+00:00:59,401 --> 00:01:01,572
+or for the entire form althogheter
+
+32
+00:01:01,572 --> 00:01:02,718
+using AI.
+
+33
+00:01:02,718 --> 00:01:04,427
+And here’s something really powerful —
+
+34
+00:01:04,427 --> 00:01:06,732
+you can select your AI provider and
+
+35
+00:01:06,732 --> 00:01:08,915
+choose which LLM model you want to use
+
+36
+00:01:08,915 --> 00:01:10,110
+to power your insights.
+
+37
+00:01:10,610 --> 00:01:13,350
+In the Company Profile section, you can
+
+38
+00:01:13,350 --> 00:01:14,721
+add key information about your
+
+39
+00:01:14,721 --> 00:01:17,194
+organization — like your industry,
+
+40
+00:01:17,194 --> 00:01:20,015
+company name, value proposition, and
+
+41
+00:01:20,015 --> 00:01:21,373
+products or services.
+
+42
+00:01:21,373 --> 00:01:23,858
+This allows the AI to generate insights
+
+43
+00:01:23,858 --> 00:01:25,053
+that are fully tailored to your
+
+44
+00:01:25,053 --> 00:01:25,762
+business.
+
+45
+00:01:26,262 --> 00:01:28,758
+Next, the Frameworks section gives you
+
+46
+00:01:28,758 --> 00:01:30,256
+complete flexibility.
+
+47
+00:01:30,256 --> 00:01:32,438
+You can set a default framework for new
+
+48
+00:01:32,438 --> 00:01:35,445
+deals — for instance, Meddpic, spiced,
+
+49
+00:01:35,445 --> 00:01:36,949
+bant, or many others .
+
+50
+00:01:36,949 --> 00:01:39,161
+You can also edit the questions or
+
+51
+00:01:39,161 --> 00:01:41,053
+guidance, and even add or remove
+
+52
+00:01:41,053 --> 00:01:42,981
+questions to perfectly match your sales
+
+53
+00:01:42,981 --> 00:01:43,828
+process.
+
+54
+00:01:44,328 --> 00:01:47,277
+Finally, in the Users tab , you can view
+
+55
+00:01:47,277 --> 00:01:49,216
+all users in your account, check how
+
+56
+00:01:49,216 --> 00:01:51,132
+many licenses are available, and
+
+57
+00:01:51,132 --> 00:01:53,407
+upgrade, downgrade, or assign admin
+
+58
+00:01:53,407 --> 00:01:55,033
+rights in just a few clicks.
+
+59
+00:01:55,533 --> 00:01:56,601
+And that’s it!
+
+60
+00:01:57,101 --> 00:01:59,353
+With Meddicc Score, you have full
+
+61
+00:01:59,353 --> 00:02:01,339
+control and flexibility to tailor the
+
+62
+00:02:01,339 --> 00:02:03,452
+app to your sales methodology, your
+
+63
+00:02:03,452 --> 00:02:07,101
+team, and your business needs So, ready
+
+64
+00:02:07,101 --> 00:02:08,215
+to boost your sales?
+
+65
+00:02:08,215 --> 00:02:11,048
+Install Meddicc Score from the Hubspot
+
+66
+00:02:11,048 --> 00:02:13,080
+marketplace and test it for free during
+
+67
+00:02:13,080 --> 00:02:14,067
+30 days!
+
+68
+00:02:14,567 --> 00:02:16,288
+Get started today!

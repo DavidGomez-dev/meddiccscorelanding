@@ -14,9 +14,22 @@ header:
   caption:
   video:
     side: true
-    id: "86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=false&hide_speed=true&t=68"
-    provider: "loom"
+    id: w3IJ8lJpCIw?rel=0&modestbranding=1&autoplay=0&mute=1&playsinline=1
+    provider: "youtube"
 ---
+
+<div class="row my-4">
+  <div class="col-md-6 mb-3">
+    <div class="border border-3 border-primary rounded">
+      <iframe class="youtubevideo" src="https://www.youtube.com/embed/D_J_5V0coHA" title="Meddicc Score Settings Walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <div class="border border-3 border-primary rounded">
+      <iframe src="https://www.youtube.com/embed/D_J_5V0coHA" title="Meddicc Score Settings Walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 
 <div id="accordionExample" class="accordion">
 <div class="accordion-item">
