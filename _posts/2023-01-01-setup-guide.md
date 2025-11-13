@@ -73,7 +73,7 @@ header:
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. Hubspot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
+<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
 
 <p>* Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
 
@@ -98,7 +98,7 @@ header:
 
 <p>Meddicc Score is easily accessible within your HubSpot records, but you may need to configure the app card to display on your Deal, Contact, or Company record pages.</p>
 
-<p> Hubspot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
+<p> HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
 
 <p>* Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
 
@@ -225,7 +225,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <ul>
   <li>Only Admins (considered that in Meddicc Score, may be different from HubSpot admins) can access Settings. This will get access to customize the experience of Meddicc Score. It is organized in four sections: General settings, Company Profile (to provide context to the AI),  Framework (to modify the questions) and Users (to manage user access and licences).</li>
-    <li>It can be accessed by clicking on "Settings" on the bottom part of the Cards or going to Hubspot Settings > Integrations > Connected Apps > Meddicc Score > Settings.</li>
+    <li>It can be accessed by clicking on "Settings" on the bottom part of the Cards or going to HubSpot Settings > Integrations > Connected Apps > Meddicc Score > Settings.</li>
 </ul>
 
 <p class="text-center"><img src="../../assets/images/guide8n.png" alt="Editing" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
