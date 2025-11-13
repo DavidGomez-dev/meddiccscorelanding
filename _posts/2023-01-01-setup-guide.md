@@ -21,7 +21,7 @@ header:
 <div class="row my-4">
   <div class="col-md-6 mb-3">
     <div class="border border-3 border-primary rounded">
-      <iframe class="youtubevideo" src="https://www.youtube.com/embed/D_J_5V0coHA" title="Meddicc Score Settings Walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="youtubevideo" src="https://www.youtube.com/embed/267NvUK-Oe4" title="Meddicc Score Installation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-md-6 mb-3">
