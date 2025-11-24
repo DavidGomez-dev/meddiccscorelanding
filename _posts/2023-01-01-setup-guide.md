@@ -73,13 +73,19 @@ header:
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>After installation, the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
+<h4 class="pt-6-m mb-3 text-primary" id="add-cards">5. Add Cards to the views</h4>
+
+<p>After installation, Meddicc Score will be available to all users of the account. However, in the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
 
 <p>* Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
 
 <p>See more information on <a href="https://knowledge.hubspot.com/integrations/install-and-manage-app-cards" target="_blank">the HubSpot official article.</a></p>
 
 <p class="text-center"><img src="../../assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>You may consider to configure a new view only for the users (sellers representatives, etc) that are going to use Meddicc Score, and use a licence. These users will also need to install Meddicc Score so they can accept the permits. They will see on the card a button to do so:</p>
+
+<p class="text-center"><img src="../../assets/images/guide512n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
