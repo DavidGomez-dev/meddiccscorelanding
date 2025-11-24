@@ -58,22 +58,20 @@ header:
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="select-your-hubspot-account">3. Select Your HubSpot Account</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="select-your-hubspot-account">3. Select Your HubSpot Account and confirm Permissions</h4>
 
 <p>If you have multiple accounts, select the one you wish to use. Single accounts will be chosen automatically.</p>
 
 <p class="text-center"><img src="../../assets/images/guide2.png" alt="Account" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
-
-<h4 class="pt-6-m mb-3 text-primary" id="confirm-permissions">4. Confirm Permissions</h4>
 
 <p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, you have installed Meddicc Score. </p>
 <p>The first user of the account is the Admin by default, but there can be more users (and Admins) on the same account.</p>
 
 <p class="text-center"><img src="../../assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<h4 class="pt-6-m mb-3 text-primary" id="add-cards">5. Add Cards to the views</h4>
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="add-cards">4. Add Cards to the views</h4>
 
 <p>After installation, Meddicc Score will be available to all users of the account. However, in the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
 
