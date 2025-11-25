@@ -71,7 +71,7 @@ header:
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="add-cards">4. Add Cards to the views</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="add-cards">4. Add Cards to the Views</h4>
 
 <p>After installation, Meddicc Score will be available to all users of the account. However, in the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
 
