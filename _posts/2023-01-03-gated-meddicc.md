@@ -40,9 +40,9 @@ Then follow this path:
 Select your active **Sales Pipeline** from the dropdown menu.  
 You’ll now see all the stages of your sales process.
 
-![Example Deal](../../assets/images/guides/1/0.png)
+![Example Deal](/assets/images/guides/1/0.png)
 
-![HubSpot pipeline setup showing stages list](../../assets/images/guides/1/1.png)
+![HubSpot pipeline setup showing stages list](/assets/images/guides/1/1.png)
 
 ---
 
@@ -51,7 +51,7 @@ You’ll now see all the stages of your sales process.
 Find the stage that you want to prevent to be selected if the MEDDICC score is not set, in this case as example, we will select **Qualified To Buy** stage.  
 Click **Edit properties** next to it.
 
-![HubSpot “Edit properties” button highlighted](../../assets/images/guides/1/2.png)
+![HubSpot “Edit properties” button highlighted](/assets/images/guides/1/2.png)
 
 ---
 
@@ -66,7 +66,7 @@ Here’s where you define the rule that controls what’s required when a deal e
 3. Under **Dependent Properties**, click **+ Add dependent property**.
 4. Search for **Score Meddicc** and select it.
 
-![Selecting Score Meddicc as dependent property](../../assets/images/guides/1/3.png)
+![Selecting Score Meddicc as dependent property](/assets/images/guides/1/3.png)
 
 ---
 
@@ -77,9 +77,9 @@ Click **Apply logic**, and then hit **Save** on your pipeline configuration.
 
 From now on, whenever a deal moves into _Qualified To Buy_, HubSpot will require a Meddicc Score.
 
-![Required checkbox enabled](../../assets/images/guides/1/4.png)
+![Required checkbox enabled](/assets/images/guides/1/4.png)
 
-## ![Save button highlighted](../../assets/images/guides/1/5.png)
+## ![Save button highlighted](/assets/images/guides/1/5.png)
 
 ## 🧠 Step 5: Test It Out
 
@@ -89,9 +89,9 @@ Try changing the **Stage** from _Appointment Scheduled_ to _Qualified To Buy._
 A pop-up will now appear asking for the **Score Meddicc** before you can proceed.  
 This ensures SDRs must complete their qualification using the Meddicc Score app.
 
-![Popup showing Score Meddicc required before saving](../../assets/images/guides/1/6.png)
+![Popup showing Score Meddicc required before saving](/assets/images/guides/1/6.png)
 
-![Popup showing Score Meddicc required before saving](../../assets/images/guides/1/7.png)
+![Popup showing Score Meddicc required before saving](/assets/images/guides/1/7.png)
 
 ---
 
@@ -101,9 +101,9 @@ Add your Deal information as always, for instance a note. In the deal view, open
 Answer the MEDDICC questions — Metrics, Economic Buyer, Pain, Decision Process, etc.  
 Once saved, your deal will display a **Score out of 100**.
 
-![Adding a note](../../assets/images/guides/1/8.png)
+![Adding a note](/assets/images/guides/1/8.png)
 
-![Meddicc Score modal showing score 70/100 and metrics](../../assets/images/guides/1/9.png)
+![Meddicc Score modal showing score 70/100 and metrics](/assets/images/guides/1/9.png)
 
 ---
 
@@ -117,9 +117,9 @@ This gives you:
 - 🤝 A smoother handoff between SDRs and AEs
 - 🔮 Better forecasting accuracy
 
-![Deal record view showing Meddicc Score filled and Qualified stage](../../assets/images/guides/1/10.png)
+![Deal record view showing Meddicc Score filled and Qualified stage](/assets/images/guides/1/10.png)
 
-![Deal record view showing Meddicc Score filled and Qualified stage](../../assets/images/guides/1/11.png)
+![Deal record view showing Meddicc Score filled and Qualified stage](/assets/images/guides/1/11.png)
 
 ---
 
@@ -130,7 +130,7 @@ You can apply the same idea to other stages. For example:
 - Require **Champion** and **Decision Process** fields before _Contract Sent_.
 - Also you can restrict deals from skippng stages on **Pipelines Rules**
 
-![Deal record view showing Meddicc Score filled and Qualified stage](../../assets/images/guides/1/12.png)
+![Deal record view showing Meddicc Score filled and Qualified stage](/assets/images/guides/1/12.png)
 
 This turns your MEDDICC framework into a living part of your CRM — not just a checklist on paper.
 
