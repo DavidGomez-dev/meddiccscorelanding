@@ -408,3 +408,18 @@ strong {
   border: 1px solid rgba(20, 32, 51, 0.04);
   box-shadow: 0 12px 22px rgba(20, 32, 51, 0.05);
 }
+.bg-gradient-primary {
+  background-color: #6a78d1;
+  background-image: linear-gradient(-303deg, #6a78d1, #00a4bd);
+}
+
+.color-primary {
+  color: #00a4bd !important;
+}
+
+.crm-topbar__logo-icon {
+  width: 45px;
+  padding: 0.35rem;
+  background-color: #1f2c3c;
+  border-radius: 0.5rem;
+}
