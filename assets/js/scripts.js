@@ -24,6 +24,64 @@ if (params.get("bant") === "true") {
   });
 }
 
+const navContexts = ["hubspot", "crm"];
+const navContextKey = "navContext";
+
+const resolveNavContext = () => {
+  const navParam = params.get("nav");
+  if (navParam && navContexts.includes(navParam)) {
+    try {
+      sessionStorage.setItem(navContextKey, navParam);
+    } catch (err) {
+      console.warn("Unable to persist nav context", err);
+    }
+    return navParam;
+  }
+
+  if (window.location.pathname.startsWith("/hubspot/")) {
+    return "hubspot";
+  }
+
+  try {
+    const storedContext = sessionStorage.getItem(navContextKey);
+    if (storedContext && navContexts.includes(storedContext)) {
+      return storedContext;
+    }
+  } catch (err) {
+    console.warn("Unable to access sessionStorage for nav context", err);
+  }
+
+  return "hubspot";
+};
+
+const applyNavContext = () => {
+  const context = resolveNavContext();
+  if (!context) return;
+
+  document.documentElement.dataset.navContext = context;
+
+  document.querySelectorAll("[data-nav-context]").forEach((el) => {
+    const shouldShow =
+      el.dataset.navContext === context || el.dataset.navContext === "both";
+    el.classList.toggle("d-none", !shouldShow);
+    el.setAttribute("aria-hidden", (!shouldShow).toString());
+  });
+};
+
+const initNavContext = () => {
+  try {
+    applyNavContext();
+  } catch (err) {
+    console.warn("Unable to toggle nav context", err);
+  }
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initNavContext);
+} else {
+  initNavContext();
+}
+
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof url != "undefined") {
