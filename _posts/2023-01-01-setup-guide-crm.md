@@ -14,7 +14,7 @@ header:
   caption:
 ---
 
-Use this guide to work with Meddicc Score inside the built-in CRM (deals, contacts, companies). The CRM runs on its own—no HubSpot cards are required—and you can optionally blend HubSpot pipeline data on top of it from the Settings page.
+Use this guide to work with Meddicc Score CRM (deals, contacts, companies). T
 
 ## Quick start and access
 
@@ -22,6 +22,8 @@ Use this guide to work with Meddicc Score inside the built-in CRM (deals, contac
 - The top bar shows your plan, data source (CRM or HubSpot), and a global search. The **Upgrade** button opens the paywall/customer portal depending on your plan.
 - Free workspaces can store up to five deals, five contacts, and five companies. The paywall appears when you try to create the 6th record of any type.
 - Optional: connect HubSpot in **Settings → Data sources**. When connected, HubSpot deals/contacts/companies appear mixed into the views but stay read-only inside this CRM; CRM-native records remain fully editable.
+
+<p class="text-center"><img src="/assets/images/crm-setup1.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 ## Navigation and dashboards
 
