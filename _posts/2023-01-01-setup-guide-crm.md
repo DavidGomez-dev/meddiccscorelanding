@@ -7,14 +7,14 @@ tags:
 classes: wide no_padding_top
 date: 2023-01-01 16:54:38 +0100
 excerpt: Guide for setting up and using Meddicc Score inside the standalone CRM experience.
-sidebar_resume: true
+sidebar_resume: crm
 header:
   overlay_image: /assets/images/zermatt.jpg
   teaser: /assets/images/zermatt.jpg
   caption:
 ---
 
-Use this guide to work with Meddicc Score CRM (deals, contacts, companies). T
+Use this guide to work with Meddicc Score CRM (deals, contacts, companies).
 
 ## Quick start and access
 

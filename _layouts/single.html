@@ -22,7 +22,11 @@ layout: default
 
 <div id="main" role="main">
 {% if page.sidebar_resume %}
-  {% include sidebar_resume.html %}
+  {% if page.sidebar_resume == 'crm' %}
+    {% include sidebar_resume_crm.html %}
+  {% else %}
+    {% include sidebar_resume.html %}
+  {% endif %}
 {% else %}
   {% include sidebar.html %}
 {% endif %}
