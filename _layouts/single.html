@@ -24,6 +24,8 @@ layout: default
 {% if page.sidebar_resume %}
   {% if page.sidebar_resume == 'crm' %}
     {% include sidebar_resume_crm.html %}
+  {% elsif page.sidebar_resume == 'zoho' %}
+    {% include sidebar_resume_zoho.html %}
   {% else %}
     {% include sidebar_resume.html %}
   {% endif %}

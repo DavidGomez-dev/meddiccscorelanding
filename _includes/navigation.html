@@ -14,6 +14,9 @@
       />
       <a class="ms-2 navbar-brand fw-bold" href="/">{{ site.title }}</a>
     </div>
+    <div class="d-flex align-items-center gap-2 d-none" data-nav-context="zoho">
+      <a class="navbar-brand fw-bold" href="/zoho/">{{ site.title }}</a>
+    </div>
     <button
       class="navbar-toggler"
       type="button"
@@ -74,6 +77,25 @@
           </strong>
         </li>
       </ul>
+      <ul
+        class="navbar-nav ms-auto me-4 my-3 my-lg-0 d-none"
+        data-nav-context="zoho"
+      >
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/zoho/#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/blog/?nav=zoho">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/blog/setup-guide-zoho/?nav=zoho"
+            >Guide</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/zoho/#pricing">Pricing</a>
+        </li>
+      </ul>
       <div class="d-flex align-items-center gap-2" data-nav-context="hubspot">
         <a
           class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 me-3"
@@ -116,6 +138,16 @@
               fill="#FF7A59"
             ></path></svg
           >HubSpot</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center gap-2 d-none"
+        data-nav-context="zoho"
+      >
+        <a
+          class="d-flex align-items-center gap-2 btn bg-gradient-primary text-white px-4 py-2 me-3"
+          href="/#zoho-salesforce-waitlist"
+          >Join waitlist</a
         >
       </div>
       <a

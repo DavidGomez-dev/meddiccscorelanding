@@ -113,7 +113,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 <ul>
   <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
   <li>Users can also lock the score value. When the score is locked, it will not be changed by manual edits or by Automations. This is useful if you want to update the form with new AI-generated responses or feedback, but keep the previously agreed score unchanged.</li>
-  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.<a href="/#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li>
+  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.<a href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="/assets/images/guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>

@@ -24,7 +24,7 @@ if (params.get("bant") === "true") {
   });
 }
 
-const navContexts = ["hubspot", "crm"];
+const navContexts = ["hubspot", "crm", "zoho"];
 const navContextKey = "navContext";
 
 const resolveNavContext = () => {
@@ -40,6 +40,17 @@ const resolveNavContext = () => {
 
   if (window.location.pathname.startsWith("/hubspot/")) {
     return "hubspot";
+  }
+
+  if (window.location.pathname.includes("setup-guide-crm")) {
+    return "crm";
+  }
+
+  if (
+    window.location.pathname.startsWith("/zoho") ||
+    window.location.pathname.includes("setup-guide-zoho")
+  ) {
+    return "zoho";
   }
 
   try {
