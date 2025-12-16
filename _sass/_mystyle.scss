@@ -424,6 +424,33 @@ strong {
   border-radius: 0.5rem;
 }
 
+$zoho-color: #5464f2;
+
 .bg-zoho {
-  background-color: #5464f2 !important;
+  background-color: $zoho-color !important;
+}
+
+.zoho .bg-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, #ab75e5, #7875e6) !important;
+}
+
+.zoho .text-gradient {
+  background: linear-gradient(45deg, #ab75e5, #7875e6) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.zoho .border-primary {
+  border-color: $zoho-color !important;
+}
+
+.zoho .gradient-start-color {
+  stop-color: #ab75e5 !important;
+}
+
+.zoho .gradient-end-color {
+  stop-color: #7875e6 !important;
+}
+
+.zoho strong {
+  color: $zoho-color !important;
 }
