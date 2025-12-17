@@ -454,3 +454,8 @@ $zoho-color: #5464f2;
 .zoho strong {
   color: $zoho-color !important;
 }
+
+.zoho strong.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}

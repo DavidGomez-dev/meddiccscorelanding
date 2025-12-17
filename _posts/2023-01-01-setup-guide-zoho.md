@@ -4,7 +4,7 @@ title: "Meddicc Score Zoho Guide"
 categories: blog
 tags:
   - setup guide
-classes: wide no_padding_top
+classes: wide no_padding_top zoho
 date: 2023-01-01 16:54:38 +0100
 excerpt: Guide for installing and using Meddicc Score in Zoho
 sidebar_resume: zoho
@@ -12,10 +12,6 @@ header:
   overlay_image: /assets/images/zermatt.jpg
   teaser: /assets/images/zermatt.jpg
   caption:
-  video:
-    side: true
-    id: "86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=false&hide_speed=true&t=68"
-    provider: "loom"
 ---
 
 <div id="accordionExample" class="accordion">
@@ -27,38 +23,48 @@ header:
 
 <div class="accordion-collapse collapse" id="collapseInstalling" data-bs-parent="#accordionExample">
 <div class="accordion-body">
-<h4 class="pt-6-m mb-3 text-primary" id="connect-your-hubspot-account">1. Connect Your HubSpot Account</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="connect-your-hubspot-account">1. Connect Your Zoho Account</h4>
 
-<p>Click the <strong>Install app</strong> button below to link your HubSpot account.</p>
+<p>Click the <strong>Install app</strong> button below to link your Zoho account.</p>
 
-<p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
+<p class="text-center"><a class="d-flex align-items-center gap-2 btn bg-gradient-primary-to-secondary text-white px-4 py-2 me-3 w-50" href="{{ site.zohoappinstall }}"><img src="/assets/images/zoho.ico" alt="Zoho" width="20" height="20" class="me-2">Install app</a></p>
 
-<p>You may need to grant permission to the user to install external apps. <a href="#cannot-install-app">See below</a>.</p>
-
-<hr>
-
-<h4 class="pt-6-m mb-3 text-primary" id="login-to-your-hubspot-account">2. Login to Your HubSpot Account</h4>
-
-<p>Simply use your standard HubSpot login credentials.</p>
-
-<p class="text-center"><img src="/assets/images/guide1.png" alt="Login" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p>You may need to grant permission to the user to install external apps. Ask your Administrator.</p>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="select-your-hubspot-account">3. Select Your HubSpot Account</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="login-to-your-hubspot-account">2. Login to Your Zoho Account</h4>
+
+<p>Simply use your standard Zoho login credentials.</p>
+
+<p class="text-center"><img src="/assets/images/zoho-guide1.png" alt="Login" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="select-your-hubspot-account">3. Select Your Zoho Account</h4>
 
 <p>If you have multiple accounts, select the one you wish to use. Single accounts will be chosen automatically.</p>
 
-<p class="text-center"><img src="/assets/images/guide2.png" alt="Account" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p>Agree on the Terms and the Authorization and Click on <strong>Install Now</strong>.</p>
 
+<p class="text-center"><img src="/assets/images/zoho-guide2.png" alt="Account" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>It will take a few minutes to be installed and you will be notified when ready.</p>
+
+<p class="text-center"><img src="/assets/images/zoho-guide22.png" alt="Account" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="confirm-permissions">4. Confirm Permissions</h4>
 
-<p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, you have installed Meddicc Score. </p>
+<p>You can find Meddicc Score on the Related List of Deals.</p>
+<p>The first time you access, you also need to authorize the necessary permissions for Meddicc Score to interface with your Zoho CRM. and click on “Connect app”. </p>
+
+<p class="text-center"><img src="/assets/images/zoho-guide23.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>Congratulations, you have installed Meddicc Score. </p>
 <p>The first user of the account is the Admin by default, but there can be more users on the same account.</p>
 
-<p class="text-center"><img src="/assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -73,11 +79,15 @@ header:
 <div class="accordion-collapse collapse show" id="collapseUsing" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score from the HubSpot Sidebar</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="access-from-sidebar">5. Access Meddicc Score from the Zoho Related List</h4>
 
-<p>Find Meddicc Score in the HubSpot sidebar under Deal. It displays a summary of the total score and categorizes the status using three colors (red, yellow, and green) based on the completeness of each category.</p>
+<p>Find Meddicc Score in the Zoho Related List under Deal. It displays the sales framework form and the current score.</p>
 
-<p class="text-center"><img src="/assets/images/guide3.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-screenshot1.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>You can also organize the Related lists by clicking on the icon that appears when hover over the Related List header.</p>
+
+<p class="text-center"><img src="/assets/images/zoho-screenshot11.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -85,44 +95,41 @@ header:
 
 <ul>
   <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in the Settings.)</li>
-  <li>Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from teh deal such as description, close date, contacts etc is also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
-Note: Comments to engagements or attachments to the engatmenets are not gathered since they are not available through the HubSpot API.</li>
-</ul>
-  <p class="text-center"><img src="/assets/images/guide61.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-<ul>
+  <li>Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in Zoho. General data from teh deal such as description, close date, contacts etc is also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
+</li>
   <li>Then the AI model returns a Score based on the data introduced, Next Steps for the Sellers and feedback for every category. The responses, feedback and score are stored. </li>
   <li>Users can manually update the pre-filled responses on the form at any time. If additional information has been recorded in the Deal, they can click on "Refill" to re-populate the form with updated AI-generated responses.</li>
 </ul>
 
 <video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3 my-3" poster="/assets/images/poster-clip.png">
-<source src="/assets/images/clip.mp4" type="video/mp4">
-<source src="/assets/images/clip.webm" type="video/webm">
-<img src="/assets/images/poster-clip.png" alt="Auto fill" class="my-5 border border-3 border-primary rounded rounded-3">
+<source src="/assets/images/zohoclip.mp4" type="video/mp4">
+<source src="/assets/images/zohoclip.webm" type="video/webm">
+<img src="/assets/images/zoho-poster-clip.png" alt="Auto fill" class="my-5 border border-3 border-primary rounded rounded-3">
 </video>
 
 <ul>
   <li>To prevent specific responses from being modified or overwritten during a refill, users can lock those responses by clicking the lock icon. Locked responses will remain unchanged even after a refill.</li>
-  <p class="text-center"><img src="/assets/images/guide411.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+  <p class="text-center"><img src="/assets/images/zoho-guide411.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
   <li>the AI model will provide ✨ Next Steps and suggested questions (and to whom), to help SDRs to know what they need to find out on the next call.</li>
 <li>If the Deal is already closed, it provides a Win Analysis or a Post-Mortem Analysis to learn from the errors and match the framework inputs with the results.</li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide42.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide42.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
   <li>Users can also lock the score value. When the score is locked, it will not be changed by manual edits or by Automations. This is useful if you want to update the form with new AI-generated responses or feedback, but keep the previously agreed score unchanged.</li>
-  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.<a href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li>
+  <!-- <li>All scores are stored in Zoho as a property (custom variable) named “score_meddicc”.<a href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li> -->
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="/assets/images/guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="/assets/images/zoho-guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>Each question can include a short guidance text to help users provide better answers. By clicking the info icon, this guidance will be displayed. The text can also be customized in the Settings menu.</li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide421.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide421.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -135,21 +142,22 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
   <li>Users can return to the previous framework at any time.</li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide4.png" alt="Begin Scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-features2.png" alt="Begin Scoring" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="settings">8. Settings  (only Admin)</h4>
 
 <ul>
-  <li>Only Admins can access this feature. This will get access to customize the experience of Meddicc Score. It is organized in three sections: General settings, Framework (to modify the questions) and Users (to manage user access and licences)</li>
+  <li>Only Admins (considered that in Meddicc Score, may be different from HubSpot admins) can access Settings. This will get access to customize the experience of Meddicc Score. It is organized in four sections: General settings, Company Profile (to provide context to the AI),  Framework (to modify the questions) and Users (to manage user access and licences).</li>
+    <li>It can be accessed by clicking on "Settings" on the bottom part of the Cards or going to HubSpot Settings > Integrations > Connected Apps > Meddicc Score > Settings.</li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide9.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide8.png" alt="Editing" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <h5 class="pt-6-m mb-3 text-primary" id="settings-general">8.1 General Settings:</h5>
 
-<p class="text-center"><img src="/assets/images/guide81.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide81.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <p><strong>8.1.1 Users access:</strong></p>
 
@@ -159,7 +167,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
   <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li>
 </ul>
 
-<p class="pt-6-m" id="automations"><strong>8.1.2 Automations:</strong></p>
+<!-- <p class="pt-6-m" id="automations"><strong>8.1.2 Automations:</strong></p>
 
 <ul>
   <li>Automations help you streamline and automate the scoring process. They are only available for Premium users.</li>
@@ -175,7 +183,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
     <strong>Score Account:</strong> This option will trigger scoring for <b>all deals*</b> in your account. <b>All previous information and scores will be overwritten, and this action cannot be undone.</b> The process may take several minutes, and the Admin user will receive an email notification once it is complete. <br>
       * Limited to the last 2000 Deals created that are not closed yet. If you need more, please <a href="mailto:meddiccscore@gmail.com">contact support.</a>
   </li>
-</ul>
+</ul> -->
 
 <p class="pt-6-m" id="scoring_methodology"><strong>8.1.3 Scoring Methodology:</strong></p>
 
@@ -197,7 +205,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
   </li>
     <li>
       Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:meddiccscore@gmail.com">support team</a>.
-    <p class="text-center"><img src="/assets/images/guide811.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+    <p class="text-center"><img src="/assets/images/zoho-guide811.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
   </li>
   <li>
     <strong>Available providers:</strong>
@@ -213,7 +221,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
         <li>Base URL: Instead of Resource name, the Base URL can be provided. The calls to the API will follow this URL {baseURL}/v1{path}</li>
         <li>Api Key: Although the key is safely stored and encrypted, It is recommended to provide an exclusive Api Key for Meddicc Score and set limits of usage.</li>
       </ul>
-          <p class="text-center"><img src="/assets/images/guide812.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
+          <p class="text-center"><img src="/assets/images/zoho-guide812.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
       </li>
     </ul>
   </li>
@@ -282,37 +290,52 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 <ul>
   <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
   <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
-  <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore data (not your HubSpot account), including deals, users, and account information. This action cannot be undone. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel any paid subscription</a> before deleting your account. Type "Delete Account" to confirm.</li>
+  <li><strong>Delete Account:</strong> Permanently deletes all MeddiccScore data (not your HubSpot account), including deals, users, and account information. This action cannot be undone. Please <a href="#how-can-cancell-or-manage-my-subcription">cancel any paid subscription</a> before deleting your account.</li>
 </ul>
 
 <!-- <h4 class="pt-6-m mb-3 text-primary" id="automations">10. Automations (Only Premium Admins)</h4> -->
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.2 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="company-profile">8.2 Company Profile: Provide context to tailor the AI responses (only Admin)</h5>
 
 <ul>
-  <li>Only Admins can access this feature. Clicking on the Framework tab, allows the user to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
-  <li>Turning on the ‘Default Framework’ switch will set the selected framework as the default for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
+  <li>In this section is possible to add more context about your organization's value propositions, products, and services to ensure AI-generated content is relevant and tailored to your organization. Filling this information is optional but recommended. The field that are available are:</li>
+    <ul>
+        <li><strong>Company name </strong></li>
+        <li><strong>Industry </strong></li>
+        <li><strong>Value proposition </strong></li>
+        <li><strong>What pains does your company solve? </strong></li>
+        <li><strong>Product(s) or Service(s): </strong> A list of the offering with the name and description. At least one has to be provided.</li>
+    </ul>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide10.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<ul>
-  <li>You can add more questions to any category of the framework. When you hover over the bottom of a question, a bar with “+” and “–” icons will appear, allowing you to add a new question or remove the existing one.</li>
-</ul>
-
-<p class="text-center"><img src="/assets/images/guide101.png" alt="Adding questions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide82.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">8.3. Users: Manage your users (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.3 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
+
+<ul>
+  <li>Only Admins can access this feature. Clicking on the Frameworks tab, allows the Admins to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
+  <li>The framework selected will also be the Default framework for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/zoho-guide10.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>You can add more questions to any category of the framework. Clicking in "+" will add one more set of question and guidance. It can be removed clicking on "-", although it has to be at least one per category.</li>
+</ul>
+
+<hr>
+
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">8.4 Users: Manage your users (only Admin)</h5>
 
 <ul>
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore.</li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
-      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan.</li>
+      <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
       <li><strong>Delete:</strong> Marks the user for deletion. Once deleted, the user will need to reinstall MeddiccScore to regain access.</li>
       <li><strong>Make Admin:</strong> Assigns administrative privileges to the selected user, granting them access to manage account settings and users. There can be more than one Admin, but at least one.</li>
       <li><strong>Remove Admin:</strong> Remove administrative privileges to the selected user. There has to be at least one Admin user.</li>
@@ -320,7 +343,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
   </li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide91.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide9n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -333,13 +356,13 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
   <li>It is also possible to download the report on PDF format.</li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide8.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-features3.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<ul>
-  <li>The Score is also available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
+<!-- <ul>
+  <li>The Score is also available as a custom Zoho property (score_meddicc), and can be used in reporting, columns, etc.</li>
 </ul>
 
-<p class="text-center"><img src="/assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p> -->
 
 <hr>
 
@@ -347,14 +370,14 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
-<p class="text-center"><img src="/assets/images/guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="changeplan">11. Change the subscription plan or billing details.</h4>
 
 <p>If you're already enjoying the premium benefits of Meddicc Score but want to upgrade to a Team plan or switch to a yearly subscription to unlock significant savings, you can easily make the change through the Customer Portal. Take advantage of these exclusive discounts today and maximize your Meddicc Score experience!</p>
 
-<p class="text-center"><img src="/assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p>You can also change your billing details by clicking on "Update Subscription".</p>
 
@@ -378,9 +401,9 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 
 <p>Additionally, you may want to delete all the data stored in MeddiccScore, including users and account information, before uninstalling. <a href="#manage-account">More information.</a> If you plan to reinstall the app later, the data will reappear unless the account has been deleted beforehand.</p>
 
-<p>To uninstall, navigate to <strong>Settings &gt; Integrations &gt; Connected Apps</strong>. Click in Actions and then "Uninstall". This will uninstall Meddicc Score without impacting your HubSpot data.</p>
+<p>To uninstall, navigate to <strong>Settings &gt; Marketplace &gt; All &gt; Installed &gt; Meddicc Score</strong>. Click in "Uninstall". This will uninstall Meddicc Score without impacting your Zoho data.</p>
 
-<p class="text-center"><img src="/assets/images/guide6.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-guide6.png" alt="Uninstall" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -388,7 +411,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 
 <div class="accordion-item">
 
-<h3 class="accordion-header">
+<!-- <h3 class="accordion-header">
 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrouble" aria-expanded="true" aria-controls="collapseTrouble"><span id="troubleshooting" class="pt-6-m">Troubleshooting</span>
 </button></h3>
 
@@ -401,11 +424,11 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 
 <p class="text-center"><img src="/assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">HubSpot User Permissions Guide</a>.</p>
+<p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">Zoho User Permissions Guide</a>.</p>
 
 <hr>
 
-<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a property / The Score property in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
+<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a property / The Score property in Zoho is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
 
@@ -447,7 +470,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 <p class="text-center"><img src="/assets/images/trouble22.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>After that, the Score property will be available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
+  <li>After that, the Score property will be available as a custom Zoho property (score_meddicc), and can be used in reporting, columns, etc.</li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/trouble23.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
@@ -469,7 +492,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 <hr>
 <h4 id="stage-report" class="pt-6-m mb-3 text-primary">The Stage is not correct on the report<a class="header-link" href="#stage-report" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>The Stage property in HubSpot can be modified. Ensure that the internal name for lost opportunities includes the string "lost" and for won opportunities, it includes the string "won". Note that sometimes the internal name might be a number, which is the standard when the stage is created.</p>
+<p>The Stage property in Zoho can be modified. Ensure that the internal name for lost opportunities includes the string "lost" and for won opportunities, it includes the string "won". Note that sometimes the internal name might be a number, which is the standard when the stage is created.</p>
 
 <p class="text-center"><img src="/assets/images/trouble7.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
@@ -490,11 +513,11 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 <h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>If you want to cancel your subscription or change the invoice details, you can access the Customer Portal (or send and email to Support) by clicking on “Subscription” button inside the settings. (Only admin users)</p>
-<p>Please cancel your subscription BEFORE uninstalling the APP, since the latter does not automatically cancel de subcription. (this is a HubSpot limitation)</p>
+<p>Please cancel your subscription BEFORE uninstalling the APP, since the latter does not automatically cancel de subcription. (this is a Zoho limitation)</p>
 
 <p class="text-center"><img src="/assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p class="text-center"><img src="/assets/images/trouble6.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/trouble6.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p> -->
 
 </div>
 </div>
