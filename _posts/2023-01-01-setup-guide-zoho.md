@@ -417,6 +417,32 @@ header:
 
 <div class="accordion-collapse collapse show" id="collapseTrouble" data-bs-parent="#accordionExample">
 <div class="accordion-body">
+
+<span id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically"></span>
+
+<h4 id="zoho-score-field-not-updated" class="pt-6-m mb-3 text-primary">Score field not updated<a class="header-link" href="#zoho-score-field-not-updated" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+
+<p>Meddicc Score can write the score back to Zoho CRM on the Deal (module: Deals) as a custom field.</p>
+
+<ul>
+  <li>On first connect, Meddicc Score will try to automatically create a <strong>Number</strong> field on Deals named <strong>Meddicc Score</strong> (range 0–100) and store its field API name.</li>
+  <li>If your Zoho user/org doesn’t allow creating fields (permissions/scopes), create the Deals field manually and add it to your Deal layout.</li>
+    <li>For doing so, go to  <strong>Settings → Customization → Modules and Fields → Deals → Fields → Create and Edit Fields</strong>.</li>
+
+<p class="text-center"><img src="/assets/images/zoho-trouble21.png" alt="troubleshooting" class="mt-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-trouble22.png" alt="troubleshooting" class="mt-5 border border-3 border-primary rounded rounded-3"></p>
+
+   <li>You need to add a new Number field, with 3 digits and Mark as Public.</li>
+<p class="text-center"><img src="/assets/images/zoho-trouble23.png" alt="troubleshooting" class="mt-5 border border-3 border-primary rounded rounded-3"></p>
+   <li>You can also add it to the views of the Cards or the Lists.</li>
+<p class="text-center"><img src="/assets/images/zoho-trouble24.png" alt="troubleshooting" class="mt-5 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/zoho-features4.png" alt="troubleshooting" class="mt-5 border border-3 border-primary rounded rounded-3"></p>
+
+  <li>If your field API name is different, go to <strong>Meddicc Score → Settings → General</strong> and set <strong>Zoho Deals score field API name</strong> to the field’s <strong>API Name</strong> (example: <code>Meddicc_Score</code>).</li>
+  <li>Re-score the Deal to trigger the update.</li>
+  <li>If it still doesn’t update, reinstall/reconnect the app so Zoho grants write permissions to Deals.</li>
+</ul>
+<hr>
 <h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="pt-6-m mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>To enable this, you may need to authorize Zoho to share information about emails:</p>
@@ -447,20 +473,6 @@ header:
 <p class="text-center"><img src="/assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="/assets/images/trouble6.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
-
-<span id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically"></span>
-<h4 id="zoho-score-field-not-updated" class="pt-6-m mb-3 text-primary">Score field not updated<a class="header-link" href="#zoho-score-field-not-updated" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>Meddicc Score can write the score back to Zoho CRM on the Deal (module: Deals) as a custom field.</p>
-
-<ul>
-  <li>Ensure you have a <strong>Number</strong> custom field on Deals (range 0–100) and that it’s added to your Deal layout.</li>
-  <li>If your Zoho account uses a different custom field than the default, go to <strong>Meddicc Score → Settings → General</strong> and set <strong>Zoho Deals score field API name</strong> to the field’s <strong>API Name</strong>.</li>
-  <li>Re-score the Deal to trigger the update.</li>
-  <li>If it still doesn’t update, reinstall/reconnect the app so Zoho grants write permissions to Deals.</li>
-</ul>
 
 </div>
 </div>
