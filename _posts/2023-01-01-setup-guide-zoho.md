@@ -120,7 +120,7 @@ header:
 <ul>
   <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
   <li>Users can also lock the score value. When the score is locked, it will not be changed by manual edits or by Automations. This is useful if you want to update the form with new AI-generated responses or feedback, but keep the previously agreed score unchanged.</li>
-  <!-- <li>All scores are stored in Zoho as a property (custom variable) named “score_meddicc”.<a href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li> -->
+  <li>The score can also be written back to Zoho CRM on the Deal as a custom field. <a href="#zoho-score-field-not-updated">See how to configure</a>.</li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/zoho-guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="/assets/images/zoho-guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
@@ -442,7 +442,7 @@ header:
 <h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>If you want to cancel your subscription or change the invoice details, you can access the Customer Portal (or send and email to Support) by clicking on “Subscription” button inside the settings. (Only admin users)</p>
-<p>Please cancel your subscription BEFORE uninstalling the APP, since the latter does not automatically cancel de subcription. (this is a HubSpot limitation)</p>
+<p>Please cancel your subscription BEFORE uninstalling the APP, since the latter does not automatically cancel de subcription. (this is a Zoho limitation)</p>
 
 <p class="text-center"><img src="/assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
@@ -450,106 +450,17 @@ header:
 
 <hr>
 
-<!-- <h4 id="cannot-install-app" class="pt-6-m mb-3 text-primary">I cannot install the APP<a class="header-link" href="#cannot-install-app" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+<span id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically"></span>
+<h4 id="zoho-score-field-not-updated" class="pt-6-m mb-3 text-primary">Score field not updated<a class="header-link" href="#zoho-score-field-not-updated" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>Please check that the user have permits to install external APPs from the marketplace.</p>
-
-<p class="text-center"><img src="/assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">Zoho User Permissions Guide</a>.</p>
-
-<hr>
-
-<h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a property / The Score property in Zoho is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
-
-<p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
-
-<p class="text-center"><a href="{{ site.pwalink }}" target="_blank"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
-
-<p>You may also need before that, to have permits to add new properties (or someone else who has authorized the app with all the permits). Partner accounts with permits may be not enough. For reference, the Scope requiered is "crm.pipelines.orders.write".</p>
-
-<p class="text-center"><img src="/assets/images/trouble1.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>If does not work even after re-installation, then user needs to <i>create the variable manually</i>. It can be done in <strong>Settings > Data Management > Properties > Create property</strong>:</p>
-
-<p class="text-center"><img src="/assets/images/trouble12.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<p>It is very important to make it work that:</p>
+<p>Meddicc Score can write the score back to Zoho CRM on the Deal (module: Deals) as a custom field.</p>
 
 <ul>
-  <li>The internal name be exactly “score_meddicc”</li>
-  <li>Object type is “Deal”</li>
-  <li>Group is “Deal information”</li>
-  <li>The property label “Score” or "Score Meddicc" (or any other)</li>
+  <li>Ensure you have a <strong>Number</strong> custom field on Deals (range 0–100) and that it’s added to your Deal layout.</li>
+  <li>If your Zoho account uses a different custom field than the default, go to <strong>Meddicc Score → Settings → General</strong> and set <strong>Zoho Deals score field API name</strong> to the field’s <strong>API Name</strong>.</li>
+  <li>Re-score the Deal to trigger the update.</li>
+  <li>If it still doesn’t update, reinstall/reconnect the app so Zoho grants write permissions to Deals.</li>
 </ul>
-
-<p class="text-center"><img src="/assets/images/trouble2.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<ul>
-  <li>"Field type": # Number</li>
-  <li>"Number format": Formatted number</li>
-</ul>
-
-<p class="text-center"><img src="/assets/images/trouble21.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<p>These are optional but recommended for validation:</p>
-<ul>
-  <li>"Set min value limit": 0</li>
-  <li>"Set max value limit": 100</li>
-  <li>"Set max number of decimal places": 0</li>
-</ul>
-
-<p class="text-center"><img src="/assets/images/trouble22.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<ul>
-  <li>After that, the Score property will be available as a custom Zoho property (score_meddicc), and can be used in reporting, columns, etc.</li>
-</ul>
-
-<p class="text-center"><img src="/assets/images/trouble23.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<p class="text-center"><img src="/assets/images/trouble24.png" alt="troubleshooting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<p class="text-center"><img src="/assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
-<h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="pt-6-m mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>To enable this, you may need to reauthorize the app for the new permits required (access to read emails basically). Please click here:</p>
-
-<p class="text-center"><a href="{{ site.pwalink }}" alt="Install" class="w-10">
-<img src="/assets/images/installBtn.png" alt="Install"></a></p>
-
-<p>In all cases, the information extracted from emails is limited to the initial portion of each email. This helps avoid processing repetitive long threads, legal disclaimers, and other non-essential content. However, if critical Deal information is buried deep within the email threads or other engagements, the AI might not capture or interpret it accurately. Also AI tends to allucinate sometimes, please check important facts.</p>
-
-<hr>
-<h4 id="stage-report" class="pt-6-m mb-3 text-primary">The Stage is not correct on the report<a class="header-link" href="#stage-report" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>The Stage property in Zoho can be modified. Ensure that the internal name for lost opportunities includes the string "lost" and for won opportunities, it includes the string "won". Note that sometimes the internal name might be a number, which is the standard when the stage is created.</p>
-
-<p class="text-center"><img src="/assets/images/trouble7.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<hr>
-
-<h4 id="how-can-add-a-discount-code" class="pt-6-m mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="mailto:meddiccscore@gmail.com">Contact Us</a>:</p>
-
-<p class="text-center"><img src="/assets/images/trouble4.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<p class="text-center"><img src="/assets/images/trouble3.png" alt="troubleshooting" class="mb-3 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<p>If you already have a subscription and want to add a coupon code, it cannot be done automatically, please <a href="mailto:meddiccscore@gmail.com">Contact Us</a></p>
-
-<hr>
-
-<h4 id="how-can-cancell-or-manage-my-subcription" class="pt-6-m mb-3 text-primary">How can I cancel or manage my subscription?<a class="header-link" href="#how-can-cancell-or-manage-my-subcription" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
-
-<p>If you want to cancel your subscription or change the invoice details, you can access the Customer Portal (or send and email to Support) by clicking on “Subscription” button inside the settings. (Only admin users)</p>
-<p>Please cancel your subscription BEFORE uninstalling the APP, since the latter does not automatically cancel de subcription. (this is a Zoho limitation)</p>
-
-<p class="text-center"><img src="/assets/images/trouble5.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
-
-<p class="text-center"><img src="/assets/images/trouble6.png" alt="troubleshooting" class="mb-5 border border-3 border-primary rounded rounded-3"></p>-->
 
 </div>
 </div>
