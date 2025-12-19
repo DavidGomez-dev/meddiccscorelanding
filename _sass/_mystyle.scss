@@ -262,6 +262,86 @@ h3 {
   white-space: nowrap;
   text-decoration: none;
 }
+
+.pricing-more-than-10 {
+  margin-top: 12px;
+}
+
+.pricing-more-than-10__details {
+  width: 100%;
+}
+
+.pricing-more-than-10__details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  background-color: #425b76;
+  border: 1px solid #425b76;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.15s ease-out;
+}
+
+.pricing-more-than-10__details > summary:hover {
+  background-color: #33475b;
+  border-color: #33475b;
+}
+
+.pricing-more-than-10__details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.pricing-more-than-10__details > summary::after {
+  content: "▾";
+  display: inline-block;
+  transition: transform 0.15s ease-out;
+}
+
+.pricing-more-than-10__details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.pricing-more-than-10__content {
+  margin-top: 10px;
+  padding: 12px;
+  background: rgb(248, 250, 252);
+  border: 1px solid rgb(234, 240, 246);
+  border-radius: 3px;
+  text-align: left;
+}
+
+.pricing-more-than-10__list {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.pricing-more-than-10__list li {
+  margin-bottom: 6px;
+}
+
+.pricing-more-than-10__disclaimer {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(51, 71, 91);
+  font-weight: 300;
+}
 .pricing-badge {
   margin-top: 15px;
   margin-bottom: -34px;
