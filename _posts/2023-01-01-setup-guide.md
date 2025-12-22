@@ -431,10 +431,14 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <h4 class="pt-6-m mb-3 text-primary" id="report-and-export">9. Report and Export</h4>
 
 <ul>
-  <li>Access the Home page but clicking on the marketplace icon and then on Meddicc Score. A list of all the account opportunities with be displayed.</li>
+  <li>Open the Meddicc Score Home: click the marketplace icon in the top bar and select “Meddicc Score.” The Home screen provides an overview of account opportunities and key metrics.</li>
+  <li>Access Full Report: when “Access Full Report” is enabled in Settings, permitted users can view team-wide statistics; otherwise non-admins see only their own data. Admins always have full access.</li>
+  <li>Filter by Opportunity Owner: use the Owner dropdown to filter the report and view deals assigned to a specific user.</li>
+  <li>Changes shown (increase/decrease) reflect the difference compared with the previous week’s data (e.g., percentage or absolute delta).</li>
+
 </ul>
 
-<p class="text-center"><img src="/assets/images/guide98n.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/guide98n2.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
   <li>From the menu "Actions" report is possible to download a CSV with all the notes and scores saved. It is also possible to download the report on PDF format.</li>
