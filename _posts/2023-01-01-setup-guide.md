@@ -165,7 +165,7 @@ header:
 
 <ul>
   <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in Settings). The Deal appear with zero score and all categories empty.</li>
-  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from teh deal such as description, close date, contacts etc is also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
+  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from the deal such as description, close date, contacts etc is also considered, plus Associated Deals, Contacts and Companies. AI analyzes this data to auto-fill responses for the Framework Questions.
 Note: Comments to engagements or attachments to the engagements are not gathered since they are not available in the HubSpot API.</li>
 </ul>
   <p class="text-center"><img src="/assets/images/guide61n.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
