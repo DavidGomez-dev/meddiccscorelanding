@@ -230,7 +230,7 @@ We (**Meddicc Score**) are the Data Controller.
 For EU/UK data subjects, our EU Representative (if applicable) is:
 
 **David Gomez**  
-[meddiccscore@gmail.com](mailto:meddiccscore@gmail.com)
+[support@meddiccscore.com](mailto:support@meddiccscore.com)
 
 ### 2. Lawful Basis for Processing
 
@@ -302,7 +302,7 @@ You can, at no cost and usually within one month:
 - Withdraw consent at any time (re-opt-in may be required later)
 - Lodge a complaint with a supervisory authority (e.g., ICO, EU member state DPA)
 
-**Contact:** [meddiccscore@gmail.com](mailto:meddiccscore@gmail.com)
+**Contact:** [support@meddiccscore.com](mailto:support@meddiccscore.com)
 
 ### 9. Profiling & Automated Decision-Making
 
@@ -320,7 +320,7 @@ We’ll update this policy’s “Last updated” date and notify users via emai
 
 EU/UK users can contact:
 
-- **Data Privacy Officer:** [meddiccscore@gmail.com](mailto:meddiccscore@gmail.com)
+- **Data Privacy Officer:** [support@meddiccscore.com](mailto:support@meddiccscore.com)
 - **Supervisory Authorities:** ICO (UK) or the relevant EU DPA for unresolved complaints.
 
 ## Email Communications: What You’ll Receive
@@ -359,4 +359,4 @@ If even so, you want do not want to receive any email from us, please contact us
 
 For any questions or concerns regarding your privacy, you may contact us using the following details:
 
-[meddiccscore@gmail.com](mailto:meddiccscore@gmail.com)
+[support@meddiccscore.com](mailto:support@meddiccscore.com)

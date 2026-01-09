@@ -29,7 +29,7 @@ The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commi
 
 ### How It Works
 
-1. **Sign Up**: [Apply by sending an email](mailto:meddiccscore@gmail.com) to to become an affiliate.
+1. **Sign Up**: [Apply by sending an email](mailto:support@meddiccscore.com) to to become an affiliate.
 2. **Get Your Code**: After approval, you’ll receive a unique affiliate code to share with your audience.
 3. **Promote Meddicc Score**: Use our promotional materials or your own content to introduce Meddicc Score to your audience.
 4. **Earn Commissions**: For every customer that subscribes through your link, you earn more than 50% commission!
@@ -48,4 +48,4 @@ The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commi
 
 ## Ready to Join?
 
-Email [here](mailto:meddiccscore@gmail.com) to apply to the Meddicc Score Affiliate Program and start earning today!
+Email [here](mailto:support@meddiccscore.com) to apply to the Meddicc Score Affiliate Program and start earning today!

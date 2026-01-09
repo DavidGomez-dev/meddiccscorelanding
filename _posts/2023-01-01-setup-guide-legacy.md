@@ -173,7 +173,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
   </li>
   <li>
     <strong>Score Account:</strong> This option will trigger scoring for <b>all deals*</b> in your account. <b>All previous information and scores will be overwritten, and this action cannot be undone.</b> The process may take several minutes, and the Admin user will receive an email notification once it is complete. <br>
-      * Limited to the last 2000 Deals created that are not closed yet. If you need more, please <a href="mailto:meddiccscore@gmail.com">contact support.</a>
+      * Limited to the last 2000 Deals created that are not closed yet. If you need more, please <a href="mailto:support@meddiccscore.com">contact support.</a>
   </li>
 </ul>
 
@@ -196,7 +196,7 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
     This allows the user to select the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
   </li>
     <li>
-      Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:meddiccscore@gmail.com">support team</a>.
+      Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
     <p class="text-center"><img src="/assets/images/guide811.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
   </li>
   <li>
@@ -477,13 +477,13 @@ Note: Comments to engagements or attachments to the engatmenets are not gathered
 
 <h4 id="how-can-add-a-discount-code" class="pt-6-m mb-3 text-primary">How can add a discount code<a class="header-link" href="#how-can-add-a-discount-code" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="mailto:meddiccscore@gmail.com">Contact Us</a>:</p>
+<p>On the checkout Stripe page, there is a button ‘Add Code’ where you can add yu discount code. The price will be automatically updated. If you face any problem or the code not longer works, please <a href="mailto:support@meddiccscore.com">Contact Us</a>:</p>
 
 <p class="text-center"><img src="/assets/images/trouble4.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <p class="text-center"><img src="/assets/images/trouble3.png" alt="troubleshooting" class="mb-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
-<p>If you already have a subscription and want to add a coupon code, it cannot be done automatically, please <a href="mailto:meddiccscore@gmail.com">Contact Us</a></p>
+<p>If you already have a subscription and want to add a coupon code, it cannot be done automatically, please <a href="mailto:support@meddiccscore.com">Contact Us</a></p>
 
 <hr>
 
