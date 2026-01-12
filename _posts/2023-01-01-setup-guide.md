@@ -210,6 +210,31 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p class="text-center"><img src="/assets/images/guide611n.png" alt="Guidance" class="my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
 
+<h5 class="pt-6-m mb-3 text-primary" id="org-charts">6.1 Organizational Charts:</h5>
+
+<ul>
+  <li>From the Deal form, you can access the <strong>Org Chart</strong> to visualize the stakeholder hierarchy. This feature helps you understand reporting structures and identify key decision-makers within the account.</li>
+  <li>You can create multiple org charts for a single company, allowing you to map different departments or scenarios. The chart you create or select for a deal will become the default for that specific deal.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/crm-orgchart-view.png" alt="Org Chart View" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li><strong>Building the Chart:</strong> Define reporting structures by selecting a parent for each contact in the list. The chart will update in real-time to reflect the hierarchy. You can also assign specific <a href="#buying-roles">Buying Roles</a> to each contact.</li>
+  <li><strong>Organize with Drag-and-Drop:</strong> Click <strong>Organize</strong> to enter a visual editing mode. Simply drag one contact and drop them onto another to establish a reporting relationship. The target contact's border will highlight, confirming the change.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/crm-orgchart-dnd.png" alt="Organize with Drag and Drop" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<ul>
+  <li>When you're finished organizing, click <strong>Done</strong>. Your changes to the reporting structure will be saved automatically.</li>
+  <li>Use the toolbar controls to <strong>Fit</strong> the chart to the screen, <strong>Expand All</strong> nodes, or <strong>Collapse All</strong> nodes for easier navigation.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/crm-orgchart-controls.png" alt="Org Chart Controls" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<h5 class="pt-6-m mb-3 text-primary" id="settings-general">6.1 Organizational Charts:</h5>
+
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="change-framework">7. Change the Framework</h4>
