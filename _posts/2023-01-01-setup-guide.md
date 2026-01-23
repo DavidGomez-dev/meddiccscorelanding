@@ -245,6 +245,24 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
+<h5 class="pt-6-m mb-3 text-primary" id="competitor-charts">6.2 Competitor Charts:</h5>
+
+<ul>
+  <li>From the Deal form, you can access the <strong>Competitor Charts</strong> to visualize and compare your company's offerings against competitors. This feature helps you identify strengths, weaknesses, and unique value propositions in your sales strategy.</li>
+
+<p class="text-center"><img src="/assets/images/features61.png" alt="Competitor Charts" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+  <li>You can create multiple competitor charts to be applied in different Deals, allowing you to map different competitive scenarios or focus on specific market segments. The chart you create or select for a deal will become the default for that specific deal.</li>
+  <li><strong>Selecting and Moving Competitors:</strong> Competitors can be selected from the predefined list and positioned on the chart. You can drag and drop competitors to arrange them visually, representing their market positioning or threat level.</li>
+  <li><strong>Managing Charts:</strong> Different competitor charts can be selected from existing ones, or you can create a new chart tailored to the deal's context. This flexibility allows for customized competitive analysis per opportunity.</li>
+  <li><strong>Integration with Sales Framework:</strong> The information from the competitor chart will be considered to automatically fill up the sales framework on competitor-related questions, providing AI-generated insights based on the mapped competitive landscape.</li>
+  <li>The list of competitors can be edited or competitors can be deleted in <strong>Settings > Company Profile > Competitors</strong>.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/guide62.png" alt="Competitor Charts" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<hr>
+
 <h4 class="pt-6-m mb-3 text-primary" id="change-framework">7. Change the Framework</h4>
 
 <ul>
