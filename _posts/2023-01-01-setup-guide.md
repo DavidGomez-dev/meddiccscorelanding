@@ -44,6 +44,8 @@ header:
 
 <p>Click the <strong>Install app</strong> button below to link your HubSpot account.</p>
 
+<p><strong>Important:</strong> All users of your company <strong>need to install the app</strong>. Even if you are the HubSpot Admin, it will not be automatically available to them until they also follow the installation process. They may require installation permits. <a href="#cannot-install-app">More info</a></p>
+
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
 
 <p>You may need to grant permission to the user to install external apps. <a href="#cannot-install-app">See below</a>.</p>
