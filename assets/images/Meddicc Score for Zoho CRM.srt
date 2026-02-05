@@ -1,0 +1,171 @@
+1
+00:00:00,000 --> 00:00:00,604
+Hello!
+
+2
+00:00:00,604 --> 00:00:02,762
+If you are working in complex deals,
+
+3
+00:00:02,762 --> 00:00:05,235
+sales frameworks like Meddicc, Bant or
+
+4
+00:00:05,235 --> 00:00:07,628
+Spiced, can be invaluable tools to
+
+5
+00:00:07,628 --> 00:00:09,694
+qualify the deal, ask the right
+
+6
+00:00:09,694 --> 00:00:11,493
+questions, and progress the deal to
+
+7
+00:00:11,493 --> 00:00:12,355
+closure.
+
+8
+00:00:12,382 --> 00:00:14,391
+However, implementing these frameworks
+
+9
+00:00:14,391 --> 00:00:16,260
+in Zoho is often complex and
+
+10
+00:00:16,260 --> 00:00:17,444
+time-consuming.
+
+11
+00:00:17,444 --> 00:00:19,632
+With Meddicc Score, we’ve created the
+
+12
+00:00:19,632 --> 00:00:21,458
+simplest way to bring them to life —
+
+13
+00:00:21,458 --> 00:00:24,201
+using AI to automatically fill, score,
+
+14
+00:00:24,201 --> 00:00:25,902
+and coach your team with ease.
+
+15
+00:00:26,932 --> 00:00:28,651
+Let’s see it in action!
+
+16
+00:00:29,151 --> 00:00:31,188
+Imagine you are currently working on a
+
+17
+00:00:31,188 --> 00:00:33,126
+new deal that already has some records
+
+18
+00:00:33,126 --> 00:00:35,548
+such as notes, emails, calls or
+
+19
+00:00:35,548 --> 00:00:36,499
+meetings.
+
+20
+00:00:36,499 --> 00:00:38,206
+We can use this information to
+
+21
+00:00:38,206 --> 00:00:40,493
+automatically fill the framework form.
+
+22
+00:00:40,993 --> 00:00:43,002
+The Meddics Score card appears on your
+
+23
+00:00:43,002 --> 00:00:45,092
+list of items of your Deal record.
+
+24
+00:00:45,092 --> 00:00:47,507
+You can click on 'Refill' and the AI
+
+25
+00:00:47,507 --> 00:00:49,457
+will first use the existing information
+
+26
+00:00:49,457 --> 00:00:51,698
+to fill the selected framework form.
+
+27
+00:00:51,698 --> 00:00:53,724
+You can also add more information to
+
+28
+00:00:53,724 --> 00:00:55,169
+complete the questions.
+
+29
+00:00:55,169 --> 00:00:57,613
+Upon clicking on 'score' , the AI will
+
+30
+00:00:57,613 --> 00:00:59,494
+provide you with a score for the Deal,
+
+31
+00:00:59,494 --> 00:01:01,665
+individual feedback and recommend next
+
+32
+00:01:01,665 --> 00:01:03,309
+steps to progress to closure.
+
+33
+00:01:04,339 --> 00:01:06,307
+Meddicc score also provide a complete
+
+34
+00:01:06,307 --> 00:01:08,043
+report where you can see all the deals
+
+35
+00:01:08,043 --> 00:01:09,186
+where you need to focus on this
+
+36
+00:01:09,186 --> 00:01:09,924
+quarter.
+
+37
+00:01:09,924 --> 00:01:12,170
+What are their Scores, the amount or the
+
+38
+00:01:12,170 --> 00:01:12,959
+status.
+
+39
+00:01:14,504 --> 00:01:16,768
+So, ready to boost your sales?
+
+40
+00:01:16,768 --> 00:01:18,933
+Install Meddicc Score from the Zoho
+
+41
+00:01:18,933 --> 00:01:20,797
+marketplace and test it for free during
+
+42
+00:01:20,797 --> 00:01:21,818
+30 days!
+
+43
+00:01:22,318 --> 00:01:23,526
+Get started today!
