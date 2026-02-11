@@ -167,7 +167,7 @@ header:
 
 <ul>
   <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in Settings). The Deal appear with zero score and all categories empty.</li>
-  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from the deal such as description, close date, contacts etc is also considered, plus Associated Deals, Contacts and Companies. AI analyzes this data to auto-fill responses for the Framework Questions.
+  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot. General data from the deal such as description, close date, contacts etc is also considered, plus Associated Deals, Contacts and Companies. Previous custom fields related to MEDDICC implementations that may have been filled in the past are also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
 Note: Comments to engagements or attachments to the engagements are not gathered since they are not available in the HubSpot API.</li>
 </ul>
   <p class="text-center"><img src="/assets/images/guide61n.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -680,11 +680,71 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
+<h4 id="what-information-considered" class="pt-6-m mb-3 text-primary">What information is considered when filling the sales framework?<a class="header-link" href="#what-information-considered" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
+
+<p>When you click "Update Score" or "Refill" on a Deal, Meddicc Score's AI analyzes multiple data sources from your HubSpot account to automatically populate the sales framework questions. Understanding what information is considered can help you ensure the AI has the best data to work with.</p>
+
+<p><strong>The AI considers the following information sources:</strong></p>
+
+<ul>
+  <li><strong>Deal Engagements (last 100):</strong> The AI retrieves and analyzes the most recent engagements associated with the Deal, including:
+    <ul>
+      <li>Notes</li>
+      <li>Emails (body content only, not attachments)</li>
+      <li>Calls</li>
+      <li>Tasks</li>
+      <li>Meetings</li>
+    </ul>
+  </li>
+  <li><strong>Deal Information:</strong> General deal data such as:
+    <ul>
+      <li>Deal Description</li>
+      <li>Close Date</li>
+      <li>Amount</li>
+      <li>Deal Stage</li>
+      <li>Other custom deal properties</li>
+    </ul>
+  </li>
+  <li><strong>Associated Records:</strong> Information from related records:
+    <ul>
+      <li>Associated Contacts</li>
+      <li>Associated Companies</li>
+      <li>Associated Deals</li>
+    </ul>
+  </li>
+  <li><strong>Previous Meddicc Fields:</strong> Any previously saved responses in the sales framework are also considered to maintain continuity.</li>
+  <li><strong>Organizational Charts:</strong> If you've created an org chart for the deal, the buying roles and reporting structure are used to fill relevant framework questions (e.g., Economic Buyer, Champion).</li>
+  <li><strong>Competitor Charts:</strong> If you've created a competitor chart for the deal, this information is used to fill competitor-related questions.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/guide61n.png" alt="Information sources for AI autofill" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p><strong>Important limitations:</strong></p>
+
+<ul>
+  <li>Comments on engagements and attachments are <strong>not</strong> available through the HubSpot API and therefore cannot be analyzed.</li>
+  <li>Only the initial portion of each email is extracted to avoid processing repetitive threads and legal disclaimers.</li>
+  <li>If critical information is buried deep in long email threads, the AI might not capture it accurately.</li>
+  <li>The AI analyzes the last 100 engagements. For deals with extensive activity history, older engagements may not be considered.</li>
+</ul>
+
+<p><strong>Best practices for better AI results:</strong></p>
+
+<ul>
+  <li>Keep important deal information in the Deal Description field</li>
+  <li>Log key insights as Notes rather than relying solely on email threads</li>
+  <li>Use the org chart and competitor chart features to provide structured context</li>
+  <li>Review and manually edit AI-generated responses to ensure accuracy</li>
+  <li>Use the lock feature to preserve important responses from being overwritten during refills</li>
+</ul>
+
+<hr>
+
 <h4 id="migrate-legacy" class="pt-6-m mb-3 text-primary">Migrate from Legacy App Cards<a class="header-link" href="#migrate-legacy" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>You may have installed a version of Meddicc Score that use the legacy App Cards on the Deal section. You can easily migrate <strong>without loosing any data or any interrumpting your current workflows</strong>.</p>
 
-<p>You may see a message indicating that the card has available updates. For account admins, a link to the app’s settings page will be included. Non-admin users will see similar messaging, but will be guided to contact their account admin to assist with setup.</p>
+<p>You may see a message indicating that the card has available updates. For account admins, a link to the app's settings page will be included. Non-admin users will see similar messaging, but will be guided to contact their account admin to assist with setup.</p>
 
 <p>The process will be the same that when adding a fresh installation, <a href="#access-from-sidebar">described before</a></p>
 
