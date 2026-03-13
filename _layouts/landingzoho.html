@@ -804,6 +804,26 @@
   <div id="footer" class="page__footer mt-0">
     <footer>{% include footer/custom.html %} {% include_cached footer.html %}</footer>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          const ip = data.ip;
+          const links = document.querySelectorAll('[href="https://app.meddiccscore.com/zoho/installlink"]');
+          links.forEach(link => {
+            try {
+              const url = new URL(link.href);
+              url.searchParams.append('ip', ip);
+              link.href = url.toString();
+            } catch (error) {
+              console.error('Error modifying URL:', error);
+            }
+          });
+        })
+        .catch(error => console.error('Error fetching IP address:', error));
+    });
+  </script>
   {% include scripts.html %}
   {% include scripts/custom.html %}
 </body>
