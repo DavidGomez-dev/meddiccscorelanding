@@ -11,11 +11,11 @@ tags:
   - Sales Qualification
   - Sales Enablement
 classes: wide
-date: 2023-03-16 11:42:15 +0100
+date: 2023-03-16 12:42:15 +0100
 excerpt: Effective sales qualification is often the difference between a record-breaking quarter and a missed forecast. To understand how teams can move away from "gut-feeling" sales...
 header:
-  overlay_image: /assets/images/posts/2026-03-16_908.webp
-  teaser: /assets/images/posts/2026-03-16_908.webp
+  overlay_image: /assets/images/posts/2026-03-16_800.webp
+  teaser: /assets/images/posts/2026-03-16_800.webp
   caption:
 ---
 
