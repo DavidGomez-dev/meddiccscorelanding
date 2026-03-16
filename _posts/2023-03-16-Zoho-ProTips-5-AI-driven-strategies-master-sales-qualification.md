@@ -11,8 +11,8 @@ classes: wide
 date: 2023-03-16 11:42:15 +0100
 excerpt: In the fast-paced world of B2B sales, time is your most precious commodity. Successfully closing deals isn't just about working harder; it’s about...
 header:
-  overlay_image: /assets/images/posts/2026-03-16_908.png
-  teaser: /assets/images/posts/2026-03-16_908.png
+  overlay_image: /assets/images/posts/2026-03-16_908.webp
+  teaser: /assets/images/posts/2026-03-16_908.webp
   caption:
 ---
 
