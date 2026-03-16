@@ -8,8 +8,8 @@ tags:
   - Sales Qualification
   - Sales Enablement
 classes: wide
-date: 2023-03-15 11:42:15 +0100
-excerpt: In the world of B2B sales, a bloated pipeline is often a silent killer. We’ve all seen it: a CRM filled with "Promising" leads that somehow never cross the finish line...
+date: 2023-03-15 13:42:15 +0100
+excerpt: In the world of B2B sales, a bloated pipeline is often a silent killer. We’ve all seen it, a CRM filled with "Promising" leads that somehow never cross the finish line...
 header:
   overlay_image: /assets/images/posts/2026-03-15_908.webp
   teaser: /assets/images/posts/2026-03-15_908.webp
