@@ -573,7 +573,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p class="text-center"><img src="/assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">HubSpot User Permissions Guide</a>.</p>
+<p>For more information on user permissions, visit the <a href="https://knowledge.hubspot.com/user-management/hubspot-user-permissions-guide?#account" target="_blank">HubSpot User Permissions Guide</a>, <a href="https://knowledge.hubspot.com/integrations/resolve-a-request-for-integration-permissions-error" target="_blank">or this link.</a></p>
 
 <hr>
 
