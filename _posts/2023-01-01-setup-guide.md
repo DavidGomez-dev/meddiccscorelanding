@@ -329,7 +329,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <strong>Individual by sections:</strong> With this option, each section of the form (e.g., Metrics, Economic Buyer, etc.) is scored as either bad (0), medium (0.5), or good (1). The individual section scores are then summed, divided by the total number of sections, and multiplied by 100 to produce a final score between 0 and 100. This method provides more predictable and consistent results, though it may also lead to more repetitive scoring patterns.
     </li>
   </ul>
-  <li>Consider only the las XX days of engagements: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
+  <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
 </ul>
 
 <p class="pt-6-m" id="selectLLM"><strong>8.1.4 AI LLM Model Provider:</strong></p>
@@ -470,8 +470,8 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <ul>
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore, and their licence status.</li>
-  <li>Language Settings: You can set a preferred language for every user on the account. This ensures that Sales Frameworks (questions and answers), assessments, and next steps are generated in that specific language. This setting applies even if the original records are in a different language. By default, all users are set to English.<br> 
-  Supported Languages: English, French, German, Dutch, Spanish, Portuguese, and Italian. (more can be added per request) </li>
+  <li><strong>Language Settings</strong>: You can set a preferred language for every user on the account. This ensures that Sales Frameworks (questions and answers), assessments, and next steps are generated in that specific language. This setting applies even if the original records are in a different language. By default, all users are set to English.<br> 
+  <strong>Supported Languages</strong>: English, French, German, Dutch, Spanish, Portuguese, and Italian. (more can be added per request) </li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
       <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
