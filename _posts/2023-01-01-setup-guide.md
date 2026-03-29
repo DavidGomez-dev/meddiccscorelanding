@@ -323,10 +323,10 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <li>Score of the forms go from 0 to 100. There are two options for Scoring the forms:</li>
   <ul>
     <li>
-      <strong>All the form together (default):</strong> When enabled, the entire form is evaluated by the selected AI LLM model, which generates a score based on the overall responses within the sales qualification framework and assesses the likelihood of successfully closing the deal. Please note that results may vary depending on the chosen model and the specific evaluation, and may sometimes be subject to interpretation or appear optimistic in nature.
+      <strong>All the form together (default):</strong> The selected AI model evaluates the form holistically and assigns a single score based on the overall completeness and deal quality. Results can vary by model and interpretation, and may sometimes skew optimistic. In this mode, section weights are not used.
     </li>
     <li>
-      <strong>Individual by sections:</strong> With this option, each section of the form (e.g., Metrics, Economic Buyer, etc.) is scored as either bad (0), medium (0.5), or good (1). The individual section scores are then summed, divided by the total number of sections, and multiplied by 100 to produce a final score between 0 and 100. This method provides more predictable and consistent results, though it may also lead to more repetitive scoring patterns.
+      <strong>Individual by sections (weighted):</strong> Each section of the form (e.g., Metrics, Economic Buyer, etc.) is rated as bad (0), medium (0.5), or good (1). The section score is multiplied by its weight configured in the Frameworks settings, and all section scores are summed to produce the final 0–100 score. If no weights are set, all sections are weighted equally. This method is more predictable and consistent, though it can lead to more repetitive scoring patterns.
     </li>
   </ul>
   <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
@@ -454,6 +454,8 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <ul>
   <li>Only Admins can access this feature. Clicking on the Frameworks tab, allows the Admins to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
   <li>The framework selected will also be the Default framework for the entire account. Every new deal will use this framework by default. The change will not affect the answers or frameworks previously submitted in existing deals. The default framework is initially set to MEDDICC.</li>
+  <li><strong>Section weights (Scoring):</strong> In the Frameworks tab you can assign a weight (as a percentage) to each category. Those weights define the maximum points for each category in the “Individual by sections (weighted)” scoring method. The final score is the sum of each category’s rating (bad/medium/good = 0/0.5/1) multiplied by its weight.</li>
+  <li><strong>Validation:</strong> The weights must add up to exactly 100% to be saved. The UI shows the total and any remaining or excess percentage. If the total is not 100%, the weights are not saved and the system falls back to equal weighting across categories.</li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/guide10n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
