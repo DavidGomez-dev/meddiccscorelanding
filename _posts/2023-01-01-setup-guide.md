@@ -330,6 +330,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
     </li>
   </ul>
   <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
+  <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
 </ul>
 
 <p class="pt-6-m" id="selectLLM"><strong>8.1.4 AI LLM Model Provider:</strong></p>
