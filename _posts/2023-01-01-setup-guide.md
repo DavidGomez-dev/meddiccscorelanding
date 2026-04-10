@@ -474,7 +474,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <ul>
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore, and their licence status.</li>
   <li><strong>Language Settings</strong>: You can set a preferred language for every user on the account. This ensures that Sales Frameworks (questions and answers), assessments, and next steps are generated in that specific language. This setting applies even if the original records are in a different language. By default, all users are set to English.<br> 
-  <strong>Supported Languages</strong>: English, French, German, Dutch, Spanish, Portuguese, and Italian. (more can be added per request) </li>
+  <strong>Supported Languages</strong>: Arabic, Chinese, English, French, German, Dutch, Spanish, Portuguese, Hindi, Japanese and Italian. (more can be added per request) </li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
       <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
