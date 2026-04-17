@@ -31,6 +31,8 @@ header:
   </div>
 </div>
 
+<p>If you are a <strong>seller or non-admin user</strong> and only need the end-user steps, use the <a href="{% post_url 2023-01-01-setup-guide-sellers %}">simplified seller guide</a>.</p>
+
 <div id="accordionExample" class="accordion">
 <div class="accordion-item">
 
