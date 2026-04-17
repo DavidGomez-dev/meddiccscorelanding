@@ -1,3 +1,61 @@
+<script>
+  (function () {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var navContexts = ["hubspot", "crm", "zoho", "salesforce"];
+      var navParam = params.get("nav");
+      var context = null;
+
+      if (navParam && navContexts.includes(navParam)) {
+        sessionStorage.setItem("navContext", navParam);
+        context = navParam;
+      } else if (window.location.pathname.startsWith("/hubspot/")) {
+        context = "hubspot";
+      } else if (window.location.pathname.includes("setup-guide-crm")) {
+        context = "crm";
+      } else if (
+        window.location.pathname.startsWith("/zoho") ||
+        window.location.pathname.includes("setup-guide-zoho")
+      ) {
+        context = "zoho";
+      } else if (
+        window.location.pathname.startsWith("/salesforce") ||
+        window.location.pathname.includes("setup-guide-salesforce")
+      ) {
+        context = "salesforce";
+      } else {
+        var storedContext = sessionStorage.getItem("navContext");
+        if (storedContext && navContexts.includes(storedContext)) {
+          context = storedContext;
+        }
+      }
+
+      if (context) {
+        document.documentElement.dataset.navContext = context;
+      }
+    } catch (err) {
+      console.warn("Unable to initialize nav context early", err);
+    }
+  })();
+</script>
+
+<style>
+  html[data-nav-context] [data-nav-context] {
+    display: none !important;
+  }
+
+  html[data-nav-context="hubspot"] [data-nav-context="hubspot"],
+  html[data-nav-context="hubspot"] [data-nav-context="both"],
+  html[data-nav-context="crm"] [data-nav-context="crm"],
+  html[data-nav-context="crm"] [data-nav-context="both"],
+  html[data-nav-context="zoho"] [data-nav-context="zoho"],
+  html[data-nav-context="zoho"] [data-nav-context="both"],
+  html[data-nav-context="salesforce"] [data-nav-context="salesforce"],
+  html[data-nav-context="salesforce"] [data-nav-context="both"] {
+    display: flex !important;
+  }
+</style>
+
 <nav
   class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
   id="mainNav"
@@ -19,6 +77,14 @@
     <div class="d-flex align-items-center gap-2 d-none" data-nav-context="zoho">
       <a class="navbar-brand fw-bold" href="/zoho/"
         >{{ site.title }} for Zoho</a
+      >
+    </div>
+    <div
+      class="d-flex align-items-center gap-2 d-none"
+      data-nav-context="salesforce"
+    >
+      <a class="navbar-brand fw-bold" href="/salesforce/"
+        >{{ site.title }} for Salesforce</a
       >
     </div>
     <button
@@ -72,13 +138,11 @@
           <a class="nav-link me-lg-3" href="/#pricing">Pricing</a>
         </li>
         <li class="nav-item">
-          <strong>
-            <a
-              class="nav-link me-lg-3 color-primary"
-              href="https://app.meddiccscore.com/auth/signin"
-              >Sign in</a
-            >
-          </strong>
+          <a
+            class="nav-link me-lg-3"
+            href="/blog/setup-guide-salesforce/?nav=salesforce"
+            >Guide</a
+          >
         </li>
       </ul>
       <ul
@@ -98,6 +162,28 @@
         </li>
         <li class="nav-item">
           <a class="nav-link me-lg-3" href="/zoho/#pricing">Pricing</a>
+        </li>
+      </ul>
+      <ul
+        class="navbar-nav ms-auto me-4 my-3 my-lg-0 d-none"
+        data-nav-context="salesforce"
+      >
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/salesforce/#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/salesforce/#blog">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link me-lg-3"
+            href="/blog/setup-guide-salesforce/?nav=salesforce"
+            >Guide</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-lg-3" href="/salesforce/#pricing">Pricing</a>
         </li>
       </ul>
       <div class="d-flex align-items-center gap-2" data-nav-context="hubspot">
@@ -161,10 +247,26 @@
       >
         <a
           class="d-flex align-items-center gap-2 btn bg-gradient-primary-to-secondary text-white px-4 py-2 me-3"
-          href="https://app.meddiccscore.com/zoho/installlink"
+          href="{{ site.zohoappinstall }}"
           ><img
             src="/assets/images/zoho.ico"
             alt="Zoho"
+            width="20"
+            height="20"
+            class="me-2"
+          />Install app</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center gap-2 d-none"
+        data-nav-context="salesforce"
+      >
+        <a
+          class="d-flex align-items-center gap-2 btn bg-sf text-white px-4 py-2 me-3"
+          href="{{ site.salesforceappinstall }}"
+          ><img
+            src="/assets/images/salesforce.svg"
+            alt="Salesforce"
             width="20"
             height="20"
             class="me-2"

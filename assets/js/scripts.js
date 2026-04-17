@@ -9,10 +9,10 @@
 
 // BANT trick
 // Get the current URL
-const currentUrl = window.location.href;
+const currentUrl1 = window.location.href;
 
 // Create a URL object to parse the URL
-const url = new URL(currentUrl);
+const url = new URL(currentUrl1);
 
 // Use URLSearchParams to get query parameters
 const params = new URLSearchParams(url.search);
@@ -24,7 +24,7 @@ if (params.get("bant") === "true") {
   });
 }
 
-const navContexts = ["hubspot", "crm", "zoho"];
+const navContexts = ["hubspot", "crm", "zoho", "salesforce"];
 const navContextKey = "navContext";
 
 const resolveNavContext = () => {
@@ -51,6 +51,13 @@ const resolveNavContext = () => {
     window.location.pathname.includes("setup-guide-zoho")
   ) {
     return "zoho";
+  }
+
+  if (
+    window.location.pathname.startsWith("/salesforce") ||
+    window.location.pathname.includes("setup-guide-salesforce")
+  ) {
+    return "salesforce";
   }
 
   try {
@@ -140,7 +147,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector(".navbar-toggler");
   const responsiveNavItems = [].slice.call(
-    document.querySelectorAll("#navbarResponsive .nav-link")
+    document.querySelectorAll("#navbarResponsive .nav-link"),
   );
   responsiveNavItems.map(function (responsiveNavItem) {
     responsiveNavItem.addEventListener("click", () => {

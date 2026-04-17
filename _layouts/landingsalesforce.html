@@ -10,12 +10,12 @@
   <!-- <link href="assets/css/styles.css" rel="stylesheet" /> -->
 </head>
 
-<body id="page-top">
+<body id="page-top" class="salesforce">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC96C23V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- Navigation-->
-  {% include navigationcrm.html %}
+  {% include navigationsalesforce.html %}
   <!-- Mashead header-->
   <header class="masthead indexpage">
     <div class="container">
@@ -24,101 +24,66 @@
           <!-- Mashead text and app badges-->
           <div class="mb-5 mb-lg-0 text-center text-lg-start">
             <p class="lead fw-normal mb-2 ps-3 border-start border-3 border-primary d-none d-md-block">
-              The first MEDDICC and AI focused CRM
+              MEDDICC qualification built for Salesforce
             </p>
-            <h1 class="display-1 lh-1 mb-3"><span class="frameworkName">Meddicc</span> Score CRM</h1>
+            <h1 class="display-1 lh-1 mb-3"><span class="frameworkName">Meddicc</span> Score for <img
+            src="/assets/images/salesforceblue.svg"
+            alt="Salesforce"
+            width="80"
+            height="80"
+            class="me-2"
+          />Salesforce</h1>
             <p class="lead fw-normal text-muted mb-3">
-              Simplify Your Sales Workflow with ✨<strong>AI-enabled <span class="frameworkName">MEDDICC</span> Tracking</strong> CRM.
+              Bring ✨<strong>AI-enabled <span class="frameworkName">MEDDICC</span> qualification</strong> directly into Salesforce.
             </p>
             <ul class="py-3 text-left">
-              <li>AI-Powered <strong>Scoring</strong> and Instant Deal Feedback.</li>
-              <li><strong>AI Contact Assessment</strong> that summarizes relationships and drafts tailored follow-up emails.</li>
+              <li><strong>Automatically Complete</strong> qualification forms with Salesforce activity.</li>
+              <li>AI-Powered <strong>Scoring</strong> and Instant Feedback.</li>
               <li>Support for <strong>Multiple Frameworks</strong>: MEDDPICC, BANT, SPICED, CHAMP...</li>
-              <li>Effortless <strong>Integration</strong> with HubSpot (Zoho and Salesforce coming) for Streamlined Workflows.</li>
+              <li>Native <strong>Salesforce workflow</strong> across Opportunities, Contacts, and Accounts.</li>
             </ul>
             <div class="d-flex flex-column flex-lg-column align-items-center justify-content-center">
-              <div class="d-flex gap-2 align-items-center justify-content-center">
-
-                <a
-                  class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 me-3"
-                  href="/hubspot/"
-                  ><svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z"
-                      fill="#FF7A59"
-                    ></path></svg>for HubSpot<i class="bi bi-box-arrow-up-right"></i></a> 
-                                    <a
-                  class="d-flex align-items-center gap-2 btn bg-zoho text-white px-4 py-2 me-3"
-                  href="/zoho/"
-                  ><img src="/assets/images/zoho.ico" alt="Zoho" width="20" height="20" class="me-2" />for Zoho<i class="bi bi-box-arrow-up-right"></i></a>
-                                                      <a
-                  class="d-flex align-items-center gap-2 btn bg-sf text-white px-4 py-2 me-3"
-                  href="/salesforce/"
-                  ><img src="/assets/images/salesforce.svg" alt="Salesforce" width="20" height="20" class="me-2" />for Salesforce<i class="bi bi-box-arrow-up-right"></i></a>
+              <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                       <a
+          class="d-flex align-items-center gap-2 btn bg-sf text-white px-4 py-2 me-3"
+          href="{{ site.salesforceappinstall }}"
+          ><img
+            src="/assets/images/salesforce.svg"
+            alt="Salesforce"
+            width="20"
+            height="20"
+            class="me-2"
+          />Install for free <i class="bi bi-box-arrow-up-right"></i></a
+        >
+                <a class="d-flex align-items-center gap-2 btn bg-black text-white px-5 py-2" href="/">Not Salesforce?</a>
               </div>
-                <a
-                  class="d-flex align-items-center gap-2 btn bg-gradient-primary text-white px-4 py-2 me-3 mt-3"
-                  href="https://app.meddiccscore.com/auth/signup"
-                  >Not CRM? 🚀 Sign up free</a>
-              <p class="my-0 fs-12px text-muted">No credit card required · Connects in minutes</p>
-
-
+              <p class="my-0 fs-12px text-muted">Salesforce rollout available · Demo on request</p>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-6 px-4 px-md-1 pt-0 mt-0 pt-md-5 mt-md-5 mb-5 order-1 order-md-2">
-          <!-- Masthead device mockup feature-->
-          <div class="masthead-device-mockup mb-5">
-            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-          <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-            <stop class="gradient-start-color" offset="0%"></stop>
-            <stop class="gradient-end-color" offset="100%"></stop>
-          </linearGradient>
-              </defs>
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
-            </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-             <img src="/assets/images/crm-screenshot1.png" class="z-3 rounded rounded-3" alt="Meddicc Score for HubSpot" srcset="" /> 
-            <!--<div style=" padding-bottom: 56.25%; height: 0;">
-              <iframe class="video-poster z-3 border border-primary border-3 rounded rounded-3" src="https://www.youtube.com/embed/w3IJ8lJpCIw?rel=0&modestbranding=1&autoplay=1&mute=1&playsinline=1" title="Meddicc Score demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;" loading="lazy"></iframe>
-            </div>-->
-          </div>
-                      <!-- Avatar testimonials -->
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center g-3 gap-4 pt-5 mt-5">
+            <!-- Avatar testimonials -->
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center g-3 gap-4 mt-5">
               <div class="avatar-group">
           <!-- Custom class for avatar grouping -->
           <!-- Avatar items -->
           <div class="avatar">
             <!-- Custom class for avatar size -->
-            <img alt="Testimonial of using Meddicc Score for Hubspot" src="/assets/images/testimonial_1.jpg" />
+            <img alt="Testimonial of using Meddicc Score for Salesforce" src="/assets/images/testimonial_1.jpg" />
           </div>
           <div class="avatar">
             <!-- Custom class for avatar size -->
-            <img alt="Testimonial of using Meddicc Score for Hubspot" src="/assets/images/testimonial_steven.jpeg" />
+            <img alt="Testimonial of using Meddicc Score for Salesforce" src="/assets/images/testimonial_steven.jpeg" />
           </div>
           <div class="avatar">
             <!-- Custom class for avatar size -->
-            <img alt="Testimonial of using Meddicc Score for Hubspot" src="/assets/images/testimonial_clem.jpg" />
+            <img alt="Testimonial of using Meddicc Score for Salesforce" src="/assets/images/testimonial_clem.jpg" />
           </div>
 
           <div class="avatar">
             <!-- Custom class for avatar size -->
-            <img alt="Testimonial of using Meddicc Score for Hubspot" src="/assets/images/testimonial_rob.webp" />
+            <img alt="Testimonial of using Meddicc Score for Salesforce" src="/assets/images/testimonial_rob.webp" />
           </div>
           <div class="avatar">
             <!-- Custom class for avatar size -->
-            <img alt="Testimonial of using Meddicc Score for Hubspot" src="/assets/images/testimonial_dylan.webp" />
+            <img alt="Testimonial of using Meddicc Score for Salesforce" src="/assets/images/testimonial_dylan.webp" />
           </div>
               </div>
               <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start g-1">
@@ -133,13 +98,32 @@
           <div class="text-muted"><span class="fw-bold fs-5">+200</span> happy users worldwide<br> from companies like:</div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
-      <div class='row'>
-        <div class="d-flex gap-2 align-items-center justify-content-center">
-
-
-
+        <div class="col-lg-6 px-4 px-md-1 pt-0 mt-0 pt-md-5 mt-md-5 mb-5 order-1 order-md-2">
+          <!-- Masthead device mockup feature-->
+          <div class="masthead-device-mockup">
+            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+          <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+            <stop class="gradient-start-color" offset="0%"></stop>
+            <stop class="gradient-end-color" offset="100%"></stop>
+          </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="50"></circle>
+            </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+              <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+            </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="50"></circle>
+            </svg>
+            <!-- <img src="/assets/images/screenshot.gif" class="z-3" alt="Meddicc Score for Salesforce" srcset="" /> -->
+            <div style=" padding-bottom: 56.25%; height: 0;">
+              <!-- <iframe class="video-poster" src="https://www.loom.com/embed/86ba7d2367064a80aa9f233190c3f89f?sid=3f8dc7d0-397e-4b72-909b-be3331e82590&hideEmbedTopBar=true&muted=true&autoplay=true&hide_speed=true&t=68&captions=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              </iframe> -->
+              <iframe class="video-poster z-3 border border-primary border-3 rounded rounded-3" src="https://www.youtube.com/embed/w3IJ8lJpCIw?rel=0&modestbranding=1&autoplay=1&mute=1&playsinline=1" title="Meddicc Score for Salesforce demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;" loading="lazy"></iframe>
+            </div>
+          </div>
         </div>
       </div>
       <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 my-3 my-md-5 logo-frame">
@@ -226,16 +210,16 @@
             <div class="h2 fs-4 text-white mb-4">
               "Ensures we follow best practices in managing our sales flow, with a seamless, all-in-one solution that's easily accessible within our CRM."
             </div>
-            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_dylan.webp" alt="Meddic Score for HubSpot user" style="height: 6rem" />
+            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_dylan.webp" alt="Meddic Score for Salesforce user" style="height: 6rem" />
             <div class="text-white">Dylan Evaldsson - <a href="https://passby.com/" class="text-white text-decoration-none"><strong class="text-white">passby.com</strong></a></div>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class='border border-3 border-white rounded rounded-3 p-3'>
             <div class="h2 fs-4 text-white mb-4">
-              "No need to set-up expensive & complex architecture/process to work with MEDDPICC in HubSpot. AI supports in understanding AE's input."
+              "No need to set up expensive and complex architecture to work with MEDDPICC in Salesforce. AI supports understanding the AE's input."
             </div>
-            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_rob.webp" alt="Meddic Score for HubSpot user" style="height: 6rem" />
+            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_rob.webp" alt="Meddic Score for Salesforce user" style="height: 6rem" />
             <div class="text-white">Rob Verschelden - <a href="https://www.geopostcodes.com/" class="text-white text-decoration-none"><strong class="text-white">geopostcodes.com</strong></a></div>
           </div>
         </div>
@@ -244,7 +228,7 @@
             <div class="h2 fs-4 text-white mb-4">
               "We struggled with deal consistency across our sales team. Meddicc Score brought everyone onto the same page. A must-have for any sales manager."
             </div>
-            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_clem.jpg" alt="Meddic Score for HubSpot user" style="height: 6rem" />
+            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_clem.jpg" alt="Meddic Score for Salesforce user" style="height: 6rem" />
             <div class="text-white">Clément Jaraud - <a href="https://home.askforthemoon.com/" class="text-white text-decoration-none"><strong class="text-white">askforthemoon.com</strong></a></div>
           </div>
         </div>
@@ -262,20 +246,20 @@
                 <!-- Feature item-->
 
                 <div class="text-center">
-                  <i class="bi-speedometer2 icon-feature text-gradient d-block mb-3"></i>
-                  <h3 class="font-alt">Smart User Dashboard</h3>
+                  <i class="bi-magic icon-feature text-gradient d-block mb-3"></i>
+                  <h3 class="font-alt">Smart Form Completion</h3>
                   <p class="text-muted mb-0">
-                    Agentic AI based to focus your sales reps on what is the next most important thing to do.
+                    Deal information (Emails, Notes, Meetings, Calls...) is fetched and used to auto-fill the form.
                   </p>
                 </div>
               </div>
               <div class="col-md-6 mb-5">
                 <!-- Feature item-->
                 <div class="text-center">
-                  <i class="bi-magic icon-feature text-gradient d-block mb-3"></i>
+                  <i class="bi-speedometer2 icon-feature text-gradient d-block mb-3"></i>
                   <h3 class="font-alt">Automated AI Scoring</h3>
                   <p class="text-muted mb-0">
-                    The tool calculates scores based on the factual data, providing you with feedback insights and next steps
+                    The tool calculates scores based on the factual data, providing you with feedback insights
                     instantly.
                   </p>
                 </div>
@@ -298,24 +282,11 @@
                 <!-- Feature item-->
                 <div class="text-center">
                   <i class="icon-feature text-gradient d-block mb-3">
-                    <svg width="64" height="64" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <style type="text/css">
-                        #gradientLogo {
-                          fill: url(#MyGradient);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="MyGradient">
-                          <stop offset="0%" stop-color="#00a4bd" />
-                          <stop offset="100%" stop-color="#00bda5" />
-                        </linearGradient>
-                      </defs>
-                      <path id="gradientLogo" d="M10.1704 10.0886C9.08591 10.0886 8.20682 9.24967 8.20682 8.21499C8.20682 7.18014 9.08591 6.34125 10.1704 6.34125C11.2548 6.34125 12.1339 7.18014 12.1339 8.21499C12.1339 9.24967 11.2548 10.0886 10.1704 10.0886ZM10.7581 4.60775V2.94095C11.2141 2.73545 11.5334 2.29534 11.5334 1.78456V1.74609C11.5334 1.04115 10.929 0.46439 10.1903 0.46439H10.1501C9.41142 0.46439 8.80706 1.04115 8.80706 1.74609V1.78456C8.80706 2.29534 9.12637 2.73564 9.58234 2.94113V4.60775C8.90354 4.70789 8.28331 4.97506 7.7718 5.36825L2.97601 1.8083C3.00766 1.69233 3.02989 1.57295 3.03008 1.44746C3.03084 0.649214 2.35371 0.00108006 1.51684 9.346e-07C0.680322 -0.000897062 0.000943832 0.645439 9.79483e-07 1.44386C-0.000939964 2.2423 0.67618 2.89043 1.51307 2.89133C1.78568 2.89169 2.03814 2.8178 2.25932 2.69769L6.97674 6.19976C6.57563 6.77759 6.34051 7.46977 6.34051 8.21499C6.34051 8.99508 6.5988 9.71679 7.03515 10.3102L5.60065 11.6793C5.48723 11.6467 5.36967 11.6241 5.24494 11.6241C4.55746 11.6241 3.99998 12.1559 3.99998 12.8119C3.99998 13.4682 4.55746 14 5.24494 14C5.93261 14 6.4899 13.4682 6.4899 12.8119C6.4899 12.6933 6.46617 12.5809 6.43206 12.4727L7.85111 11.1185C8.49527 11.5876 9.29748 11.8695 10.1704 11.8695C12.2856 11.8695 14 10.2333 14 8.21499C14 6.38782 12.5934 4.87833 10.7581 4.60775Z" fill="#FF7A59"></path>
-                    </svg>
+                    <img src="/assets/images/salesforceblue.svg" alt="Salesforce" width="64" height="64" />
                   </i>
-                  <h3 class="font-alt">Easy Integration with CRMs</h3>
+                  <h3 class="font-alt">Easy Integration with Salesforce</h3>
                   <p class="text-muted mb-0">
-                    Seamlessly integrate with HubSpot and Zoho (Salesforce soon) to enhance your existing Deal, Contact and Company pages.
+                    Seamlessly integrate with Salesforce to enhance your existing Opportunity, Contact, and Account pages.
                   </p>
                 </div>
               </div>
@@ -339,7 +310,7 @@
             </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <circle cx="50" cy="50" r="50"></circle>
             </svg>
-            <img src="/assets/images/crm-screenshot2.png" class="z-3 border border-primary border-3 rounded rounded-3" alt="Meddicc Score for HubSpot" srcset="" />
+            <img src="/assets/images/screenshot2n.png" class="z-3 border border-primary border-3 rounded rounded-3" alt="Meddicc Score for Salesforce" srcset="" />
           </div>
         </div>
       </div>
@@ -350,7 +321,23 @@
     <div class="container px-5">
       <div class="row gx-5 justify-content-center justify-content-lg-between">
         <div class="col-12 order-2 order-md-1 col-lg-5">
-
+          <h2 class="display-4 lh-1 mb-4">🪄<strong>Smart</strong> Form Auto-Completion</h2>
+          <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+            The tool retrieves activity recorded in Salesforce and uses <strong>AI to pre-populate</strong> the sales framework (e.g., <span class="frameworkName">MEDDICC</span>) with opportunity context.</p>
+          <p class="my-3 mb-lg-0">
+            <a class="lead text-decor-none link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <strong>How Smart Completion work? <i class="bi bi-chevron-down"></i></strong>
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample2">
+            <p class="my-2 mb-lg-0 text-justify">
+              Meddicc Score retrieves recent Opportunity activity (Emails, Meetings, Calls, Notes...) recorded in Salesforce and uses an AI model to respond to the framework (e.g., MEDDICC) questions.
+              <br>These responses pre-fill the form but they can be also manually updated later by the user.
+              <br>The tool uses a high-intelligence LLM model model trained for fast, complex tasks. The prompt and parameters are tuned to provide more focused and deterministic responses. 
+              <br>Users can also choose from the best existing models from the top providers such as OpenAI, Google, Anthopic or Meta.
+              <br>The data you provided is NOT used for training the model. <a href="/privacy/#use-of-ai-services">Please refer to the LLM provider privacy policies.</a>
+            </p>
+          </div>
 
           <h2 class="display-4 lh-1 mb-4 mt-5">✨ AI-powered scoring and <strong>feedback</strong></h2>
           <p class="lead fw-normal text-muted mb-5 mb-lg-0">
@@ -372,9 +359,9 @@
 
         </div>
         <div class="col-sm-12 col-md-7 order-1 order-md-2 p-0 align-items-start">
-          <div class="px-0  sticky-top top-100px">
-            <video autoplay loop muted playsinline controls class="img-fluid crm-card p-0" poster="/assets/images/demo-poster-clip.png">
-              <source src="/assets/images/demo-clip.mp4" type="video/mp4">
+          <div class="px-0 px-md-5 sticky-top top-100px">
+            <video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3" poster="/assets/images/poster-clip.png">
+              <source src="/assets/images/clip.mp4" type="video/mp4">
               <source src="/assets/images/clip.webm" type="video/webm">
               Your browser does not support the video tag.
             </video>
@@ -389,8 +376,8 @@
     <div class="container px-5">
       <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-sm-8 col-md-6 p-0">
-          <div class="px-0  pb-4 pb-md-0">
-            <img class="img-fluid crm-card " src="/assets/images/crm-features2.png" alt="AI scoring of sales deals" />
+          <div class="px-0 pb-4 pb-md-0">
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features2.png" alt="AI scoring of sales deals" />
           </div>
         </div>
         <div class="col-12 col-lg-5">
@@ -407,13 +394,13 @@
     <div class="container px-5">
       <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-12 col-lg-5">
-          <h2 class="display-4 lh-1 mb-4">⚡ Smart User <strong>Dashboard</strong></h2>
+          <h2 class="display-4 lh-1 mb-4">⚡ Access from <strong>Opportunity, Contact and Account</strong> pages</h2>
           <p class="lead fw-normal text-muted mb-5 mb-lg-0">
-            Easier to track opportunities, review insights, and update scores without leaving your workflow. Focus on the prioroties and close deals faster with <strong>talking points</strong> for every Contact.
+            Qualify opportunities, review insights, and update scores without leaving Salesforce. Boost productivity and close deals faster with <strong>talking points</strong> for every contact.
         </div>
         <div class="col-sm-8 col-md-6 p-0">
-          <div class="px-0  pb-4 pb-md-0">
-            <img class="img-fluid crm-card" src="/assets/images/crm-features3.png" alt="AI scoring of sales deals" />
+          <div class="px-0 pb-4 pb-md-0">
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features5.png" alt="AI scoring of sales deals" />
           </div>
         </div>
       </div>
@@ -424,37 +411,78 @@
     <div class="container px-5">
       <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-sm-8 col-md-6 p-0">
-          <div class="px-0  pb-4 pb-md-0">
-            <img class="img-fluid crm-card p-2" src="/assets/images/features4.png" alt="AI scoring of sales deals" />
+          <div class="px-0 pb-4 pb-md-0">
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features4.png" alt="AI scoring of sales deals" />
           </div>
         </div>
         <div class="col-12 col-lg-5">
-          <h2 class="display-4 lh-1 mb-4">🦾 Effortless CRM <strong>Integration</strong> with <strong>Automations</strong></h2>
+          <h2 class="display-4 lh-1 mb-4">🦾 Effortless Salesforce <strong>Integration</strong> with <strong>Automations</strong></h2>
           <p class="lead fw-normal text-muted mb-5 mb-lg-0">
-            Meddicc Score is available for <strong>HubSpot</strong>, sourcing for all the CRM information. Automatically score your entire pipeline with <strong>automations</strong> and keep scores continuously updated using <strong>workflows</strong>.
+            Score fits naturally into your Salesforce workflow, making it easy to use in dashboards, reports, and BI tools. Automatically score your pipeline with <strong>automations</strong> and keep qualification data continuously updated across your process.
         </div>
 
       </div>
     </div>
   </section>
-  <!-- Basic features section
+  <!-- Basic features section-->
   <section class="bg-light">
     <div class="container px-5">
       <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-12 col-lg-5">
-          <h2 class="display-4 lh-1 mb-4">📈 <strong>Reports</strong> and export to Excel or PDF</h2>
+          <h2 class="display-4 lh-1 mb-4">📊 Reports & <strong>Deal Hygiene</strong></h2>
+          <p class="lead fw-normal text-muted mb-3">
+            <p class="lead fw-normal text-muted mb-3">
+              Keep your pipeline healthy and supervise your team with reports showing <strong>average MEDDICC scores per Sales Rep</strong>, deals missing scores, and score trends. Spot at‑risk opportunities and qualification gaps by pipeline, owner, or stage — then export to Excel or PDF for audits and sharing.
+            </p></p>
+          </p>
           <p class="lead fw-normal text-muted mb-5 mb-lg-0">
-            Generate <strong>comprehensive pipeline reports</strong> for a clear sales overview. Easily <strong>export notes and key data</strong> to Excel or PDF, simplifying trend analysis, performance tracking, and team collaboration. Streamline workflows with seamless data management and reporting.
+            Actionable exports and visuals enforce deal hygiene, prioritize follow-ups, and <strong>improve forecasting accuracy</strong>.
+          </p>
         </div>
         <div class="col-sm-8 col-md-6 p-0">
           <div class="px-5 px-sm-0">
-            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features3.png" alt="AI scoring of sales deals" />
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features3n.png" alt="AI scoring of sales deals" />
           </div>
         </div>
       </div>
     </div>
-  </section>-->
-
+  </section>
+      <!-- Basic features section-->
+  <section class="">
+    <div class="container px-5">
+      <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-sm-8 col-md-6 p-0">
+          <div class="px-0 pb-4 pb-md-0">
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features6.png" alt="Organizational Chart Feature" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <h2 class="display-4 lh-1 mb-4">🏢 Visualize Stakeholder Maps with <strong>Org Charts</strong></h2>
+          <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+            Map out key stakeholders and reporting structures with interactive organizational charts. Define <strong>buying roles</strong>, identify champions and blockers, and understand the political landscape of your deals. This information is also used to pre-fill your sales frameworks, <strong>saving you valuable time</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Competitor Charts section-->
+  <section class="bg-light">
+    <div class="container px-5">
+      <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-12 col-lg-5">
+          <h2 class="display-4 lh-1 mb-4">⚔️ <strong>Competitor Charts</strong> for Strategic Insights</h2>
+          <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+            Visualize and analyze your competitive landscape with interactive competitor charts. Compare price and quality market positioning to strengthen your sales strategy and identify unique value propositions. Gain a competitive edge by understanding how your offerings stack up against rivals in key deals.
+          </p>
+        </div>
+        <div class="col-sm-8 col-md-6 p-0">
+          <div class="px-0 pb-4 pb-md-0">
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features61.png" alt="Competitor Charts Feature" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <!-- Basic features section-->
   <section class="">
     <div class="container px-5">
@@ -465,13 +493,51 @@
             Pick the best AI model for your needs from top providers like <strong>OpenAI, Google, Anthropic, or Meta</strong>. Choose based on performance, cost, or data privacy to ensure your sales process is powered by the most suitable AI technology. With <strong>Azure OpenAI</strong> you can also guarantee enterprise-grade security and privacy.
         </div>
         <div class="col-sm-8 col-md-6 p-0">
-          <div class="px-0  pb-4 pb-md-0">
-            <img class="img-fluid crm-card p-2" src="/assets/images/guide811.png" alt="AI providers for Meddicc Score" />
+          <div class="px-0 pb-4 pb-md-0">
+            <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/guide811.png" alt="AI providers for Meddicc Score" />
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- NotesAI CTA aside-->
+  <!-- <aside class="text-center bg-light">
+    <div class="container px-3 px-md-5">
+      <h2 class="display-4 lh-1 mb-4 text-left">📝 Leverage <strong>AI Notetakers</strong></h2>
+      <div class="row g-4 pt-5 justify-content-center">
+        <div class="col-12 col-md-6">
+          <div class='border border-3 border-primary rounded rounded-3 p-0 p-md-3'>
+            <div class="h2 fs-4 mb-4">
+              <p>MeddicScore reads recent updates in a Salesforce opportunity, sends them to an LLM, and extracts the information that is relevant to MEDDIC.</p>
+              <p>This works especially well for us because we often use an AI meeting transcriber when we speak with customers, so our meeting notes in Salesforce are quite rich with information.</p>
+              <p>This workflow has saved me hours of work - and really helps me identity gaps in my deals where I need to get more info.</p>
+            </div>
+            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_steven.jpeg" alt="Meddic Score for Salesforce user" style="height: 6rem" />
+            <div class="text-disabled">Steven Renwick - <a href="https://tilores.io/"><strong class="">tilores.io</strong></a></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="/assets/images/notetaking.png" class="py-3" alt="note taking esquema" srcset="">
+          <div class="row ms-2 g-4 p-3 justify-content-center">
+            <div class="col-12 col-md-4">
+              <strong>1.</strong> Use your AI note-taking app to <strong>transcribe your meetings</strong> and phone calls. Users have reported that <strong>Fireflies</strong> and <strong>Fathom</strong> work exceptionally well.
+            </div>
+            <div class="col-12 col-md-4">
+              <strong>2.</strong> Automatically integrate the transcribed notes into Salesforce as an activity, task, or meeting record.
+            </div>
+            <div class="col-12 col-md-4">
+              <strong>3.</strong> Allow MeddicScore to analyze the notes and <strong>automatically extract relevant information</strong> for your sales framework, ensuring accurate scoring.
+            </div>
+          </div>
+          <h4 class="py-3"><strong>Save countless hours of work!</strong></h4>
+          <a class="btn private-button--primary px-4 py-2 me-5" href="https://fireflies.ai/?fpr=david72" target="_blank">Try Fireflies <i class="bi bi-box-arrow-up-right"></i></a>
+          <a class="btn private-button--primary px-4 py-2" href="https://fathom.partnerlinks.io/ial3ldnc585p" target="_blank">Try Fathom <i class="bi bi-box-arrow-up-right"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </aside> -->
   <!-- Pricing section-->
   <section class="" style="background-color: #f3f3f4;" id="pricing">
     <div class="container px-3 px-md-5">
@@ -480,14 +546,9 @@
         <p>🚨 BLACK FRIDAY SALE 🚨: Apply code <strong>BLACK25</strong> at the checkout for 50% off for 3 months! (valid until Monday December 1, 2025)</p>
       </div> -->
       <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-5 border-primary cta-pricing">
-        <div class="col-md-4"><h3>30 Days FREE Trial</h3></div>
-        <div class="col-md-4">Use <span class="fw-bold">30DAYSTRIAL</span> code at the checkout. <br><span class="fs-xs">No commitment requiered, cancel anytime.</span></div>
-        <div class="col-md-4 mt-3 mt-md-0">
-                <a
-class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto" style="max-width: 180px;"
-        href="https://app.meddiccscore.com/auth/signup"
-        >🚀 Sign up free</a
-      >
+        <div class="col-md-4"><h3>Salesforce rollout</h3></div>
+        <div class="col-md-4">Use the same Meddicc Score plans with Salesforce. <br><span class="fs-xs">Contact us for onboarding and rollout details.</span></div>
+        <div class="col-md-4 mt-3 mt-md-0"><a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto" style="max-width: 180px;" href="mailto:support@meddiccscore.com?subject=Salesforce%20Pricing%20-%20Meddicc%20Score&body=Hi%2C%0A%0AI%20would%20like%20pricing%20and%20rollout%20details%20for%20Meddicc%20Score%20for%20Salesforce.%0A%0ARegards%2C%0A%5BYour%20Name%5D">Talk to sales</a>
         </div>
       </div>
       <div class="row gx-5 justify-content-center justify-content-lg-between pt-5">
@@ -519,7 +580,7 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
               <ul>
                 <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
                 <li><span class="price-text-blue">&#10003;</span> Unlimited deals with Score</li>
-                <li><span class="price-text-blue">&#10003;</span> Dedicated Support</li>
+                <li><span class="price-text-blue">&#10003;</span> Automations</li>
               </ul>
             </div>
           </div>
@@ -540,7 +601,7 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
               <ul>
                 <li><span class="price-text-blue">&#10003;</span> View Meddicc Score</li>
                 <li><span class="price-text-blue">&#10003;</span> Unlimited deals with Score</li>
-                <li><span class="price-text-blue">&#10003;</span> Prioritary Support</li>
+                <li><span class="price-text-blue">&#10003;</span> Automations</li>
               </ul>
               <div class="text-center pb-1 pricing-more-than-10">
                 <details class="pricing-more-than-10__details">
@@ -555,6 +616,7 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
                     <a href="mailto:support@meddiccscore.com" class="my-1 price-contact">Contact us</a>
                   </div>
                 </details>
+                <span class="pricing-more-than-10__disclaimer">* Only users who actively use the plugin require a license (not every Salesforce user).</span>
               </div>
 
             </div>
@@ -591,7 +653,7 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
                 <span class="fw-bolder">I give MEDDICC Score my highest recommendation.</span>"
               </p>
             </div>
-            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_prasanna.jpeg" alt="Meddic Score for HubSpot user" style="height: 6rem" />
+            <img class="img-fluid rounded-circle" src="/assets/images/testimonial_prasanna.jpeg" alt="Meddic Score for Salesforce user" style="height: 6rem" />
             <div class="text-white">Prasanna Kumar, CEO - <a href="mailto:prasanna@methodmarketing.in" class="text-white text-decoration-none"><strong class="text-white">Method Marketing</strong></a></div>
           </div>
         </div>
@@ -604,7 +666,7 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
       <h2 class="display-4 lh-1 mb-5">Resources about Meddicc Score</h2>
       <div class="row my-5 gx-5 pt-3 px-0 px-md-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-sm-8 col-md-4 p-0">
-          <div class="pax-4 px-md-5">
+          <div class="pax-4 px-3 px-md-0">
             <a href="/blog/gated-meddicc/">
             <img class="img-fluid rounded rounded-3" src="/assets/images/guides/1/herov2.webp" alt="How to Create a Gate for Pipeline Stages with Meddicc" />
             </a>
@@ -613,7 +675,7 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
         <div class="col-12 col-md-8">
           <h3 class="display-5 lh-1 mb-4">How to Create a <strong>Gate for Pipeline Stages</strong> with Meddicc Frameworks</h3>
           <p class="lead fw-normal text-muted mb-5 mb-lg-0">
-            <span class="fw-bolder">[VIDEO]</span> Learn how to make MEDDICC part of your HubSpot pipeline by requiring SDRs to complete a Meddicc Score before advancing deals in the pipeline...</p>
+            <span class="fw-bolder">[VIDEO]</span> Learn how to make MEDDICC part of your Salesforce pipeline by requiring SDRs to complete a Meddicc Score before advancing opportunities...</p>
         </div>
       </div>
       <div class="entries-grid pt-5">
@@ -633,9 +695,9 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
             <h3 class="text-white mb-4">
               Improve Your Sales Process
               <br />
-              with Meddicc Score for HubSpot
+              with Meddicc Score for Salesforce
             </h3>
-            <a class="btn btn-light py-3 px-4 mt-5 rounded-pill" href="mailto:support@meddiccscore.com?subject=Book%20a%20Demo%20-%20Meddicc%20Score%20for%20HubSpot&body=Hi%2C%0A%0AI%20would%20like%20to%20book%20a%20demo%20for%20Meddicc%20Score%20for%20HubSpot.%20Please%20share%20available%20dates%20and%20times.%0A%0ARegards%2C%0A%5BYour%20Name%5D" target="_blank">Book a demo →</a>
+            <a class="btn btn-light py-3 px-4 mt-5 rounded-pill" href="mailto:support@meddiccscore.com?subject=Book%20a%20Demo%20-%20Meddicc%20Score%20for%20Salesforce&body=Hi%2C%0A%0AI%20would%20like%20to%20book%20a%20demo%20for%20Meddicc%20Score%20for%20Salesforce.%20Please%20share%20available%20dates%20and%20times.%0A%0ARegards%2C%0A%5BYour%20Name%5D" target="_blank">Book a demo →</a>
           </div>
           <div class='col-12 col-lg-5 px-0 px-md-5'>
             <!-- START - We recommend to place the below code where you want the form in your website html  -->
@@ -753,11 +815,9 @@ class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto
   <!-- App badge section-->
   <section class="bg-gradient-primary-to-secondary" id="download">
     <div class="container px-5">
-      <h3 class="text-center text-white font-alt mb-4">Start Your Free Trial Today!</h3>
+      <h3 class="text-center text-white font-alt mb-4">Start Your Salesforce Rollout</h3>
       <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2 mx-auto" style="max-width: 180px;"
-        href="https://app.meddiccscore.com/auth/signup"
-        >🚀 Sign up free</a>
+        <a class="d-flex align-items-center gap-2 btn bg-black text-white px-4 py-2" href="mailto:support@meddiccscore.com?subject=Book%20a%20Demo%20-%20Meddicc%20Score%20for%20Salesforce&body=Hi%2C%0A%0AI%20would%20like%20to%20book%20a%20demo%20for%20Meddicc%20Score%20for%20Salesforce.%20Please%20share%20available%20dates%20and%20times.%0A%0ARegards%2C%0A%5BYour%20Name%5D">Book a demo</a>
       </div>
     </div>
   </section>

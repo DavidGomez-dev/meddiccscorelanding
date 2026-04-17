@@ -505,9 +505,15 @@ strong {
 }
 
 $zoho-color: #5464f2;
+$sf-color: #0176d3;
+$sf-gradient-start: #021d5b;
 
 .bg-zoho {
   background-color: $zoho-color !important;
+}
+
+.bg-sf {
+  background-color: $sf-color !important;
 }
 
 .zoho .bg-gradient-primary-to-secondary {
@@ -540,6 +546,77 @@ $zoho-color: #5464f2;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
-.sidebar.resume{
+.salesforce .bg-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, $sf-gradient-start, #1b96ff) !important;
+}
+
+.salesforce .bg-gradient-primary {
+  background-color: $sf-gradient-start;
+  background-image: linear-gradient(-303deg, $sf-gradient-start, #1b96ff);
+}
+
+.salesforce .text-gradient {
+  background: linear-gradient(45deg, $sf-gradient-start, #1b96ff) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.salesforce .border-primary {
+  border-color: $sf-color !important;
+}
+
+.salesforce .gradient-start-color {
+  stop-color: $sf-gradient-start !important;
+}
+
+.salesforce .gradient-end-color {
+  stop-color: #1b96ff !important;
+}
+
+.salesforce strong {
+  color: $sf-color !important;
+}
+
+.salesforce strong.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.salesforce .private-button--primary,
+.salesforce .private-button--primary:hover {
+  background-color: $sf-color;
+  border-color: $sf-color;
+  color: #fff !important;
+}
+
+.salesforce .private-button--primary:visited {
+  color: #fff !important;
+}
+
+.salesforce .text-decor-none:hover,
+.salesforce .color-primary {
+  color: $sf-color !important;
+}
+
+.salesforce .text-decor-none:hover {
+  text-decoration-color: $sf-color !important;
+}
+
+.salesforce #sib-container a,
+.salesforce .price-text-blue {
+  color: $sf-color !important;
+}
+
+.salesforce .cta-pricing,
+.salesforce .pricing-card-header {
+  background-color: $sf-gradient-start;
+  background-image: linear-gradient(-303deg, $sf-gradient-start, #1b96ff);
+}
+
+.salesforce .crm-topbar__logo-icon {
+  background-color: $sf-color;
+}
+
+.sidebar.resume {
   padding-bottom: 20px !important;
 }
