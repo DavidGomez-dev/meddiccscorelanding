@@ -49,9 +49,11 @@ header:
 
 <p>For the first installation, we recommend selecting <strong>Install for Admins Only</strong>. This gives you a controlled rollout: first validate the experience as an admin, then assign the packaged permission set to the end users who should start with the app.</p>
 
+<p class="text-center"><img src="/assets/images/sfguide0.png" alt="App launcher" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
 <p>If Salesforce asks for access to an external site or third-party callout, approve it so the package can reach the Meddicc Score backend for scoring, refill, and settings sync.</p>
 
-<p><strong>Screenshot to add:</strong> the Salesforce package install page showing the package name, the org login, and the <strong>Install for Admins Only</strong> option selected.</p>
+<p class="text-center"><img src="/assets/images/sfguide01.png" alt="App launcher" class="w-75 my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
