@@ -333,6 +333,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </ul>
   <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
   <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
+    <li><strong>Custom scoring prompt (Pro+ only)</strong>: With the Pro+ add-on it is possible to customize the prompt that is it used for scoring. Tehre is a base prompt that is what it is used. It is recommended to follow that format.</li>
 </ul>
 
 <p class="pt-6-m" id="selectLLM"><strong>8.1.4 AI LLM Model Provider:</strong></p>
@@ -350,7 +351,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
     <ul>
       <li><strong>OpenAI / GPT 4.1  (default): </strong><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Google / Gemini 2.5:</strong> <a href="https://deepmind.google/models/gemini/" target="_blank">more information on model capabilities ↗</a></li>
-      <li><strong>Anthropic / Sonnet 4:</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on model capabilities ↗</a></li>
+      <li><strong>Anthropic / Sonnet 4 (Pro+ only):</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Meta / Llama 4:</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>OpenAI / GPT OSS:</strong> <a href="https://platform.openai.com/docs/models/gpt-oss-120b" target="_blank">more information on model capabilities ↗</a>. GPT OSS is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>Azure OpenAI / GPT 4.1:</strong> Microsoft Azure enables the use of OpenAI models (along with others) in a private, secure, enterprise-grade deployment, guaranteeing full data privacy (according to their claims). This allows organizations to leverage the latest OpenAI models without explicitly sharing their information with OpenAI.<a href="https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/" target="_blank">more information on Azure ↗</a>. For this to work, more information is required:
@@ -542,6 +543,461 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p>You can also change your billing details by clicking on Billing Information > "Update information".</p>
 
 <p class="text-center"><img src="/assets/images/trouble51n.png" alt="troubleshooting" class="mt-5 w-50 border border-3 border-primary rounded rounded-3"></p>
+
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+
+<h3 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseApi" aria-expanded="true" aria-controls="collapseApi"><span id="api" class="pt-6-m">Meddicc Score API</span>
+</button></h3>
+
+<div class="accordion-collapse collapse" id="collapseApi" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-overview">12. Meddicc Score API Overview (Pro+ only)</h4>
+
+<p>Meddicc Score also provides an API so external automations and workflows can read and update MEDDICC data programmatically for HubSpot-connected accounts.</p>
+
+<p>This API is currently available only for <strong>premium feature</strong> accounts where:</p>
+
+<ul>
+  <li>The account has <strong>Pro+ add-on enabled</strong>.</li>
+  <li>The account has at least <strong>one premium user</strong>.</li>
+  <li>An <strong>account-scoped API token</strong> has been configured for the workspace.</li>
+</ul>
+
+<p>The token is account-scoped, so it gives access to the deals that belong to that HubSpot account. If API  access has not been enabled for your workspace yet, please contact Meddicc Score support. It can be generated on Settings > General > Meddicc Score API Key. This is you YOUR_ACCOUNT_API_TOKEN</p>
+
+<p class="text-center"><img src="/assets/images/guide121.png" alt="Api key" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-authentication">12.1 Authentication</h4>
+
+<p>Requests can authenticate either with a Bearer token (YOUR_ACCOUNT_API_TOKEN) in the <code>Authorization</code> header or with a direct API key header (without Bearer) such as <code>apikey</code>, <code>api-key</code>, <code>api_key</code>, <code>x-api-key</code> or <code>x-apikey</code>.</p>
+
+<pre><code>Authorization: Bearer YOUR_ACCOUNT_API_TOKEN
+apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
+
+<p>Base path:</p>
+
+<pre><code>/hubspot/api/v1</code></pre>
+
+<p>Download the Postman collection: <a href="https://app.meddiccscore.com/js/Meddicc_Score_API.postman_collection.json" target="_blank">Meddicc Score API Postman Collection</a></p>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-endpoints">12.2 Available Endpoints</h4>
+
+<table style="width:100%; border-collapse:collapse; margin-bottom:1rem;">
+  <thead>
+    <tr>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Method</th>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Endpoint</th>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/deals?page=1&amp;limit=25</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns the deals stored in Meddicc Score for the authenticated account with pagination metadata.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/deals</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Workflow-friendly paginated deal listing endpoint that accepts <code>page</code> and <code>limit</code> in the JSON body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc?hs_object_id=123456789</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns the full MEDDICC payload plus flattened questions and summary data.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc-summary?hs_object_id=123456789</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns a compact summary including score, lock state, completion and per-section status.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Workflow-friendly read endpoint that accepts <code>hs_object_id</code> or <code>dealId</code> in the JSON body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc-summary</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Workflow-friendly summary endpoint that accepts <code>hs_object_id</code> or <code>dealId</code> in the JSON body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc/questions/lock</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Locks or unlocks a single question using <code>hs_object_id</code> or <code>dealId</code>, plus <code>questionId</code> and <code>locked</code> in the body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc/score-lock</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Locks or unlocks the overall score using <code>hs_object_id</code> or <code>dealId</code> and <code>locked</code> in the body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc/score</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Updates the score manually from the request body using <code>hs_object_id</code> or <code>dealId</code> and <code>score</code>.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc/recalculate</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Recalculates the score from the current MEDDICC answers using <code>hs_object_id</code> or <code>dealId</code> in the body.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Note:</strong> the API accepts <code>hs_object_id</code>, <code>dealId</code>, <code>deal_id</code> or <code>objectId</code> as the HubSpot Deal ID. For HubSpot workflows, <code>hs_object_id</code> is the recommended field name because that is what HubSpot exposes directly.</p>
+
+<p><strong>Note:</strong> <code>questionId</code> currently maps to the internal question name, for example <code>metrics</code>, <code>economicBuyer</code>, <code>decisionCriteria</code>, <code>champion</code>, etc.</p>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-examples">12.3 Endpoint Details and Examples</h4>
+
+<p>The read endpoints support both <code>GET</code> and <code>POST</code>. For HubSpot workflows, prefer the <code>POST</code> variants because workflow actions can send JSON bodies more easily than query-string parameters.</p>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>GET /deals</code> and <code>POST /deals</code></h5>
+
+<p>Purpose: list the deals that already exist in the Meddicc Score database for the authenticated account.</p>
+
+<p>Accepted pagination fields:</p>
+
+<ul>
+  <li><code>page</code>: optional, default <code>1</code>.</li>
+  <li><code>limit</code>: optional, default <code>25</code>, maximum <code>100</code>.</li>
+</ul>
+
+<p>Typical <code>GET</code> request:</p>
+
+<pre><code>curl --request GET \
+  --url "https://app.meddiccscore.com/hubspot/api/v1/deals?page=1&amp;limit=25" \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN"</code></pre>
+
+<p>Typical <code>POST</code> request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/deals \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "page": 1,
+    "limit": 25
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "page": 1,
+  "limit": 25,
+  "total": 142,
+  "totalPages": 6,
+  "hasNextPage": true,
+  "hasPreviousPage": false,
+  "deals": [
+    {
+      "hs_object_id": "123456789",
+      "dealId": "123456789",
+      "dealname": "Acme Expansion",
+      "dealstage": "contractsent",
+      "amount": 50000,
+      "hasMeddicc": true,
+      "summary": {
+        "hs_object_id": "123456789",
+        "dealId": "123456789",
+        "score": 78,
+        "lockedScore": false,
+        "completionPct": 64
+      }
+    }
+  ]
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>GET /meddicc</code> and <code>POST /meddicc</code></h5>
+
+<p>Purpose: return the full stored MEDDICC payload for one deal, plus a flattened <code>questions</code> array and a computed <code>summary</code>.</p>
+
+<p>Required deal identifier:</p>
+
+<ul>
+  <li><code>GET</code>: pass <code>hs_object_id</code> in the query string.</li>
+  <li><code>POST</code>: pass <code>hs_object_id</code> in the JSON body.</li>
+</ul>
+
+<p>Accepted alternative field names are <code>dealId</code>, <code>deal_id</code> and <code>objectId</code>, but <code>hs_object_id</code> is recommended.</p>
+
+<p>Typical <code>POST</code> request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789"
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "hs_object_id": "123456789",
+  "dealId": "123456789",
+  "updatedAt": "2026-04-25T10:21:00.000Z",
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 78,
+    "lockedScore": false,
+    "completionPct": 64
+  },
+  "questions": [
+    {
+      "id": "economicBuyer",
+      "section": "economicBuyer",
+      "value": "VP Finance",
+      "locked": false
+    }
+  ],
+  "meddicc": {
+    "framework": "meddicc",
+    "score": 78
+  }
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>GET /meddicc-summary</code> and <code>POST /meddicc-summary</code></h5>
+
+<p>Purpose: return only the computed summary for one deal. This is usually the best endpoint for workflows that just need the score, lock status, completion, and section-level progress.</p>
+
+<p>Required deal identifier:</p>
+
+<ul>
+  <li><code>GET</code>: <code>hs_object_id</code> in the query string.</li>
+  <li><code>POST</code>: <code>hs_object_id</code> in the JSON body.</li>
+</ul>
+
+<p>Typical <code>GET</code> request:</p>
+
+<pre><code>curl --request GET \
+  --url "https://app.meddiccscore.com/hubspot/api/v1/meddicc-summary?hs_object_id=123456789" \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN"</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "hs_object_id": "123456789",
+  "dealId": "123456789",
+  "framework": "meddicc",
+  "score": 78,
+  "lockedScore": false,
+  "questionCount": 14,
+  "answeredCount": 9,
+  "completionPct": 64,
+  "sectionCount": 7,
+  "completedSectionCount": 4
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/questions/lock</code></h5>
+
+<p>Purpose: lock or unlock a single MEDDICC question so that it cannot be edited by later automations or by the user interface until unlocked again.</p>
+
+<p>Required body fields:</p>
+
+<ul>
+  <li><code>hs_object_id</code>: the HubSpot Deal ID.</li>
+  <li><code>questionId</code>: the internal question name.</li>
+  <li><code>locked</code>: boolean, either <code>true</code> or <code>false</code>.</li>
+</ul>
+
+<p>Typical request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc/questions/lock \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789",
+    "questionId": "economicBuyer",
+    "locked": true
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "success": true,
+  "questionId": "economicBuyer",
+  "locked": true,
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 78,
+    "lockedScore": false
+  }
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/score-lock</code></h5>
+
+<p>Purpose: lock or unlock the overall MEDDICC score. When the score is locked, recalculation does not overwrite the stored score.</p>
+
+<p>Required body fields:</p>
+
+<ul>
+  <li><code>hs_object_id</code>: the HubSpot Deal ID.</li>
+  <li><code>locked</code>: boolean, either <code>true</code> or <code>false</code>.</li>
+</ul>
+
+<p>Typical request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc/score-lock \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789",
+    "locked": true
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "success": true,
+  "lockedScore": true,
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 78,
+    "lockedScore": true
+  }
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/score</code></h5>
+
+<p>Purpose: set the deal score directly through the API.</p>
+
+<p>Required body fields:</p>
+
+<ul>
+  <li><code>hs_object_id</code>: the HubSpot Deal ID.</li>
+  <li><code>score</code>: numeric value. The API stores it as an integer and clamps it to the <code>0</code> to <code>100</code> range.</li>
+</ul>
+
+<p>Typical request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc/score \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789",
+    "score": 78
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "success": true,
+  "score": 78,
+  "hubspotSync": {
+    "success": true,
+    "property": "score_meddicc",
+    "score": 78
+  },
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 78,
+    "lockedScore": false
+  }
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/recalculate</code></h5>
+
+<p>Purpose: recompute the score using the current MEDDICC answers already stored in Meddicc Score.</p>
+
+<p>Required body fields:</p>
+
+<ul>
+  <li><code>hs_object_id</code>: the HubSpot Deal ID.</li>
+</ul>
+
+<p>Typical request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc/recalculate \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789"
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "success": true,
+  "hubspotSync": {
+    "success": true,
+    "property": "score_meddicc",
+    "score": 81
+  },
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 81,
+    "lockedScore": false,
+    "completionPct": 64
+  }
+}</code></pre>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-responses">12.4 Responses and HubSpot Sync</h4>
+
+<p>Score-changing endpoints return the local result plus a <code>hubspotSync</code> object.</p>
+
+<p>The API always stores the MEDDICC change locally first. Then, when the endpoint changes the score, Meddicc Score also tries to update the HubSpot custom property <code>score_meddicc</code> on the deal.</p>
+
+<p>If the HubSpot property update succeeds, the response includes a successful <code>hubspotSync</code> result. If HubSpot rejects the update or the user token needs reauthorization, the local change is still saved and the response explains that the HubSpot sync failed.</p>
+
+<p><code>completionPct</code> is the percentage of MEDDICC questions that currently have an answer. It is a completeness metric, not a quality metric. In other words, it helps you know how much of the framework has been filled in, while <code>score</code> represents the actual MEDDICC evaluation. It is calculated from <code>answeredCount / questionCount</code> and rounded to an integer percentage.</p>
+
+<p>Example response after a manual score update:</p>
+
+<pre><code>{
+  "success": true,
+  "score": 78,
+  "hubspotSync": {
+    "success": true,
+    "skipped": false,
+    "property": "score_meddicc",
+    "score": 78
+  },
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "framework": "meddicc",
+    "score": 78,
+    "lockedScore": false,
+    "completionPct": 64
+  }
+}</code></pre>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-workflows">12.5 Workflow Usage</h4>
+
+<p>This API is intended mainly for advanced automations. A common pattern is:</p>
+
+<ul>
+  <li>Read the current MEDDICC summary for a deal.</li>
+  <li>Use workflow logic to decide whether to lock the score or a specific answer.</li>
+  <li>Update the score manually or trigger a recalculation.</li>
+  <li>Use the returned <code>score</code>, <code>lockedScore</code>, <code>completionPct</code> or <code>hubspotSync</code> fields in the next automation step.</li>
+</ul>
 
 </div>
 </div>

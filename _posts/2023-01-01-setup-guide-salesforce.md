@@ -13,24 +13,7 @@ header:
   overlay_image: /assets/images/zermatt.jpg
   teaser: /assets/images/zermatt.jpg
   caption:
-  video:
-    side: true
-    id: w3IJ8lJpCIw?rel=0&modestbranding=1&autoplay=0&mute=1&playsinline=1
-    provider: "youtube"
 ---
-
-<div class="row my-4">
-  <div class="col-md-6 mb-3">
-    <div class="border border-3 border-primary rounded">
-      <iframe class="youtubevideo" src="https://www.youtube.com/embed/267NvUK-Oe4" title="Meddicc Score Salesforce Installation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="col-md-6 mb-3">
-    <div class="border border-3 border-primary rounded">
-      <iframe src="https://www.youtube.com/embed/D_J_5V0coHA" title="Meddicc Score Salesforce Settings Walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
 
 <p>Meddicc Score for Salesforce installs as a Salesforce package and gives your team a dedicated <strong>Meddicc Score</strong> Lightning app, guided scoring directly inside <strong>Opportunities</strong>, supporting views for <strong>Contacts</strong> and <strong>Accounts</strong>, plus a <strong>Meddicc Dashboard</strong> and <strong>Meddicc Settings</strong> tab.</p>
 
@@ -52,7 +35,17 @@ header:
 
 <p>Start with the package install link below and sign in with a Salesforce admin user in the target org.</p>
 
-<p class="text-center"><a href="{{ site.salesforceappinstall }}" target="_blank" class="w-50"><img src="/assets/images/installBtn.png" alt="Install Meddicc Score for Salesforce"></a></p>
+<p class="text-center">
+<a class="d-flex align-items-center gap-2 btn bg-sf text-white px-4 py-2 me-3 w-25"
+          href="{{ site.salesforceappinstall }}"
+          ><img
+            src="/assets/images/salesforce.svg"
+            alt="Salesforce"
+            width="20"
+            height="20"
+            class="me-2"
+          />Install APP <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
 
 <p>For the first installation, we recommend selecting <strong>Install for Admins Only</strong>. This gives you a controlled rollout: first validate the experience as an admin, then assign the packaged permission set to the end users who should start with the app.</p>
 
@@ -75,7 +68,7 @@ header:
   <li><strong>Meddicc Score permissions</strong> under Permission Sets</li>
 </ul>
 
-<p><strong>Screenshot to add:</strong> App Launcher search results showing <strong>Meddicc Score</strong>, <strong>Meddicc Settings</strong>, and <strong>Meddicc Dashboard</strong>.</p>
+<p class="text-center"><img src="/assets/images/sffeatures4.png" alt="App launcher" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -96,7 +89,7 @@ header:
 
 <p><strong>Important:</strong> if a user is missing this permission set, they may see access errors, missing tabs, or incomplete refill behavior.</p>
 
-<p><strong>Screenshot to add:</strong> the <strong>Meddicc Score permissions</strong> permission set page with <strong>Manage Assignments</strong> visible, or the assignment screen showing one or more users selected.</p>
+<p class="text-center"><img src="/assets/images/sffeatures6.png" alt="Permission sets" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -111,7 +104,7 @@ header:
 
 <p>This gives admins and users a clean default entry point without manually creating a Lightning app first. For onboarding and training, this is the easiest place to start because all key tabs are already grouped together.</p>
 
-<p><strong>Screenshot to add:</strong> the <strong>Meddicc Score</strong> Lightning app open, with the top navigation showing <strong>Meddicc Dashboard</strong> and <strong>Meddicc Settings</strong>.</p>
+<p class="text-center"><img src="/assets/images/sfscreenshot.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -130,7 +123,13 @@ header:
 
 <p>If you want to support multiple frameworks, customize guidance text, or fine-tune scoring behavior before rollout, this is the place to do it.</p>
 
-<p><strong>Screenshot to add:</strong> the <strong>Meddicc Settings</strong> tab open, showing the default settings record and the active framework selector.</p>
+<p class="text-center"><img src="/assets/images/sfguide4.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="/assets/images/sfguide3.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="/assets/images/sfguide2.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="/assets/images/sfguide1.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -140,7 +139,7 @@ header:
 
 <p>If you do not see them, a Salesforce admin should check the Lightning record pages and make sure the packaged components are present and the page assignment is active for the correct apps, profiles, or record types. This is the step that most often decides whether the launch feels smooth for end users.</p>
 
-<p><strong>Screenshot to add:</strong> the Lightning App Builder for an Opportunity record page showing the Meddicc Score component placed on the page.</p>
+<p class="text-center"><img src="/assets/images/sfguide8.png" alt="Permission sets" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
@@ -168,7 +167,7 @@ header:
   <li>The user can manually type answers or use <strong>Refill</strong> to prefill them from Salesforce data</li>
 </ul>
 
-<p><strong>Screenshot to add:</strong> a brand-new Opportunity record showing the Meddicc Score component with a zero score and empty framework questions visible.</p>
+<p class="text-center"><img src="/assets/images/sfposter-clip.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -187,7 +186,14 @@ header:
 
 <p>Users can then review the responses, edit them, refill again later, or rescore at any time. In practice, this means the score can evolve with the deal instead of becoming a one-time exercise.</p>
 
-<p><strong>Screenshot to add:</strong> an Opportunity after <strong>Refill</strong> showing several questions prefilled with responses and a visible score at the top.</p>
+<div class="px-0 px-md-5">
+            <video autoplay loop muted playsinline controls class="img-fluid border border-3 border-primary rounded rounded-3" poster="/assets/images/sfposter-clip.png">
+              <source src="/assets/images/sfclip.mp4" type="video/mp4">
+              <source src="/assets/images/sfclip.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+            <!-- <img class="img-fluid border border-3 border-primary rounded rounded-3" src="/assets/images/features1.png" alt="AI scoring of sales deals" /> -->
+</div>
 
 <hr>
 
@@ -203,7 +209,7 @@ header:
   <li>The team wants AI feedback refreshed without changing a locked score</li>
 </ul>
 
-<p><strong>Screenshot to add:</strong> the Opportunity component showing a locked question and the score area with the edit and lock icons visible.</p>
+<p class="text-center"><img src="/assets/images/sfguide5.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
@@ -215,8 +221,9 @@ header:
 
 <p>This helps teams work from the person and account perspective, not only from the opportunity record.</p>
 
-<p><strong>Screenshot to add:</strong> one Contact record showing the Meddicc side component and one Account record showing the account summary component.</p>
+<p class="text-center"><img src="/assets/images/sffeatures5.png" alt="Contact view" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
+<p class="text-center"><img src="/assets/images/sfguide9.png" alt="Company view" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="dashboard">11. Use the Dashboard</h4>
@@ -235,7 +242,7 @@ header:
 
 <p>Use it as the shared starting point for pipeline review, coaching, and identifying which opportunities need scoring attention first.</p>
 
-<p><strong>Screenshot to add:</strong> the <strong>Meddicc Dashboard</strong> page with the KPI tiles and focus opportunity list visible.</p>
+<p class="text-center"><img src="/assets/images/sffeatures6.png" alt="Competitor chart" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 </div>
 </div>
