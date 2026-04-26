@@ -571,7 +571,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p>The token is account-scoped, so it gives access to the deals that belong to that HubSpot account. If API  access has not been enabled for your workspace yet, please contact Meddicc Score support. It can be generated on Settings > General > Meddicc Score API Key. This is you YOUR_ACCOUNT_API_TOKEN</p>
 
-<p class="text-center"><img src="/assets/images/guide121.png" alt="Api key" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
+<p class="text-center"><img src="/assets/images/guide121.png" alt="Api key" class="w-75 my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
 
