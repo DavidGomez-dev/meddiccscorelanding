@@ -280,7 +280,53 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="settings">8. Settings  (only Admin)</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-workflow-actions">8. HubSpot Workflow Actions (Pro+ only)</h4>
+
+<p>Meddicc Score includes custom HubSpot workflow actions so Admins can automate common MEDDICC operations directly from deal-based workflows. These actions use the enrolled deal automatically, so you do not need to create a webhook, store an API key, or manually map the deal ID.</p>
+
+<p class="text-center"><img src="/assets/images/guides/2/4.png" alt="Workflow actions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>Workflow actions are available for Pro+ accounts with at least one premium user. The enrolled deal must already exist in Meddicc Score and have MEDDICC data.</p>
+
+<table style="width:100%; border-collapse:collapse; margin-bottom:1rem;">
+  <thead>
+    <tr>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Workflow Action</th>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">What it does</th>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Common use case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Get MEDDICC Summary</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns the current framework, score, score lock status, completion percentage, and question/section progress for the enrolled deal. It does not change the deal.</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Branch a workflow based on score, completion, or whether the score is locked.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Lock MEDDICC Score</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Locks the current MEDDICC score for the enrolled deal. Future recalculations can update answers and feedback, but they will not overwrite the stored score while it is locked.</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Freeze the score when a deal reaches a late stage such as Contract Sent.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Unlock MEDDICC Score</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Unlocks the MEDDICC score for the enrolled deal so future recalculations can update it again.</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Allow the score to change again if a deal moves backwards, is reopened, or needs new qualification work.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Recalculate MEDDICC Score</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Recalculates the MEDDICC score using the current answers and syncs the score back to the HubSpot <code>score_meddicc</code> property when possible.</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Refresh the score at a specific stage or after important qualification data has been added.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The actions return output fields that can be used in later workflow branches, including <code>hubspotDealId</code>, <code>dealId</code>, <code>framework</code>, <code>score</code>, <code>lockedScore</code>, <code>completionPct</code>, <code>questionCount</code>, <code>answeredCount</code>, <code>sectionCount</code>, <code>completedSectionCount</code>, <code>errorCode</code>, and <code>errorMessage</code>. The recalculation action also returns <code>hubspotSyncStatus</code>.</p>
+
+<p>For a full example, see <a href="{% post_url 2023-01-04-hubspot-workflow-lock-score-contract-sent %}">How to Lock and Unlock the Meddicc Score with a HubSpot Workflow</a>. If you need lower-level control, the <a href="#hubspot-api-overview">Meddicc Score API</a> section below explains the webhook-based approach.</p>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="settings">9. Settings  (only Admin)</h4>
 
 <ul>
   <li>Only Admins (considered that in Meddicc Score, may be different from HubSpot admins) can access Settings. This will get access to customize the experience of Meddicc Score. It is organized in four sections: General settings, Company Profile (to provide context to the AI),  Framework (to modify the questions) and Users (to manage user access and licences).</li>
@@ -289,11 +335,11 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <p class="text-center"><img src="/assets/images/guide8n.png" alt="Editing" class="w-50 my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<h5 class="pt-6-m mb-3 text-primary" id="settings-general">8.1 General Settings:</h5>
+<h5 class="pt-6-m mb-3 text-primary" id="settings-general">9.1 General Settings:</h5>
 
 <p class="text-center"><img src="/assets/images/guide81n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p><strong>8.1.1 Users access:</strong></p>
+<p><strong>9.1.1 Users access:</strong></p>
 
 <ul>
   <li><strong>Change Framework:</strong> Allows non-admin users to switch between different sales qualification frameworks (e.g., MEDDICC, BANT).</li>
@@ -301,7 +347,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li>
 </ul>
 
-<p class="pt-6-m" id="automations"><strong>8.1.2 Automations:</strong></p>
+<p class="pt-6-m" id="automations"><strong>9.1.2 Automations:</strong></p>
 
 <ul>
   <li>Automations help you streamline and automate the scoring process. They are only available for Premium users.</li>
@@ -319,7 +365,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
 </ul>
 
-<p class="pt-6-m" id="scoring_methodology"><strong>8.1.3 Scoring Methodology:</strong></p>
+<p class="pt-6-m" id="scoring_methodology"><strong>9.1.3 Scoring Methodology:</strong></p>
 
 <ul>
   <li>Score of the forms go from 0 to 100. There are two options for Scoring the forms:</li>
@@ -336,7 +382,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
     <li><strong>Custom scoring prompt (Pro+ only)</strong>: With the Pro+ add-on it is possible to customize the prompt that is it used for scoring. Tehre is a base prompt that is what it is used. It is recommended to follow that format.</li>
 </ul>
 
-<p class="pt-6-m" id="selectLLM"><strong>8.1.4 AI LLM Model Provider:</strong></p>
+<p class="pt-6-m" id="selectLLM"><strong>9.1.4 AI LLM Model Provider:</strong></p>
 
 <ul>
   <li>
@@ -425,7 +471,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <!-- <h4 class="pt-6-m mb-3 text-primary" id="selectLLM">TODO</h4> -->
 
-<p ><strong>8.1.5 Manage your Subscription and account:</strong></p>
+<p ><strong>9.1.5 Manage your Subscription and account:</strong></p>
 <ul>
   <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
   <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
@@ -436,7 +482,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="company-profile">8.2 Company Profile: Provide context to tailor the AI responses (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="company-profile">9.2 Company Profile: Provide context to tailor the AI responses (only Admin)</h5>
 
 <ul>
   <li>In this section is possible to add more context about your organization's value propositions, products, and services to ensure AI-generated content is relevant and tailored to your organization. Filling this information is optional but recommended. The field that are available are:</li>
@@ -453,7 +499,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">8.3 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="editing-questions">9.3 Frameworks: Editing the framework questions and default framework (only Admin)</h5>
 
 <ul>
   <li>Only Admins can access this feature. Clicking on the Frameworks tab, allows the Admins to edit the questions and the guidance for that framework. The change will apply to all account members (not just the individual user). The modification will not affect the answers or scores previously submitted but will update the questions and guidance for all deals where that framework has been used.</li>
@@ -472,7 +518,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">8.4 Users: Manage your users (only Admin)</h5>
+<h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">9.4 Users: Manage your users (only Admin)</h5>
 
 <ul>
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore, and their licence status.</li>
@@ -492,7 +538,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">9. Report and Export</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="report-and-export">10. Report and Export</h4>
 
 <ul>
   <li>Open the Meddicc Score Home: click the marketplace icon in the top bar and select “Meddicc Score.” The Home screen provides an overview of account opportunities and key metrics.</li>
@@ -519,7 +565,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">10. Upgrade to Premium</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="upgrade-to-premium">11. Upgrade to Premium</h4>
 
 <p>If you like Meddicc Score and want to use it for more than 5 deals, you can upgrade easily from the own app. Click on “Upgrade Now” and you will go to a checkout powered by Stripe.</p>
 
@@ -528,7 +574,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="text-center"><img src="/assets/images/guide5.png" alt="Ugrade" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="changeplan">11. Change the subscription plan or billing details.</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="changeplan">12. Change the subscription plan or billing details.</h4>
 
 <p>If you're already enjoying the premium benefits of Meddicc Score but want to upgrade to a Team plan or switch to a yearly subscription to unlock significant savings, you can easily make the change through the Customer Portal. Take advantage of these exclusive discounts today and maximize your Meddicc Score experience!</p>
 
@@ -557,7 +603,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <div class="accordion-collapse collapse" id="collapseApi" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-overview">12. Meddicc Score API Overview (Pro+ only)</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-overview">13. Meddicc Score API Overview (Pro+ only)</h4>
 
 <p>Meddicc Score also provides an API so external automations and workflows can read and update MEDDICC data programmatically for HubSpot-connected accounts.</p>
 
@@ -575,7 +621,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-authentication">12.1 Authentication</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-authentication">13.1 Authentication</h4>
 
 <p>Requests can authenticate either with a Bearer token (YOUR_ACCOUNT_API_TOKEN) in the <code>Authorization</code> header or with a direct API key header (without Bearer) such as <code>apikey</code>, <code>api-key</code>, <code>api_key</code>, <code>x-api-key</code> or <code>x-apikey</code>.</p>
 
@@ -590,7 +636,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-endpoints">12.2 Available Endpoints</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-endpoints">13.2 Available Endpoints</h4>
 
 <table style="width:100%; border-collapse:collapse; margin-bottom:1rem;">
   <thead>
@@ -660,7 +706,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-examples">12.3 Endpoint Details and Examples</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-examples">13.3 Endpoint Details and Examples</h4>
 
 <p>The read endpoints support both <code>GET</code> and <code>POST</code>. For HubSpot workflows, prefer the <code>POST</code> variants because workflow actions can send JSON bodies more easily than query-string parameters.</p>
 
@@ -955,7 +1001,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-responses">12.4 Responses and HubSpot Sync</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-responses">13.4 Responses and HubSpot Sync</h4>
 
 <p>Score-changing endpoints return the local result plus a <code>hubspotSync</code> object.</p>
 
@@ -988,7 +1034,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-workflows">12.5 Workflow Usage</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-workflows">13.5 Workflow Usage</h4>
 
 <p>This API is intended mainly for advanced automations. A common pattern is:</p>
 
