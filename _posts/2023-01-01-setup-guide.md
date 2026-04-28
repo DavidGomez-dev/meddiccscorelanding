@@ -148,7 +148,7 @@ header:
 
 <ul>
 <li>The Contact Cards list all the deals where the contact is involed on. </li>
-<li>Morevoer, it makes and AI generated Action Plan for this contact, summarizing the importance and providing talking points / potential questions for the next interaction, according to the sales framework.</li>
+<li>Morevoer, it makes an AI generated Action Plan for this contact, summarizing the importance and providing talking points / potential questions for the next interaction, according to the sales framework. If AI is disabled in Settings, the Action Plan is generated deterministically from the number of associated deals and their scores.</li>
 <li>It also generate a draft email to be sent according to the plan, ready by clicking on "Send Email". It is also possible to "Schedule a Meeting", or re-do the contact analysis.</li>
 </ul>
 
@@ -190,6 +190,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <li>Clicking on Score will trigger the AI to reassess and recalculate the Score based on updated data.</li>
   <li>the AI model will provide ✨ Next Steps and suggested questions (and to whom), to help SDRs to know what they need to find out on the next call.</li>
 <li>If the Deal is already closed, it provides a Win Analysis or a Post-Mortem Analysis to learn from the errors and match the framework inputs with the results.</li>
+<li>If <strong>Use AI for Refill and Score</strong> is disabled in Settings, the Refill button is disabled and the Score button uses a deterministic completeness-based calculation from the text entered in each response. Empty responses or responses such as "I don't know" score zero for that question. Next Steps are also generated without AI from the resulting score and response completeness.</li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/guide42.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -342,6 +343,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p><strong>9.1.1 Users access:</strong></p>
 
 <ul>
+  <li><strong>Use AI for Refill and Score:</strong> Enabled by default. When set to <strong>YES</strong>, Meddicc Score can use the selected AI model to refill answers, score the form, generate feedback, and create next steps. When set to <strong>NO</strong>, no AI is used: Refill is disabled, scoring is calculated deterministically from the completeness of each answer, and contact action plans are based only on associated deal counts and scores. The AI LLM Model, Automations, and Scoring Methodology tiles are hidden while this option is disabled.</li>
   <li><strong>Change Framework:</strong> Allows non-admin users to switch between different sales qualification frameworks (e.g., MEDDICC, BANT).</li>
   <li><strong>Change Score Manually:</strong> Enables non-admin users to manually adjust the scores assigned to deals or opportunities.</li>
   <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li>
@@ -350,7 +352,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="pt-6-m" id="automations"><strong>9.1.2 Automations:</strong></p>
 
 <ul>
-  <li>Automations help you streamline and automate the scoring process. They are only available for Premium users.</li>
+  <li>Automations help you streamline and automate the scoring process. They are only available for Premium users and are shown only when <strong>Use AI for Refill and Score</strong> is enabled.</li>
   <li>
     <strong>Automatic Scoring:</strong> When enabled, this feature sets up a workflow so that every time a new engagement (Note, Meeting, Task, or Call) is logged in HubSpot, the Meddicc Score form is automatically re-filled with the latest information and rescored. Locked fields will not be changed, but unlocked fields and the overall score may be updated. Please note the following limitations due to the HubSpot API:
     <ul>
@@ -368,7 +370,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="pt-6-m" id="scoring_methodology"><strong>9.1.3 Scoring Methodology:</strong></p>
 
 <ul>
-  <li>Score of the forms go from 0 to 100. There are two options for Scoring the forms:</li>
+  <li>Score of the forms go from 0 to 100. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. There are two options for Scoring the forms:</li>
   <ul>
     <li>
       <strong>All the form together (default):</strong> The selected AI model evaluates the form holistically and assigns a single score based on the overall completeness and deal quality. Results can vary by model and interpretation, and may sometimes skew optimistic. In this mode, section weights are not used.
@@ -379,14 +381,14 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </ul>
   <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
   <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
-    <li><strong>Custom scoring prompt (Pro+ only)</strong>: With the Pro+ add-on it is possible to customize the prompt that is it used for scoring. Tehre is a base prompt that is what it is used. It is recommended to follow that format.</li>
+    <li><strong>Custom scoring prompt (Pro+ only)</strong>: With the Pro+ add-on, you can customize the instructions used by the AI when scoring deals. The default prompt provides the recommended structure and scoring rules, so use it as a starting point and keep the same format when adapting it to your qualification process.</li>
 </ul>
 
 <p class="pt-6-m" id="selectLLM"><strong>9.1.4 AI LLM Model Provider:</strong></p>
 
 <ul>
   <li>
-    This allows the user to select the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
+    This allows the user to select the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
   </li>
     <li>
       Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
