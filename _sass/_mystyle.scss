@@ -665,6 +665,14 @@ strong {
   box-shadow: 0 1.25rem 3rem rgba(33, 51, 67, 0.08);
 }
 
+.border-primary-nosh {
+  --bs-border-opacity: 1;
+  border-color: rgba(
+    var(--bs-primary-rgb),
+    var(--bs-border-opacity)
+  ) !important;
+}
+
 .final-cta-intro {
   max-width: 48rem;
 }
