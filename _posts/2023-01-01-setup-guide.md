@@ -526,6 +526,16 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore, and their licence status.</li>
   <li><strong>Language Settings</strong>: You can set a preferred language for every user on the account. This ensures that Sales Frameworks (questions and answers), assessments, and next steps are generated in that specific language. This setting applies even if the original records are in a different language. By default, all users are set to English.<br> 
   <strong>Supported Languages</strong>: Arabic, Chinese, English, French, German, Dutch, Spanish, Portuguese, Hindi, Japanese and Italian. (more can be added per request) </li>
+  <li><strong>Weekly Pipeline Risk Digest</strong>: Admins can control the weekly email digest for each user from the Users tab. The digest highlights pipeline risks, missing qualification fields, and recommended next actions before the next pipeline review.</li>
+  <li><strong>Digest role</strong>: Admins can assign each user one of three digest roles:
+    <ul>
+      <li><strong>Sales Rep</strong>: receives a personal pipeline summary and the top deals assigned to them that need attention.</li>
+      <li><strong>Manager</strong>: receives a team summary, owner comparison, recommended focus areas, and the top team deals that need attention.</li>
+      <li><strong>RevOps / Admin</strong>: receives adoption and data quality metrics, framework usage, rep performance, and the top account-level deals that need attention.</li>
+    </ul>
+  </li>
+  <li><strong>Weekly email toggle</strong>: Admins can enable or disable weekly email updates per user. Admin users are enabled by default, and Sales Rep users can be enabled manually by an Admin. New users are enabled by default and can be changed from this same section.</li>
+  <li><strong>Send test email</strong>: Admins can send a test digest from the Users tab to preview what a selected user would receive. Test emails are delivered to the Admin who sends the test and are marked as a test preview.</li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
       <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
