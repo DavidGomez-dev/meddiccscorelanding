@@ -354,7 +354,21 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <ul>
   <li>Automations help you streamline and automate the scoring process. They are only available for Premium users and are shown only when <strong>Use AI for Refill and Score</strong> is enabled.</li>
   <li>
-    <strong>Sync MeddiccScore to HubSpot properties:</strong> When enabled, Meddicc Score creates a <strong>Meddicc Score properties</strong> group on HubSpot Deals and syncs a small set of fixed deal properties. These include <code>score_meddicc</code>, framework, last scored date, completion percentage, missing categories, bad/medium/good categories, qualification status, and next action. This is useful when you want Meddicc Score data available in HubSpot lists, workflows, reports, deal views, manager dashboards, or stage-gate automations. If HubSpot shows a permissions error, see <a href="#sync-properties">Troubleshooting: sync Meddicc Score properties to HubSpot</a>.
+    <strong>Sync MeddiccScore to HubSpot properties:</strong> When enabled, Meddicc Score creates a <strong>Meddicc Score properties</strong> group on HubSpot Deals and syncs a small set of fixed deal properties. This is useful when you want Meddicc Score data available in HubSpot lists, workflows, reports, deal views, manager dashboards, or stage-gate automations.
+    <p>The synced properties are:</p>
+    <ul>
+      <li><code>score_meddicc</code>: The overall Meddicc Score for the deal, from 0 to 100.</li>
+      <li><code>meddicc_framework</code>: The qualification framework used for the deal, such as MEDDICC, MEDDPICC, BANT, SPICED, or a custom framework.</li>
+      <li><code>meddicc_last_scored_date</code>: The date and time when the deal was last successfully scored and synced.</li>
+      <li><code>meddicc_completion_pct</code>: The percentage of framework questions that have been answered.</li>
+      <li><code>meddicc_missing_categories</code>: Categories where at least one required question is still empty.</li>
+      <li><code>meddicc_bad_categories</code>: Categories where the AI feedback is bad and the deal may need attention before moving forward.</li>
+      <li><code>meddicc_medium_categories</code>: Categories where the AI feedback is medium and the qualification may need improvement.</li>
+      <li><code>meddicc_good_categories</code>: Categories where the AI feedback is good.</li>
+      <li><code>meddicc_qualification_status</code>: A summary status for the deal: unscored, incomplete, qualified, or at risk.</li>
+      <li><code>meddicc_next_action</code>: A short recommended next action generated from the deal assessment.</li>
+    </ul>
+    If HubSpot shows a permissions error, see <a href="#sync-properties">Troubleshooting: sync Meddicc Score properties to HubSpot</a>.
   </li>
   <li>
     <strong>Automatic Scoring:</strong> When enabled, this feature sets up a workflow so that every time a new engagement (Note, Meeting, Task, or Call) is logged in HubSpot, the Meddicc Score form is automatically re-filled with the latest information and rescored. Locked fields will not be changed, but unlocked fields and the overall score may be updated. Please note the following limitations due to the HubSpot API:

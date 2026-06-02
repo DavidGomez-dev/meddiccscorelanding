@@ -145,6 +145,10 @@ This deal was moved back to Appointment Scheduled because one or more MEDDICC ca
 Review the MEDDICC Bad Categories property, update the qualification details, and score the deal again before moving it forward.
 ```
 
+Here is an example of the internal email received by the deal owner:
+
+![Example internal HubSpot email notification sent to the deal owner](/assets/images/guides/3/email-received.png)
+
 You can also include HubSpot personalization tokens for the deal name, deal owner, deal stage, and MEDDICC next action.
 
 ---
