@@ -36,5 +36,19 @@ permalink: /blog/
             Learn how to use a HubSpot workflow and the Meddicc Score API to automatically lock the score when a deal reaches a particial stage like "Contract Sent"...</p>
         </div>
       </div>
+      <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-sm-8 col-md-4 p-0">
+          <div class="px-5 px-sm-0">
+            <a href="/blog/hubspot-workflow-prevent-unqualified-meddicc-deals/">
+            <img class="img-fluid rounded rounded-3" src="/assets/images/guides/3/hero.webp" alt="How to Use HubSpot Workflows to Gate Stages on Deals" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <h3>How to Use HubSpot Workflows to <strong>Gate Stages on Deals</strong></h3>
+          <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+            Learn how to use synced Meddicc Score properties in HubSpot workflows to move unqualified deals back, notify the deal owner, and keep later pipeline stages clean.</p>
+        </div>
+      </div>
 
 </div>

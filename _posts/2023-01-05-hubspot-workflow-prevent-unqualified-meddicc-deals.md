@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "How to Use HubSpot Workflows to Move Back Unqualified MEDDICC Deals"
+title: "How to Use HubSpot Workflows to Gate Stages on Deals"
 categories: blog
 tags:
   - HubSpot
@@ -9,15 +9,15 @@ tags:
   - revops
   - pipeline management
 classes: wide
-date: 2026-06-02 12:00:00 +0100
+date: 2023-01-05 12:00:00 +0100
 excerpt: Learn how to use Meddicc Score properties in HubSpot workflows to move deals back when they reach later pipeline stages without strong qualification.
 header:
-  overlay_image: /assets/images/guides/1/herov2.webp
-  teaser: /assets/images/guides/1/herov2.webp
+  overlay_image: /assets/images/guides/3/hero.webp
+  teaser: /assets/images/guides/3/hero.webp
   caption:
 ---
 
-# How to Use HubSpot Workflows to Move Back Unqualified MEDDICC Deals
+# How to Use HubSpot Workflows to Gate Stages on Deals
 
 Pipeline stage gates are useful when you need a required score before a deal can move forward. But many teams want something more practical: a workflow that checks whether a deal is really qualified and pushes it back when important MEDDICC areas are weak.
 
