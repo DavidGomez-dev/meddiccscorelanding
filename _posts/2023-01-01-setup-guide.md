@@ -198,7 +198,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <ul>
   <li>Users can also modify the score manually by clicking the pencil icon below the score.</li>
   <li>Users can also lock the score value. When the score is locked, it will not be changed by manual edits or by Automations. This is useful if you want to update the form with new AI-generated responses or feedback, but keep the previously agreed score unchanged.</li>
-  <li>All scores are stored in HubSpot as a property (custom variable) named “score_meddicc”.<a href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically">Please see below how to configure.</a></li>
+  <li>All scores are stored in HubSpot as a property (custom variable) named <code>score_meddicc</code>. If your Admin enables <strong>Sync MeddiccScore to HubSpot properties</strong> in <strong>Settings &gt; General Settings &gt; Automations</strong>, Meddicc Score can also sync framework, completion, missing categories, bad/medium/good categories, qualification status, last scored date, and next action back to HubSpot deal properties. These fields can then be used in HubSpot lists, workflows, reports, deal views, and dashboards. <a href="#sync-properties">Please see below how to configure.</a></li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/guide412.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"><img src="/assets/images/guide413.png" alt="Manual Scoring" class="w-50 my-3 mx-auto border border-3 border-primary rounded rounded-3"></p>
@@ -353,6 +353,9 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <ul>
   <li>Automations help you streamline and automate the scoring process. They are only available for Premium users and are shown only when <strong>Use AI for Refill and Score</strong> is enabled.</li>
+  <li>
+    <strong>Sync MeddiccScore to HubSpot properties:</strong> When enabled, Meddicc Score creates a <strong>Meddicc Score properties</strong> group on HubSpot Deals and syncs a small set of fixed deal properties. These include <code>score_meddicc</code>, framework, last scored date, completion percentage, missing categories, bad/medium/good categories, qualification status, and next action. This is useful when you want Meddicc Score data available in HubSpot lists, workflows, reports, deal views, manager dashboards, or stage-gate automations. If HubSpot shows a permissions error, see <a href="#sync-properties">Troubleshooting: sync Meddicc Score properties to HubSpot</a>.
+  </li>
   <li>
     <strong>Automatic Scoring:</strong> When enabled, this feature sets up a workflow so that every time a new engagement (Note, Meeting, Task, or Call) is logged in HubSpot, the Meddicc Score form is automatically re-filled with the latest information and rescored. Locked fields will not be changed, but unlocked fields and the overall score may be updated. Please note the following limitations due to the HubSpot API:
     <ul>
@@ -570,7 +573,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="text-center"><img src="/assets/images/guide981n.png" alt="Reporting" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
-  <li>The Score is also available as a custom HubSpot property (score_meddicc), and can be used in reporting, columns, etc.</li>
+  <li>The Score is also available as a custom HubSpot property (<code>score_meddicc</code>), and can be used in reporting, columns, etc. If <strong>Sync MeddiccScore to HubSpot properties</strong> is enabled in <strong>Settings &gt; General Settings &gt; Automations</strong>, HubSpot can also receive the framework, last scored date, completion percentage, missing categories, bad/medium/good categories, qualification status, and next action.</li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -1113,11 +1116,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <h4 id="i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" class="pt-6-m mb-3 text-primary">I cannot see Score as a property / The Score property in HubSpot is not updated automatically<a class="header-link" href="#i-cannot-see-score-as-a-custom-variable--the-score-in-hubspot-is-not-updated-automatically" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
 
-<p>To enable this, you may need to reauthorize the app for the new permits required. Please click here</p>
+<p>To enable this, you may need to reauthorize the app so Meddicc Score can create or update HubSpot deal properties. Please click here:</p>
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
 
-<p>You may also need before that, to have permits to add new properties (or someone else who has authorized the app with all the permits). Partner accounts with permits may be not enough. For reference, the Scope requiered is "crm.pipelines.orders.write".</p>
+<p>You may also need a HubSpot user with permission to create or edit properties, usually a Super Admin. If the app was installed by a user without the required permissions, ask a HubSpot Super Admin to reinstall or reauthorize the app.</p>
 
 <p class="text-center"><img src="/assets/images/trouble1.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -1130,7 +1133,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 <ul>
   <li>The internal name be exactly “score_meddicc”</li>
   <li>Object type is “Deal”</li>
-  <li>Group is “Deal information”</li>
+  <li>Group is “Meddicc Score properties” if available; otherwise “Deal information” is acceptable for this score-only property.</li>
   <li>The property label “Score” or "Score Meddicc" (or any other)</li>
 </ul>
 
@@ -1163,6 +1166,49 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 <p class="text-center"><img src="/assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <hr>
+
+<h4 id="sync-properties" class="pt-6-m mb-3 text-primary">Troubleshooting: sync Meddicc Score properties to HubSpot<a class="header-link" href="#sync-properties" title="Permalink"><span class="sr-only">Permalink</span></a></h4>
+
+<p>The <strong>Sync MeddiccScore to HubSpot properties</strong> toggle is located in <strong>Settings &gt; General Settings &gt; Automations</strong>. When enabled, Meddicc Score tries to create a HubSpot Deal property group named <strong>Meddicc Score properties</strong> and then creates or updates the fixed properties used for reporting, workflows, and stage-gate rules.</p>
+
+<p>If you see <strong>HubSpot property sync needs permissions</strong>, HubSpot did not allow the app to create or update those properties. The most common reasons are:</p>
+
+<ul>
+  <li>The app was authorized by a HubSpot user who is not allowed to create or edit deal properties.</li>
+  <li>The app was installed before the property-sync permissions were available.</li>
+  <li>Your HubSpot portal requires a Super Admin to approve additional CRM property permissions.</li>
+</ul>
+
+<p>To fix it:</p>
+
+<ol>
+  <li>Ask a HubSpot Super Admin to reinstall or reauthorize Meddicc Score using the install button below.</li>
+  <li>Approve the requested CRM permissions.</li>
+  <li>Open <strong>Meddicc Score &gt; Settings &gt; General Settings &gt; Automations</strong>.</li>
+  <li>Turn <strong>Sync MeddiccScore to HubSpot properties</strong> off and on again, or score a deal again.</li>
+</ol>
+
+<p class="text-center"><a href="{{ site.pwalink }}" target="_blank"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
+
+<p>Once permissions are correct, Meddicc Score will create or update these HubSpot Deal properties:</p>
+
+<ul>
+  <li><code>score_meddicc</code></li>
+  <li><code>meddicc_framework</code></li>
+  <li><code>meddicc_last_scored_date</code></li>
+  <li><code>meddicc_completion_pct</code></li>
+  <li><code>meddicc_missing_categories</code></li>
+  <li><code>meddicc_bad_categories</code></li>
+  <li><code>meddicc_medium_categories</code></li>
+  <li><code>meddicc_good_categories</code></li>
+  <li><code>meddicc_qualification_status</code></li>
+  <li><code>meddicc_next_action</code></li>
+</ul>
+
+<p>If your team cannot grant those permissions, Meddicc Score can still save data inside the app and will keep trying to sync the basic score property when possible.</p>
+
+<hr>
+
 <h4 id="the-ai-autofill-is-not-taking-information-from-my-emails" class="pt-6-m mb-3 text-primary">The AI Autofill is not taking information from my Emails<a class="header-link" href="#the-ai-autofill-is-not-taking-information-from-my-emails" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
 <p>To enable this, you may need to reauthorize the app for the new permits required (access to read emails basically). Please click here:</p>

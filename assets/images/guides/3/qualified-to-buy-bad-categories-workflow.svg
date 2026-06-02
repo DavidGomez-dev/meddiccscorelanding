@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1460" viewBox="0 0 960 1460" role="img" aria-labelledby="title desc">
+  <title id="title">HubSpot workflow stage gate example using Meddicc Score bad categories</title>
+  <desc id="desc">A workflow diagram showing a deal entering Qualified To Buy, branching when bad MEDDICC categories are present, moving the deal back to Appointment Scheduled, and emailing the deal owner.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f9fc; }
+      .line { stroke: #425b76; stroke-width: 4; fill: none; }
+      .card { fill: #ffffff; stroke: #00a4bd; stroke-width: 3; }
+      .card-soft { fill: #ffffff; stroke: #d5dee8; stroke-width: 2; }
+      .action { fill: #ffffff; stroke: #00bda5; stroke-width: 3; }
+      .email { fill: #ffffff; stroke: #7c98ff; stroke-width: 3; }
+      .end { fill: #ffffff; stroke: #d5dee8; stroke-width: 2; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #33475b; font-weight: 700; }
+      .text { font-family: Arial, Helvetica, sans-serif; font-size: 20px; fill: #33475b; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 17px; fill: #516f90; }
+      .pill { fill: #eaf0f6; }
+      .plus { fill: #425b76; }
+      .accent { fill: #00a4bd; font-weight: 700; }
+      .muted { fill: #516f90; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="1460" rx="24"/>
+
+  <rect class="card" x="230" y="40" width="500" height="250" rx="12"/>
+  <text class="label" x="270" y="88">Trigger enrollment for deals</text>
+  <rect class="pill" x="270" y="125" width="420" height="110" rx="12"/>
+  <text class="text" x="295" y="160">Deal stage changed to</text>
+  <text class="label" x="295" y="198">Qualified To Buy</text>
+  <text class="small" x="295" y="228">Re-enroll when deal stage changes</text>
+
+  <path class="line" d="M480 290 L480 375"/>
+  <circle class="plus" cx="480" cy="350" r="24"/>
+  <text x="472" y="359" font-family="Arial" font-size="34" fill="#fff">+</text>
+
+  <rect class="card" x="180" y="375" width="600" height="250" rx="12"/>
+  <text class="label" x="220" y="425">1. Branch</text>
+  <text class="text" x="220" y="475">If these criteria are met:</text>
+  <text class="label" x="220" y="515">MEDDICC Bad Categories</text>
+  <text class="text" x="220" y="555">contains Decision Process</text>
+  <text class="text" x="220" y="587">or Paper Process</text>
+
+  <path class="line" d="M480 625 L480 700"/>
+  <path class="line" d="M480 700 L260 700"/>
+  <path class="line" d="M480 700 L700 700"/>
+  <path class="line" d="M260 700 L260 780"/>
+  <path class="line" d="M700 700 L700 780"/>
+
+  <rect class="card-soft" x="70" y="690" width="380" height="82" rx="10"/>
+  <text class="label" x="100" y="725">Has blocked MEDDICC</text>
+  <text class="small" x="100" y="755">bad category present</text>
+
+  <rect class="card-soft" x="610" y="690" width="280" height="82" rx="10"/>
+  <text class="label" x="690" y="740">None met</text>
+
+  <circle class="plus" cx="260" cy="800" r="24"/>
+  <text x="252" y="809" font-family="Arial" font-size="34" fill="#fff">+</text>
+
+  <circle class="plus" cx="700" cy="800" r="24"/>
+  <text x="692" y="809" font-family="Arial" font-size="34" fill="#fff">+</text>
+
+  <rect class="action" x="95" y="845" width="520" height="190" rx="12"/>
+  <text class="label" x="135" y="900">2. Edit record</text>
+  <text class="text" x="135" y="950">Set deal stage on enrolled deal to</text>
+  <text class="label" x="135" y="990">Appointment Scheduled</text>
+
+  <path class="line" d="M260 1035 L260 1120"/>
+  <circle class="plus" cx="260" cy="1100" r="24"/>
+  <text x="252" y="1109" font-family="Arial" font-size="34" fill="#fff">+</text>
+
+  <rect class="email" x="95" y="1150" width="520" height="180" rx="12"/>
+  <text class="label" x="135" y="1202">3. Send internal email</text>
+  <text class="text" x="135" y="1252">Notify the deal owner:</text>
+  <text class="label" x="135" y="1292">Deal moved back from</text>
+  <text class="label" x="135" y="1322">Qualified To Buy</text>
+
+  <path class="line" d="M260 1330 L260 1390"/>
+  <rect class="end" x="190" y="1380" width="140" height="55" rx="10"/>
+  <text class="label" x="235" y="1416">End</text>
+
+  <rect class="end" x="635" y="845" width="130" height="65" rx="10"/>
+  <text class="label" x="675" y="886">End</text>
+</svg>
