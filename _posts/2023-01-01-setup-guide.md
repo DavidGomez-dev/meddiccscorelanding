@@ -553,6 +553,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
   <li><strong>Weekly email toggle</strong>: Admins can enable or disable weekly email updates per user. Admin users are enabled by default, and Sales Rep users can be enabled manually by an Admin. New users are enabled by default and can be changed from this same section.</li>
   <li><strong>Send test email</strong>: Admins can send a test digest from the Users tab to preview what a selected user would receive. Test emails are delivered to the Admin who sends the test and are marked as a test preview.</li>
+    <li><strong>Pipelines</strong>: Admins can configure to what pipelines the user will be subscribed to on the email digest.</li>
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
       <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
@@ -560,6 +561,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <li><strong>Make Admin:</strong> Assigns administrative privileges to the selected user, granting them access to manage account settings and users. There can be more than one Admin, but at least one.</li>
       <li><strong>Remove Admin:</strong> Remove administrative privileges to the selected user. There has to be at least one Admin user.</li>
     </ul>
+        <li><strong>Weekly digest schedule</strong>: This controls when enabled users receive their weekly digest.</li>
   </li>
 </ul>
 
