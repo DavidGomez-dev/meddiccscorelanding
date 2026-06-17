@@ -693,6 +693,21 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
     </tr>
     <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/contacts?page=1&amp;limit=25</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns the contacts stored in Meddicc Score for the authenticated account with pagination metadata.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/contacts</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Workflow-friendly contact endpoint. Without a contact ID it lists contacts; with <code>hs_object_id</code> or <code>contactId</code> it returns one contact.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/contacts/{contactId}</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns one account-owned HubSpot contact by contact ID.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc?hs_object_id=123456789</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Returns the full MEDDICC payload plus flattened questions and summary data.</td>
     </tr>
@@ -798,6 +813,79 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       }
     }
   ]
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>GET /contacts</code>, <code>POST /contacts</code> and <code>GET /contacts/{contactId}</code></h5>
+
+<p>Purpose: retrieve HubSpot contact records that Meddicc Score has stored for the authenticated account. Contacts are created or refreshed when a user opens the Meddicc Score contact or company card.</p>
+
+<p>Accepted pagination fields for list requests:</p>
+
+<ul>
+  <li><code>page</code>: optional, default <code>1</code>.</li>
+  <li><code>limit</code>: optional, default <code>25</code>, maximum <code>100</code>.</li>
+</ul>
+
+<p>Accepted contact identifier fields for single-contact requests are <code>hs_object_id</code>, <code>contactId</code>, <code>contact_id</code> and <code>objectId</code>.</p>
+
+<p>Typical list request:</p>
+
+<pre><code>curl --request GET \
+  --url "https://app.meddiccscore.com/hubspot/api/v1/contacts?page=1&amp;limit=25" \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN"</code></pre>
+
+<p>Typical single-contact request:</p>
+
+<pre><code>curl --request GET \
+  --url https://app.meddiccscore.com/hubspot/api/v1/contacts/987654321 \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN"</code></pre>
+
+<p>Typical list response:</p>
+
+<pre><code>{
+  "page": 1,
+  "limit": 25,
+  "total": 38,
+  "totalPages": 2,
+  "hasNextPage": true,
+  "hasPreviousPage": false,
+  "contacts": [
+    {
+      "hs_object_id": "987654321",
+      "contactId": "987654321",
+      "contactname": "Ada Lovelace",
+      "contactemail": "ada@example.com",
+      "contactjobtitle": "VP Finance",
+      "roles": ["economicBuyer"],
+      "associatedDeals": [
+        {
+          "hs_object_id": "123456789",
+          "dealname": "Acme Expansion"
+        }
+      ],
+      "contactAss": {
+        "summary": "Strong stakeholder"
+      },
+      "hasAssessment": true,
+      "lastEvaluation": "2026-06-17T10:00:00.000Z"
+    }
+  ]
+}</code></pre>
+
+<p>Typical single-contact response:</p>
+
+<pre><code>{
+  "contact": {
+    "hs_object_id": "987654321",
+    "contactId": "987654321",
+    "contactname": "Ada Lovelace",
+    "contactemail": "ada@example.com",
+    "contactjobtitle": "VP Finance",
+    "roles": ["economicBuyer"],
+    "associatedDeals": [],
+    "contactAss": null,
+    "hasAssessment": false
+  }
 }</code></pre>
 
 <h5 class="pt-4-m mb-2 text-primary"><code>GET /meddicc</code> and <code>POST /meddicc</code></h5>
@@ -1152,6 +1240,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>DEAL_NOT_FOUND</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">The deal does not exist in Meddicc Score or does not belong to the authenticated account.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>CONTACT_NOT_FOUND</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The contact does not exist in Meddicc Score or does not belong to the authenticated account.</td>
     </tr>
     <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
