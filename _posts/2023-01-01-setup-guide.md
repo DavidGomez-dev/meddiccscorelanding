@@ -636,6 +636,10 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-overview">13. Meddicc Score API Overview (Pro+ only)</h4>
 
+<div class="p-3 border border-3 border-primary rounded rounded-3">
+<p>Download the Postman collection: <a href="https://app.meddiccscore.com/js/Meddicc_Score_API.postman_collection.json" target="_blank">Meddicc Score API Postman Collection</a></p>
+</div>
+
 <p>Meddicc Score also provides an API so external automations and workflows can read and update MEDDICC data programmatically for HubSpot-connected accounts.</p>
 
 <p>This API is currently available only for <strong>premium feature</strong> accounts where:</p>
@@ -663,7 +667,6 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <pre><code>/hubspot/api/v1</code></pre>
 
-<p>Download the Postman collection: <a href="https://app.meddiccscore.com/js/Meddicc_Score_API.postman_collection.json" target="_blank">Meddicc Score API Postman Collection</a></p>
 
 <hr>
 
@@ -1065,7 +1068,122 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <hr>
 
-<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-workflows">13.5 Workflow Usage</h4>
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-error-codes">13.5 Error Responses and Error Codes</h4>
+
+<p>When an API request fails, Meddicc Score returns a JSON error response with a human-readable message and a stable machine-readable <code>code</code>. Existing integrations can continue reading the <code>error</code> field, while new integrations should use <code>code</code> for branching logic.</p>
+
+<p>Typical error response:</p>
+
+<pre><code>{
+  "success": false,
+  "error": "Missing API token.",
+  "code": "MISSING_API_TOKEN",
+  "status": 401
+}</code></pre>
+
+<p>For unknown API routes, the response also includes request details:</p>
+
+<pre><code>{
+  "success": false,
+  "error": "API route not found.",
+  "code": "ROUTE_NOT_FOUND",
+  "status": 404,
+  "details": {
+    "method": "GET",
+    "path": "/hubspot/api/v1/unknown"
+  }
+}</code></pre>
+
+<table style="width:100%; border-collapse:collapse; margin-bottom:1rem;">
+  <thead>
+    <tr>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">HTTP status</th>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Code</th>
+      <th style="padding:10px; border:1px solid #e5e7eb; text-align:left;">Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>400</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>INVALID_JSON</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The request body could not be parsed as valid JSON.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>400</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>MISSING_DEAL_ID</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The request did not include a HubSpot Deal ID. Send <code>hs_object_id</code>, <code>dealId</code>, <code>deal_id</code> or <code>objectId</code>.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>400</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>INVALID_QUESTION_LOCK</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The question lock request is missing <code>questionId</code> or a boolean <code>locked</code> value.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>400</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>INVALID_LOCKED_VALUE</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The score lock request is missing a boolean <code>locked</code> value.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>400</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>INVALID_SCORE_VALUE</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The manual score request is missing a numeric <code>score</code> value.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>401</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>MISSING_API_TOKEN</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">No API token was sent in the request.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>401</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>INVALID_API_TOKEN</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The API token does not match an enabled account token.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>403</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>VIP_REQUIRED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">API access is not enabled for the authenticated account.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>403</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>PREMIUM_USER_REQUIRED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The account needs at least one premium user before API access can be used.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>DEAL_NOT_FOUND</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The deal does not exist in Meddicc Score or does not belong to the authenticated account.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>QUESTION_NOT_FOUND</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The supplied <code>questionId</code> was not found in the deal's MEDDICC form.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>ROUTE_NOT_FOUND</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The requested API path does not exist under <code>/hubspot/api/v1</code>.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>409</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>MEDDICC_NOT_AVAILABLE</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The deal exists, but it does not have MEDDICC data stored yet.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>INTERNAL_ERROR</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">An unexpected server error occurred.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>RECALCULATE_FAILED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The API could not recalculate the MEDDICC score for the deal.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-workflows">13.6 Workflow Usage</h4>
 
 <p>This API is intended mainly for advanced automations. A common pattern is:</p>
 
