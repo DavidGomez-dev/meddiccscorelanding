@@ -417,7 +417,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <li><strong>OpenAI / GPT 4.1  (default): </strong><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Google / Gemini 2.5:</strong> <a href="https://deepmind.google/models/gemini/" target="_blank">more information on model capabilities ↗</a></li>
       <li><strong>Anthropic / Sonnet 4 (Pro+ only):</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on model capabilities ↗</a></li>
-      <li><strong>Meta / Llama 4:</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
+      <li><strong>Meta / Llama 4 (deprecated, not available):</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>OpenAI / GPT OSS:</strong> <a href="https://platform.openai.com/docs/models/gpt-oss-120b" target="_blank">more information on model capabilities ↗</a>. GPT OSS is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>Azure OpenAI / GPT 4.1:</strong> Microsoft Azure enables the use of OpenAI models (along with others) in a private, secure, enterprise-grade deployment, guaranteeing full data privacy (according to their claims). This allows organizations to leverage the latest OpenAI models without explicitly sharing their information with OpenAI.<a href="https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/" target="_blank">more information on Azure ↗</a>. For this to work, more information is required:
       <ul>
@@ -469,7 +469,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <td style="padding:10px; border:1px solid #e5e7eb;">Handles long contexts well; polished, safe outputs.</td>
     </tr>
     <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Meta Llama (via Groq)</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Meta Llama ((deprecated, not available))</strong></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡⚡ (ultra-low latency on Groq)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠 (solid; generally below GPT-4/Gemini for reasoning)</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Best when speed is critical; slightly weaker reasoning depth.</td>
