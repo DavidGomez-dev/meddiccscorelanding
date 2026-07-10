@@ -343,7 +343,6 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p><strong>9.1.1 Users access:</strong></p>
 
 <ul>
-  <li><strong>Use AI for Refill and Score:</strong> Enabled by default. When set to <strong>YES</strong>, Meddicc Score can use the selected AI model to refill answers, score the form, generate feedback, and create next steps. When set to <strong>NO</strong>, no AI is used: Refill is disabled, scoring is calculated deterministically from the completeness of each answer, and contact action plans are based only on associated deal counts and scores. The AI LLM Model, Automations, and Scoring Methodology tiles are hidden while this option is disabled.</li>
   <li><strong>Change Framework:</strong> Allows non-admin users to switch between different sales qualification frameworks (e.g., MEDDICC, BANT).</li>
   <li><strong>Change Score Manually:</strong> Enables non-admin users to manually adjust the scores assigned to deals or opportunities.</li>
   <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li>
@@ -352,7 +351,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p class="pt-6-m" id="automations"><strong>9.1.2 Automations:</strong></p>
 
 <ul>
-  <li>Automations help you streamline and automate the scoring process. They are only available for Premium users and are shown only when <strong>Use AI for Refill and Score</strong> is enabled.</li>
+  <li>Automations help you streamline and automate the scoring process. They are shown before <strong>AI Settings</strong> in the General Settings tab and are available when <strong>Use AI for Refill and Score</strong> is enabled.</li>
   <li>
     <strong>Sync MeddiccScore to HubSpot properties:</strong> When enabled, Meddicc Score creates a <strong>Meddicc Score properties</strong> group on HubSpot Deals and syncs a small set of fixed deal properties. This is useful when you want Meddicc Score data available in HubSpot lists, workflows, reports, deal views, manager dashboards, or stage-gate automations.
     <p>The synced properties are:</p>
@@ -384,31 +383,21 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
 </ul>
 
-<p class="pt-6-m" id="scoring_methodology"><strong>9.1.3 Scoring Methodology:</strong></p>
+<p class="pt-6-m" id="selectLLM"><strong>9.1.3 AI Settings:</strong></p>
 
 <ul>
-  <li>Score of the forms go from 0 to 100. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. There are two options for Scoring the forms:</li>
-  <ul>
-    <li>
-      <strong>All the form together (default):</strong> The selected AI model evaluates the form holistically and assigns a single score based on the overall completeness and deal quality. Results can vary by model and interpretation, and may sometimes skew optimistic. In this mode, section weights are not used.
-    </li>
-    <li>
-      <strong>Individual by sections (weighted):</strong> Each section of the form (e.g., Metrics, Economic Buyer, etc.) is rated as bad (0), medium (0.5), or good (1). The section score is multiplied by its weight configured in the Frameworks settings, and all section scores are summed to produce the final 0–100 score. If no weights are set, all sections are weighted equally. This method is more predictable and consistent, though it can lead to more repetitive scoring patterns.
-    </li>
-  </ul>
-  <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
-  <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
-    <li><strong>Custom scoring prompt (Pro+ only)</strong>: With the Pro+ add-on, you can customize the instructions used by the AI when scoring deals. The default prompt provides the recommended structure and scoring rules, so use it as a starting point and keep the same format when adapting it to your qualification process.</li>
-</ul>
-
-<p class="pt-6-m" id="selectLLM"><strong>9.1.4 AI LLM Model Provider:</strong></p>
-
-<ul>
+  <li><strong>Use AI for Refill and Score:</strong> Enabled by default. When set to <strong>YES</strong>, Meddicc Score can use the selected AI model to refill answers, score the form, generate feedback, create next steps, produce Win/Loss analysis, and generate the Closed Won onboarding handoff. When set to <strong>NO</strong>, no AI is used: Refill is disabled, scoring is calculated deterministically from the completeness of each answer, and contact action plans are based only on associated deal counts and scores. The provider, custom prompt, Automations, and Scoring Methodology controls are hidden while this option is disabled.</li>
   <li>
-    This allows the user to select the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
+    <strong>Provider:</strong> Selects the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
   </li>
-    <li>
-      Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
+  <li>
+    <strong>Custom scoring prompt (Pro+ only):</strong> With the Pro+ add-on, you can customize the instructions used by the AI when scoring deals. The default prompt provides the recommended structure and scoring rules, so use it as a starting point and keep the same format when adapting it to your qualification process.
+  </li>
+  <li>
+    <strong>Custom onboarding handoff prompt:</strong> Available for all accounts. Use this field to customize the Customer Success onboarding handoff generated for Closed Won deals. Leave it empty to use the default handoff instructions. The handoff still uses the required structure: summary, customer goals, success criteria, stakeholders, commitments, implementation risks, open questions, first actions, and source notes.
+  </li>
+  <li>
+    Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
     <p class="text-center"><img src="/assets/images/guide811n.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
   </li>
   <li>
@@ -429,6 +418,22 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       </li>
     </ul>
   </li>
+</ul>
+
+<p class="pt-6-m" id="scoring_methodology"><strong>9.1.4 Scoring Methodology:</strong></p>
+
+<ul>
+  <li>Score of the forms go from 0 to 100. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. There are two options for Scoring the forms:</li>
+  <ul>
+    <li>
+      <strong>All the form together (default):</strong> The selected AI model evaluates the form holistically and assigns a single score based on the overall completeness and deal quality. Results can vary by model and interpretation, and may sometimes skew optimistic. In this mode, section weights are not used.
+    </li>
+    <li>
+      <strong>Individual by sections (weighted):</strong> Each section of the form (e.g., Metrics, Economic Buyer, etc.) is rated as bad (0), medium (0.5), or good (1). The section score is multiplied by its weight configured in the Frameworks settings, and all section scores are summed to produce the final 0–100 score. If no weights are set, all sections are weighted equally. This method is more predictable and consistent, though it can lead to more repetitive scoring patterns.
+    </li>
+  </ul>
+  <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
+  <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
 </ul>
 
 <table style="width:100%; border-collapse:collapse; font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size:14px;">
@@ -763,7 +768,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <p><strong>Note:</strong> <code>questionId</code> currently maps to the internal question name, for example <code>metrics</code>, <code>economicBuyer</code>, <code>decisionCriteria</code>, <code>champion</code>, etc.</p>
 
-<p><strong>Closed deals:</strong> when a deal is marked Closed Won or Closed Lost, Meddicc Score freezes the MEDDICC framework for analytics. During that closure lock, all questions are returned as locked and automated/API score updates do not overwrite the framework. The close-stage webhook still refreshes the Win Analysis or Post-mortem Analysis from the frozen framework, so the closed deal does not keep the previous open-deal Next Steps. In the HubSpot card, users can still open Update Score and manually unlock specific fields if an explicit correction is needed.</p>
+<p><strong>Closed deals:</strong> when a deal is marked Closed Won or Closed Lost, Meddicc Score freezes the MEDDICC framework for analytics. During that closure lock, all questions are returned as locked and automated/API score updates do not overwrite the framework. The close-stage webhook still refreshes the Win Analysis or Post-mortem Analysis from the frozen framework, so the closed deal does not keep the previous open-deal Next Steps. For Closed Won deals, Meddicc Score can also generate an Onboarding Handoff for Customer Success from the closed deal information, MEDDICC answers, contacts, companies, activities, and Win Analysis. In the HubSpot card, users can download the handoff as an editable Markdown file or refresh it with the latest won-deal information. Users can still open Update Score and manually unlock specific fields if an explicit correction is needed.</p>
 
 <hr>
 
@@ -994,7 +999,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <h5 class="pt-4-m mb-2 text-primary"><code>GET /onboarding-handoff</code> and <code>POST /onboarding-handoff</code></h5>
 
-<p>Purpose: return or refresh the Customer Success onboarding handoff for a Closed Won deal. The handoff is generated from deal properties, MEDDICC answers and feedback, contacts, companies, activities, and the Win Analysis.</p>
+<p>Purpose: return or refresh the Customer Success onboarding handoff for a Closed Won deal. The handoff is generated from deal properties, MEDDICC answers and feedback, contacts, companies, activities, and the Win Analysis. Admins can customize the handoff output in <strong>Settings &gt; General Settings &gt; AI Settings &gt; Custom onboarding handoff prompt</strong>. In the HubSpot UI, users can download a ready handoff as an editable Markdown file.</p>
 
 <p>Required deal identifier:</p>
 
