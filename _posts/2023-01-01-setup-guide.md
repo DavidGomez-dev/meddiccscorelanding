@@ -717,6 +717,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;">Returns a compact summary including score, lock state, completion and per-section status.</td>
     </tr>
     <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>GET</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/onboarding-handoff?hs_object_id=123456789</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Returns the Customer Success onboarding handoff for a Closed Won deal.</td>
+    </tr>
+    <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Workflow-friendly read endpoint that accepts <code>hs_object_id</code> or <code>dealId</code> in the JSON body.</td>
@@ -725,6 +730,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc-summary</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Workflow-friendly summary endpoint that accepts <code>hs_object_id</code> or <code>dealId</code> in the JSON body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/onboarding-handoff</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Generates or refreshes the Customer Success onboarding handoff for a Closed Won deal.</td>
     </tr>
     <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
@@ -752,6 +762,8 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 <p><strong>Note:</strong> the API accepts <code>hs_object_id</code>, <code>dealId</code>, <code>deal_id</code> or <code>objectId</code> as the HubSpot Deal ID. For HubSpot workflows, <code>hs_object_id</code> is the recommended field name because that is what HubSpot exposes directly.</p>
 
 <p><strong>Note:</strong> <code>questionId</code> currently maps to the internal question name, for example <code>metrics</code>, <code>economicBuyer</code>, <code>decisionCriteria</code>, <code>champion</code>, etc.</p>
+
+<p><strong>Closed deals:</strong> when a deal is marked Closed Won or Closed Lost, Meddicc Score freezes the MEDDICC framework for analytics. During that closure lock, all questions are returned as locked and automated/API score updates do not overwrite the framework. The close-stage webhook still refreshes the Win Analysis or Post-mortem Analysis from the frozen framework, so the closed deal does not keep the previous open-deal Next Steps. In the HubSpot card, users can still open Update Score and manually unlock specific fields if an explicit correction is needed.</p>
 
 <hr>
 
@@ -922,6 +934,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
     "dealId": "123456789",
     "score": 78,
     "lockedScore": false,
+    "closureLock": {
+      "locked": false,
+      "effectiveLocked": false,
+      "outcome": null
+    },
     "completionPct": 64
   },
   "questions": [
@@ -963,11 +980,71 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
   "framework": "meddicc",
   "score": 78,
   "lockedScore": false,
+  "closureLock": {
+    "locked": false,
+    "effectiveLocked": false,
+    "outcome": null
+  },
   "questionCount": 14,
   "answeredCount": 9,
   "completionPct": 64,
   "sectionCount": 7,
   "completedSectionCount": 4
+}</code></pre>
+
+<h5 class="pt-4-m mb-2 text-primary"><code>GET /onboarding-handoff</code> and <code>POST /onboarding-handoff</code></h5>
+
+<p>Purpose: return or refresh the Customer Success onboarding handoff for a Closed Won deal. The handoff is generated from deal properties, MEDDICC answers and feedback, contacts, companies, activities, and the Win Analysis.</p>
+
+<p>Required deal identifier:</p>
+
+<ul>
+  <li><code>GET</code>: <code>hs_object_id</code> in the query string.</li>
+  <li><code>POST</code>: <code>hs_object_id</code> in the JSON body. Add <code>regenerate: true</code> when you want to force a refresh.</li>
+</ul>
+
+<p>Typical <code>GET</code> request:</p>
+
+<pre><code>curl --request GET \
+  --url "https://app.meddiccscore.com/hubspot/api/v1/onboarding-handoff?hs_object_id=123456789" \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN"</code></pre>
+
+<p>Typical <code>POST</code> request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/onboarding-handoff \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789",
+    "regenerate": true
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "hs_object_id": "123456789",
+  "dealId": "123456789",
+  "closureLock": {
+    "locked": true,
+    "effectiveLocked": true,
+    "outcome": "won"
+  },
+  "onboardingHandoff": {
+    "status": "ready",
+    "generatedAt": "2026-07-09T10:21:00.000Z",
+    "data": {
+      "summary": "The customer bought to reduce onboarding delays.",
+      "customerGoals": ["Launch the first team within 30 days"],
+      "successCriteria": ["Time-to-value under 30 days"],
+      "stakeholders": ["VP Customer Operations - executive sponsor"],
+      "commitments": ["Sales promised a kickoff next week"],
+      "implementationRisks": ["Data migration timing is still unconfirmed"],
+      "openQuestions": ["Who owns the data export?"],
+      "firstActions": ["Schedule kickoff", "Confirm technical owner"],
+      "sourceNotes": ["Generated from MEDDICC answers and recent deal activity"]
+    }
+  }
 }</code></pre>
 
 <h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/questions/lock</code></h5>
@@ -1237,6 +1314,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;">The account needs at least one premium user before API access can be used.</td>
     </tr>
     <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>403</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>AI_DISABLED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The requested AI-generated handoff cannot be created because AI is disabled for the account.</td>
+    </tr>
+    <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>404</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>DEAL_NOT_FOUND</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">The deal does not exist in Meddicc Score or does not belong to the authenticated account.</td>
@@ -1262,6 +1344,16 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;">The deal exists, but it does not have MEDDICC data stored yet.</td>
     </tr>
     <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>409</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>CLOSED_QUALIFICATION_LOCKED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The deal is closed and the MEDDICC framework is frozen for analytics.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>409</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>HANDOFF_NOT_APPLICABLE</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The onboarding handoff was requested for a deal that is not Closed Won.</td>
+    </tr>
+    <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>INTERNAL_ERROR</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">An unexpected server error occurred.</td>
@@ -1270,6 +1362,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>RECALCULATE_FAILED</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">The API could not recalculate the MEDDICC score for the deal.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>HANDOFF_GENERATION_FAILED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The API could not generate the onboarding handoff.</td>
     </tr>
   </tbody>
 </table>
