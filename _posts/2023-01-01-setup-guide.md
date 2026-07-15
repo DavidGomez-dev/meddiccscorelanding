@@ -345,7 +345,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <ul>
   <li><strong>Change Framework:</strong> Allows non-admin users to switch between different sales qualification frameworks (e.g., MEDDICC, BANT).</li>
   <li><strong>Change Score Manually:</strong> Enables non-admin users to manually adjust the scores assigned to deals or opportunities.</li>
-  <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li>
+  <!-- <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li> -->
 </ul>
 
 <p class="pt-6-m" id="automations"><strong>9.1.2 Automations:</strong></p>
@@ -394,7 +394,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
     <strong>Custom scoring prompt (Pro+ only):</strong> With the Pro+ add-on, you can customize the instructions used by the AI when scoring deals. The default prompt provides the recommended structure and scoring rules, so use it as a starting point and keep the same format when adapting it to your qualification process.
   </li>
   <li>
-    <strong>Custom onboarding handoff prompt:</strong> Available for all accounts. Use this field to customize the Customer Success onboarding handoff generated for Closed Won deals. Leave it empty to use the default handoff instructions. The handoff still uses the required structure: summary, customer goals, success criteria, stakeholders, commitments, implementation risks, open questions, first actions, and source notes.
+    <strong>Custom onboarding handoff prompt:</strong> Available for all accounts. Use this field to customize the Customer Success onboarding handoff generated for Closed Won deals. Leave it empty to use the default handoff instructions. The prompt can request different section names, priorities, tone, and level of detail. Meddicc Score still returns the handoff in a stable format with a summary and flexible sections, so the HubSpot UI, download, and API can render custom outcomes consistently.
   </li>
   <li>
     Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
@@ -418,22 +418,6 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       </li>
     </ul>
   </li>
-</ul>
-
-<p class="pt-6-m" id="scoring_methodology"><strong>9.1.4 Scoring Methodology:</strong></p>
-
-<ul>
-  <li>Score of the forms go from 0 to 100. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. There are two options for Scoring the forms:</li>
-  <ul>
-    <li>
-      <strong>All the form together (default):</strong> The selected AI model evaluates the form holistically and assigns a single score based on the overall completeness and deal quality. Results can vary by model and interpretation, and may sometimes skew optimistic. In this mode, section weights are not used.
-    </li>
-    <li>
-      <strong>Individual by sections (weighted):</strong> Each section of the form (e.g., Metrics, Economic Buyer, etc.) is rated as bad (0), medium (0.5), or good (1). The section score is multiplied by its weight configured in the Frameworks settings, and all section scores are summed to produce the final 0–100 score. If no weights are set, all sections are weighted equally. This method is more predictable and consistent, though it can lead to more repetitive scoring patterns.
-    </li>
-  </ul>
-  <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
-  <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
 </ul>
 
 <table style="width:100%; border-collapse:collapse; font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size:14px;">
@@ -487,6 +471,24 @@ Note: Comments to engagements or attachments to the engagements are not gathered
     </tr>
   </tbody>
 </table>
+
+
+<p class="pt-6-m" id="scoring_methodology"><strong>9.1.4 Scoring Methodology:</strong></p>
+
+<ul>
+  <li>Score of the forms go from 0 to 100. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. There are two options for Scoring the forms:</li>
+  <ul>
+    <li>
+      <strong>All the form together (default):</strong> The selected AI model evaluates the form holistically and assigns a single score based on the overall completeness and deal quality. Results can vary by model and interpretation, and may sometimes skew optimistic. In this mode, section weights are not used.
+    </li>
+    <li>
+      <strong>Individual by sections (weighted):</strong> Each section of the form (e.g., Metrics, Economic Buyer, etc.) is rated as bad (0), medium (0.5), or good (1). The section score is multiplied by its weight configured in the Frameworks settings, and all section scores are summed to produce the final 0–100 score. If no weights are set, all sections are weighted equally. This method is more predictable and consistent, though it can lead to more repetitive scoring patterns.
+    </li>
+  </ul>
+  <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
+  <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
+</ul>
+
 
 <p style="margin-top:8px; font-size:12px; color:#6b7280;">
   <strong>Legend:</strong> ⚡ = relative speed; 🧠 = relative intelligence.<br>
@@ -999,7 +1001,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <h5 class="pt-4-m mb-2 text-primary"><code>GET /onboarding-handoff</code> and <code>POST /onboarding-handoff</code></h5>
 
-<p>Purpose: return or refresh the Customer Success onboarding handoff for a Closed Won deal. The handoff is generated from deal properties, MEDDICC answers and feedback, contacts, companies, activities, and the Win Analysis. Admins can customize the handoff output in <strong>Settings &gt; General Settings &gt; AI Settings &gt; Custom onboarding handoff prompt</strong>. In the HubSpot UI, users can download a ready handoff as an editable Markdown file.</p>
+<p>Purpose: return or refresh the Customer Success onboarding handoff for a Closed Won deal. The handoff is generated from deal properties, MEDDICC answers and feedback, contacts, companies, activities, and the Win Analysis. Admins can customize the handoff output in <strong>Settings &gt; General Settings &gt; AI Settings &gt; Custom onboarding handoff prompt</strong>. Custom prompts can define the section names and content priorities; the response keeps a stable <code>summary</code> plus <code>sections</code> structure. In the HubSpot UI, users can download a ready handoff as an editable Markdown file.</p>
 
 <p>Required deal identifier:</p>
 
@@ -1039,15 +1041,22 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
     "status": "ready",
     "generatedAt": "2026-07-09T10:21:00.000Z",
     "data": {
+      "title": "Onboarding Handoff",
       "summary": "The customer bought to reduce onboarding delays.",
-      "customerGoals": ["Launch the first team within 30 days"],
-      "successCriteria": ["Time-to-value under 30 days"],
-      "stakeholders": ["VP Customer Operations - executive sponsor"],
-      "commitments": ["Sales promised a kickoff next week"],
-      "implementationRisks": ["Data migration timing is still unconfirmed"],
-      "openQuestions": ["Who owns the data export?"],
-      "firstActions": ["Schedule kickoff", "Confirm technical owner"],
-      "sourceNotes": ["Generated from MEDDICC answers and recent deal activity"]
+      "sections": [
+        {
+          "title": "Customer goals",
+          "content": ["Launch the first team within 30 days"]
+        },
+        {
+          "title": "Success criteria",
+          "content": ["Time-to-value under 30 days"]
+        },
+        {
+          "title": "First actions",
+          "content": ["Schedule kickoff", "Confirm technical owner"]
+        }
+      ]
     }
   }
 }</code></pre>
