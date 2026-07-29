@@ -21,8 +21,8 @@ The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commi
 
 ### Why Join?
 
-- **Competitive Commission**: Earn an oustanding **50% for each referred customer’s subscription for up to 6 months (or until cancelled if before )**.
-- **Recurring Revenue**: Receive recurring commissions for the first 6 months of a referred customer's subscription (or until cancelled if before ). (**without limit on the commisison**)
+- **Competitive Commission**: Earn an oustanding **25% for each referred customer’s subscription during the full life of the subscription ( until cancelled )**.
+- **Recurring Revenue**: Receive recurring commissions for the full life of the subscription of a referred customer's  (until cancelled ). (**without limit on the commisison**)
 - **Easy Sign-Up**: Get started quickly by applying to our program. Once approved, you’ll receive your unique referral code.
 - **Access to Resources**: We provide promotional materials, including banners, logos, and sample content to help you succeed.
 - **Monthly Payouts**: Get paid on a monthly basis once you reach the minimum threshold of 20USD.
@@ -32,7 +32,7 @@ The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commi
 1. **Sign Up**: [Apply by sending an email](mailto:support@meddiccscore.com) to to become an affiliate.
 2. **Get Your Code**: After approval, you’ll receive a unique affiliate code to share with your audience.
 3. **Promote Meddicc Score**: Use our promotional materials or your own content to introduce Meddicc Score to your audience.
-4. **Earn Commissions**: For every customer that subscribes through your link, you earn more than 50% commission!
+4. **Earn Commissions**: For every customer that subscribes through your link, you earn a 25% commission!
 
 ### Payout Details
 
