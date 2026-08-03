@@ -16,20 +16,14 @@ header:
 ---
 
 <div class="row my-4">
-  <div class="col-md-6 mb-3">
+  <div class="col-md-12 mb-3">
     <div class="border border-3 border-primary rounded">
       <iframe src="https://www.youtube.com/embed/w3IJ8lJpCIw" title="Meddicc Score App" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="col-md-6 mb-3">
-    <div class="border border-3 border-primary rounded">
-      <iframe class="youtubevideo" src="https://www.youtube.com/embed/267NvUK-Oe4" title="Meddicc Score Installation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-
 </div>
 
-<p>This guide is for <strong>sellers and non-admin users</strong>. It only covers the steps needed to open Meddicc Score inside HubSpot, connect your user if prompted, and use it in your daily workflow.</p>
+<p>This guide is for <strong>sellers and non-admin users</strong>. It covers the steps needed to open Meddicc Score inside HubSpot and use it in your daily workflow.</p>
 
 <p>If you need help with <strong>card placement, permissions, licences, framework settings, automations, or account configuration</strong>, please contact your Admin and use the <a href="{% post_url 2023-01-01-setup-guide %}">full setup guide</a>.</p>
 
@@ -59,9 +53,7 @@ header:
 
 <p class="text-center"><img src="/assets/images/guide3n.png" alt="Meddicc Score inside HubSpot" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>If the card asks you to finish connecting the app, click the button shown on the card and complete the permission step.</p>
-
-<p class="text-center"><img src="/assets/images/guide512n.png" alt="Finish connecting the app" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p>If the card says that Meddicc Score is not connected or needs to be reauthorized, contact your HubSpot or Meddicc Score Admin. You do not need to install the app individually when it is already connected for your HubSpot account.</p>
 
 </div>
 </div>
@@ -198,7 +190,7 @@ header:
 <h3 class="pt-6-m mb-3 text-primary" id="ask-admin">When to Ask Your Admin for Help</h3>
 
 <ul>
-  <li>You do not see the Meddicc Score card, or the card does not let you finish connecting your user.</li>
+  <li>You do not see the Meddicc Score card, or the card says that the account needs to connect or reauthorize the app.</li>
   <li>You need access to change frameworks, edit scores manually, or view reports.</li>
   <li>You need changes to settings, users, licences, automations, or the default framework.</li>
 </ul>

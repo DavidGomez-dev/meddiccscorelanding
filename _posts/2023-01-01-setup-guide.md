@@ -46,11 +46,11 @@ header:
 
 <p>Click the <strong>Install app</strong> button below to link your HubSpot account.</p>
 
-<p><strong>Important:</strong> All users of your company <strong>need to install the app</strong>. Even if you are the HubSpot Admin, it will not be automatically available to them until they also follow the installation process. They may require installation permits. <a href="#cannot-install-app">More info</a></p>
+<p><strong>Important:</strong> Meddicc Score only needs to be installed once per HubSpot account. A Super Admin, or another user with the required HubSpot app marketplace permissions, should complete this connection. After that, other users on the same HubSpot account can use Meddicc Score without installing the app individually.</p>
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
 
-<p>You may need to grant permission to the user to install external apps. <a href="#cannot-install-app">See below</a>.</p>
+<p>The person completing this account connection may need permission to install marketplace apps and approve the requested CRM access. <a href="#cannot-install-app">See below</a>.</p>
 
 <hr>
 
@@ -68,8 +68,8 @@ header:
 
 <p class="text-center"><img src="/assets/images/guide2.png" alt="Account" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, you have installed Meddicc Score. </p>
-<p>The first user of the account is the Admin by default, but there can be more users (and Admins) on the same account.</p>
+<p>Approve the necessary permissions for Meddicc Score to interface with your HubSpot CRM and click on “Connect app”. Congratulations, Meddicc Score is now connected for this HubSpot account.</p>
+<p>The first user to connect the account becomes the Meddicc Score Admin by default. Additional users can access the app when they open a configured Meddicc Score card, and more Meddicc Score Admins can be assigned later.</p>
 
 <p class="text-center"><img src="/assets/images/guide21.png" alt="Permissions" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
@@ -77,7 +77,7 @@ header:
 
 <h4 class="pt-6-m mb-3 text-primary" id="add-cards">4. Add Cards to the Views</h4>
 
-<p>After installation, Meddicc Score will be available to all users of the account. However, in the first time per account, Meddicc Score needs to be configured to appear in different locations in the HubSpot UI. HubSpot Admins can select the location by going to <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. They can be added to the different views (Default view is the first one).</p>
+<p>After the account connection, Meddicc Score is available to users of that HubSpot account. The app cards still need to be placed in the relevant HubSpot record views. HubSpot Admins can choose their locations under <strong>Settings > Connected Apps > Meddicc Score > App cards > Manage Locations</strong>. Cards can be added to different views, including the Default view.</p>
 
 <p>* Users must have <strong>Customize record page layout</strong> permissions or <strong>Super Admin permissions</strong> to create cards and customize a record. If you are unable to add the card, see the <a href="#cannot-add-cards">I cannot add cards to my view</a> section below for troubleshooting steps.</p>
 
@@ -85,9 +85,7 @@ header:
 
 <p class="text-center"><img src="/assets/images/guide3n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-<p>You may consider to configure a new view only for the users (sellers representatives, etc) that are going to use Meddicc Score, and use a licence. These users will also need to install Meddicc Score so they can accept the permits. They will see on the card a button to do so:</p>
-
-<p class="text-center"><img src="/assets/images/guide512n.png" alt="Access from Sidebar" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+<p>You may configure a dedicated view for the sellers or other team members who will use Meddicc Score and consume a licence. Users do not need to install the app individually. The first time they open a configured card, Meddicc Score creates their user profile and gives them the access available for the account.</p>
 
 </div>
 </div>
@@ -547,7 +545,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <h5 class="pt-6-m mb-3 text-primary mt-2" id="manage-account">9.4 Users: Manage your users (only Admin)</h5>
 
 <ul>
-  <li>Clicking on the "Users" tab displays a list of current users who have installed MeddiccScore, and their licence status.</li>
+  <li>Clicking on the "Users" tab displays the current Meddicc Score users for the account and their licence status. Team members are added when they first access Meddicc Score from HubSpot.</li>
   <li><strong>Language Settings</strong>: You can set a preferred language for every user on the account. This ensures that Sales Frameworks (questions and answers), assessments, and next steps are generated in that specific language. This setting applies even if the original records are in a different language. By default, all users are set to English.<br> 
   <strong>Supported Languages</strong>: Arabic, Chinese, English, French, German, Dutch, Spanish, Portuguese, Hindi, Japanese and Italian. (more can be added per request) </li>
   <li><strong>Weekly Pipeline Risk Digest</strong>: Admins can control the weekly email digest for each user from the Users tab. The digest highlights pipeline risks, missing qualification fields, and recommended next actions before the next pipeline review.</li>
@@ -564,7 +562,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
     <li>In the right column of the list, three actions are available only to the Admin users:
     <ul>
       <li><strong>Upgrade/Downgrade:</strong> Change the user's status to Premium or Free. This action either assigns or frees up a license. If no licenses are available, additional licenses can be purchased, or the account can be upgraded to the Team plan. <strong>Please note the downgrade DO NOT cancel the subcription, just free the seat or the licences count.</strong></li>
-      <li><strong>Delete:</strong> Marks the user for deletion. Once deleted, the user will need to reinstall MeddiccScore to regain access.</li>
+      <li><strong>Delete:</strong> Marks the user for deletion. If the HubSpot account remains connected, the user can be created again when they next access a Meddicc Score card.</li>
       <li><strong>Make Admin:</strong> Assigns administrative privileges to the selected user, granting them access to manage account settings and users. There can be more than one Admin, but at least one.</li>
       <li><strong>Remove Admin:</strong> Remove administrative privileges to the selected user. There has to be at least one Admin user.</li>
     </ul>
@@ -1434,7 +1432,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <h4 id="cannot-install-app" class="pt-6-m mb-3 text-primary">I cannot install the APP<a class="header-link" href="#cannot-install-app" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h4>
 
-<p>Please check that the user have permits to install external APPs from the marketplace.</p>
+<p>Only one authorized user needs to install Meddicc Score for the HubSpot account. Ask a Super Admin, or a user with HubSpot marketplace access and the permissions requested by the app, to complete the connection. Other team members do not need marketplace installation permission after the account is connected.</p>
 
 <p class="text-center"><img src="/assets/images/trouble13.png" alt="troubleshooting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
