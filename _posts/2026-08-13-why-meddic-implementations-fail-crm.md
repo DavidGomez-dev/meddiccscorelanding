@@ -11,8 +11,8 @@ classes: wide
 date: 2026-08-13 09:00:00 +0200
 excerpt: MEDDIC rarely fails because sales teams reject the methodology. It fails when the CRM turns it into a static checklist instead of supporting discovery, coaching, and better deal decisions.
 header:
-  overlay_image: /assets/images/posts/2025-05-19_511.webp
-  teaser: /assets/images/posts/2025-05-19_511.webp
+  overlay_image: /assets/images/posts/2026-08-13_123.webp
+  teaser: /assets/images/posts/2026-08-13_123.webp
   caption:
 ---
 
