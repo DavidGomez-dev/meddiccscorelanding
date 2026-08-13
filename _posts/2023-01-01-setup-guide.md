@@ -138,6 +138,8 @@ header:
 <li>Moreover, a "Next Steps" is also created, that is transformed in "Win Analysis" for the deals marked closed-won and a "Post-mortem Analysis" for the closed-lost.</li>
 <li>It is also has some buttons to "Send Email" and "Schedule Meeting".</li>
 <li>Clicking on "Redo Analysis", it will trigger to re-fill the form and score it again. Clicking on "Update Score", users can access to modfiy the responses and/or score it again</li>
+<li><strong>Qualification Intelligence</strong> tracks how the deal's score and completion change over time, shows improved and still-missing qualification fields, and highlights risks such as stale scoring or stage progression without qualification improvement. When enough closed-won and closed-lost MEDDICC history is available for the account, the expandable <strong>Account pattern</strong> section shows qualification fields associated with wins in that account. These are historical patterns, not guarantees or causal predictions.</li>
+<li><strong>Onboarding Handoff</strong>, for closed-won deals, turns the key deal and customer information into a structured handoff for the onboarding team, helping Sales and Onboarding align quickly after a deal closes. The AI prompt used to generate the handoff can be customized in <strong>Settings</strong> to match your process, terminology, and preferred output. Onboarding Handoff is also available through the API for integrations and automated workflows.</li>
 </ul>
 
 <p class="text-center"><img src="/assets/images/guide51n.png" alt="Editing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -316,10 +318,15 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <td style="padding:10px; border:1px solid #e5e7eb;">Recalculates the MEDDICC score using the current answers and syncs the score back to the HubSpot <code>score_meddicc</code> property when possible.</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Refresh the score at a specific stage or after important qualification data has been added.</td>
     </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Refill and Score MEDDICC</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Refills unlocked answers from the latest HubSpot deal data and engagements, then recalculates the MEDDICC score. Locked answers remain unchanged, and a locked overall score is preserved.</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Refresh qualification data and scoring when a deal reaches a workflow milestone.</td>
+    </tr>
   </tbody>
 </table>
 
-<p>The actions return output fields that can be used in later workflow branches, including <code>hubspotDealId</code>, <code>dealId</code>, <code>framework</code>, <code>score</code>, <code>lockedScore</code>, <code>completionPct</code>, <code>questionCount</code>, <code>answeredCount</code>, <code>sectionCount</code>, <code>completedSectionCount</code>, <code>errorCode</code>, and <code>errorMessage</code>. The recalculation action also returns <code>hubspotSyncStatus</code>.</p>
+<p>The actions return output fields that can be used in later workflow branches, including <code>hubspotDealId</code>, <code>dealId</code>, <code>framework</code>, <code>score</code>, <code>lockedScore</code>, <code>completionPct</code>, <code>questionCount</code>, <code>answeredCount</code>, <code>sectionCount</code>, <code>completedSectionCount</code>, <code>errorCode</code>, and <code>errorMessage</code>. The score-changing actions also return <code>hubspotSyncStatus</code>, and the refill action returns <code>refillStatus</code>.</p>
 
 <p>For a full example, see <a href="{% post_url 2023-01-04-hubspot-workflow-lock-score-contract-sent %}">How to Lock and Unlock the Meddicc Score with a HubSpot Workflow</a>. If you need lower-level control, the <a href="#hubspot-api-overview">Meddicc Score API</a> section below explains the webhook-based approach.</p>
 
@@ -584,6 +591,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 </ul>
 
+
 <p class="text-center"><img src="/assets/images/guide98n2.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
 <ul>
@@ -598,6 +606,36 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 </ul>
 
 <p class="text-center"><img src="/assets/images/features4.png" alt="Reporting" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+
+<h5 class="pt-6-m mb-3 text-primary" id="qualification-analysis">10.1 Qualification Analysis</h5>
+
+<p>The Home page also includes <strong>Qualification Analysis</strong>, a historical view of closed deals and their recorded MEDDICC qualification. Use the switch at the top of Home to move between <strong>Live pipeline</strong>, which contains the current open-deal reporting, and <strong>Qualification Analysis</strong>, which contains historical outcome analysis.</p>
+
+<p class="text-center"><img src="/assets/images/guide911n.png" alt="Qualification" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>Qualification Analysis is filtered independently using the same Home controls:</p>
+
+<ul>
+  <li><strong>Time range:</strong> select a year or another available period, or provide a custom close-date range.</li>
+  <li><strong>Pipeline:</strong> limit the analysis to a specific HubSpot pipeline.</li>
+  <li><strong>Owner:</strong> review the closed deals assigned to a particular HubSpot owner when team visibility is enabled.</li>
+</ul>
+
+<p>The graphs are shown in tabs so the page remains easy to scan:</p>
+
+<ul>
+  <li><strong>Win rate by score band:</strong> compares the percentage of deals won in the low, medium, and high final-score bands.</li>
+  <li><strong>Won/lost deal volume:</strong> shows how many won and lost deals are in each score band. Use this together with win rate because a percentage based on very few deals can be misleading.</li>
+  <li><strong>Good in won deals:</strong> shows the percentage of closed-won deals where each MEDDICC section was marked good.</li>
+  <li><strong>Bad in lost deals:</strong> shows the percentage of closed-lost deals where each MEDDICC section was marked bad.</li>
+</ul>
+
+<p>The summary statistics include the number of closed scored deals, win rate, average final score for won and lost deals, and the score gap between those outcomes. The <strong>Historical patterns</strong> section adds concise observations about score progression and deals that moved stages without a later qualification improvement.</p>
+
+<p>The closed-deal list includes the deal name, owner, amount, outcome, actual close date, score, good and bad MEDDICC categories, and a collapsible timeline. The timeline records important qualification events such as score changes and deal-stage changes. Use the deal link to open the corresponding HubSpot record.</p>
+
+<p>These reports describe patterns that are <strong>associated with wins or losses</strong>; they do not establish that a score or MEDDICC section caused the outcome. Outcome patterns are shown only when enough local closed-deal history is available. When there is not enough historical data, the page still shows basic coverage and progression information and indicates that more data is needed.</p>
 
 <hr>
 
@@ -1210,6 +1248,46 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
   }
 }</code></pre>
 
+<h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/refill-and-score</code></h5>
+
+<p>Purpose: refill unlocked MEDDICC answers from the latest HubSpot deal data and engagements, then recalculate the score. Locked answers are preserved. If the overall score is locked, answers and feedback can be refreshed but the stored score remains unchanged.</p>
+
+<p>Required body fields:</p>
+
+<ul>
+  <li><code>hs_object_id</code>: the HubSpot Deal ID.</li>
+</ul>
+
+<p>Typical request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc/refill-and-score \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789"
+  }'</code></pre>
+
+<p>Typical response:</p>
+
+<pre><code>{
+  "success": true,
+  "refillStatus": "success",
+  "hubspotSync": {
+    "success": true,
+    "property": "score_meddicc",
+    "score": 84
+  },
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 84,
+    "lockedScore": false,
+    "completionPct": 79
+  },
+  "meddicc": {}
+}</code></pre>
+
 <hr>
 
 <h4 class="pt-6-m mb-3 text-primary" id="hubspot-api-responses">13.4 Responses and HubSpot Sync</h4>
@@ -1366,6 +1444,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;">The onboarding handoff was requested for a deal that is not Closed Won.</td>
     </tr>
     <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>409</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>HUBSPOT_AUTH_REQUIRED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">HubSpot must be reconnected before Meddicc Score can read current deal activity.</td>
+    </tr>
+    <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>INTERNAL_ERROR</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">An unexpected server error occurred.</td>
@@ -1374,6 +1457,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>RECALCULATE_FAILED</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">The API could not recalculate the MEDDICC score for the deal.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>REFILL_AND_SCORE_FAILED</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">The API could not refill and score the MEDDICC data for the deal.</td>
     </tr>
     <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>500</code></td>
