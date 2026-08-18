@@ -880,3 +880,27 @@ pre {
   padding: 1rem;
   border-radius: 16px;
 }
+
+[data-icon-name="HubspotCertification"] {
+inline-size: 24px !important;
+    block-size: 24px !important;
+    fill: rgb(255, 122, 89) !important;
+}
+
+.lead{
+    font-family: "Lexend Deca", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+}
+
+.HubspotCertificationText {
+    box-sizing: border-box;
+
+    font-style: unset;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    background-color: unset;
+    letter-spacing: 0px;
+    line-height: 18px;
+}
