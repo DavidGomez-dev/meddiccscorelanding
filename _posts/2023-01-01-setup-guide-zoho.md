@@ -204,16 +204,15 @@ header:
     This allows the user to select the Large Language Model (AI) provider used on the app, to pre-fill the forms and score the framework. The data will be shared with that provider, so please take into account their privacy policies, <a href="/privacy/#information-collected-but-not-stored-used-in-the-llm" >see more information here.</a>
   </li>
     <li>
-      Every model comes with its own strengths in terms of capabilities, latency/speed, and intelligence. We encourage you to try different options and choose the one that best fits your needs for both quality and performance. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
+      Model selection balances extraction accuracy, structured-output consistency, latency, and cost. MEDDICC scoring is primarily an evidence-extraction and classification task, so a newer or more reasoning-intensive model does not automatically produce a better score. More reasoning can sometimes infer qualification details that are not supported by the CRM record. We recommend testing providers against representative deals and choosing the option that most consistently reflects the evidence in your CRM. If there’s a specific model you’d like us to add, please reach out to our <a href="mailto:support@meddiccscore.com">support team</a>.
     <p class="text-center"><img src="/assets/images/zoho-guide811.png" alt="Editing" class="my-3 w-50 border border-3 border-primary rounded rounded-3"></p>
   </li>
   <li>
     <strong>Available providers:</strong>
     <ul>
       <li><strong>OpenAI / GPT 4.1  (default): </strong><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">more information on model capabilities ↗</a></li>
-      <li><strong>Google / Gemini 2.5:</strong> <a href="https://deepmind.google/models/gemini/" target="_blank">more information on model capabilities ↗</a></li>
-      <li><strong>Anthropic / Sonnet 4:</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on model capabilities ↗</a></li>
-      <li><strong>Meta / Llama 4:</strong> <a href="https://www.llama.com/models/llama-4/" target="_blank">more information on model capabilities ↗</a>. Meta Llama is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
+      <li><strong>Google / Gemini 2.5 Flash:</strong> <a href="https://deepmind.google/models/gemini/" target="_blank">more information on model capabilities ↗</a></li>
+      <li><strong>Anthropic / Claude Sonnet 4.6 and Haiku 4.5:</strong> Sonnet 4.6 is used for the highest-quality scoring mode, while Haiku 4.5 is used for faster, lower-cost modes. <a href="https://www.anthropic.com/claude/sonnet" target="_blank">more information on Claude ↗</a></li>
       <li><strong>OpenAI / GPT OSS:</strong> <a href="https://platform.openai.com/docs/models/gpt-oss-120b" target="_blank">more information on model capabilities ↗</a>. GPT OSS is provided by Groq: <a href="https://groq.com/about-us" target="_blank">more information  ↗</a></li>
       <li><strong>Azure OpenAI / GPT 4.1:</strong> Microsoft Azure enables the use of OpenAI models (along with others) in a private, secure, enterprise-grade deployment, guaranteeing full data privacy (according to their claims). This allows organizations to leverage the latest OpenAI models without explicitly sharing their information with OpenAI.<a href="https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/" target="_blank">more information on Azure ↗</a>. For this to work, more information is required:
       <ul>
@@ -227,62 +226,7 @@ header:
   </li>
 </ul>
 
-<table style="width:100%; border-collapse:collapse; font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size:14px;">
-  <caption style="caption-side:top; text-align:left; font-weight:600; padding:8px 0;">
-    Model Performance Comparison (General Overview)
-  </caption>
-  <thead>
-    <tr style="background:#f5f6f7;">
-      <th style="text-align:left; padding:10px; border:1px solid #e5e7eb;">Provider / Model</th>
-      <th style="text-align:left; padding:10px; border:1px solid #e5e7eb;">Speed (Latency &amp; Throughput)</th>
-      <th style="text-align:left; padding:10px; border:1px solid #e5e7eb;">Intelligence (Reasoning &amp; Output Quality)</th>
-      <th style="text-align:left; padding:10px; border:1px solid #e5e7eb;">Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>OpenAI GPT-4.1 (Direct API)</strong></td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡ (fast; depends on load)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (excellent reasoning, creative and reliable)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">Strong balance of speed and intelligence; widely adopted.</td>
-    </tr>
-    <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>OpenAI GPT-4.1 (Azure OpenAI)</strong></td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡ (enterprise-grade stability)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (same model quality as direct API)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">Often steadier latency due to Microsoft infrastructure.</td>
-    </tr>
-    <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Google Gemini (Pro / Ultra)</strong></td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">⚡ (slower than the rest)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠🧠 (very strong reasoning, multimodal)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">Excels at complex reasoning &amp; and more verbose.</td>
-    </tr>
-    <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Anthropic Claude (Sonnet / Opus)</strong></td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡ (good, especially with long contexts)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (strong reasoning; alignment-focused)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">Handles long contexts well; polished, safe outputs.</td>
-    </tr>
-    <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Meta Llama (via Groq)</strong></td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡⚡ (ultra-low latency on Groq)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠 (solid; generally below GPT-4/Gemini for reasoning)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">Best when speed is critical; slightly weaker reasoning depth.</td>
-    </tr>
-        <tr>
-      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>GPT OSS (via Groq)</strong></td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">⚡⚡⚡⚡ (extremely fast; Groq hardware optimized for OSS models)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">🧠🧠🧠🧠 (similar or better than GPT 4.1)</td>
-      <td style="padding:10px; border:1px solid #e5e7eb;">Good combination of speed and reasoning.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p style="margin-top:8px; font-size:12px; color:#6b7280;">
-  <strong>Legend:</strong> ⚡ = relative speed; 🧠 = relative intelligence.<br>
-  <strong>Disclaimer:</strong> This is a generalized, high-level comparison (as of 2025). Actual performance varies by model version, prompt, context length, provider load, and infrastructure.
-</p>
+<p><strong>Choosing a provider:</strong> Compare providers using the same representative deals and review evidence accuracy, unsupported assumptions, structured-response consistency, latency, and cost. The quality and recency of the CRM activities and properties available to Meddicc Score often affect the result more than model generation alone.</p>
 
 <!-- <h4 class="pt-6-m mb-3 text-primary" id="selectLLM">TODO</h4> -->
 
