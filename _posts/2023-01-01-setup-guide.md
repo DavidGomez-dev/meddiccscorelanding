@@ -309,6 +309,11 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <td style="padding:10px; border:1px solid #e5e7eb;">Freeze the score when a deal reaches a late stage such as Contract Sent.</td>
     </tr>
     <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Lock MEDDICC Deal</strong></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Locks the current score and all questions together for the enrolled deal, preserving the score and answer values.</td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Freeze the score and qualification answers when a deal reaches an agreed milestone.</td>
+    </tr>
+    <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><strong>Unlock MEDDICC Score</strong></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Unlocks the MEDDICC score for the enrolled deal so future recalculations can update it again.</td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Allow the score to change again if a deal moves backwards, is reopened, or needs new qualification work.</td>
@@ -326,7 +331,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </tbody>
 </table>
 
-<p>The actions return output fields that can be used in later workflow branches, including <code>hubspotDealId</code>, <code>dealId</code>, <code>framework</code>, <code>score</code>, <code>lockedScore</code>, <code>completionPct</code>, <code>questionCount</code>, <code>answeredCount</code>, <code>sectionCount</code>, <code>completedSectionCount</code>, <code>errorCode</code>, and <code>errorMessage</code>. The score-changing actions also return <code>hubspotSyncStatus</code>, and the refill action returns <code>refillStatus</code>.</p>
+<p>The actions return output fields that can be used in later workflow branches, including <code>hubspotDealId</code>, <code>dealId</code>, <code>framework</code>, <code>score</code>, <code>lockedScore</code>, <code>completionPct</code>, <code>questionCount</code>, <code>answeredCount</code>, <code>sectionCount</code>, <code>completedSectionCount</code>, <code>errorCode</code>, and <code>errorMessage</code>. The <strong>Lock MEDDICC Deal</strong> action also returns <code>lockedQuestionCount</code>. To unlock the score and all questions together, use <code>/meddicc/deal-lock</code> with <code>locked: false</code>; <strong>Unlock MEDDICC Score</strong> only unlocks the score. The score-changing actions also return <code>hubspotSyncStatus</code>, and the refill action returns <code>refillStatus</code>.</p>
 
 <p>For a full example, see <a href="{% post_url 2023-01-04-hubspot-workflow-lock-score-contract-sent %}">How to Lock and Unlock the Meddicc Score with a HubSpot Workflow</a>. If you need lower-level control, the <a href="#hubspot-api-overview">Meddicc Score API</a> section below explains the webhook-based approach.</p>
 
@@ -735,6 +740,11 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
     </tr>
     <tr>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc/deal-lock</code></td>
+      <td style="padding:10px; border:1px solid #e5e7eb;">Locks or unlocks the score and all questions together using <code>hs_object_id</code> or <code>dealId</code> and <code>locked</code> in the body.</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border:1px solid #e5e7eb;"><code>POST</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;"><code>/meddicc/score</code></td>
       <td style="padding:10px; border:1px solid #e5e7eb;">Updates the score manually from the request body using <code>hs_object_id</code> or <code>dealId</code> and <code>score</code>.</td>
     </tr>
@@ -1114,6 +1124,46 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
   }
 }</code></pre>
 
+<h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/deal-lock</code></h5>
+
+<p>Purpose: lock or unlock the score and all questions in one action. Send <code>locked: true</code> to lock both, or <code>locked: false</code> to unlock both. Existing answers, feedback entries, and the score value are preserved.</p>
+
+<p>Required body fields:</p>
+
+<ul>
+  <li><code>hs_object_id</code>: the HubSpot Deal ID.</li>
+  <li><code>locked</code>: boolean, either <code>true</code> or <code>false</code>.</li>
+</ul>
+
+<p>Typical request:</p>
+
+<pre><code>curl --request POST \
+  --url https://app.meddiccscore.com/hubspot/api/v1/meddicc/deal-lock \
+  --header "apikey: YOUR_ACCOUNT_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "hs_object_id": "123456789",
+    "locked": true
+  }'</code></pre>
+
+<p>Example response (summary abbreviated):</p>
+
+<pre><code>{
+  "success": true,
+  "lockedScore": true,
+  "lockedQuestionCount": 12,
+  "summary": {
+    "hs_object_id": "123456789",
+    "dealId": "123456789",
+    "score": 78,
+    "lockedScore": true,
+    "questionCount": 12,
+    "lockedQuestionCount": 12
+  }
+}</code></pre>
+
+<p>An invalid or missing boolean <code>locked</code> returns HTTP 400. Missing MEDDICC data returns HTTP 409. Unlocking both is also rejected with HTTP 409 and <code>CLOSED_QUALIFICATION_LOCKED</code> while a closed qualification lock is active. An explicit combined lock applied to a closed deal remains in place if the deal is later reopened.</p>
+
 <h5 class="pt-4-m mb-2 text-primary"><code>POST /meddicc/score</code></h5>
 
 <p>Purpose: set the deal score directly through the API.</p>
@@ -1423,7 +1473,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <ul>
   <li>Read the current MEDDICC summary for a deal.</li>
-  <li>Use workflow logic to decide whether to lock the score or a specific answer.</li>
+  <li>Use workflow logic to decide whether to lock the score, a specific answer, or the score and all questions together with <strong>Lock MEDDICC Deal</strong>.</li>
   <li>Update the score manually or trigger a recalculation.</li>
   <li>Use the returned <code>score</code>, <code>lockedScore</code>, <code>completionPct</code> or <code>hubspotSync</code> fields in the next automation step.</li>
 </ul>
