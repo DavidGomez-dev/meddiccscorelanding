@@ -50,7 +50,7 @@ header:
 
 <p class="text-center"><a href="{{ site.pwalink }}" target="_blank" class="w-50"><img src="/assets/images/installBtn.png" alt="Install"></a></p>
 
-<p>The person completing this account connection may need permission to install marketplace apps and approve the requested CRM access. <a href="#cannot-install-app">See below</a>.</p>
+<p>The person completing this account connection may need permission to install marketplace apps and approve the requested CRM access. <a href="#cannot-install-app">See below</a></p>
 
 <hr>
 
