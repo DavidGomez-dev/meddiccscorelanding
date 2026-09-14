@@ -169,7 +169,7 @@ header:
 
 <ul>
   <li>The first time you access a Deal, the default framework (normally MEDDICC) is used. (The default framework can be changed in Settings). The Deal appear with zero score and all categories empty.</li>
-  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information of the last 100 Deal Engagements (Emails, Meetings, Calls, Tasks, Notes…) recorded in HubSpot, or the last XX days defined in Settings. General data from the deal such as description, close date, contacts etc is also considered, plus Associated Deals, Contacts and Companies. Previous custom fields related to MEDDICC implementations that may have been filled in the past are also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
+  <li>When clicking on "Update Score" (or the pencil), a modal window is launched. Meddicc Score retrieves the relevant information from up to 100 recent Deal Engagements recorded in HubSpot, using the activity types and optional day limit selected in Settings. All five types (Emails, Meetings, Calls, Tasks and Notes) are enabled by default. <a href="#activity-types-ai">Learn how to choose activity types.</a> General data from the deal such as description, close date, contacts etc is also considered, plus Associated Deals, Contacts and Companies. Previous custom fields related to MEDDICC implementations that may have been filled in the past are also considered. AI analyzes this data to auto-fill responses for the Framework Questions.
 Note: Comments to engagements or attachments to the engagements are not gathered since they are not available in the HubSpot API.</li>
 </ul>
   <p class="text-center"><img src="/assets/images/guide61n.png" alt="Auto scoring" class="my-3 border border-3 border-primary rounded rounded-3"></p>
@@ -362,6 +362,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <ul>
   <li>Automations help you streamline and automate the scoring process. They are shown before <strong>AI Settings</strong> in the General Settings tab and are available when <strong>Use AI for Refill and Score</strong> is enabled.</li>
+  <li>When an automation retrieves activities, it uses the account’s <a href="#activity-types-ai">Activity types used for AI</a> selection. Excluding an activity type changes the evidence retrieved; it does not disable the automation or change its trigger.</li>
   <li>
     <strong>Sync MeddiccScore to HubSpot properties:</strong> When enabled, Meddicc Score creates a <strong>Meddicc Score properties</strong> group on HubSpot Deals and syncs a small set of fixed deal properties. This is useful when you want Meddicc Score data available in HubSpot lists, workflows, reports, deal views, manager dashboards, or stage-gate automations.
     <p>The synced properties are:</p>
@@ -444,7 +445,8 @@ Note: Comments to engagements or attachments to the engagements are not gathered
       <strong>Individual by sections (weighted):</strong> Each section of the form (e.g., Metrics, Economic Buyer, etc.) is rated as bad (0), medium (0.5), or good (1). The section score is multiplied by its weight configured in the Frameworks settings, and all section scores are summed to produce the final 0–100 score. If no weights are set, all sections are weighted equally. This method is more predictable and consistent, though it can lead to more repetitive scoring patterns.
     </li>
   </ul>
-  <li><strong>Consider only the las XX days of engagements</strong>: By default, the AI analyzes the last 100 deal activities (notes, calls, meetings, etc). You can refine this by setting a specific day limit, ensuring the AI focuses only on your most recent—and relevant—engagements for refilling and scoring.</li>
+  <li id="activity-types-ai"><strong>Activity types used for AI:</strong> Choose which HubSpot activities the AI uses: Notes, Calls, Emails, Meetings and Tasks. All are selected by default. Unchecked types are not fetched or used as activity context. This setting applies to everyone in the account, including refill, Score all and automations.</li>
+  <li><strong>Consider only the last XX days of engagements:</strong> The AI considers up to 100 recent activities from the selected types. Set a day limit to further restrict the activity context to that period. This limit works together with the activity-type selection.</li>
   <li><strong>Consider only these deal properties for scoring</strong>: By default, the AI analyzes several key deal properties, such as Close Date, Amount, and existing MEDDIC fields. To better align with your specific business workflow, you can customize which properties the AI evaluates. For example, if your "Close Date" is often a placeholder, excluding it will prevent skewed scoring or feedback. To customize your settings, check the box and select only the properties you wish to include.</li>
 </ul>
 
@@ -1675,7 +1677,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 <p><strong>The AI considers the following information sources:</strong></p>
 
 <ul>
-  <li><strong>Deal Engagements (last 100):</strong> The AI retrieves and analyzes the most recent engagements associated with the Deal, including:
+  <li><strong>Deal Engagements (last 100):</strong> The AI retrieves and analyzes up to 100 recent engagements associated with the Deal, subject to the account’s <a href="#activity-types-ai">activity-type selection</a>, optional day limit and HubSpot permissions. All of these types are enabled by default:
     <ul>
       <li>Notes</li>
       <li>Emails (body content only, not attachments)</li>
@@ -1713,7 +1715,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
   <li>Comments on engagements and attachments are <strong>not</strong> available through the HubSpot API and therefore cannot be analyzed.</li>
   <li>Only the initial portion of each email is extracted to avoid processing repetitive threads and legal disclaimers.</li>
   <li>If critical information is buried deep in long email threads, the AI might not capture it accurately.</li>
-  <li>The AI analyzes the last 100 engagements. For deals with extensive activity history, older engagements may not be considered.</li>
+  <li>The AI analyzes up to 100 recent engagements from the selected activity types, subject to the optional day limit. Excluded types are not fetched, and older engagements may not be considered.</li>
 </ul>
 
 <p><strong>Best practices for better AI results:</strong></p>
