@@ -1,62 +1,46 @@
 ---
 layout: single
-title: "Affiliate Program"
+title: "Reseller Program"
 categories: blog
 tags:
-  - affiliate program
+  - reseller program
 classes: wide
 date: 2023-01-02 16:54:38 +0100
-excerpt: Affiliate program for Meddicc Score
+excerpt: Resell Meddicc Score to your HubSpot and Zoho consulting clients
 header:
   overlay_image: /assets/images/imageaffiliate.webp
   teaser: /assets/images/imageaffiliate.webp
   caption:
 ---
 
-# Meddicc Score Affiliate Program
+# Meddicc Score Reseller Program
 
-## Earn by Sharing Meddicc Score with Your Network!
+The **Meddicc Score Reseller Program** is designed for sales consultancies, RevOps partners, CRM implementation specialists, and agencies that want to include Meddicc Score in the solution they deliver to clients. You maintain the commercial relationship with each client and manage their access through a dedicated reseller portal.
 
-The **Meddicc Score Affiliate Program** gives you an opportunity to earn a commission for every customer you refer to our app. If you’re a marketer, consultant, or growth specialist with an audience interested in improving sales qualification frameworks, this program is for you!
+## Why Join?
 
-### Why Join?
+- **Add more value to MEDDICC consulting:** go beyond designing a methodology or running a workshop. Implement the framework directly in the client's CRM so sellers can use it on live deals and managers can reinforce it over time.
+- **Create recurring revenue:** include Meddicc Score licences in your managed service or invoice them as a separate recurring line item.
+- **Keep a 20% reseller margin:** your consolidated subscription receives a 20% reseller discount. You decide the commercial price and service package you offer to each client.
+- **Benefit from volume pricing:** all client seats are purchased together, so the pooled subscription can reach lower volume tiers as your managed client base grows. The 20% reseller discount is applied in addition to the applicable volume price.
+- **Reuse available seats:** when a client reduces usage or leaves, released seats remain available for another client until you resize the consolidated subscription.
+- **Control onboarding and adoption:** create client installation links, offer controlled trials, allocate licences, and adjust access without requiring a separate subscription for every client.
+- **Support both HubSpot and Zoho CRM:** manage clients on either supported CRM from the same reseller portal.
 
-- **Competitive Commission**: Earn an oustanding **25% for each referred customer’s subscription during the full life of the subscription ( until cancelled )**.
-- **Recurring Revenue**: Receive recurring commissions for the full life of the subscription of a referred customer's  (until cancelled ). (**without limit on the commisison**)
-- **Easy Sign-Up**: Get started quickly by applying to our program. Once approved, you’ll receive your unique referral code.
-- **Access to Resources**: We provide promotional materials, including banners, logos, and sample content to help you succeed.
-- **Monthly Payouts**: Get paid on a monthly basis once you reach the minimum threshold of 20USD.
+## How the Financial Model Works
 
-### How It Works
+This is a **reseller margin**, not a referral commission or a later cash payout.
 
-1. **Sign Up**: [Apply by sending an email](mailto:support@meddiccscore.com) to to become an affiliate.
-2. **Get Your Code**: After approval, you’ll receive a unique affiliate code to share with your audience.
-3. **Promote Meddicc Score**: Use our promotional materials or your own content to introduce Meddicc Score to your audience.
-4. **Earn Commissions**: For every customer that subscribes through your link, you earn a 25% commission!
+1. You purchase one consolidated Meddicc Score subscription covering the seats managed across all your clients.
+2. Stripe charges your company directly using the applicable volume tier and the **20% reseller discount**.
+3. You contract with and invoice your clients under your own commercial terms.
+4. The difference between what your clients pay you and what you pay for Meddicc Score is your licence margin. Your implementation, training, CRM configuration, coaching, and ongoing advisory services can be priced separately or bundled into the same offer.
 
-### Payout Details
+For example, if the standard subscription value after volume pricing is **€1,000**, the 20% reseller discount reduces your Meddicc Score charge to **€800**. If you invoice your clients €1,000 for those licences, your gross licence margin is **€200**, before taxes, payment costs, and your own operating expenses. Consulting and implementation fees are additional revenue based on the services you provide.
 
-- Payouts are made monthly via Stripe.
-- You need a minimum balance of €20 to request a payout.
-- You will have access to a report to track your conversions.
+There is no commission balance, payout request, or monthly transfer from Meddicc Score. You collect payment from your clients, and Stripe bills you for the consolidated reseller subscription. Each reseller remains responsible for its own client agreements, invoicing, and applicable taxes.
 
-### Program Terms
-
-- You may not bid on our brand terms in search engine ads.
-- You cannot use spam tactics or misrepresent our product in your promotions.
-- Affiliates are paid only for valid conversions—refunds or cancellations will not be credited.
-
-## Ready to Join?
-
-Email [here](mailto:support@meddiccscore.com) to apply to the Meddicc Score Affiliate Program and start earning today!
-
----
-
-## Reseller Program
-
-The **Meddicc Score Reseller Program** is designed for agencies and service providers that want to include Meddicc Score in the solution they deliver to clients. Unlike the affiliate program, the reseller maintains the commercial relationship with each client and manages access through a dedicated portal.
-
-### One Subscription Across Your Clients
+## One Subscription Across Your Clients
 
 The reseller purchases one consolidated Meddicc Score subscription and distributes its seats across managed client accounts. This gives you one payment, access to tiered volume pricing, and the flexibility to move available seats between clients.
 
@@ -68,7 +52,7 @@ The reseller purchases one consolidated Meddicc Score subscription and distribut
 
 <p class="text-center"><img src="/assets/images/reseller/reseller-portal-overview.png" alt="Meddicc Score reseller portal overview with a secure installation link and shared subscription capacity" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-### Onboard and Manage Clients
+## Onboard and Manage Clients
 
 From the reseller portal, you select the client's CRM and create a secure installation link. Each link can be used once, normally expires after 14 days, and connects one verified HubSpot portal or Zoho organization to your reseller account.
 
@@ -84,10 +68,10 @@ Allocating paid seats ends an active reseller trial for that client. The client 
 
 <p class="text-center"><img src="/assets/images/reseller/reseller-portal-management.png" alt="Reseller portal controls for client accounts, CRM installation links, seat allocation, and consolidated billing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
 
-### Portal Access
+## Portal Access
 
 Reseller access is created by Meddicc Score. If your email already belongs to a HubSpot or Zoho Meddicc Score user, the same user can be assigned to the reseller portal. For your first portal login, open the reseller sign-in page, enter your work email, and select **Change / forgot password?** to create a password securely by email.
 
-### Become a Reseller
+## Become a Reseller
 
 The reseller program is approved and configured directly with each partner. [Contact us by email](mailto:support@meddiccscore.com?subject=Meddicc%20Score%20Reseller%20Program) and tell us about your agency, the CRM platforms you support, and the number of client seats you expect to manage.
