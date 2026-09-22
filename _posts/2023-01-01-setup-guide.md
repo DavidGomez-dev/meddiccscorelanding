@@ -92,6 +92,36 @@ header:
 </div>
 
 <div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResellerPortal" aria-expanded="false" aria-controls="collapseResellerPortal"><span id="reseller-portal" class="pt-6-m">Agency and Reseller Portal</span>
+</button></h3>
+
+<div class="accordion-collapse collapse" id="collapseResellerPortal" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<p>If your company receives Meddicc Score through an agency or reseller, use the secure HubSpot installation link supplied by that agency instead of the standard marketplace installation button. A HubSpot Admin should open the link, select the correct HubSpot account, and approve the requested permissions.</p>
+
+<p>The installation link is valid for one HubSpot account, can be used once, and normally expires after 14 days. After HubSpot verifies the account, it is automatically connected to the agency portal.</p>
+
+<h4 class="pt-6-m mb-3 text-primary">What the agency manages</h4>
+<ul>
+  <li><strong>Client onboarding:</strong> creates a secure installation link for each HubSpot or Zoho client.</li>
+  <li><strong>Trials:</strong> can start a controlled 30-day trial and choose the number of trial seats.</li>
+  <li><strong>Licences:</strong> allocates paid seats from one shared agency subscription and can update the allocation later.</li>
+  <li><strong>Billing:</strong> manages subscription capacity, payment methods, and invoices from the agency portal.</li>
+</ul>
+
+<p class="text-center"><img src="/assets/images/reseller/reseller-portal-overview.png" alt="Agency portal overview with a one-time HubSpot installation link and shared subscription capacity" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p class="text-center"><img src="/assets/images/reseller/reseller-portal-management.png" alt="Agency portal controls for client accounts, CRM installation links, seat allocation, and consolidated billing" class="my-3 border border-3 border-primary rounded rounded-3"></p>
+
+<p>Seats released by one client return to the agency's available subscription capacity and can be assigned to another client. Allocating paid seats to a client ends any active agency trial for that client.</p>
+
+<div class="alert alert-info" role="alert"><strong>For client administrators:</strong> your Meddicc Score account works normally inside HubSpot, but subscription and licence controls are managed by your agency. The Settings page shows the agency contact email for billing or seat-change requests.</div>
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
 
 <h3 class="accordion-header">
 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsing" aria-expanded="true" aria-controls="collapseUsing"><span id="using" class="pt-6-m">Using the APP</span>
