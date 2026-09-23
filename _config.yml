@@ -139,7 +139,7 @@ footer:
     - label: "Security"
       icon: "fas fa-fw fa-shield-alt"
       url: "/security/"
-    - label: "Affiliate Program"
+    - label: "Reseller Program"
       icon: "fas fa-fw fa-users"
       url: "https://meddiccscore.com/blog/affiliate-program/"
     - label: #"Instagram"
