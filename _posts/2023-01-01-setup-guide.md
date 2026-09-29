@@ -358,7 +358,17 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   <!-- <li><strong>Access Report:</strong> Grants access to non-admin user to a detailed report summarizing deal scoring.</li> -->
 </ul>
 
-<p class="pt-6-m" id="automations"><strong>9.1.2 Automations:</strong></p>
+<p class="pt-6-m" id="deal-stage-locking"><strong>9.1.2 Lock qualification by deal stage:</strong></p>
+
+<ul>
+  <li><strong>Enable stage-based locking:</strong> Controls whether Meddicc Score automatically locks the score and all qualification questions when a deal reaches a configured HubSpot stage.</li>
+  <li><strong>Stages that lock qualification:</strong> Select one or more stages from the account's HubSpot pipelines. The list is retrieved from HubSpot and groups every stage under its pipeline, so you can configure different locking points for different sales processes.</li>
+  <li>When a deal enters a selected stage, its current score and qualification answers are preserved and cannot be overwritten by normal editing, refill, scoring, or automation. When the deal moves out of every selected stage, the automatic stage lock is released and its previous score-lock state is restored.</li>
+  <li>Turn the feature off if sellers should remain able to update qualification at every stage, including after a deal closes.</li>
+  <li>For existing accounts that have not saved this setting yet, Meddicc Score keeps the previous behavior: Closed Won and Closed Lost deals are locked automatically.</li>
+</ul>
+
+<p class="pt-6-m" id="automations"><strong>9.1.3 Automations:</strong></p>
 
 <ul>
   <li>Automations help you streamline and automate the scoring process. They are shown before <strong>AI Settings</strong> in the General Settings tab and are available when <strong>Use AI for Refill and Score</strong> is enabled.</li>
@@ -394,7 +404,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
   </li>
 </ul>
 
-<p class="pt-6-m" id="selectLLM"><strong>9.1.3 AI Settings:</strong></p>
+<p class="pt-6-m" id="selectLLM"><strong>9.1.4 AI Settings:</strong></p>
 
 <ul>
   <li><strong>Use AI for Refill and Score:</strong> Enabled by default. When set to <strong>YES</strong>, Meddicc Score can use the selected AI model to refill answers, score the form, generate feedback, create next steps, produce Win/Loss analysis, and generate the Closed Won onboarding handoff. When set to <strong>NO</strong>, no AI is used: Refill is disabled, scoring is calculated deterministically from the completeness of each answer, and contact action plans are based only on associated deal counts and scores. The provider, custom prompt, Automations, and Scoring Methodology controls are hidden while this option is disabled.</li>
@@ -433,7 +443,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 <p><strong>Choosing a provider:</strong> Compare providers using the same representative deals and review evidence accuracy, unsupported assumptions, structured-response consistency, latency, and cost. The quality and recency of the CRM activities and properties available to Meddicc Score often affect the result more than model generation alone.</p>
 
 
-<p class="pt-6-m" id="scoring_methodology"><strong>9.1.4 Scoring Methodology:</strong></p>
+<p class="pt-6-m" id="scoring_methodology"><strong>9.1.5 Scoring Methodology:</strong></p>
 
 <ul>
   <li>Score of the forms go from 0 to 100. This tile is shown only when <strong>Use AI for Refill and Score</strong> is enabled. There are two options for Scoring the forms:</li>
@@ -453,7 +463,7 @@ Note: Comments to engagements or attachments to the engagements are not gathered
 
 <!-- <h4 class="pt-6-m mb-3 text-primary" id="selectLLM">TODO</h4> -->
 
-<p ><strong>9.1.5 Manage your Subscription and account:</strong></p>
+<p ><strong>9.1.6 Manage your Subscription and account:</strong></p>
 <ul>
   <li><strong>Upgrade (Free users only):</strong> Upgrade your account to access premium features.</li>
   <li><strong>Manage Subscription (Admin, paid users only):</strong> Opens the Customer Portal to update or cancel your subscription. For Corporate subscriptions, contact support by email. <a href="#how-can-cancell-or-manage-my-subcription">More information.</a></li>
@@ -762,7 +772,7 @@ apikey: YOUR_ACCOUNT_API_TOKEN</code></pre>
 
 <p><strong>Note:</strong> <code>questionId</code> currently maps to the internal question name, for example <code>metrics</code>, <code>economicBuyer</code>, <code>decisionCriteria</code>, <code>champion</code>, etc.</p>
 
-<p><strong>Closed deals:</strong> when a deal is marked Closed Won or Closed Lost, Meddicc Score freezes the MEDDICC framework for analytics. During that closure lock, all questions are returned as locked and automated/API score updates do not overwrite the framework. The close-stage webhook still refreshes the Win Analysis or Post-mortem Analysis from the frozen framework, so the closed deal does not keep the previous open-deal Next Steps. For Closed Won deals, Meddicc Score can also generate an Onboarding Handoff for Customer Success from the closed deal information, MEDDICC answers, contacts, companies, activities, and Win Analysis. In the HubSpot card, users can download the handoff as an editable Markdown file or refresh it with the latest won-deal information. Users can still open Update Score and manually unlock specific fields if an explicit correction is needed.</p>
+<p><strong>Stage-based deal locking:</strong> account Admins can choose whether qualification is locked and select the exact HubSpot stages that trigger the lock under <a href="#deal-stage-locking">Settings &gt; General &gt; Lock qualification by deal stage</a>. Selections are pipeline-specific. While a deal is in a selected stage, all questions and the score are returned as locked, and automated/API score updates do not overwrite the framework. Moving the deal out of the selected stages releases the automatic lock. Accounts that have not saved this setting retain the previous default behavior, where Closed Won and Closed Lost deals are locked. A genuine closed-stage change still refreshes the Win Analysis or Post-mortem Analysis from the frozen framework. For Closed Won deals, Meddicc Score can also generate an Onboarding Handoff for Customer Success from the closed deal information, MEDDICC answers, contacts, companies, activities, and Win Analysis. In the HubSpot card, users can download the handoff as an editable Markdown file or refresh it with the latest won-deal information.</p>
 
 <hr>
 
