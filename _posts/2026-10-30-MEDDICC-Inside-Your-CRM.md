@@ -26,7 +26,9 @@ On October 29, 2026, Carlos Antonioli, Founder & CEO of Sention, joined David G�
 
 The recording is now available.
 
-[Watch the webinar recording on Sention](SENTION_RECORDING_URL){: .btn .btn--primary}
+[![Watch the MEDDICC Inside Your CRM webinar recording]({{ "/assets/images/guides/4/webinarplaceholder.png" | relative_url }})](https://meeting.zoho.com/meeting/public/videoprv?recordingId=9e6c72946cb0397beb311e5c94aa2b7c1f0d0848c7d57a8d1da96eb3a059ba25&x-meeting-org=858283904)
+
+[Watch the webinar recording on Sention](https://meeting.zoho.com/meeting/public/videoprv?recordingId=9e6c72946cb0397beb311e5c94aa2b7c1f0d0848c7d57a8d1da96eb3a059ba25&x-meeting-org=858283904){: .btn .btn--primary}
 
 ## What the session covers
 
@@ -71,4 +73,4 @@ Use it to review your qualification process, discuss the questions managers ask,
 
 Visit Sention to access the webinar recording with Carlos Antonioli and David Gómez Jiménez.
 
-[Watch MEDDICC Inside Your CRM](SENTION_RECORDING_URL){: .btn .btn--primary}
+[Watch MEDDICC Inside Your CRM](https://meeting.zoho.com/meeting/public/videoprv?recordingId=9e6c72946cb0397beb311e5c94aa2b7c1f0d0848c7d57a8d1da96eb3a059ba25&x-meeting-org=858283904){: .btn .btn--primary}
