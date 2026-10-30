@@ -11,8 +11,8 @@ classes: wide
 date: 2026-10-30 09:00:00 +0100
 excerpt: Watch Carlos Antonioli and David Gómez Jiménez explore how to embed MEDDICC into your CRM, coach qualification gaps, and use deal evidence in pipeline reviews.
 header:
-  overlay_image: "/assets/images/guides/1/2026-10-30-meddicc-webinar-recording-blue.webp"
-  teaser: "/assets/images/guides/1/2026-10-30-meddicc-webinar-recording-blue.webp"
+  overlay_image: "/assets/images/guides/4/2026-10-30-meddicc-webinar-recording-blue.webp"
+  teaser: "/assets/images/guides/4/2026-10-30-meddicc-webinar-recording-blue.webp"
   caption:
 ---
 
